@@ -4,223 +4,329 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#050b19">
-<title>CYBERAI 2.0 - Intelligent AI Assistant</title>
+<meta name="theme-color" content="#061226">
+<title>CYBERAI 2.0</title>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --bg: #050b18;
+  --panel: #0c1930;
+  --panel2: #10294a;
+  --blue: #168cff;
+  --cyan: #36c5ff;
+  --text: #f4f8ff;
+  --muted: #a9c3df;
 }
 
+* { box-sizing: border-box; }
+
 body {
-  background: #050b19;
-  color: #eaf5ff;
+  margin: 0;
   font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at top, #10294c 0%, #050b18 55%);
+  color: var(--text);
   min-height: 100vh;
 }
 
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+
 header {
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 18px;
-  border-bottom: 1px solid #12365b;
-  background: #071326;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 5;
+  background: rgba(5, 15, 32, .96);
+  border-bottom: 1px solid #1269b7;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo {
-  color: #22baff;
-  font-size: 22px;
+.brand {
+  font-size: 23px;
   font-weight: bold;
-  letter-spacing: 2px;
-  text-shadow: 0 0 15px #008cff;
+  letter-spacing: 1px;
+  color: var(--cyan);
+  text-shadow: 0 0 14px #087cff;
 }
 
-button, label {
-  cursor: pointer;
+.header-actions {
+  display: flex;
+  gap: 7px;
 }
 
-header button {
-  background: #102b49;
-  color: #7bd8ff;
-  border: 1px solid #1478b9;
-  padding: 10px 14px;
+.small-button {
+  background: #10294a;
+  border: 1px solid #247ac4;
+  color: white;
   border-radius: 9px;
+  padding: 9px 11px;
+  font-size: 12px;
 }
 
-main {
-  max-width: 950px;
+.page {
+  max-width: 900px;
   margin: auto;
-  padding: 20px;
+  padding: 15px;
 }
 
-#welcome {
+/* USERNAME SCREEN */
+
+#loginScreen {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  background: rgba(12, 25, 48, .96);
+  border: 1px solid #168cff;
+  box-shadow: 0 0 35px #087cff30;
+  border-radius: 22px;
+  padding: 28px;
   text-align: center;
-  padding: 65px 10px 30px;
 }
 
-.orb {
-  width: 100px;
-  height: 100px;
+.logo-circle {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 15px;
+  display: grid;
+  place-items: center;
   border-radius: 50%;
-  margin: 0 auto 25px;
-  background: radial-gradient(circle, #4ce2ff, #0755a5, #071326);
-  box-shadow: 0 0 35px #008cff;
+  background: #102f55;
+  border: 2px solid var(--cyan);
+  color: var(--cyan);
+  font-size: 35px;
+  box-shadow: 0 0 25px #168cff66;
 }
 
-#welcome h1 {
-  font-size: 30px;
-  color: #35caff;
-  margin-bottom: 12px;
+.login-card h1 {
+  color: var(--cyan);
+  margin-bottom: 8px;
 }
 
-#welcome p {
-  color: #a7c7e6;
+.login-card p {
+  color: var(--muted);
   line-height: 1.6;
 }
 
-.suggestions {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-top: 28px;
+.field {
+  width: 100%;
+  padding: 15px;
+  background: #071326;
+  color: white;
+  border: 1px solid #168cff;
+  border-radius: 11px;
+  margin: 12px 0;
+  outline: none;
 }
 
-.suggestions button {
-  padding: 15px;
-  border: 1px solid #14517c;
+.primary-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(100deg, #087cff, #16baff);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 11px;
+}
+
+.note {
+  font-size: 12px;
+  color: #8daac9;
+}
+
+/* MAIN APP */
+
+#appScreen { display: none; }
+
+.welcome-card {
+  background: linear-gradient(130deg, #102b50, #0a1730);
+  border: 1px solid #167ac9;
+  border-radius: 18px;
+  padding: 22px;
+  margin: 12px 0 18px;
+}
+
+.welcome-card h2 {
+  color: var(--cyan);
+  margin-top: 0;
+}
+
+.welcome-card p {
+  color: #c5d9ef;
+  line-height: 1.6;
+}
+
+.section-title {
+  color: #7ecaff;
+  font-size: 14px;
+  margin: 18px 0 10px;
+}
+
+.suggestion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.suggestion {
+  background: #10294a;
+  color: white;
+  border: 1px solid #176bb1;
   border-radius: 12px;
-  background: #0a1c32;
-  color: #c8eaff;
+  padding: 15px 10px;
   text-align: left;
+  min-height: 65px;
+}
+
+.suggestion:hover, .suggestion:focus {
+  background: #174477;
 }
 
 #chat {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  padding-bottom: 20px;
+  min-height: 100px;
+  padding: 5px 0 15px;
 }
 
 .message {
   max-width: 90%;
-  padding: 15px;
+  padding: 13px;
   border-radius: 15px;
+  margin: 12px 0;
   line-height: 1.6;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 
 .user {
-  align-self: flex-end;
-  background: #104d80;
-  border: 1px solid #1688d0;
+  background: #12477e;
+  border: 1px solid #268bdb;
+  margin-left: auto;
 }
 
 .assistant {
-  align-self: flex-start;
-  background: #0c1c30;
-  border: 1px solid #17456b;
+  background: #101f36;
+  border: 1px solid #17568d;
+  margin-right: auto;
+}
+
+.message small {
+  display: block;
+  color: #74c7ff;
+  font-size: 11px;
+  margin-top: 9px;
 }
 
 .copy-button {
-  display: block;
-  margin-top: 10px;
-  background: transparent;
-  border: 1px solid #247bb1;
-  color: #80d9ff;
-  padding: 6px 10px;
+  margin-top: 9px;
+  padding: 7px 10px;
+  color: #c9e8ff;
+  background: #10294a;
+  border: 1px solid #28699f;
   border-radius: 7px;
+  font-size: 12px;
+}
+
+.quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 16px;
+}
+
+.quick-replies button {
+  background: #102f54;
+  border: 1px solid #168cff;
+  color: #d9efff;
+  border-radius: 20px;
+  padding: 9px 12px;
+  font-size: 13px;
 }
 
 .composer {
   position: sticky;
   bottom: 0;
-  background: #050b19;
-  padding: 12px 0 18px;
-  border-top: 1px solid #12365b;
+  background: rgba(5, 11, 24, .97);
+  border-top: 1px solid #123b65;
+  padding: 12px 0;
 }
 
-.input-area {
-  display: flex;
-  align-items: flex-end;
-  gap: 8px;
-  background: #0a1b30;
-  border: 1px solid #17629b;
-  border-radius: 15px;
-  padding: 10px;
-}
-
-textarea {
-  flex: 1;
-  min-width: 0;
-  min-height: 45px;
-  max-height: 150px;
+#prompt {
+  width: 100%;
+  min-height: 65px;
   resize: vertical;
-  background: transparent;
+  background: #0c1930;
   color: white;
-  border: none;
+  border: 1px solid #168cff;
+  border-radius: 12px;
+  padding: 13px;
   outline: none;
-  font-size: 16px;
-  padding: 10px 5px;
 }
 
-.input-area button {
-  background: #087fc5;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 12px;
-}
-
-.tools {
+.control-row {
   display: flex;
-  gap: 12px;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 9px;
 }
 
-.tools button, .tools label {
-  background: #10233b;
-  color: #85d7ff;
-  border: 1px solid #174c76;
-  padding: 9px 13px;
-  border-radius: 8px;
+.control-row button {
+  border: none;
+  color: white;
+  background: #087cff;
+  padding: 11px 14px;
+  border-radius: 9px;
 }
 
-#fileInput {
-  display: none;
+.control-row button.secondary {
+  background: #10294a;
+  border: 1px solid #247ac4;
 }
 
-#uploadPreview {
-  font-size: 12px;
-  color: #9edfff;
-  margin-top: 8px;
+.control-row button:disabled {
+  opacity: .5;
 }
 
 #status {
+  color: #83caff;
   font-size: 12px;
-  color: #83cfff;
-  padding: 5px;
+  margin-top: 10px;
+}
+
+#fileInput {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  color: #b7d8f5;
+  font-size: 12px;
+}
+
+#uploadPreview {
+  color: #9ccfff;
+  font-size: 12px;
+  margin-top: 7px;
 }
 
 footer {
   text-align: center;
-  padding: 22px;
-  color: #7194b3;
+  color: #819dbb;
   font-size: 12px;
+  padding: 25px 10px;
 }
 
-@media(max-width: 550px) {
-  main { padding: 12px; }
-  #welcome { padding-top: 45px; }
-  #welcome h1 { font-size: 25px; }
-  .suggestions { grid-template-columns: 1fr; }
+.hidden { display: none !important; }
+
+@media (max-width: 480px) {
+  .brand { font-size: 19px; }
+  .small-button { padding: 8px; }
   .message { max-width: 96%; }
 }
 </style>
@@ -229,286 +335,742 @@ footer {
 <body>
 
 <header>
-  <div class="logo">CYBERAI 2.0</div>
-  <button onclick="newChat()">+ New Chat</button>
+  <div class="brand">✦ CYBERAI 2.0</div>
+
+  <div class="header-actions" id="headerActions" style="display:none">
+    <button class="small-button" onclick="newChat()">New chat</button>
+    <button class="small-button" onclick="showHistory()">History</button>
+    <button class="small-button" onclick="changeUsername()">Profile</button>
+  </div>
 </header>
 
-<main>
+<main class="page">
 
-<section id="welcome">
-  <div class="orb"></div>
-  <h1>Welcome to CYBERAI 2.0</h1>
-  <p>
-    Your intelligent AI assistant.<br>
-    Ask questions, explore ideas, learn and create.
-  </p>
+  <!-- USERNAME REGISTRATION -->
 
-  <div class="suggestions">
-    <button onclick="suggest('Explain artificial intelligence in simple terms.')">
-      Explain artificial intelligence
-    </button>
-    <button onclick="suggest('Teach me something interesting about technology.')">
-      Explore technology
-    </button>
-    <button onclick="suggest('Help me write a creative story.')">
-      Write a creative story
-    </button>
-    <button onclick="suggest('Give me ideas for a new business.')">
-      Discover business ideas
-    </button>
-  </div>
-</section>
+  <section id="loginScreen">
+    <div class="login-card">
+      <div class="logo-circle">✦</div>
 
-<section id="chat"></section>
+      <h1>Welcome to CYBERAI</h1>
 
-<div class="composer">
-  <div class="input-area">
-    <textarea id="prompt" placeholder="Ask CYBERAI anything..."></textarea>
-    <button onclick="sendMessage()" id="sendButton">Send</button>
-  </div>
+      <p>
+        Your intelligent assistant, learning partner,
+        conversation companion and game host.
+      </p>
 
-  <div class="tools">
-    <button onclick="startVoice()">🎤 Voice</button>
-    <label for="fileInput">📎 Attach</label>
-    <input type="file" id="fileInput"
-      accept=".txt,.pdf,.doc,.docx,image/*" multiple>
-  </div>
+      <form id="usernameForm">
+        <input
+          class="field"
+          id="usernameInput"
+          type="text"
+          maxlength="24"
+          placeholder="Create your username"
+          autocomplete="nickname"
+          required
+        >
 
-  <div id="uploadPreview"></div>
-  <div id="status">CYBERAI is ready.</div>
-</div>
+        <button class="primary-button" type="submit">
+          Get Started →
+        </button>
+      </form>
+
+      <p class="note">
+        Your username is saved in this browser on this device.
+        You do not need to enter a password.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN APP -->
+
+  <section id="appScreen">
+
+    <div class="welcome-card" id="welcomeCard">
+      <h2 id="welcomeTitle">Welcome!</h2>
+      <p id="welcomeText">
+        How can I help you today?
+      </p>
+    </div>
+
+    <div id="homeSuggestions">
+
+      <div class="section-title">WHAT WOULD YOU LIKE TO DO?</div>
+
+      <div class="suggestion-grid">
+        <button class="suggestion" onclick="quickAction('chat')">
+          💬 Chat with me
+        </button>
+
+        <button class="suggestion" onclick="showGames()">
+          🎮 Play a game
+        </button>
+
+        <button class="suggestion" onclick="quickAction('learn')">
+          📚 Learn something
+        </button>
+
+        <button class="suggestion" onclick="quickAction('joke')">
+          😂 Tell me a joke
+        </button>
+
+        <button class="suggestion" onclick="quickAction('story')">
+          📖 Tell me a story
+        </button>
+
+        <button class="suggestion" onclick="quickAction('ideas')">
+          💡 Give me ideas
+        </button>
+      </div>
+
+    </div>
+
+    <div id="chat"></div>
+
+    <div id="quickReplies" class="quick-replies"></div>
+
+    <div class="composer">
+
+      <textarea
+        id="prompt"
+        placeholder="Type a message to CYBERAI..."
+      ></textarea>
+
+      <input
+        type="file"
+        id="fileInput"
+        multiple
+        accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png"
+      >
+
+      <div id="uploadPreview"></div>
+
+      <div class="control-row">
+        <button id="sendButton" onclick="sendMessage()">Send ➤</button>
+        <button class="secondary" onclick="startVoice()">🎤 Voice</button>
+        <button class="secondary" onclick="showGames()">🎮 Games</button>
+        <button class="secondary" onclick="newChat()">New chat</button>
+      </div>
+
+      <div id="status">CYBERAI is ready.</div>
+
+    </div>
+
+  </section>
 
 </main>
 
 <footer>
-  CYBERAI 2.0<br>
-  Created by Oduyebo Abiola
+  Created by Oduyebo Abiola<br>
+  CYBERAI 2.0 — Knowledge • Conversation • Creativity
 </footer>
 
 <script>
+
+/* =====================================
+   CONFIGURATION
+===================================== */
+
 const API_URL =
 "https://cyberai-engine.anuoluwapooduyebo01.workers.dev/";
 
 const chat = document.getElementById("chat");
-const welcome = document.getElementById("welcome");
 const promptBox = document.getElementById("prompt");
-const fileInput = document.getElementById("fileInput");
-const uploadPreview = document.getElementById("uploadPreview");
 const statusText = document.getElementById("status");
 const sendButton = document.getElementById("sendButton");
+const quickReplies = document.getElementById("quickReplies");
 
+let username = localStorage.getItem("cyberai_username") || "";
+let knowledgeLibrary = [];
+let libraryReady = false;
 let current = [];
-let conversations = JSON.parse(
-  localStorage.getItem("cyberai_history") || "[]"
-);
+let game = null;
 
-function saveHistory() {
-  localStorage.setItem(
-    "cyberai_history",
-    JSON.stringify(conversations)
-  );
-}
+let conversations;
 
-function saveConversation() {
-  if (!current.length) return;
-
-  const conversation = {
-    id: current.id,
-    title: current.find(m => m.role === "user").text.slice(0, 35),
-    messages: current
-  };
-
-  const index = conversations.findIndex(
-    c => c.id === conversation.id
+try {
+  conversations = JSON.parse(
+    localStorage.getItem("cyberai_history") || "[]"
   );
 
-  if (index >= 0) {
-    conversations[index] = conversation;
-  } else {
-    conversations.unshift(conversation);
-  }
-
-  conversations = conversations.slice(0, 30);
-  saveHistory();
+  if (!Array.isArray(conversations)) conversations = [];
+} catch {
+  conversations = [];
 }
 
-function renderMessage(text, role) {
-  const wrapper = document.createElement("div");
-  wrapper.className = "message " + role;
+/* =====================================
+   USERNAME SYSTEM
+===================================== */
 
-  const content = document.createElement("div");
-  content.textContent = text;
-  wrapper.appendChild(content);
+function openApp() {
 
-  if (role === "assistant") {
-    const copy = document.createElement("button");
-    copy.className = "copy-button";
-    copy.textContent = "Copy response";
-
-    copy.onclick = async () => {
-      try {
-        await navigator.clipboard.writeText(text);
-        copy.textContent = "Copied!";
-      } catch {
-        copy.textContent = "Copy unavailable";
-      }
-    };
-
-    wrapper.appendChild(copy);
-  }
-
-  chat.appendChild(wrapper);
-  chat.scrollTop = chat.scrollHeight;
-}
-
-/* REAL OPENAI CONNECTION */
-async function sendMessage() {
-  const text = promptBox.value.trim();
-  const selectedFiles = Array.from(fileInput.files);
-
-  if (!text && !selectedFiles.length) return;
-
-  welcome.style.display = "none";
-
-  let message = text;
-
-  if (selectedFiles.length) {
-    message += (message ? "\n" : "") +
-      "Selected files (not uploaded for reading): " +
-      selectedFiles.map(file => file.name).join(", ");
-  }
-
-  if (!current.id) current.id = Date.now();
-
-  current.push({
-    role: "user",
-    text: message
-  });
-
-  renderMessage(message, "user");
-
-  promptBox.value = "";
-  fileInput.value = "";
-  uploadPreview.innerHTML = "";
-
-  sendButton.disabled = true;
-  sendButton.textContent = "...";
-  statusText.textContent = "CYBERAI is thinking...";
-
-  const typing = document.createElement("div");
-  typing.className = "message assistant";
-  typing.textContent = "Connecting to CYBERAI...";
-  chat.appendChild(typing);
-
-  try {
-    const response = await fetch(API_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        message: text || message
-      })
-    });
-
-    const data = await response.json();
-    typing.remove();
-
-    if (!response.ok) {
-      throw new Error(data.error || "AI service error.");
-    }
-
-    const answer = data.reply || "No response received.";
-
-    current.push({
-      role: "assistant",
-      text: answer
-    });
-
-    renderMessage(answer, "assistant");
-    saveConversation();
-
-    statusText.textContent = "CYBERAI is ready.";
-
-  } catch (error) {
-    typing.remove();
-
-    renderMessage(
-      "Connection error: " + error.message,
-      "assistant"
-    );
-
-    statusText.textContent =
-      "Connection problem. Please try again.";
-  }
-
-  sendButton.disabled = false;
-  sendButton.textContent = "Send";
-  chat.scrollTop = chat.scrollHeight;
-}
-
-function suggest(text) {
-  promptBox.value = text;
-  promptBox.focus();
-}
-
-function newChat() {
-  current = [];
-  current.id = Date.now();
-
-  chat.innerHTML = "";
-  welcome.style.display = "block";
-
-  promptBox.value = "";
-  fileInput.value = "";
-  uploadPreview.innerHTML = "";
-
-  statusText.textContent = "New conversation started.";
-}
-
-function startVoice() {
-  const SpeechRecognition =
-    window.SpeechRecognition ||
-    window.webkitSpeechRecognition;
-
-  if (!SpeechRecognition) {
-    alert("Voice input is not supported in this browser.");
+  if (!username) {
+    document.getElementById("loginScreen").style.display = "flex";
+    document.getElementById("appScreen").style.display = "none";
+    document.getElementById("headerActions").style.display = "none";
     return;
   }
 
-  const recognition = new SpeechRecognition();
-  recognition.lang = "en-US";
-  recognition.interimResults = false;
+  document.getElementById("loginScreen").style.display = "none";
+  document.getElementById("appScreen").style.display = "block";
+  document.getElementById("headerActions").style.display = "flex";
 
-  recognition.onresult = event => {
-    promptBox.value += event.results[0][0].transcript;
-    promptBox.focus();
-  };
+  document.getElementById("welcomeTitle").textContent =
+    "Welcome back, " + username + "!";
 
-  recognition.onerror = () => {
-    statusText.textContent = "Voice input unavailable.";
-  };
+  document.getElementById("welcomeText").textContent =
+    "Hi " + username + "! 😊 How can I help you today?";
 
-  recognition.start();
 }
 
-fileInput.addEventListener("change", () => {
-  uploadPreview.innerHTML = "";
+document.getElementById("usernameForm").addEventListener(
+  "submit",
+  function(event) {
 
-  Array.from(fileInput.files).forEach(file => {
-    const item = document.createElement("div");
-    item.textContent = "📎 " + file.name;
-    uploadPreview.appendChild(item);
-  });
-});
-
-promptBox.addEventListener("keydown", event => {
-  if (event.key === "Enter" && !event.shiftKey) {
     event.preventDefault();
-    sendMessage();
-  }
-});
-</script>
 
-</body>
-</html>
+    const name = document.getElementById("usernameInput")
+      .value.trim();
+
+    if (name.length < 2) {
+      alert("Please enter a username with at least 2 characters.");
+      return;
+    }
+
+    username = name.replace(/\s+/g, " ").slice(0, 24);
+
+    localStorage.setItem("cyberai_username", username);
+
+    current = [];
+    chat.innerHTML = "";
+
+    openApp();
+
+    statusText.textContent =
+      "Welcome, " + username + "! CYBERAI is ready.";
+
+  }
+);
+
+function changeUsername() {
+
+  const newName = prompt(
+    "Enter your new CYBERAI username:",
+    username
+  );
+
+  if (!newName || !newName.trim()) return;
+
+  username = newName.trim().replace(/\s+/g, " ").slice(0, 24);
+
+  localStorage.setItem("cyberai_username", username);
+
+  openApp();
+
+  addBotMessage(
+    "Your username has been updated. Welcome, " +
+    username + "! 😊"
+  );
+
+}
+
+/* =====================================
+   KNOWLEDGE LIBRARY
+===================================== */
+
+async function loadKnowledge() {
+
+  try {
+
+    const response = await fetch("./knowledge.json");
+
+    if (!response.ok) {
+      throw new Error("Could not load knowledge.json");
+    }
+
+    const data = await response.json();
+
+    knowledgeLibrary = [];
+
+    Object.entries(data).forEach(([category, entries]) => {
+
+      if (!Array.isArray(entries)) return;
+
+      entries.forEach(entry => {
+
+        knowledgeLibrary.push({
+          ...entry,
+          category: category
+        });
+
+      });
+
+    });
+
+    libraryReady = true;
+
+    statusText.textContent =
+      "Knowledge library ready: " +
+      knowledgeLibrary.length + " entries.";
+
+  } catch (error) {
+
+    console.error(error);
+
+    libraryReady = false;
+
+    statusText.textContent =
+      "Knowledge library could not be loaded.";
+
+  }
+
+}
+
+function normalize(text) {
+
+  return String(text || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+}
+
+function searchKnowledge(question) {
+
+  if (!libraryReady || !knowledgeLibrary.length) {
+    return null;
+  }
+
+  const query = normalize(question);
+
+  if (!query) return null;
+
+  const queryWords = query.split(" ")
+    .filter(word => word.length > 2);
+
+  let bestMatch = null;
+  let highestScore = 0;
+
+  for (const entry of knowledgeLibrary) {
+
+    const storedQuestion = normalize(entry.question || "");
+
+    const keywords = Array.isArray(entry.keywords)
+      ? entry.keywords.map(normalize)
+      : [];
+
+    let score = 0;
+
+    if (query === storedQuestion) score += 100;
+
+    if (
+      storedQuestion &&
+      query.length > 4 &&
+      (query.includes(storedQuestion) ||
+       storedQuestion.includes(query))
+    ) {
+      score += 40;
+    }
+
+    for (const keyword of keywords) {
+
+      if (keyword && query.includes(keyword)) {
+        score += 15;
+      }
+
+    }
+
+    const searchable = normalize(
+      (entry.question || "") + " " + keywords.join(" ")
+    );
+
+    for (const word of queryWords) {
+
+      if (searchable.includes(word)) {
+        score += 3;
+      }
+
+    }
+
+    if (score > highestScore) {
+      highestScore = score;
+      bestMatch = entry;
+    }
+
+  }
+
+  if (highestScore >= 15 && bestMatch && bestMatch.answer) {
+    return bestMatch;
+  }
+
+  return null;
+
+}
+
+/* =====================================
+   MESSAGE DISPLAY
+===================================== */
+
+function addMessage(text, sender, source) {
+
+  const message = document.createElement("div");
+
+  message.className = "message " + sender;
+
+  const content = document.createElement("div");
+  content.textContent = text;
+
+  message.appendChild(content);
+
+  if (source) {
+
+    const label = document.createElement("small");
+    label.textContent = source;
+
+    message.appendChild(label);
+
+  }
+
+  if (sender === "assistant") {
+
+    const copyButton = document.createElement("button");
+
+    copyButton.className = "copy-button";
+    copyButton.textContent = "Copy answer";
+
+    copyButton.onclick = async function() {
+
+      try {
+
+        await navigator.clipboard.writeText(text);
+        copyButton.textContent = "Copied!";
+
+      } catch {
+
+        copyButton.textContent = "Copy unavailable";
+
+      }
+
+    };
+
+    message.appendChild(copyButton);
+
+  }
+
+  chat.appendChild(message);
+
+  chat.scrollTop = chat.scrollHeight;
+
+}
+
+function addBotMessage(text, source = "CYBERAI") {
+
+  addMessage(text, "assistant", source);
+
+  current.push({
+    role: "assistant",
+    text: text
+  });
+
+  saveConversation();
+
+}
+
+function addUserMessage(text) {
+
+  addMessage(text, "user");
+
+  current.push({
+    role: "user",
+    text: text
+  });
+
+  saveConversation();
+
+}
+
+/* =====================================
+   SUGGESTED REPLIES
+===================================== */
+
+function showSuggestions(items) {
+
+  quickReplies.innerHTML = "";
+
+  items.forEach(item => {
+
+    const button = document.createElement("button");
+
+    button.textContent = item;
+
+    button.onclick = function() {
+      handleSuggestion(item);
+    };
+
+    quickReplies.appendChild(button);
+
+  });
+
+}
+
+function clearSuggestions() {
+  quickReplies.innerHTML = "";
+}
+
+function handleSuggestion(item) {
+
+  clearSuggestions();
+
+  if (item === "Play a game") {
+    showGames();
+    return;
+  }
+
+  if (item === "Tell me a joke") {
+    quickAction("joke");
+    return;
+  }
+
+  if (item === "Learn something") {
+    quickAction("learn");
+    return;
+  }
+
+  if (item === "Just chatting") {
+    quickAction("chat");
+    return;
+  }
+
+  promptBox.value = item;
+  sendMessage();
+
+}
+
+/* =====================================
+   SMALL TALK AND CONVERSATION
+===================================== */
+
+function localConversation(text) {
+
+  const q = normalize(text);
+
+  const greetings = [
+    "hi",
+    "hello",
+    "hey",
+    "good morning",
+    "good afternoon",
+    "good evening",
+    "hello cyberai",
+    "hey cyberai"
+  ];
+
+  if (
+    greetings.includes(q) ||
+    /^(hi|hello|hey)\s/.test(q)
+  ) {
+
+    return {
+      answer:
+        "Hey " + username +
+        "! 😊 It's lovely to have you here. How are you doing today?",
+      suggestions: [
+        "I'm fine",
+        "I'm doing great",
+        "Not so good",
+        "Let's play a game"
+      ]
+    };
+
+  }
+
+  if (
+    q.includes("how are you") ||
+    q === "how r u"
+  ) {
+
+    return {
+      answer:
+        "I'm doing great, " + username +
+        "! Thanks for asking. 😊 What are you planning to do today?",
+      suggestions: [
+        "Let's chat",
+        "Play a game",
+        "Learn something",
+        "Tell me a joke"
+      ]
+    };
+
+  }
+
+  if (
+    q.includes("i am fine") ||
+    q.includes("im fine") ||
+    q.includes("i am good") ||
+    q.includes("doing great") ||
+    q.includes("i am okay")
+  ) {
+
+    return {
+      answer:
+        "That's wonderful, " + username +
+        "! 😊 What would you like us to do today?",
+      suggestions: [
+        "Play a game",
+        "Let's chat",
+        "Learn something",
+        "Tell me a joke"
+      ]
+    };
+
+  }
+
+  if (
+    q.includes("thank you") ||
+    q === "thanks"
+  ) {
+
+    return {
+      answer:
+        "You're very welcome, " + username +
+        "! I'm always happy to help. What else would you like to explore?",
+      suggestions: [
+        "Ask a question",
+        "Play a game",
+        "Tell me a joke"
+      ]
+    };
+
+  }
+
+  if (
+    q.includes("who are you") ||
+    q.includes("what are you")
+  ) {
+
+    return {
+      answer:
+        "I'm CYBERAI 2.0, your friendly intelligent assistant! " +
+        "I can help you learn, answer questions, chat, play games, " +
+        "and explore new ideas. I was created by Oduyebo Abiola.",
+      suggestions: [
+        "What can you do?",
+        "Play a game",
+        "Let's chat"
+      ]
+    };
+
+  }
+
+  if (
+    q.includes("what can you do") ||
+    q.includes("how can you help")
+  ) {
+
+    return {
+      answer:
+        "I can help you with learning, general knowledge, writing, " +
+        "ideas, jokes, stories, riddles, quizzes and conversations. " +
+        "You can also explore my games menu!",
+      suggestions: [
+        "Play a game",
+        "Tell me a story",
+        "Ask a question",
+        "Tell me a joke"
+      ]
+    };
+
+  }
+
+  if (
+    q.includes("goodbye") ||
+    q === "bye" ||
+    q.includes("see you later")
+  ) {
+
+    return {
+      answer:
+        "Goodbye for now, " + username +
+        "! Have a wonderful day. I'll be here whenever you return. 💙",
+      suggestions: [
+        "Start a new chat"
+      ]
+    };
+
+  }
+
+  return null;
+
+}
+
+/* =====================================
+   QUICK ACTIONS
+===================================== */
+
+function quickAction(action) {
+
+  clearSuggestions();
+
+  if (action === "chat") {
+
+    addBotMessage(
+      "Of course, " + username +
+      "! 😊 Let's chat. Tell me something interesting about your day."
+    );
+
+    showSuggestions([
+      "I had a good day",
+      "I want to learn something",
+      "Let's play a game"
+    ]);
+
+    return;
+
+  }
+
+  if (action === "learn") {
+
+    addBotMessage(
+      "I would love to help you learn! Which subject interests you today?"
+    );
+
+    showSuggestions([
+      "Science",
+      "Mathematics",
+      "Technology",
+      "Geography"
+    ]);
+
+    return;
+
+  }
+
+  if (action === "joke") {
+
+    const jokes = [
+      "Why did the computer go to the doctor? Because it had a virus! 😂",
+      "Why was the maths book sad? Because it had too many problems! 😂",
+      "What do you call a sleeping dinosaur? A dino-snore! 😂",
+      "Why did the student eat his homework? Because the teacher said it was a piece of cake! 😂"
+    ];
+
+    addBotMessage(
+      jokes[Math.floor(Math.random() * jokes.length)]
+    );
+
+    showSuggestions([
+      "Tell me another joke",
+      "Play a game",
+      "Let's chat"
+    ]);
+
+    return;
+
+  }
+
+  if (action === "story") {
+
+    addBotMessage(
+      "Once upon a time, a curious young inventor discovered " +
+      "a little glowing robot. The robot could answer questions, "
