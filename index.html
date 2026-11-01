@@ -246,7 +246,9 @@ textarea{resize:vertical;min-height:48px}
 <div class="panel">
   <h3>Knowledge Library</h3>
   <p id="libraryStatus" class="small">Loading knowledge.json...</p>
-  <p class="small">This version works without an external AI API. It answers from its local library and built-in features.</p>
+  <p class="small">Live AI connection plus local knowledge library.</p>
+  <button onclick="configureAIConnection()">Connect AI backend</button>
+  <p id="aiConnectionStatus" class="small">AI backend not connected yet.</p>
 </div>
 
 </section>
@@ -730,3 +732,38 @@ function toggleMute(){
     try{recognition.stop()}catch(e){}
   }else if(callActive){
   
+  }else if(callActive){
+    beginCallListening();
+  }
+  $("muteButton").textContent = muted ? "🔇 Unmute" : "🎙 Mute";
+}
+
+function toggleCamera(){
+  cameraOn = !cameraOn;
+  if(callStream) callStream.getVideoTracks().forEach(track => track.enabled = cameraOn);
+  $("cameraButton").textContent = cameraOn ? "📷 Camera on" : "📷 Camera off";
+}
+
+function toggleCallSpeaker(){
+  speakerOn = !speakerOn;
+  $("speakerButton").textContent = speakerOn ? "🔊 Speaker" : "🔇 Speaker off";
+  if(!speakerOn && window.speechSynthesis) window.speechSynthesis.cancel();
+}
+
+function endCall(){
+  callActive = false;
+  recognitionActive = false;
+  if(recognition){ try{recognition.stop()}catch(e){} }
+  if(callStream){ callStream.getTracks().forEach(track=>track.stop()); callStream = null; }
+  if(window.speechSynthesis) window.speechSynthesis.cancel();
+  $("cameraPreview").srcObject = null;
+  $("callScreen").classList.add("hidden");
+  $("callStatus").textContent = "Call ended";
+  document.body.classList.remove("speaking");
+}
+
+init();
+</script>
+<script src="./ai-client.js"></script>
+</body>
+</html>
