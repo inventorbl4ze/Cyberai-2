@@ -1,0 +1,168 @@
+
+{
+  "library_name": "CYBERAI Knowledge Library",
+  "version": "1.0",
+  "categories": [
+    {
+      "name": "Science",
+      "entries": [
+        {
+          "question": "What is science?",
+          "keywords": ["science", "scientific study"],
+          "answer": "Science is the systematic study of the natural world through observation, experiments and evidence."
+        },
+        {
+          "question": "What is photosynthesis?",
+          "keywords": ["photosynthesis", "plants", "food"],
+          "answer": "Photosynthesis is the process by which green plants use sunlight, water and carbon dioxide to make glucose and release oxygen."
+        },
+        {
+          "question": "What is gravity?",
+          "keywords": ["gravity", "force", "earth"],
+          "answer": "Gravity is the force of attraction between objects with mass. Earth's gravity keeps us and other objects near its surface."
+        },
+        {
+          "question": "What is electricity?",
+          "keywords": ["electricity", "electrical energy"],
+          "answer": "Electricity is associated with electric charges. It powers many devices, lights and machines."
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "entries": [
+        {
+          "question": "What is mathematics?",
+          "keywords": ["mathematics", "maths", "math"],
+          "answer": "Mathematics is the study of numbers, quantities, shapes, patterns and relationships."
+        },
+        {
+          "question": "What is a fraction?",
+          "keywords": ["fraction", "numerator", "denominator"],
+          "answer": "A fraction represents part of a whole. It has a numerator on top and a denominator below."
+        },
+        {
+          "question": "What is a prime number?",
+          "keywords": ["prime number", "prime"],
+          "answer": "A prime number is a whole number greater than 1 that has exactly two positive factors: 1 and itself. Examples include 2, 3, 5 and 7."
+        },
+        {
+          "question": "What is the area of a rectangle?",
+          "keywords": ["rectangle", "area", "length", "width"],
+          "answer": "The area of a rectangle is calculated using: Area = Length × Width."
+        }
+      ]
+    },
+    {
+      "name": "Technology",
+      "entries": [
+        {
+          "question": "What is artificial intelligence?",
+          "keywords": ["artificial intelligence", "AI"],
+          "answer": "Artificial intelligence is technology that enables computer systems to perform tasks such as understanding language, recognising patterns and generating content."
+        },
+        {
+          "question": "What is a computer?",
+          "keywords": ["computer", "computing"],
+          "answer": "A computer is an electronic device that accepts data, processes it, stores information and produces results."
+        },
+        {
+          "question": "What is the internet?",
+          "keywords": ["internet", "online", "web"],
+          "answer": "The internet is a worldwide network of connected computer systems that communicate and share information."
+        },
+        {
+          "question": "What is programming?",
+          "keywords": ["programming", "coding", "software"],
+          "answer": "Programming is the process of writing instructions that tell a computer how to perform tasks."
+        }
+      ]
+    },
+    {
+      "name": "Geography",
+      "entries": [
+        {
+          "question": "How many continents are there?",
+          "keywords": ["continents", "seven continents"],
+          "answer": "There are seven commonly recognised continents: Africa, Antarctica, Asia, Europe, North America, South America and Australia."
+        },
+        {
+          "question": "What is the largest ocean?",
+          "keywords": ["largest ocean", "pacific ocean"],
+          "answer": "The Pacific Ocean is the largest ocean on Earth."
+        },
+        {
+          "question": "What is the capital of Nigeria?",
+          "keywords": ["Nigeria", "capital of Nigeria", "Abuja"],
+          "answer": "Abuja is the capital city of Nigeria."
+        },
+        {
+          "question": "What is a desert?",
+          "keywords": ["desert", "dry region"],
+          "answer": "A desert is a region that receives very little precipitation. Deserts can be hot or cold."
+        }
+      ]
+    },
+    {
+      "name": "History",
+      "entries": [
+        {
+          "question": "What is history?",
+          "keywords": ["history", "past events"],
+          "answer": "History is the study of past events, people, societies and developments."
+        },
+        {
+          "question": "When did Nigeria gain independence?",
+          "keywords": ["Nigeria independence", "independence day", "1960"],
+          "answer": "Nigeria gained independence from British colonial rule on 1 October 1960."
+        },
+        {
+          "question": "Who was the first president of Nigeria?",
+          "keywords": ["first president", "Nigeria president"],
+          "answer": "Dr Nnamdi Azikiwe became Nigeria's first President in 1963."
+        }
+      ]
+    },
+    {
+      "name": "Biology",
+      "entries": [
+        {
+          "question": "What is a cell?",
+          "keywords": ["cell", "biology", "living things"],
+          "answer": "A cell is the basic structural and functional unit of living organisms."
+        },
+        {
+          "question": "What is the function of the heart?",
+          "keywords": ["heart", "blood", "circulation"],
+          "answer": "The heart pumps blood around the body, helping deliver oxygen and nutrients to tissues."
+        },
+        {
+          "question": "What is an ecosystem?",
+          "keywords": ["ecosystem", "environment", "organisms"],
+          "answer": "An ecosystem is a community of living organisms interacting with one another and with their physical environment."
+        }
+      ]
+    },
+    {
+      "name": "General Knowledge",
+      "entries": [
+        {
+          "question": "What is the largest planet?",
+          "keywords": ["largest planet", "Jupiter"],
+          "answer": "Jupiter is the largest planet in our solar system."
+        },
+        {
+          "question": "How many days are in a leap year?",
+          "keywords": ["leap year", "days"],
+          "answer": "A leap year has 366 days. February has 29 days in a leap year."
+        },
+        {
+          "question": "What is communication?",
+          "keywords": ["communication", "information"],
+          "answer": "Communication is the process of sharing information, ideas and feelings between people or groups."
+        }
+      ]
+    }
+  ]
+            }
+          
