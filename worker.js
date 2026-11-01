@@ -96,7 +96,8 @@ export default {
           model: env.AI_MODEL || "gpt-5.5",
           instructions: "You are CYBERAI 2.0, a helpful, friendly, accurate AI assistant created by Oduyebo Abiola. Answer clearly and naturally. Be honest when uncertain. For schoolwork, explain concepts and help the learner understand rather than simply encouraging copying. Do not claim to see, hear, or access anything that was not provided in the conversation.",
           input,
-          max_output_tokens: 1200
+          max_output_tokens: 1200,
+          store: false
         })
       });
 
