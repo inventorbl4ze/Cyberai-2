@@ -4,330 +4,173 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#061226">
 <title>CYBERAI 2.0</title>
 
 <style>
 :root {
-  --bg: #050b18;
-  --panel: #0c1930;
-  --panel2: #10294a;
-  --blue: #168cff;
-  --cyan: #36c5ff;
-  --text: #f4f8ff;
-  --muted: #a9c3df;
+  --blue:#00c8ff;
+  --dark:#050b18;
+  --panel:#0b1830;
+  --text:#eaf8ff;
+  --muted:#8da9c5;
 }
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background:
-    radial-gradient(circle at top, #10294c 0%, #050b18 55%);
-  color: var(--text);
-  min-height: 100vh;
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:radial-gradient(circle at top,#102d55,#050b18 65%);
+  color:var(--text);
+  font-family:Arial,sans-serif;
 }
-
-button, input, textarea { font: inherit; }
-button { cursor: pointer; }
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  background: rgba(5, 15, 32, .96);
-  border-bottom: 1px solid #1269b7;
-  padding: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+button,input,textarea{font:inherit}
+button{
+  border:1px solid #087ca9;
+  background:#082b49;
+  color:white;
+  border-radius:12px;
+  padding:11px 14px;
+  cursor:pointer;
 }
-
-.brand {
-  font-size: 23px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: var(--cyan);
-  text-shadow: 0 0 14px #087cff;
+button:active{transform:scale(.97)}
+button:hover{background:#10466c}
+header{
+  padding:17px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #123c5d;
+  background:#061326;
+  position:sticky;
+  top:0;
+  z-index:5;
 }
-
-.header-actions {
-  display: flex;
-  gap: 7px;
+.logo{font-size:23px;font-weight:bold;color:var(--blue)}
+.creator{font-size:11px;color:var(--muted);margin-top:4px}
+main{max-width:850px;margin:auto;padding:15px}
+.panel{
+  background:#0a1930eF;
+  border:1px solid #12476c;
+  border-radius:17px;
+  padding:15px;
+  margin-bottom:14px;
+  box-shadow:0 0 20px #001c35;
 }
-
-.small-button {
-  background: #10294a;
-  border: 1px solid #247ac4;
-  color: white;
-  border-radius: 9px;
-  padding: 9px 11px;
-  font-size: 12px;
+.hidden{display:none!important}
+h2{color:var(--blue)}
+input,textarea{
+  width:100%;
+  padding:13px;
+  border-radius:11px;
+  background:#061326;
+  color:white;
+  border:1px solid #17618a;
+  outline:none;
 }
-
-.page {
-  max-width: 900px;
-  margin: auto;
-  padding: 15px;
+textarea{resize:vertical;min-height:48px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.row button{flex:1}
+#messages{
+  height:43vh;
+  min-height:250px;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding:8px;
 }
-
-/* USERNAME SCREEN */
-
-#loginScreen {
-  min-height: 85vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.message{
+  padding:12px;
+  border-radius:13px;
+  max-width:88%;
+  line-height:1.5;
+  overflow-wrap:anywhere;
 }
-
-.login-card {
-  width: 100%;
-  max-width: 430px;
-  background: rgba(12, 25, 48, .96);
-  border: 1px solid #168cff;
-  box-shadow: 0 0 35px #087cff30;
-  border-radius: 22px;
-  padding: 28px;
-  text-align: center;
+.user{
+  align-self:flex-end;
+  background:#075078;
 }
-
-.logo-circle {
-  width: 85px;
-  height: 85px;
-  margin: 0 auto 15px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: #102f55;
-  border: 2px solid var(--cyan);
-  color: var(--cyan);
-  font-size: 35px;
-  box-shadow: 0 0 25px #168cff66;
+.bot{
+  align-self:flex-start;
+  background:#142c48;
+  border:1px solid #174e72;
 }
-
-.login-card h1 {
-  color: var(--cyan);
-  margin-bottom: 8px;
+.small{font-size:12px;color:var(--muted)}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.actions button{flex:1;min-width:95px}
+#callScreen{
+  position:fixed;
+  inset:0;
+  z-index:20;
+  background:#030914;
+  display:flex;
+  flex-direction:column;
+  padding:14px;
 }
-
-.login-card p {
-  color: var(--muted);
-  line-height: 1.6;
+.callTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:8px;
 }
-
-.field {
-  width: 100%;
-  padding: 15px;
-  background: #071326;
-  color: white;
-  border: 1px solid #168cff;
-  border-radius: 11px;
-  margin: 12px 0;
-  outline: none;
+.callStage{
+  flex:1;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:0;
 }
-
-.primary-button {
-  width: 100%;
-  padding: 14px;
-  background: linear-gradient(100deg, #087cff, #16baff);
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 11px;
+.robot{
+  width:min(55vw,240px);
+  aspect-ratio:1;
+  border-radius:50%;
+  border:2px solid var(--blue);
+  background:radial-gradient(circle,#164b77,#071326 70%);
+  box-shadow:0 0 35px #008cff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  animation:glow 2s infinite alternate;
 }
-
-.note {
-  font-size: 12px;
-  color: #8daac9;
+.robotFace{font-size:100px;line-height:1}
+.robotName{color:var(--blue);font-weight:bold;margin-top:10px}
+@keyframes glow{
+  from{box-shadow:0 0 15px #008cff}
+  to{box-shadow:0 0 45px #00d9ff}
 }
-
-/* MAIN APP */
-
-#appScreen { display: none; }
-
-.welcome-card {
-  background: linear-gradient(130deg, #102b50, #0a1730);
-  border: 1px solid #167ac9;
-  border-radius: 18px;
-  padding: 22px;
-  margin: 12px 0 18px;
+.speaking .robot{animation:glow .35s infinite alternate}
+#cameraPreview{
+  position:absolute;
+  right:8px;
+  bottom:12px;
+  width:32%;
+  max-width:170px;
+  aspect-ratio:3/4;
+  background:#15253a;
+  border:2px solid var(--blue);
+  border-radius:15px;
+  object-fit:cover;
+  transform:scaleX(-1);
 }
-
-.welcome-card h2 {
-  color: var(--cyan);
-  margin-top: 0;
+.callInfo{text-align:center;color:#b5d5ed;padding:10px}
+.callControls{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  padding:15px 5px 25px;
+  flex-wrap:wrap;
 }
-
-.welcome-card p {
-  color: #c5d9ef;
-  line-height: 1.6;
+.callControls button{
+  min-width:65px;
+  border-radius:30px;
+  padding:14px;
 }
-
-.section-title {
-  color: #7ecaff;
-  font-size: 14px;
-  margin: 18px 0 10px;
-}
-
-.suggestion-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.suggestion {
-  background: #10294a;
-  color: white;
-  border: 1px solid #176bb1;
-  border-radius: 12px;
-  padding: 15px 10px;
-  text-align: left;
-  min-height: 65px;
-}
-
-.suggestion:hover, .suggestion:focus {
-  background: #174477;
-}
-
-#chat {
-  min-height: 100px;
-  padding: 5px 0 15px;
-}
-
-.message {
-  max-width: 90%;
-  padding: 13px;
-  border-radius: 15px;
-  margin: 12px 0;
-  line-height: 1.6;
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-}
-
-.user {
-  background: #12477e;
-  border: 1px solid #268bdb;
-  margin-left: auto;
-}
-
-.assistant {
-  background: #101f36;
-  border: 1px solid #17568d;
-  margin-right: auto;
-}
-
-.message small {
-  display: block;
-  color: #74c7ff;
-  font-size: 11px;
-  margin-top: 9px;
-}
-
-.copy-button {
-  margin-top: 9px;
-  padding: 7px 10px;
-  color: #c9e8ff;
-  background: #10294a;
-  border: 1px solid #28699f;
-  border-radius: 7px;
-  font-size: 12px;
-}
-
-.quick-replies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 10px 0 16px;
-}
-
-.quick-replies button {
-  background: #102f54;
-  border: 1px solid #168cff;
-  color: #d9efff;
-  border-radius: 20px;
-  padding: 9px 12px;
-  font-size: 13px;
-}
-
-.composer {
-  position: sticky;
-  bottom: 0;
-  background: rgba(5, 11, 24, .97);
-  border-top: 1px solid #123b65;
-  padding: 12px 0;
-}
-
-#prompt {
-  width: 100%;
-  min-height: 65px;
-  resize: vertical;
-  background: #0c1930;
-  color: white;
-  border: 1px solid #168cff;
-  border-radius: 12px;
-  padding: 13px;
-  outline: none;
-}
-
-.control-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 9px;
-}
-
-.control-row button {
-  border: none;
-  color: white;
-  background: #087cff;
-  padding: 11px 14px;
-  border-radius: 9px;
-}
-
-.control-row button.secondary {
-  background: #10294a;
-  border: 1px solid #247ac4;
-}
-
-.control-row button:disabled {
-  opacity: .5;
-}
-
-#status {
-  color: #83caff;
-  font-size: 12px;
-  margin-top: 10px;
-}
-
-#fileInput {
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-  color: #b7d8f5;
-  font-size: 12px;
-}
-
-#uploadPreview {
-  color: #9ccfff;
-  font-size: 12px;
-  margin-top: 7px;
-}
-
-footer {
-  text-align: center;
-  color: #819dbb;
-  font-size: 12px;
-  padding: 25px 10px;
-}
-
-.hidden { display: none !important; }
-
-@media (max-width: 480px) {
-  .brand { font-size: 19px; }
-  .small-button { padding: 8px; }
-  .message { max-width: 96%; }
+.endCall{background:#b51f36;border-color:#ff526b}
+.danger{background:#842033}
+@media(max-width:500px){
+  header{padding:12px}
+  .logo{font-size:20px}
+  #messages{height:40vh}
 }
 </style>
 </head>
@@ -335,742 +178,555 @@ footer {
 <body>
 
 <header>
-  <div class="brand">✦ CYBERAI 2.0</div>
-
-  <div class="header-actions" id="headerActions" style="display:none">
-    <button class="small-button" onclick="newChat()">New chat</button>
-    <button class="small-button" onclick="showHistory()">History</button>
-    <button class="small-button" onclick="changeUsername()">Profile</button>
+  <div>
+    <div class="logo">✦ CYBERAI 2.0</div>
+    <div class="creator">Created by Oduyebo Abiola</div>
   </div>
+  <button onclick="newChat()">＋ New chat</button>
 </header>
 
-<main class="page">
+<main>
 
-  <!-- USERNAME REGISTRATION -->
+<section id="loginPanel" class="panel hidden">
+  <h2>Welcome to CYBERAI</h2>
+  <p>Choose a nickname to begin. Do not use private information.</p>
+  <input id="usernameInput" maxlength="24" placeholder="Enter a nickname">
+  <br><br>
+  <button onclick="registerUser()">Continue</button>
+</section>
 
-  <section id="loginScreen">
-    <div class="login-card">
-      <div class="logo-circle">✦</div>
+<section id="home" class="hidden">
 
-      <h1>Welcome to CYBERAI</h1>
+<div class="panel">
+  <h2 id="welcome">Hello!</h2>
+  <p>Your intelligent local assistant.</p>
+  <div class="row">
+    <button onclick="startCall('voice')">📞 Voice call</button>
+    <button onclick="startCall('video')">📹 Video call</button>
+  </div>
+  <p class="small">Calls use your browser's microphone and, for video, camera permissions.</p>
+</div>
 
-      <p>
-        Your intelligent assistant, learning partner,
-        conversation companion and game host.
-      </p>
+<div class="panel">
+  <div class="actions">
+    <button onclick="quickAction('joke')">😂 Joke</button>
+    <button onclick="quickAction('story')">📖 Story</button>
+    <button onclick="quickAction('riddle')">🧩 Riddle</button>
+    <button onclick="quickAction('quiz')">🧠 Quiz</button>
+    <button onclick="quickAction('game')">🎮 Games</button>
+    <button onclick="quickAction('help')">📚 Learn</button>
+  </div>
+</div>
 
-      <form id="usernameForm">
-        <input
-          class="field"
-          id="usernameInput"
-          type="text"
-          maxlength="24"
-          placeholder="Create your username"
-          autocomplete="nickname"
-          required
-        >
+<div class="panel">
+  <div id="messages"></div>
+  <div class="row">
+    <textarea id="messageInput" placeholder="Message CYBERAI..." rows="2"></textarea>
+  </div>
+  <br>
+  <div class="row">
+    <button onclick="sendMessage()">Send ➤</button>
+    <button onclick="startVoiceInput()">🎙 Speak</button>
+    <button id="voiceToggle" onclick="toggleVoice()">🔊 Voice ON</button>
+  </div>
+  <br>
+  <div class="row">
+    <button onclick="clearChat()">Clear chat</button>
+    <button onclick="showHistory()">Chat history</button>
+    <button onclick="changeUser()">Change nickname</button>
+  </div>
+</div>
 
-        <button class="primary-button" type="submit">
-          Get Started →
-        </button>
-      </form>
+<div id="historyPanel" class="panel hidden">
+  <h2>Saved conversations</h2>
+  <div id="historyList"></div>
+  <button onclick="hideHistory()">Close</button>
+</div>
 
-      <p class="note">
-        Your username is saved in this browser on this device.
-        You do not need to enter a password.
-      </p>
-    </div>
-  </section>
+<div class="panel">
+  <h3>Knowledge Library</h3>
+  <p id="libraryStatus" class="small">Loading knowledge.json...</p>
+  <p class="small">This version works without an external AI API. It answers from its local library and built-in features.</p>
+</div>
 
-  <!-- MAIN APP -->
-
-  <section id="appScreen">
-
-    <div class="welcome-card" id="welcomeCard">
-      <h2 id="welcomeTitle">Welcome!</h2>
-      <p id="welcomeText">
-        How can I help you today?
-      </p>
-    </div>
-
-    <div id="homeSuggestions">
-
-      <div class="section-title">WHAT WOULD YOU LIKE TO DO?</div>
-
-      <div class="suggestion-grid">
-        <button class="suggestion" onclick="quickAction('chat')">
-          💬 Chat with me
-        </button>
-
-        <button class="suggestion" onclick="showGames()">
-          🎮 Play a game
-        </button>
-
-        <button class="suggestion" onclick="quickAction('learn')">
-          📚 Learn something
-        </button>
-
-        <button class="suggestion" onclick="quickAction('joke')">
-          😂 Tell me a joke
-        </button>
-
-        <button class="suggestion" onclick="quickAction('story')">
-          📖 Tell me a story
-        </button>
-
-        <button class="suggestion" onclick="quickAction('ideas')">
-          💡 Give me ideas
-        </button>
-      </div>
-
-    </div>
-
-    <div id="chat"></div>
-
-    <div id="quickReplies" class="quick-replies"></div>
-
-    <div class="composer">
-
-      <textarea
-        id="prompt"
-        placeholder="Type a message to CYBERAI..."
-      ></textarea>
-
-      <input
-        type="file"
-        id="fileInput"
-        multiple
-        accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png"
-      >
-
-      <div id="uploadPreview"></div>
-
-      <div class="control-row">
-        <button id="sendButton" onclick="sendMessage()">Send ➤</button>
-        <button class="secondary" onclick="startVoice()">🎤 Voice</button>
-        <button class="secondary" onclick="showGames()">🎮 Games</button>
-        <button class="secondary" onclick="newChat()">New chat</button>
-      </div>
-
-      <div id="status">CYBERAI is ready.</div>
-
-    </div>
-
-  </section>
-
+</section>
 </main>
 
-<footer>
-  Created by Oduyebo Abiola<br>
-  CYBERAI 2.0 — Knowledge • Conversation • Creativity
-</footer>
+<section id="callScreen" class="hidden">
+  <div class="callTop">
+    <strong id="callTitle">CYBERAI CALL</strong>
+    <span class="small" id="callStatus">Connecting...</span>
+  </div>
+
+  <div class="callStage" id="callStage">
+    <div class="robot">
+      <div class="robotFace">🤖</div>
+      <div class="robotName">CYBERAI</div>
+    </div>
+    <video id="cameraPreview" autoplay muted playsinline class="hidden"></video>
+  </div>
+
+  <div class="callInfo" id="callInfo">CYBERAI is ready to listen.</div>
+
+  <div class="callControls">
+    <button onclick="toggleMute()" id="muteButton">🎙 Mute</button>
+    <button onclick="toggleCamera()" id="cameraButton">📷 Camera off</button>
+    <button onclick="toggleCallSpeaker()" id="speakerButton">🔊 Speaker</button>
+    <button class="endCall" onclick="endCall()">☎ End</button>
+  </div>
+</section>
 
 <script>
+/* CYBERAI 2.0 - LOCAL VERSION */
 
-/* =====================================
-   CONFIGURATION
-===================================== */
-
-const API_URL =
-"https://cyberai-engine.anuoluwapooduyebo01.workers.dev/";
-
-const chat = document.getElementById("chat");
-const promptBox = document.getElementById("prompt");
-const statusText = document.getElementById("status");
-const sendButton = document.getElementById("sendButton");
-const quickReplies = document.getElementById("quickReplies");
+const $ = id => document.getElementById(id);
 
 let username = localStorage.getItem("cyberai_username") || "";
+let voiceEnabled = localStorage.getItem("cyberai_voice") !== "false";
 let knowledgeLibrary = [];
-let libraryReady = false;
-let current = [];
-let game = null;
+let currentMessages = [];
+let history = JSON.parse(localStorage.getItem("cyberai_history") || "[]");
 
-let conversations;
+let recognition = null;
+let callStream = null;
+let callMode = "";
+let muted = false;
+let cameraOn = false;
+let speakerOn = true;
+let callActive = false;
+let recognitionActive = false;
 
-try {
-  conversations = JSON.parse(
-    localStorage.getItem("cyberai_history") || "[]"
-  );
+function init(){
+  $("voiceToggle").textContent = voiceEnabled ? "🔊 Voice ON" : "🔇 Voice OFF";
 
-  if (!Array.isArray(conversations)) conversations = [];
-} catch {
-  conversations = [];
+  if(username){
+    showHome();
+  }else{
+    $("loginPanel").classList.remove("hidden");
+  }
+
+  loadKnowledge();
 }
 
-/* =====================================
-   USERNAME SYSTEM
-===================================== */
-
-function openApp() {
-
-  if (!username) {
-    document.getElementById("loginScreen").style.display = "flex";
-    document.getElementById("appScreen").style.display = "none";
-    document.getElementById("headerActions").style.display = "none";
+function registerUser(){
+  const name = $("usernameInput").value.trim();
+  if(!name){
+    alert("Please enter a nickname.");
     return;
   }
-
-  document.getElementById("loginScreen").style.display = "none";
-  document.getElementById("appScreen").style.display = "block";
-  document.getElementById("headerActions").style.display = "flex";
-
-  document.getElementById("welcomeTitle").textContent =
-    "Welcome back, " + username + "!";
-
-  document.getElementById("welcomeText").textContent =
-    "Hi " + username + "! 😊 How can I help you today?";
-
+  username = name.slice(0,24);
+  localStorage.setItem("cyberai_username",username);
+  showHome();
 }
 
-document.getElementById("usernameForm").addEventListener(
-  "submit",
-  function(event) {
-
-    event.preventDefault();
-
-    const name = document.getElementById("usernameInput")
-      .value.trim();
-
-    if (name.length < 2) {
-      alert("Please enter a username with at least 2 characters.");
-      return;
-    }
-
-    username = name.replace(/\s+/g, " ").slice(0, 24);
-
-    localStorage.setItem("cyberai_username", username);
-
-    current = [];
-    chat.innerHTML = "";
-
-    openApp();
-
-    statusText.textContent =
-      "Welcome, " + username + "! CYBERAI is ready.";
-
+function showHome(){
+  $("loginPanel").classList.add("hidden");
+  $("home").classList.remove("hidden");
+  $("welcome").textContent = "Welcome back, " + username + "!";
+  loadCurrentChat();
+  if(currentMessages.length === 0){
+    addBotMessage("Hello " + username + "! I am CYBERAI. You can chat with me, use voice, or start a voice or video call.");
   }
-);
-
-function changeUsername() {
-
-  const newName = prompt(
-    "Enter your new CYBERAI username:",
-    username
-  );
-
-  if (!newName || !newName.trim()) return;
-
-  username = newName.trim().replace(/\s+/g, " ").slice(0, 24);
-
-  localStorage.setItem("cyberai_username", username);
-
-  openApp();
-
-  addBotMessage(
-    "Your username has been updated. Welcome, " +
-    username + "! 😊"
-  );
-
 }
 
-/* =====================================
-   KNOWLEDGE LIBRARY
-===================================== */
+function changeUser(){
+  const next = prompt("Enter a new nickname:");
+  if(next && next.trim()){
+    username = next.trim().slice(0,24);
+    localStorage.setItem("cyberai_username",username);
+    $("welcome").textContent = "Welcome back, " + username + "!";
+  }
+}
 
-async function loadKnowledge() {
+function loadCurrentChat(){
+  currentMessages = JSON.parse(localStorage.getItem("cyberai_current_chat") || "[]");
+  $("messages").innerHTML = "";
+  currentMessages.forEach(m => renderMessage(m.text,m.role));
+}
 
-  try {
+function saveChat(){
+  localStorage.setItem("cyberai_current_chat",JSON.stringify(currentMessages));
+  if(currentMessages.length){
+    const item = {
+      date:new Date().toLocaleString(),
+      messages:currentMessages.slice(-80)
+    };
+    history.unshift(item);
+    history = history.slice(0,20);
+    localStorage.setItem("cyberai_history",JSON.stringify(history));
+  }
+}
 
+function newChat(){
+  saveChat();
+  currentMessages = [];
+  localStorage.removeItem("cyberai_current_chat");
+  $("messages").innerHTML = "";
+  addBotMessage("A new conversation has started. What would you like to talk about?");
+}
+
+function clearChat(){
+  if(!confirm("Clear this conversation?")) return;
+  currentMessages = [];
+  $("messages").innerHTML = "";
+  localStorage.removeItem("cyberai_current_chat");
+  addBotMessage("Your conversation has been cleared.");
+}
+
+function showHistory(){
+  $("historyPanel").classList.remove("hidden");
+  const list = $("historyList");
+  list.innerHTML = "";
+  if(!history.length){
+    list.textContent = "No saved conversations yet.";
+    return;
+  }
+  history.forEach((item,index)=>{
+    const button = document.createElement("button");
+    button.style.width = "100%";
+    button.style.margin = "5px 0";
+    button.textContent = item.date + " — " + item.messages.length + " messages";
+    button.onclick = ()=>restoreHistory(index);
+    list.appendChild(button);
+  });
+}
+
+function restoreHistory(index){
+  currentMessages = history[index].messages || [];
+  $("messages").innerHTML = "";
+  currentMessages.forEach(m=>renderMessage(m.text,m.role));
+  localStorage.setItem("cyberai_current_chat",JSON.stringify(currentMessages));
+  hideHistory();
+}
+
+function hideHistory(){
+  $("historyPanel").classList.add("hidden");
+}
+
+function renderMessage(text,role){
+  const div = document.createElement("div");
+  div.className = "message " + (role === "user" ? "user" : "bot");
+  div.textContent = text;
+  $("messages").appendChild(div);
+  $("messages").scrollTop = $("messages").scrollHeight;
+}
+
+function addUserMessage(text){
+  currentMessages.push({role:"user",text});
+  renderMessage(text,"user");
+  localStorage.setItem("cyberai_current_chat",JSON.stringify(currentMessages));
+}
+
+function addBotMessage(text,shouldSpeak=true){
+  currentMessages.push({role:"bot",text});
+  renderMessage(text,"bot");
+  localStorage.setItem("cyberai_current_chat",JSON.stringify(currentMessages));
+  if(shouldSpeak && voiceEnabled) speak(text);
+}
+
+function speak(text){
+  if(!("speechSynthesis" in window)) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "en-NG";
+  utterance.rate = 1;
+  utterance.pitch = 1;
+  utterance.onstart = ()=>{
+    document.body.classList.add("speaking");
+    $("callInfo").textContent = "CYBERAI is speaking...";
+  };
+  utterance.onend = ()=>{
+    document.body.classList.remove("speaking");
+    $("callInfo").textContent = "CYBERAI is ready to listen.";
+  };
+  window.speechSynthesis.speak(utterance);
+}
+
+function toggleVoice(){
+  voiceEnabled = !voiceEnabled;
+  localStorage.setItem("cyberai_voice",String(voiceEnabled));
+  $("voiceToggle").textContent = voiceEnabled ? "🔊 Voice ON" : "🔇 Voice OFF";
+  if(!voiceEnabled && window.speechSynthesis) window.speechSynthesis.cancel();
+}
+
+async function loadKnowledge(){
+  try{
     const response = await fetch("./knowledge.json");
-
-    if (!response.ok) {
-      throw new Error("Could not load knowledge.json");
-    }
-
+    if(!response.ok) throw new Error("Knowledge file not found");
     const data = await response.json();
 
     knowledgeLibrary = [];
 
-    Object.entries(data).forEach(([category, entries]) => {
-
-      if (!Array.isArray(entries)) return;
-
-      entries.forEach(entry => {
-
-        knowledgeLibrary.push({
-          ...entry,
-          category: category
-        });
-
+    if(Array.isArray(data.categories)){
+      data.categories.forEach(category=>{
+        if(Array.isArray(category.entries)){
+          category.entries.forEach(entry=>{
+            knowledgeLibrary.push({...entry,category:category.name});
+          });
+        }
       });
+    }else{
+      Object.entries(data).forEach(([category,entries])=>{
+        if(Array.isArray(entries)){
+          entries.forEach(entry=>{
+            knowledgeLibrary.push({...entry,category});
+          });
+        }
+      });
+    }
 
-    });
-
-    libraryReady = true;
-
-    statusText.textContent =
-      "Knowledge library ready: " +
-      knowledgeLibrary.length + " entries.";
-
-  } catch (error) {
-
-    console.error(error);
-
-    libraryReady = false;
-
-    statusText.textContent =
-      "Knowledge library could not be loaded.";
-
+    $("libraryStatus").textContent =
+      "Loaded " + knowledgeLibrary.length + " knowledge entries.";
+  }catch(error){
+    $("libraryStatus").textContent =
+      "Knowledge library unavailable. Built-in conversation still works.";
   }
-
 }
 
-function normalize(text) {
-
-  return String(text || "")
-    .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, " ")
-    .replace(/\s+/g, " ")
+function normalize(text){
+  return text.toLowerCase()
+    .replace(/[^a-z0-9\s]/g," ")
+    .replace(/\s+/g," ")
     .trim();
-
 }
 
-function searchKnowledge(question) {
+const stopWords = new Set([
+  "the","is","a","an","and","or","to","of","in","on","for",
+  "what","how","why","when","where","who","which","can",
+  "could","would","please","tell","me","about","do","does",
+  "are","was","were","it","my","your","you","i"
+]);
 
-  if (!libraryReady || !knowledgeLibrary.length) {
-    return null;
-  }
+function searchKnowledge(question){
+  const q = normalize(question);
+  const words = q.split(" ").filter(w=>w.length>2 && !stopWords.has(w));
+  let best = null;
+  let bestScore = 0;
 
-  const query = normalize(question);
-
-  if (!query) return null;
-
-  const queryWords = query.split(" ")
-    .filter(word => word.length > 2);
-
-  let bestMatch = null;
-  let highestScore = 0;
-
-  for (const entry of knowledgeLibrary) {
-
-    const storedQuestion = normalize(entry.question || "");
-
-    const keywords = Array.isArray(entry.keywords)
-      ? entry.keywords.map(normalize)
-      : [];
-
+  knowledgeLibrary.forEach(entry=>{
+    const questionText = normalize(entry.question || "");
+    const keywordText = normalize((entry.keywords || []).join(" "));
     let score = 0;
 
-    if (query === storedQuestion) score += 100;
-
-    if (
-      storedQuestion &&
-      query.length > 4 &&
-      (query.includes(storedQuestion) ||
-       storedQuestion.includes(query))
-    ) {
-      score += 40;
+    if(questionText && q === questionText) score += 12;
+    if(questionText && q.includes(questionText)) score += 8;
+    if(keywordText){
+      (entry.keywords || []).forEach(keyword=>{
+        const k = normalize(keyword);
+        if(k && q.includes(k)) score += 4;
+      });
     }
 
-    for (const keyword of keywords) {
+    const combined = questionText + " " + keywordText;
+    words.forEach(word=>{
+      if(combined.includes(word)) score += 1;
+    });
 
-      if (keyword && query.includes(keyword)) {
-        score += 15;
-      }
-
+    if(score > bestScore){
+      bestScore = score;
+      best = entry;
     }
-
-    const searchable = normalize(
-      (entry.question || "") + " " + keywords.join(" ")
-    );
-
-    for (const word of queryWords) {
-
-      if (searchable.includes(word)) {
-        score += 3;
-      }
-
-    }
-
-    if (score > highestScore) {
-      highestScore = score;
-      bestMatch = entry;
-    }
-
-  }
-
-  if (highestScore >= 15 && bestMatch && bestMatch.answer) {
-    return bestMatch;
-  }
-
-  return null;
-
-}
-
-/* =====================================
-   MESSAGE DISPLAY
-===================================== */
-
-function addMessage(text, sender, source) {
-
-  const message = document.createElement("div");
-
-  message.className = "message " + sender;
-
-  const content = document.createElement("div");
-  content.textContent = text;
-
-  message.appendChild(content);
-
-  if (source) {
-
-    const label = document.createElement("small");
-    label.textContent = source;
-
-    message.appendChild(label);
-
-  }
-
-  if (sender === "assistant") {
-
-    const copyButton = document.createElement("button");
-
-    copyButton.className = "copy-button";
-    copyButton.textContent = "Copy answer";
-
-    copyButton.onclick = async function() {
-
-      try {
-
-        await navigator.clipboard.writeText(text);
-        copyButton.textContent = "Copied!";
-
-      } catch {
-
-        copyButton.textContent = "Copy unavailable";
-
-      }
-
-    };
-
-    message.appendChild(copyButton);
-
-  }
-
-  chat.appendChild(message);
-
-  chat.scrollTop = chat.scrollHeight;
-
-}
-
-function addBotMessage(text, source = "CYBERAI") {
-
-  addMessage(text, "assistant", source);
-
-  current.push({
-    role: "assistant",
-    text: text
   });
 
-  saveConversation();
-
+  return bestScore >= 3 ? best : null;
 }
 
-function addUserMessage(text) {
-
-  addMessage(text, "user");
-
-  current.push({
-    role: "user",
-    text: text
-  });
-
-  saveConversation();
-
-}
-
-/* =====================================
-   SUGGESTED REPLIES
-===================================== */
-
-function showSuggestions(items) {
-
-  quickReplies.innerHTML = "";
-
-  items.forEach(item => {
-
-    const button = document.createElement("button");
-
-    button.textContent = item;
-
-    button.onclick = function() {
-      handleSuggestion(item);
-    };
-
-    quickReplies.appendChild(button);
-
-  });
-
-}
-
-function clearSuggestions() {
-  quickReplies.innerHTML = "";
-}
-
-function handleSuggestion(item) {
-
-  clearSuggestions();
-
-  if (item === "Play a game") {
-    showGames();
-    return;
-  }
-
-  if (item === "Tell me a joke") {
-    quickAction("joke");
-    return;
-  }
-
-  if (item === "Learn something") {
-    quickAction("learn");
-    return;
-  }
-
-  if (item === "Just chatting") {
-    quickAction("chat");
-    return;
-  }
-
-  promptBox.value = item;
-  sendMessage();
-
-}
-
-/* =====================================
-   SMALL TALK AND CONVERSATION
-===================================== */
-
-function localConversation(text) {
-
+function localConversation(text){
   const q = normalize(text);
 
-  const greetings = [
-    "hi",
-    "hello",
-    "hey",
-    "good morning",
-    "good afternoon",
-    "good evening",
-    "hello cyberai",
-    "hey cyberai"
-  ];
+  if(/^(hi|hello|hey|good morning|good afternoon|good evening)$/.test(q))
+    return "Hello " + username + "! It is good to chat with you. What would you like to discuss?";
 
-  if (
-    greetings.includes(q) ||
-    /^(hi|hello|hey)\s/.test(q)
-  ) {
+  if(q.includes("how are you"))
+    return "I am working well and ready to help you. How are you doing?";
 
-    return {
-      answer:
-        "Hey " + username +
-        "! 😊 It's lovely to have you here. How are you doing today?",
-      suggestions: [
-        "I'm fine",
-        "I'm doing great",
-        "Not so good",
-        "Let's play a game"
-      ]
-    };
+  if(q.includes("your name") || q === "who are you")
+    return "I am CYBERAI, your local digital assistant, created by Oduyebo Abiola.";
 
-  }
+  if(q.includes("who created you") || q.includes("who made you"))
+    return "I was created by Oduyebo Abiola.";
 
-  if (
-    q.includes("how are you") ||
-    q === "how r u"
-  ) {
+  if(q.includes("thank"))
+    return "You are welcome! I am glad I could help.";
 
-    return {
-      answer:
-        "I'm doing great, " + username +
-        "! Thanks for asking. 😊 What are you planning to do today?",
-      suggestions: [
-        "Let's chat",
-        "Play a game",
-        "Learn something",
-        "Tell me a joke"
-      ]
-    };
+  if(q.includes("bye") || q.includes("goodbye"))
+    return "Goodbye " + username + "! Have a wonderful day.";
 
-  }
+  if(q.includes("what can you do") || q.includes("your features"))
+    return "I can chat, answer questions from my local knowledge library, tell stories and jokes, play simple games, and talk using your browser's voice features.";
 
-  if (
-    q.includes("i am fine") ||
-    q.includes("im fine") ||
-    q.includes("i am good") ||
-    q.includes("doing great") ||
-    q.includes("i am okay")
-  ) {
+  if(q.includes("i love you"))
+    return "That is kind of you to say. I am here to help and have friendly conversations.";
 
-    return {
-      answer:
-        "That's wonderful, " + username +
-        "! 😊 What would you like us to do today?",
-      suggestions: [
-        "Play a game",
-        "Let's chat",
-        "Learn something",
-        "Tell me a joke"
-      ]
-    };
+  if(q.includes("time"))
+    return "Your device time is " + new Date().toLocaleTimeString() + ".";
 
-  }
-
-  if (
-    q.includes("thank you") ||
-    q === "thanks"
-  ) {
-
-    return {
-      answer:
-        "You're very welcome, " + username +
-        "! I'm always happy to help. What else would you like to explore?",
-      suggestions: [
-        "Ask a question",
-        "Play a game",
-        "Tell me a joke"
-      ]
-    };
-
-  }
-
-  if (
-    q.includes("who are you") ||
-    q.includes("what are you")
-  ) {
-
-    return {
-      answer:
-        "I'm CYBERAI 2.0, your friendly intelligent assistant! " +
-        "I can help you learn, answer questions, chat, play games, " +
-        "and explore new ideas. I was created by Oduyebo Abiola.",
-      suggestions: [
-        "What can you do?",
-        "Play a game",
-        "Let's chat"
-      ]
-    };
-
-  }
-
-  if (
-    q.includes("what can you do") ||
-    q.includes("how can you help")
-  ) {
-
-    return {
-      answer:
-        "I can help you with learning, general knowledge, writing, " +
-        "ideas, jokes, stories, riddles, quizzes and conversations. " +
-        "You can also explore my games menu!",
-      suggestions: [
-        "Play a game",
-        "Tell me a story",
-        "Ask a question",
-        "Tell me a joke"
-      ]
-    };
-
-  }
-
-  if (
-    q.includes("goodbye") ||
-    q === "bye" ||
-    q.includes("see you later")
-  ) {
-
-    return {
-      answer:
-        "Goodbye for now, " + username +
-        "! Have a wonderful day. I'll be here whenever you return. 💙",
-      suggestions: [
-        "Start a new chat"
-      ]
-    };
-
-  }
+  if(q.includes("date"))
+    return "Today's date is " + new Date().toLocaleDateString() + ".";
 
   return null;
-
 }
 
-/* =====================================
-   QUICK ACTIONS
-===================================== */
+function getAnswer(text){
+  const local = localConversation(text);
+  if(local) return local;
 
-function quickAction(action) {
-
-  clearSuggestions();
-
-  if (action === "chat") {
-
-    addBotMessage(
-      "Of course, " + username +
-      "! 😊 Let's chat. Tell me something interesting about your day."
-    );
-
-    showSuggestions([
-      "I had a good day",
-      "I want to learn something",
-      "Let's play a game"
-    ]);
-
-    return;
-
+  const match = searchKnowledge(text);
+  if(match){
+    return (match.answer || "I found this topic in my library.") +
+      (match.category ? "\n\nTopic: " + match.category : "");
   }
 
-  if (action === "learn") {
+  return "I do not have a reliable answer to that in my offline knowledge library yet. Try asking in a different way, or add this topic to knowledge.json. I am working without an external AI engine.";
+}
 
-    addBotMessage(
-      "I would love to help you learn! Which subject interests you today?"
-    );
+function sendMessage(){
+  const input = $("messageInput");
+  const text = input.value.trim();
+  if(!text) return;
+  input.value = "";
+  addUserMessage(text);
+  const answer = getAnswer(text);
+  setTimeout(()=>addBotMessage(answer),250);
+}
 
-    showSuggestions([
-      "Science",
-      "Mathematics",
-      "Technology",
-      "Geography"
-    ]);
+$("messageInput").addEventListener("keydown",event=>{
+  if(event.key === "Enter" && event.ctrlKey){
+    sendMessage();
+  }
+});
 
+function startVoiceInput(){
+  const SpeechRecognition =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  if(!SpeechRecognition){
+    alert("Voice recognition is not supported in this browser. Try Chrome.");
     return;
-
   }
 
-  if (action === "joke") {
+  const r = new SpeechRecognition();
+  r.lang = "en-NG";
+  r.interimResults = false;
+  r.continuous = false;
 
-    const jokes = [
-      "Why did the computer go to the doctor? Because it had a virus! 😂",
-      "Why was the maths book sad? Because it had too many problems! 😂",
-      "What do you call a sleeping dinosaur? A dino-snore! 😂",
-      "Why did the student eat his homework? Because the teacher said it was a piece of cake! 😂"
-    ];
+  r.onstart = ()=> $("callInfo").textContent = "Listening...";
+  r.onresult = event=>{
+    $("messageInput").value = event.results[0][0].transcript;
+    sendMessage();
+  };
+  r.onerror = event=>{
+    $("callInfo").textContent = "Microphone issue: " + event.error;
+  };
+  r.onend = ()=>{
+    if(callActive) $("callInfo").textContent = "Call is active.";
+  };
 
-    addBotMessage(
-      jokes[Math.floor(Math.random() * jokes.length)]
-    );
+  try{r.start()}catch(e){alert("Voice input could not start.")}
+}
 
-    showSuggestions([
-      "Tell me another joke",
-      "Play a game",
-      "Let's chat"
-    ]);
+/* CALL FEATURES */
 
+async function startCall(mode){
+  callMode = mode;
+  callActive = true;
+  muted = false;
+  cameraOn = false;
+  $("callScreen").classList.remove("hidden");
+  $("callTitle").textContent =
+    mode === "video" ? "CYBERAI VIDEO CALL" : "CYBERAI VOICE CALL";
+  $("callStatus").textContent = "Starting...";
+  $("cameraPreview").classList.toggle("hidden",mode !== "video");
+  $("cameraButton").style.display = mode === "video" ? "block" : "none";
+
+  try{
+    callStream = await navigator.mediaDevices.getUserMedia({
+      audio:true,
+      video: mode === "video"
+        ? {facingMode:"user"}
+        : false
+    });
+
+    const audioTracks = callStream.getAudioTracks();
+    audioTracks.forEach(track=>track.enabled=true);
+
+    if(mode === "video"){
+      $("cameraPreview").srcObject = callStream;
+      cameraOn = true;
+      $("cameraButton").textContent = "📷 Camera on";
+    }
+
+    $("callStatus").textContent = "Connected locally";
+    $("callInfo").textContent =
+      "Speak naturally. CYBERAI will listen and reply using its local knowledge.";
+    beginCallListening();
+
+  }catch(error){
+    $("callStatus").textContent = "Permission needed";
+    $("callInfo").textContent =
+      "Please allow microphone" +
+      (mode === "video" ? " and camera" : "") +
+      " access. Open this website using HTTPS.";
+    callActive = false;
+  }
+}
+
+function beginCallListening(){
+  const SpeechRecognition =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  if(!SpeechRecognition){
+    $("callInfo").textContent =
+      "Speech recognition is unavailable. Use the chat microphone button instead.";
     return;
-
   }
 
-  if (action === "story") {
+  if(!callActive || muted || recognitionActive) return;
 
-    addBotMessage(
-      "Once upon a time, a curious young inventor discovered " +
-      "a little glowing robot. The robot could answer questions, "
+  recognition = new SpeechRecognition();
+  recognition.lang = "en-NG";
+  recognition.interimResults = false;
+  recognition.continuous = false;
+
+  recognition.onstart = ()=>{
+    recognitionActive = true;
+    $("callInfo").textContent = "Listening to you...";
+  };
+
+  recognition.onresult = event=>{
+    const spokenText = event.results[0][0].transcript;
+    addUserMessage(spokenText);
+    const answer = getAnswer(spokenText);
+    addBotMessage(answer);
+    $("callInfo").textContent = "You said: " + spokenText;
+  };
+
+  recognition.onerror = event=>{
+    $("callInfo").textContent =
+      "Listening issue: " + event.error + ".";
+  };
+
+  recognition.onend = ()=>{
+    recognitionActive = false;
+    if(callActive && !muted){
+      setTimeout(beginCallListening,700);
+    }
+  };
+
+  try{recognition.start()}catch(error){
+    recognitionActive = false;
+  }
+}
+
+function toggleMute(){
+  muted = !muted;
+  if(callStream){
+    callStream.getAudioTracks().forEach(track=>{
+      track.enabled = !muted;
+    });
+  }
+
+  if(muted && recognition){
+    try{recognition.stop()}catch(e){}
+  }else if(callActive){
+  
