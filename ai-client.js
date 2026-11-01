@@ -43,7 +43,7 @@
     const endpoint = getEndpoint();
     if (!endpoint) return originalGetAnswer(text);
 
-    const history = (window.currentMessages || []).slice(-11, -1).map(item => ({
+    const history = (window.cyberaiState.currentMessages || []).slice(-11, -1).map(item => ({
       role: item.role === "bot" ? "assistant" : "user",
       content: item.text
     }));
@@ -88,16 +88,16 @@
         "Speech recognition is unavailable. Use the chat microphone button instead.";
       return;
     }
-    if (!window.callActive || window.muted || window.recognitionActive) return;
-    window.recognition = new SpeechRecognition();
-    window.recognition.lang = "en-NG";
-    window.recognition.interimResults = false;
-    window.recognition.continuous = false;
-    window.recognition.onstart = () => {
-      window.recognitionActive = true;
+    if (!window.cyberaiState.callActive || window.cyberaiState.muted || window.cyberaiState.recognitionActive) return;
+    window.cyberaiState.recognition = new SpeechRecognition();
+    window.cyberaiState.recognition.lang = "en-NG";
+    window.cyberaiState.recognition.interimResults = false;
+    window.cyberaiState.recognition.continuous = false;
+    window.cyberaiState.recognition.onstart = () => {
+      window.cyberaiState.recognitionActive = true;
       document.getElementById("callInfo").textContent = "Listening to you...";
     };
-    window.recognition.onresult = async event => {
+    window.cyberaiState.recognition.onresult = async event => {
       const spokenText = event.results[0][0].transcript;
       window.addUserMessage(spokenText);
       document.getElementById("callInfo").textContent = "Thinking...";
@@ -105,14 +105,14 @@
       window.addBotMessage(answer);
       document.getElementById("callInfo").textContent = "You said: " + spokenText;
     };
-    window.recognition.onerror = event => {
+    window.cyberaiState.recognition.onerror = event => {
       document.getElementById("callInfo").textContent = "Listening issue: " + event.error + ".";
     };
-    window.recognition.onend = () => {
-      window.recognitionActive = false;
-      if (window.callActive && !window.muted) setTimeout(window.beginCallListening, 700);
+    window.cyberaiState.recognition.onend = () => {
+      window.cyberaiState.recognitionActive = false;
+      if (window.cyberaiState.callActive && !window.cyberaiState.muted) setTimeout(window.beginCallListening, 700);
     };
-    try { window.recognition.start(); } catch { window.recognitionActive = false; }
+    try { window.cyberaiState.recognition.start(); } catch { window.cyberaiState.recognitionActive = false; }
   };
 
   document.addEventListener("DOMContentLoaded", updateStatus);
