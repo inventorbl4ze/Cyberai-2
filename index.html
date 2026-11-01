@@ -297,6 +297,18 @@ let cameraOn = false;
 let speakerOn = true;
 let callActive = false;
 let recognitionActive = false;
+window.cyberaiState = {
+  get currentMessages(){ return currentMessages; },
+  get callActive(){ return callActive; },
+  set callActive(value){ callActive = value; },
+  get muted(){ return muted; },
+  set muted(value){ muted = value; },
+  get recognitionActive(){ return recognitionActive; },
+  set recognitionActive(value){ recognitionActive = value; },
+  get recognition(){ return recognition; },
+  set recognition(value){ recognition = value; }
+};
+
 
 function init(){
   $("voiceToggle").textContent = voiceEnabled ? "🔊 Voice ON" : "🔇 Voice OFF";
@@ -722,25 +734,15 @@ function beginCallListening(){
 
 function toggleMute(){
   muted = !muted;
-  if(callStream){
-    callStream.getAudioTracks().forEach(track=>{
-      track.enabled = !muted;
-    });
-  }
-
-  if(muted && recognition){
-    try{recognition.stop()}catch(e){}
-  }else if(callActive){
-  
-  }else if(callActive){
-    beginCallListening();
-  }
+  if(callStream) callStream.getAudioTracks().forEach(track=>track.enabled=!muted);
+  if(muted && recognition){ try{recognition.stop()}catch(e){} }
+  else if(callActive) beginCallListening();
   $("muteButton").textContent = muted ? "🔇 Unmute" : "🎙 Mute";
 }
 
 function toggleCamera(){
   cameraOn = !cameraOn;
-  if(callStream) callStream.getVideoTracks().forEach(track => track.enabled = cameraOn);
+  if(callStream) callStream.getVideoTracks().forEach(track=>track.enabled=cameraOn);
   $("cameraButton").textContent = cameraOn ? "📷 Camera on" : "📷 Camera off";
 }
 
@@ -750,11 +752,26 @@ function toggleCallSpeaker(){
   if(!speakerOn && window.speechSynthesis) window.speechSynthesis.cancel();
 }
 
+function quickAction(type){
+  const prompts = {
+    joke:"Tell me a clean, funny joke.",
+    story:"Tell me a short imaginative story.",
+    riddle:"Give me a riddle and let me guess the answer.",
+    quiz:"Give me a short general-knowledge quiz question.",
+    game:"Suggest a fun word game we can play in chat.",
+    help:"Teach me an interesting topic in a simple way."
+  };
+  const message = prompts[type];
+  if(!message) return;
+  addUserMessage(message);
+  Promise.resolve(getAnswer(message)).then(addBotMessage);
+}
+
 function endCall(){
   callActive = false;
   recognitionActive = false;
   if(recognition){ try{recognition.stop()}catch(e){} }
-  if(callStream){ callStream.getTracks().forEach(track=>track.stop()); callStream = null; }
+  if(callStream){ callStream.getTracks().forEach(track=>track.stop()); callStream=null; }
   if(window.speechSynthesis) window.speechSynthesis.cancel();
   $("cameraPreview").srcObject = null;
   $("callScreen").classList.add("hidden");
