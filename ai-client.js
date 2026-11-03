@@ -1,7 +1,8 @@
 // CYBERAI 2.0 browser-side connection. The API key never belongs in this file.
 (() => {
   const API_URL_KEY = "cyberai_ai_endpoint";
-  const getEndpoint = () => (localStorage.getItem(API_URL_KEY) || "").trim();
+  const DEFAULT_ENDPOINT = "https://cyberai-engine.anuoluwapooduyebo01.workers.dev/api/chat";
+  const getEndpoint = () => (localStorage.getItem(API_URL_KEY) || DEFAULT_ENDPOINT).trim();
 
   window.configureAIConnection = function () {
     const current = getEndpoint();
