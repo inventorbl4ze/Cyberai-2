@@ -2228,15 +2228,6 @@
             "force"
           ],
           "answer": "Unemployment generally refers to people in the labour force who are available for work and actively seeking work but do not have a job."
-        },
-        {
-          "question": "What is entrepreneurship?",
-          "keywords": [
-            "entrepreneur",
-            "business",
-            "opportunity"
-          ],
-          "answer": "Entrepreneurship is the process of developing and organising a venture to provide a product or service while managing uncertainty."
         }
       ]
     },
@@ -2712,33 +2703,6 @@
       "name": "Web Development",
       "entries": [
         {
-          "question": "What is HTML?",
-          "keywords": [
-            "HTML",
-            "web page",
-            "markup language"
-          ],
-          "answer": "HTML means HyperText Markup Language. It provides the structure and meaning of web-page content using elements such as headings, paragraphs, links, images and forms."
-        },
-        {
-          "question": "What is CSS?",
-          "keywords": [
-            "CSS",
-            "styling",
-            "web design"
-          ],
-          "answer": "CSS means Cascading Style Sheets. It controls how web content looks, including colours, spacing, fonts, layouts, borders and responsive behaviour."
-        },
-        {
-          "question": "What is JavaScript?",
-          "keywords": [
-            "JavaScript",
-            "web programming",
-            "interactivity"
-          ],
-          "answer": "JavaScript is a programming language commonly used to add behaviour and interactivity to websites, such as menus, form validation, animations and dynamic content."
-        },
-        {
           "question": "What is the difference between HTML CSS and JavaScript?",
           "keywords": [
             "HTML CSS JavaScript difference",
@@ -2866,24 +2830,6 @@
       "name": "Cybersecurity Fundamentals",
       "entries": [
         {
-          "question": "What is cybersecurity?",
-          "keywords": [
-            "cybersecurity",
-            "digital protection",
-            "information security"
-          ],
-          "answer": "Cybersecurity is the practice of protecting devices, networks, applications and information from unauthorised access, disruption, damage and misuse."
-        },
-        {
-          "question": "What is phishing?",
-          "keywords": [
-            "phishing",
-            "scam",
-            "fraudulent message"
-          ],
-          "answer": "Phishing is a scam in which someone impersonates a trusted person or organisation to trick people into revealing information, opening harmful files or visiting deceptive websites."
-        },
-        {
           "question": "What makes a password safer?",
           "keywords": [
             "password safety",
@@ -2891,15 +2837,6 @@
             "account security"
           ],
           "answer": "Use a long, unique passphrase for each account, avoid personal details and never share passwords. A reputable password manager can help create and store unique passwords."
-        },
-        {
-          "question": "What is two-factor authentication?",
-          "keywords": [
-            "2FA",
-            "two factor authentication",
-            "account protection"
-          ],
-          "answer": "Two-factor authentication adds a second verification step beyond a password, such as an authenticator-app code or a security key. It makes account access harder for an impostor."
         },
         {
           "question": "What is malware?",
@@ -2943,33 +2880,6 @@
       "name": "English Grammar and Writing",
       "entries": [
         {
-          "question": "What is a noun?",
-          "keywords": [
-            "noun",
-            "person place thing idea",
-            "grammar"
-          ],
-          "answer": "A noun is a word that names a person, place, thing or idea. Examples include teacher, Lagos, book and honesty."
-        },
-        {
-          "question": "What is a verb?",
-          "keywords": [
-            "verb",
-            "action word",
-            "state of being"
-          ],
-          "answer": "A verb expresses an action, event or state of being. Examples include write, think, become and is."
-        },
-        {
-          "question": "What is an adjective?",
-          "keywords": [
-            "adjective",
-            "describing word",
-            "grammar"
-          ],
-          "answer": "An adjective describes or gives more information about a noun or pronoun, such as bright, careful, tall or interesting."
-        },
-        {
           "question": "What is an adverb?",
           "keywords": [
             "adverb",
@@ -3003,15 +2913,6 @@
             "comparison"
           ],
           "answer": "A simile compares things using words such as 'like' or 'as'. A metaphor describes one thing as another to create a direct comparison."
-        },
-        {
-          "question": "What is active voice?",
-          "keywords": [
-            "active voice",
-            "passive voice",
-            "grammar"
-          ],
-          "answer": "In active voice, the subject performs the action. For example, 'The pupil answered the question.' In passive voice, the subject receives the action."
         }
       ]
     },
@@ -3142,15 +3043,6 @@
           "answer": "A citation identifies the source of information, quotations or ideas used in a piece of work. It helps readers locate and verify the original source."
         },
         {
-          "question": "What is misinformation?",
-          "keywords": [
-            "misinformation",
-            "false information",
-            "fact checking"
-          ],
-          "answer": "Misinformation is false or inaccurate information shared regardless of whether the person sharing it intends to deceive. Check claims against multiple credible sources."
-        },
-        {
           "question": "What is a hypothesis?",
           "keywords": [
             "hypothesis",
@@ -3192,15 +3084,6 @@
           "answer": "Metal conducts heat away from your skin faster than wood does. Your skin therefore cools more quickly when touching metal, making it feel colder even when both materials are at the same temperature."
         },
         {
-          "question": "What causes day and night?",
-          "keywords": [
-            "day night",
-            "earth rotation",
-            "sunlight"
-          ],
-          "answer": "Day and night are caused by Earth's rotation. The side facing the Sun experiences daylight while the side turned away experiences night."
-        },
-        {
           "question": "Why do we see lightning before hearing thunder?",
           "keywords": [
             "lightning thunder",
@@ -3226,22 +3109,6 @@
             "water droplets"
           ],
           "answer": "Condensation is the change of a gas or vapour into a liquid. It occurs when the vapour loses enough energy or reaches conditions where liquid can form."
-        },
-        {
-          "question": "What is renewable energy?",
-          "keywords": [
-            "renewable energy",
-            "solar wind hydro"
-          ],
-          "answer": "Renewable energy comes from sources that are naturally replenished, such as sunlight, wind, moving water and geothermal heat."
-        },
-        {
-          "question": "What is the water cycle?",
-          "keywords": [
-            "water cycle",
-            "evaporation condensation precipitation"
-          ],
-          "answer": "The water cycle describes how water moves through the environment by processes including evaporation, condensation, precipitation, infiltration and collection."
         }
       ]
     },
