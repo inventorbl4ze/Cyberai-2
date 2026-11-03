@@ -490,18 +490,35 @@ function addBotMessage(text,shouldSpeak=true){
 
 function speak(text){
   if(!("speechSynthesis" in window)) return;
+  if(callActive && !speakerOn) return;
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "en-NG";
-  utterance.rate = 1;
-  utterance.pitch = 1;
+  const utterance = new SpeechSynthesisUtterance(String(text));
+  const voices = window.speechSynthesis.getVoices();
+  const preferredVoice = voices.find(v=>/^en-NG/i.test(v.lang)) ||
+    voices.find(v=>/^en-GB/i.test(v.lang)) ||
+    voices.find(v=>/^en-US/i.test(v.lang)) ||
+    voices.find(v=>/^en/i.test(v.lang));
+  if(preferredVoice) utterance.voice = preferredVoice;
+  utterance.lang = preferredVoice?.lang || "en-GB";
+  utterance.rate = 0.94;
+  utterance.pitch = 1.04;
   utterance.onstart = ()=>{
     document.body.classList.add("speaking");
     $("callInfo").textContent = "CYBERAI is speaking...";
+    $("callStatus").textContent = "AI speaking";
   };
   utterance.onend = ()=>{
     document.body.classList.remove("speaking");
-    $("callInfo").textContent = "CYBERAI is ready to listen.";
+    if(callActive){
+      $("callInfo").textContent = "Listening for your next message...";
+      $("callStatus").textContent = "Call active";
+    }else{
+      $("callInfo").textContent = "CYBERAI is ready to listen.";
+    }
+  };
+  utterance.onerror = ()=>{
+    document.body.classList.remove("speaking");
+    if(callActive) $("callInfo").textContent = "Voice playback had a problem. You can continue by speaking.";
   };
   window.speechSynthesis.speak(utterance);
 }
