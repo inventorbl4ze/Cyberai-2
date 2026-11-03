@@ -540,8 +540,7 @@ async function loadKnowledge(){
 
     if(Array.isArray(data.categories)){
       data.categories.forEach(category=>{
-        if(/disease|medical|health/i.test(category.name || "")) return;
-        if(Array.isArray(category.entries)){
+          if(Array.isArray(category.entries)){
           category.entries.forEach(entry=>{
             knowledgeLibrary.push({...entry,category:category.name});
           });
