@@ -2629,11 +2629,785 @@
           "sourceUrl": "https://tgftp.nws.noaa.gov/weather/current/DNMM.html"
         }
       ]
+    },
+    {
+      "name": "WAEC, JAMB and Exam Preparation",
+      "entries": [
+        {
+          "question": "What is WAEC?",
+          "keywords": [
+            "WAEC",
+            "West African Examinations Council",
+            "school examination"
+          ],
+          "answer": "WAEC means the West African Examinations Council. It conducts examinations such as the WASSCE for candidates in participating West African countries."
+        },
+        {
+          "question": "What is JAMB?",
+          "keywords": [
+            "JAMB",
+            "Joint Admissions and Matriculation Board",
+            "UTME"
+          ],
+          "answer": "JAMB is Nigeria's Joint Admissions and Matriculation Board. It conducts the Unified Tertiary Matriculation Examination (UTME) used in the admission process for many tertiary institutions."
+        },
+        {
+          "question": "What is the difference between WAEC and JAMB?",
+          "keywords": [
+            "WAEC vs JAMB",
+            "WASSCE",
+            "UTME",
+            "examinations"
+          ],
+          "answer": "WAEC conducts the West African Senior School Certificate Examination, which assesses secondary-school learning. JAMB conducts the UTME, which is used as part of admission into many Nigerian tertiary institutions."
+        },
+        {
+          "question": "How should I prepare for an examination?",
+          "keywords": [
+            "exam preparation",
+            "revision",
+            "study plan"
+          ],
+          "answer": "Start early, list the topics, use the official syllabus, practise past questions, review mistakes, take short breaks and get enough sleep. Ask a teacher to explain topics you do not understand."
+        },
+        {
+          "question": "What is a past question?",
+          "keywords": [
+            "past questions",
+            "exam practice",
+            "revision"
+          ],
+          "answer": "A past question is a question taken from an earlier examination. Past questions help learners understand question styles and practise applying what they have studied; they do not guarantee that the same question will appear again."
+        },
+        {
+          "question": "What is a marking scheme?",
+          "keywords": [
+            "marking scheme",
+            "mark allocation",
+            "exam answers"
+          ],
+          "answer": "A marking scheme is a guide showing how marks are awarded for an examination question. It helps students understand the points or steps expected in a good answer."
+        },
+        {
+          "question": "What is continuous assessment?",
+          "keywords": [
+            "continuous assessment",
+            "school assessment",
+            "coursework"
+          ],
+          "answer": "Continuous assessment is the regular evaluation of a learner's progress through activities such as tests, assignments, projects, practical work and class participation."
+        },
+        {
+          "question": "How can I improve my mathematics examination score?",
+          "keywords": [
+            "mathematics exam",
+            "maths revision",
+            "calculations"
+          ],
+          "answer": "Learn the meaning of each formula, practise calculations regularly, show your working, check units and signs, and review every error so you understand how to correct it."
+        }
+      ]
+    },
+    {
+      "name": "Web Development",
+      "entries": [
+        {
+          "question": "What is HTML?",
+          "keywords": [
+            "HTML",
+            "web page",
+            "markup language"
+          ],
+          "answer": "HTML means HyperText Markup Language. It provides the structure and meaning of web-page content using elements such as headings, paragraphs, links, images and forms."
+        },
+        {
+          "question": "What is CSS?",
+          "keywords": [
+            "CSS",
+            "styling",
+            "web design"
+          ],
+          "answer": "CSS means Cascading Style Sheets. It controls how web content looks, including colours, spacing, fonts, layouts, borders and responsive behaviour."
+        },
+        {
+          "question": "What is JavaScript?",
+          "keywords": [
+            "JavaScript",
+            "web programming",
+            "interactivity"
+          ],
+          "answer": "JavaScript is a programming language commonly used to add behaviour and interactivity to websites, such as menus, form validation, animations and dynamic content."
+        },
+        {
+          "question": "What is the difference between HTML CSS and JavaScript?",
+          "keywords": [
+            "HTML CSS JavaScript difference",
+            "website structure style behaviour"
+          ],
+          "answer": "HTML provides page structure, CSS controls presentation and layout, and JavaScript adds behaviour and interactivity. They are often used together to build websites."
+        },
+        {
+          "question": "What is a website?",
+          "keywords": [
+            "website",
+            "web pages",
+            "internet"
+          ],
+          "answer": "A website is a collection of related web pages and resources made available under a web address or domain and accessed through a browser."
+        },
+        {
+          "question": "What is a domain name?",
+          "keywords": [
+            "domain",
+            "domain name",
+            "website address"
+          ],
+          "answer": "A domain name is the readable address people use to find a website, such as example.com. The Domain Name System helps translate domain names into network addresses."
+        },
+        {
+          "question": "What is web hosting?",
+          "keywords": [
+            "web hosting",
+            "server",
+            "publish website"
+          ],
+          "answer": "Web hosting is a service that stores website files and makes them accessible over the internet. Static sites can also be hosted through services such as GitHub Pages."
+        },
+        {
+          "question": "What is responsive web design?",
+          "keywords": [
+            "responsive design",
+            "mobile friendly",
+            "screen sizes"
+          ],
+          "answer": "Responsive web design makes a website adapt to different screen sizes and devices. It commonly uses flexible layouts, responsive images and CSS media queries."
+        }
+      ]
+    },
+    {
+      "name": "Programming Concepts",
+      "entries": [
+        {
+          "question": "What is a variable in programming?",
+          "keywords": [
+            "variable",
+            "programming",
+            "store data"
+          ],
+          "answer": "A variable is a named place in a program where a value can be stored and used. The exact rules for declaring variables depend on the programming language."
+        },
+        {
+          "question": "What is a function in programming?",
+          "keywords": [
+            "function",
+            "code reuse",
+            "programming"
+          ],
+          "answer": "A function is a reusable block of code designed to perform a task. It can receive inputs called parameters and may return a result."
+        },
+        {
+          "question": "What is a loop in programming?",
+          "keywords": [
+            "loop",
+            "iteration",
+            "for while"
+          ],
+          "answer": "A loop repeats a block of instructions while a condition is met or for a specified number of iterations. Common examples are for loops and while loops."
+        },
+        {
+          "question": "What is an array?",
+          "keywords": [
+            "array",
+            "list",
+            "collection",
+            "programming"
+          ],
+          "answer": "An array is an ordered collection of values stored under one variable name. Many languages allow individual elements to be accessed by an index."
+        },
+        {
+          "question": "What is debugging?",
+          "keywords": [
+            "debugging",
+            "software error",
+            "bug"
+          ],
+          "answer": "Debugging is the process of finding, understanding and correcting errors in a program. Developers may use error messages, logs, breakpoints and small tests."
+        },
+        {
+          "question": "What is an algorithm in programming?",
+          "keywords": [
+            "algorithm",
+            "logic",
+            "steps"
+          ],
+          "answer": "An algorithm is a finite, ordered set of clear steps for solving a problem. A program implements an algorithm in a programming language."
+        },
+        {
+          "question": "What is a compiler?",
+          "keywords": [
+            "compiler",
+            "source code",
+            "machine code"
+          ],
+          "answer": "A compiler translates source code from a programming language into another form, often machine code or bytecode, so it can be executed or further processed."
+        },
+        {
+          "question": "What is an API?",
+          "keywords": [
+            "API",
+            "application programming interface",
+            "software connection"
+          ],
+          "answer": "An API, or Application Programming Interface, defines how software components can request data or services from one another using agreed rules."
+        }
+      ]
+    },
+    {
+      "name": "Cybersecurity Fundamentals",
+      "entries": [
+        {
+          "question": "What is cybersecurity?",
+          "keywords": [
+            "cybersecurity",
+            "digital protection",
+            "information security"
+          ],
+          "answer": "Cybersecurity is the practice of protecting devices, networks, applications and information from unauthorised access, disruption, damage and misuse."
+        },
+        {
+          "question": "What is phishing?",
+          "keywords": [
+            "phishing",
+            "scam",
+            "fraudulent message"
+          ],
+          "answer": "Phishing is a scam in which someone impersonates a trusted person or organisation to trick people into revealing information, opening harmful files or visiting deceptive websites."
+        },
+        {
+          "question": "What makes a password safer?",
+          "keywords": [
+            "password safety",
+            "passphrase",
+            "account security"
+          ],
+          "answer": "Use a long, unique passphrase for each account, avoid personal details and never share passwords. A reputable password manager can help create and store unique passwords."
+        },
+        {
+          "question": "What is two-factor authentication?",
+          "keywords": [
+            "2FA",
+            "two factor authentication",
+            "account protection"
+          ],
+          "answer": "Two-factor authentication adds a second verification step beyond a password, such as an authenticator-app code or a security key. It makes account access harder for an impostor."
+        },
+        {
+          "question": "What is malware?",
+          "keywords": [
+            "malware",
+            "malicious software",
+            "computer threat"
+          ],
+          "answer": "Malware is software designed to harm a device, disrupt operations, spy on activity or gain unauthorised access. Examples include viruses, worms, trojans and ransomware."
+        },
+        {
+          "question": "Why should software be updated?",
+          "keywords": [
+            "software updates",
+            "security patches",
+            "device safety"
+          ],
+          "answer": "Updates can fix security weaknesses, correct bugs, improve compatibility and add features. Install updates from official device or software sources."
+        },
+        {
+          "question": "What is a data backup?",
+          "keywords": [
+            "backup",
+            "data recovery",
+            "file copy"
+          ],
+          "answer": "A backup is an additional copy of important information kept separately so it can be restored if the original is lost, damaged or inaccessible."
+        },
+        {
+          "question": "How can I recognise an online scam?",
+          "keywords": [
+            "online scam",
+            "fraud warning",
+            "fake offer"
+          ],
+          "answer": "Be cautious of urgent demands, unrealistic prizes, requests for passwords or payment, suspicious links and messages pretending to be officials. Verify through a trusted official channel before acting."
+        }
+      ]
+    },
+    {
+      "name": "English Grammar and Writing",
+      "entries": [
+        {
+          "question": "What is a noun?",
+          "keywords": [
+            "noun",
+            "person place thing idea",
+            "grammar"
+          ],
+          "answer": "A noun is a word that names a person, place, thing or idea. Examples include teacher, Lagos, book and honesty."
+        },
+        {
+          "question": "What is a verb?",
+          "keywords": [
+            "verb",
+            "action word",
+            "state of being"
+          ],
+          "answer": "A verb expresses an action, event or state of being. Examples include write, think, become and is."
+        },
+        {
+          "question": "What is an adjective?",
+          "keywords": [
+            "adjective",
+            "describing word",
+            "grammar"
+          ],
+          "answer": "An adjective describes or gives more information about a noun or pronoun, such as bright, careful, tall or interesting."
+        },
+        {
+          "question": "What is an adverb?",
+          "keywords": [
+            "adverb",
+            "modifies verb adjective adverb"
+          ],
+          "answer": "An adverb modifies a verb, adjective or another adverb. It can describe how, when, where or to what extent something happens, as in 'She spoke clearly.'"
+        },
+        {
+          "question": "What is a paragraph?",
+          "keywords": [
+            "paragraph",
+            "topic sentence",
+            "supporting details"
+          ],
+          "answer": "A paragraph is a group of related sentences that develop one main idea. It often contains a topic sentence, supporting details and sometimes a concluding sentence."
+        },
+        {
+          "question": "What is a thesis statement?",
+          "keywords": [
+            "thesis statement",
+            "essay",
+            "main argument"
+          ],
+          "answer": "A thesis statement expresses the central claim or controlling idea of an essay. It helps readers understand what the writing will explain or argue."
+        },
+        {
+          "question": "What is the difference between a simile and a metaphor?",
+          "keywords": [
+            "simile metaphor",
+            "figure of speech",
+            "comparison"
+          ],
+          "answer": "A simile compares things using words such as 'like' or 'as'. A metaphor describes one thing as another to create a direct comparison."
+        },
+        {
+          "question": "What is active voice?",
+          "keywords": [
+            "active voice",
+            "passive voice",
+            "grammar"
+          ],
+          "answer": "In active voice, the subject performs the action. For example, 'The pupil answered the question.' In passive voice, the subject receives the action."
+        }
+      ]
+    },
+    {
+      "name": "Nigerian Education and Careers",
+      "entries": [
+        {
+          "question": "What is a university?",
+          "keywords": [
+            "university",
+            "higher education",
+            "degree"
+          ],
+          "answer": "A university is a higher-education institution that offers degree programmes and carries out teaching and research across different fields."
+        },
+        {
+          "question": "What is a polytechnic?",
+          "keywords": [
+            "polytechnic",
+            "technical education",
+            "ND HND"
+          ],
+          "answer": "A polytechnic is a higher-education institution that emphasises applied, technical and professional learning. In Nigeria, programmes can include National Diploma and Higher National Diploma qualifications."
+        },
+        {
+          "question": "What is the difference between a course and a career?",
+          "keywords": [
+            "course vs career",
+            "study programme",
+            "occupation"
+          ],
+          "answer": "A course is a subject or programme studied. A career is a longer-term path of work and professional development; one course may support several possible careers."
+        },
+        {
+          "question": "What does a software engineer do?",
+          "keywords": [
+            "software engineer",
+            "software development",
+            "career"
+          ],
+          "answer": "A software engineer designs, builds, tests, maintains and improves software systems. The work may involve programming, teamwork, problem-solving, security and understanding user needs."
+        },
+        {
+          "question": "What does a cybersecurity professional do?",
+          "keywords": [
+            "cybersecurity career",
+            "security analyst",
+            "digital protection"
+          ],
+          "answer": "Cybersecurity professionals help organisations protect systems and information. Work can include monitoring, risk assessment, secure design, incident response and security education."
+        },
+        {
+          "question": "What is an apprenticeship?",
+          "keywords": [
+            "apprenticeship",
+            "practical training",
+            "work skills"
+          ],
+          "answer": "An apprenticeship combines practical workplace training with structured learning under experienced guidance. It helps a learner develop skills for a particular occupation."
+        },
+        {
+          "question": "What is a scholarship?",
+          "keywords": [
+            "scholarship",
+            "education funding",
+            "student support"
+          ],
+          "answer": "A scholarship is financial support awarded to a learner, often based on academic achievement, talent, financial need or other stated criteria. Conditions vary by provider."
+        },
+        {
+          "question": "How do I choose a career?",
+          "keywords": [
+            "career choice",
+            "interests",
+            "skills",
+            "research"
+          ],
+          "answer": "Explore subjects and activities you enjoy, identify skills you want to develop, research real job tasks and training requirements, and speak with teachers or trusted career advisers. Keep your options open as you learn."
+        }
+      ]
+    },
+    {
+      "name": "Research and Information Literacy",
+      "entries": [
+        {
+          "question": "What is a reliable source?",
+          "keywords": [
+            "reliable source",
+            "credibility",
+            "evidence"
+          ],
+          "answer": "A reliable source has relevant expertise, explains where its information comes from, provides evidence, and can be checked against other trustworthy sources. Reliability also depends on the topic."
+        },
+        {
+          "question": "What is a primary source?",
+          "keywords": [
+            "primary source",
+            "original evidence",
+            "research"
+          ],
+          "answer": "A primary source is original material from the time or event being studied, such as a diary, interview, official record, original dataset or research report."
+        },
+        {
+          "question": "What is a secondary source?",
+          "keywords": [
+            "secondary source",
+            "analysis",
+            "interpretation"
+          ],
+          "answer": "A secondary source analyses, interprets or summarises primary sources. Examples include many textbooks, review articles and historical analyses."
+        },
+        {
+          "question": "What is plagiarism?",
+          "keywords": [
+            "plagiarism",
+            "academic honesty",
+            "copying"
+          ],
+          "answer": "Plagiarism is presenting another person's words, ideas or work as your own without proper acknowledgement. Use citations and quotation marks where appropriate."
+        },
+        {
+          "question": "What is a citation?",
+          "keywords": [
+            "citation",
+            "reference",
+            "source acknowledgement"
+          ],
+          "answer": "A citation identifies the source of information, quotations or ideas used in a piece of work. It helps readers locate and verify the original source."
+        },
+        {
+          "question": "What is misinformation?",
+          "keywords": [
+            "misinformation",
+            "false information",
+            "fact checking"
+          ],
+          "answer": "Misinformation is false or inaccurate information shared regardless of whether the person sharing it intends to deceive. Check claims against multiple credible sources."
+        },
+        {
+          "question": "What is a hypothesis?",
+          "keywords": [
+            "hypothesis",
+            "testable prediction",
+            "research"
+          ],
+          "answer": "A hypothesis is a proposed explanation or prediction that can be investigated using observations or experiments. A useful scientific hypothesis can be tested."
+        },
+        {
+          "question": "What is a conclusion in research?",
+          "keywords": [
+            "research conclusion",
+            "findings",
+            "evidence"
+          ],
+          "answer": "A research conclusion summarises what the evidence indicates, explains how it relates to the research question and notes important limitations."
+        }
+      ]
+    },
+    {
+      "name": "Everyday Science and Practical Knowledge",
+      "entries": [
+        {
+          "question": "Why does ice float on water?",
+          "keywords": [
+            "ice floats",
+            "density",
+            "water anomaly"
+          ],
+          "answer": "Ice floats because solid water is usually less dense than liquid water. When water freezes, its molecules form an open structure that occupies more space."
+        },
+        {
+          "question": "Why does metal feel colder than wood at the same temperature?",
+          "keywords": [
+            "metal wood thermal conductivity",
+            "touch",
+            "heat transfer"
+          ],
+          "answer": "Metal conducts heat away from your skin faster than wood does. Your skin therefore cools more quickly when touching metal, making it feel colder even when both materials are at the same temperature."
+        },
+        {
+          "question": "What causes day and night?",
+          "keywords": [
+            "day night",
+            "earth rotation",
+            "sunlight"
+          ],
+          "answer": "Day and night are caused by Earth's rotation. The side facing the Sun experiences daylight while the side turned away experiences night."
+        },
+        {
+          "question": "Why do we see lightning before hearing thunder?",
+          "keywords": [
+            "lightning thunder",
+            "speed of light",
+            "sound"
+          ],
+          "answer": "Light travels much faster than sound through air. The flash therefore reaches an observer before the sound of thunder from the same storm."
+        },
+        {
+          "question": "What is evaporation?",
+          "keywords": [
+            "evaporation",
+            "liquid gas",
+            "water cycle"
+          ],
+          "answer": "Evaporation is the change of a liquid into a gas at its surface. It can occur below the liquid's boiling point and generally happens faster when conditions favour energy transfer."
+        },
+        {
+          "question": "What is condensation?",
+          "keywords": [
+            "condensation",
+            "gas liquid",
+            "water droplets"
+          ],
+          "answer": "Condensation is the change of a gas or vapour into a liquid. It occurs when the vapour loses enough energy or reaches conditions where liquid can form."
+        },
+        {
+          "question": "What is renewable energy?",
+          "keywords": [
+            "renewable energy",
+            "solar wind hydro"
+          ],
+          "answer": "Renewable energy comes from sources that are naturally replenished, such as sunlight, wind, moving water and geothermal heat."
+        },
+        {
+          "question": "What is the water cycle?",
+          "keywords": [
+            "water cycle",
+            "evaporation condensation precipitation"
+          ],
+          "answer": "The water cycle describes how water moves through the environment by processes including evaporation, condensation, precipitation, infiltration and collection."
+        }
+      ]
+    },
+    {
+      "name": "Digital Productivity and Office Skills",
+      "entries": [
+        {
+          "question": "What is a spreadsheet?",
+          "keywords": [
+            "spreadsheet",
+            "rows columns",
+            "data"
+          ],
+          "answer": "A spreadsheet is a digital document organised into rows and columns of cells. It can store data, perform calculations, create charts and help analyse information."
+        },
+        {
+          "question": "What is a word processor?",
+          "keywords": [
+            "word processor",
+            "document editing",
+            "typing"
+          ],
+          "answer": "A word processor is software used to create, edit, format and print text documents. It commonly supports headings, tables, spelling tools and page layout."
+        },
+        {
+          "question": "What is a presentation?",
+          "keywords": [
+            "presentation",
+            "slides",
+            "visual communication"
+          ],
+          "answer": "A presentation communicates information to an audience, often using slides with concise text, images, diagrams and spoken explanation."
+        },
+        {
+          "question": "What is cloud storage?",
+          "keywords": [
+            "cloud storage",
+            "online files",
+            "sync"
+          ],
+          "answer": "Cloud storage keeps files on remote internet-connected servers so authorised users can access or synchronise them across devices. Account security and backups remain important."
+        },
+        {
+          "question": "What is a PDF?",
+          "keywords": [
+            "PDF",
+            "Portable Document Format",
+            "document"
+          ],
+          "answer": "PDF means Portable Document Format. It is designed to preserve a document's layout across different devices and operating systems."
+        },
+        {
+          "question": "What is a file extension?",
+          "keywords": [
+            "file extension",
+            "filename",
+            "file type"
+          ],
+          "answer": "A file extension is the ending of a filename, such as .pdf, .jpg or .html. It often indicates the file format, though it does not guarantee that a file is safe."
+        },
+        {
+          "question": "What is version control?",
+          "keywords": [
+            "version control",
+            "Git",
+            "code history"
+          ],
+          "answer": "Version control records changes to files over time. It helps people compare revisions, restore earlier versions and collaborate; Git is a widely used version-control system."
+        },
+        {
+          "question": "What is GitHub?",
+          "keywords": [
+            "GitHub",
+            "Git",
+            "repository",
+            "code hosting"
+          ],
+          "answer": "GitHub is an online platform for hosting Git repositories and collaborating on projects. It supports code review, issue tracking, documentation and project workflows."
+        }
+      ]
+    },
+    {
+      "name": "Mathematics: Formulas and Applications",
+      "entries": [
+        {
+          "question": "What is the formula for the area of a triangle?",
+          "keywords": [
+            "triangle area",
+            "half base height",
+            "formula"
+          ],
+          "answer": "The area of a triangle is A = ½ × base × perpendicular height. The base and height must be measured in compatible units."
+        },
+        {
+          "question": "What is the formula for the circumference of a circle?",
+          "keywords": [
+            "circle circumference",
+            "2 pi r",
+            "diameter"
+          ],
+          "answer": "The circumference of a circle is C = 2πr or C = πd, where r is the radius and d is the diameter."
+        },
+        {
+          "question": "What is Pythagoras' theorem?",
+          "keywords": [
+            "Pythagoras theorem",
+            "right angled triangle",
+            "hypotenuse"
+          ],
+          "answer": "For a right-angled triangle, a² + b² = c², where a and b are the shorter sides and c is the hypotenuse, the side opposite the right angle."
+        },
+        {
+          "question": "What is the mean of a set of numbers?",
+          "keywords": [
+            "mean",
+            "average",
+            "sum",
+            "count"
+          ],
+          "answer": "The arithmetic mean is found by adding all the values and dividing by the number of values."
+        },
+        {
+          "question": "What is the median?",
+          "keywords": [
+            "median",
+            "middle value",
+            "ordered data"
+          ],
+          "answer": "The median is the middle value after data are arranged in order. If there are two middle values, the median is their average."
+        },
+        {
+          "question": "What is the mode?",
+          "keywords": [
+            "mode",
+            "most frequent",
+            "statistics"
+          ],
+          "answer": "The mode is the value that occurs most often in a data set. A data set may have one mode, more than one mode or no mode."
+        },
+        {
+          "question": "What is the gradient of a straight line?",
+          "keywords": [
+            "gradient",
+            "slope",
+            "change in y",
+            "change in x"
+          ],
+          "answer": "The gradient of a straight line is the change in y divided by the change in x: m = (y₂ − y₁)/(x₂ − x₁), provided x₂ is not equal to x₁."
+        },
+        {
+          "question": "What is simple interest?",
+          "keywords": [
+            "simple interest",
+            "principal",
+            "rate",
+            "time"
+          ],
+          "answer": "Simple interest is calculated using I = PRT/100 when the rate R is a percentage per time period, P is principal and T is the number of matching periods."
+        }
+      ]
     }
   ],
   "metadata": {
     "updatedAt": "2026-11-03",
-    "description": "Expanded educational reference library. Dated current-affairs records are snapshots, not a live news feed. For breaking news and current weather, retrieve live sources and display timestamps.",
-    "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice."
+    "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Dated current-affairs records are snapshots, not a live news feed.",
+    "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice.",
+    "offlineMode": "CYBERAI answers from these local records and built-in rules only; it does not generate new facts from a live language model."
   }
 }
