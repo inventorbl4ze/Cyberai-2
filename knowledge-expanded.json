@@ -959,6 +959,1681 @@
           "answer": "Communication is the exchange of information, thoughts and feelings through speaking, writing, signs or other forms."
         }
       ]
+    },
+    {
+      "name": "Further Mathematics",
+      "entries": [
+        {
+          "question": "What is a function?",
+          "keywords": [
+            "function",
+            "domain",
+            "range",
+            "mapping"
+          ],
+          "answer": "A function maps each permitted input to exactly one output. The domain is the set of allowed inputs and the range is the set of outputs."
+        },
+        {
+          "question": "What is a composite function?",
+          "keywords": [
+            "composite",
+            "function",
+            "fog"
+          ],
+          "answer": "A composite function applies one function after another. If f and g are functions, (f∘g)(x)=f(g(x))."
+        },
+        {
+          "question": "What is an inverse function?",
+          "keywords": [
+            "inverse",
+            "function",
+            "one",
+            "to",
+            "one"
+          ],
+          "answer": "An inverse function reverses the action of a function. It exists as a function when the original function is one-to-one on the chosen domain."
+        },
+        {
+          "question": "What is differentiation?",
+          "keywords": [
+            "differentiation",
+            "derivative",
+            "calculus"
+          ],
+          "answer": "Differentiation finds the derivative of a function, which describes its instantaneous rate of change or the gradient of a curve at a point."
+        },
+        {
+          "question": "What is integration?",
+          "keywords": [
+            "integration",
+            "integral",
+            "calculus"
+          ],
+          "answer": "Integration is a mathematical process used to find accumulated quantities and areas under curves. It is the reverse process of differentiation in many contexts."
+        },
+        {
+          "question": "What is a limit?",
+          "keywords": [
+            "limit",
+            "calculus",
+            "function"
+          ],
+          "answer": "A limit describes the value that a function approaches as its input approaches a particular value."
+        },
+        {
+          "question": "What is a matrix?",
+          "keywords": [
+            "matrix",
+            "rows",
+            "columns"
+          ],
+          "answer": "A matrix is a rectangular arrangement of numbers or symbols in rows and columns. Matrices are used to represent and solve systems of equations and transformations."
+        },
+        {
+          "question": "What is a determinant?",
+          "keywords": [
+            "determinant",
+            "square",
+            "matrix"
+          ],
+          "answer": "A determinant is a number calculated from a square matrix. It helps determine whether a matrix is invertible and describes scale changes in transformations."
+        },
+        {
+          "question": "What is a vector?",
+          "keywords": [
+            "vector",
+            "magnitude",
+            "direction"
+          ],
+          "answer": "A vector is a quantity with both magnitude and direction. Examples in mathematics and physics include displacement and velocity."
+        },
+        {
+          "question": "What is a complex number?",
+          "keywords": [
+            "complex",
+            "number",
+            "imaginary",
+            "i"
+          ],
+          "answer": "A complex number has the form a+bi, where a and b are real numbers and i²=-1."
+        },
+        {
+          "question": "What is a differential equation?",
+          "keywords": [
+            "differential",
+            "equation",
+            "derivative"
+          ],
+          "answer": "A differential equation relates an unknown function to one or more of its derivatives. It is used to model changing systems."
+        },
+        {
+          "question": "What is a binomial expansion?",
+          "keywords": [
+            "binomial",
+            "theorem",
+            "expansion",
+            "coefficients"
+          ],
+          "answer": "The binomial theorem gives a formula for expanding powers of a sum, such as (a+b)^n, for suitable integer n."
+        },
+        {
+          "question": "What is a permutation?",
+          "keywords": [
+            "permutation",
+            "arrangement",
+            "order"
+          ],
+          "answer": "A permutation is an arrangement of objects where order matters. The number of arrangements of n distinct objects is n!."
+        },
+        {
+          "question": "What is a combination?",
+          "keywords": [
+            "combination",
+            "selection",
+            "order"
+          ],
+          "answer": "A combination is a selection where order does not matter. The number of ways to choose r objects from n is nCr=n!/[r!(n-r)!]."
+        },
+        {
+          "question": "What is mathematical induction?",
+          "keywords": [
+            "mathematical",
+            "induction",
+            "proof"
+          ],
+          "answer": "Mathematical induction is a proof method: establish a base case, then show that if a statement holds for n=k, it also holds for n=k+1."
+        }
+      ]
+    },
+    {
+      "name": "Advanced Mathematics and Statistics",
+      "entries": [
+        {
+          "question": "What is standard deviation?",
+          "keywords": [
+            "standard",
+            "deviation",
+            "spread",
+            "data"
+          ],
+          "answer": "Standard deviation measures how spread out data values are around their mean. A larger standard deviation indicates greater spread."
+        },
+        {
+          "question": "What is variance?",
+          "keywords": [
+            "variance",
+            "statistics",
+            "squared",
+            "deviation"
+          ],
+          "answer": "Variance is the average squared deviation from the mean, with the exact formula depending on whether the data are a population or sample."
+        },
+        {
+          "question": "What is correlation?",
+          "keywords": [
+            "correlation",
+            "relationship",
+            "variables"
+          ],
+          "answer": "Correlation measures the strength and direction of association between variables. Correlation alone does not prove that one variable causes another."
+        },
+        {
+          "question": "What is probability?",
+          "keywords": [
+            "probability",
+            "likelihood",
+            "event"
+          ],
+          "answer": "Probability measures how likely an event is, on a scale from 0 (impossible) to 1 (certain)."
+        },
+        {
+          "question": "What is conditional probability?",
+          "keywords": [
+            "conditional",
+            "probability",
+            "given",
+            "event"
+          ],
+          "answer": "Conditional probability is the probability of an event occurring given that another event has already occurred."
+        },
+        {
+          "question": "What is a normal distribution?",
+          "keywords": [
+            "normal",
+            "distribution",
+            "bell",
+            "curve"
+          ],
+          "answer": "A normal distribution is a symmetric, bell-shaped probability distribution centred on its mean. Many measurements are approximately normal, though not all are."
+        },
+        {
+          "question": "What is a logarithm?",
+          "keywords": [
+            "logarithm",
+            "exponent",
+            "inverse"
+          ],
+          "answer": "A logarithm answers the question: to what power must a base be raised to obtain a given number? If b^x=y, then log base b of y=x."
+        },
+        {
+          "question": "What is a sequence?",
+          "keywords": [
+            "sequence",
+            "terms",
+            "pattern"
+          ],
+          "answer": "A sequence is an ordered list of numbers following a rule or pattern. It may be arithmetic, geometric or follow another rule."
+        },
+        {
+          "question": "What is a series?",
+          "keywords": [
+            "series",
+            "sum",
+            "sequence"
+          ],
+          "answer": "A series is the sum of the terms of a sequence. It may have a finite or infinite number of terms."
+        },
+        {
+          "question": "What is an arithmetic progression?",
+          "keywords": [
+            "arithmetic",
+            "progression",
+            "common",
+            "difference"
+          ],
+          "answer": "An arithmetic progression is a sequence in which the difference between consecutive terms is constant."
+        },
+        {
+          "question": "What is a geometric progression?",
+          "keywords": [
+            "geometric",
+            "progression",
+            "common",
+            "ratio"
+          ],
+          "answer": "A geometric progression is a sequence in which each term is obtained by multiplying the previous term by a constant ratio."
+        },
+        {
+          "question": "What is linear programming?",
+          "keywords": [
+            "linear",
+            "programming",
+            "constraints",
+            "objective"
+          ],
+          "answer": "Linear programming optimises a linear objective function subject to linear constraints, often to allocate limited resources."
+        },
+        {
+          "question": "What is a mathematical model?",
+          "keywords": [
+            "mathematical",
+            "modelling",
+            "assumptions"
+          ],
+          "answer": "A mathematical model uses mathematical ideas and equations to represent a real situation. It simplifies reality and depends on assumptions."
+        },
+        {
+          "question": "What is an asymptote?",
+          "keywords": [
+            "asymptote",
+            "curve",
+            "graph"
+          ],
+          "answer": "An asymptote is a line that a curve approaches arbitrarily closely in a particular direction."
+        },
+        {
+          "question": "What is a proof in mathematics?",
+          "keywords": [
+            "mathematical",
+            "proof",
+            "logic",
+            "theorem"
+          ],
+          "answer": "A mathematical proof is a logical argument showing that a statement follows from accepted definitions, axioms and previously established results."
+        }
+      ]
+    },
+    {
+      "name": "Calendar, Months and Days",
+      "entries": [
+        {
+          "question": "How many months are in a year?",
+          "keywords": [
+            "months",
+            "year",
+            "calendar"
+          ],
+          "answer": "There are 12 months in a calendar year."
+        },
+        {
+          "question": "What are the 12 months in order?",
+          "keywords": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
+          "answer": "The months in order are January, February, March, April, May, June, July, August, September, October, November and December."
+        },
+        {
+          "question": "How many days are in each month?",
+          "keywords": [
+            "days",
+            "month",
+            "calendar"
+          ],
+          "answer": "January 31, February 28 (29 in a leap year), March 31, April 30, May 31, June 30, July 31, August 31, September 30, October 31, November 30 and December 31."
+        },
+        {
+          "question": "What are the seven days of the week?",
+          "keywords": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "answer": "The seven days are Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday."
+        },
+        {
+          "question": "What is a leap year?",
+          "keywords": [
+            "leap",
+            "year",
+            "February",
+            "29"
+          ],
+          "answer": "A leap year has 366 days, including 29 February. In the Gregorian calendar, years divisible by 4 are leap years, except century years not divisible by 400."
+        },
+        {
+          "question": "How many days are in a common year?",
+          "keywords": [
+            "common",
+            "year",
+            "365",
+            "days"
+          ],
+          "answer": "A common year has 365 days."
+        },
+        {
+          "question": "How many days are in a leap year?",
+          "keywords": [
+            "leap",
+            "year",
+            "366",
+            "days"
+          ],
+          "answer": "A leap year has 366 days."
+        },
+        {
+          "question": "What is a decade?",
+          "keywords": [
+            "decade",
+            "ten",
+            "years"
+          ],
+          "answer": "A decade is a period of ten years."
+        },
+        {
+          "question": "What is a century?",
+          "keywords": [
+            "century",
+            "hundred",
+            "years"
+          ],
+          "answer": "A century is a period of one hundred years."
+        },
+        {
+          "question": "What is a millennium?",
+          "keywords": [
+            "millennium",
+            "thousand",
+            "years"
+          ],
+          "answer": "A millennium is a period of one thousand years."
+        },
+        {
+          "question": "What is a quarter of a year?",
+          "keywords": [
+            "quarter",
+            "year",
+            "three",
+            "months"
+          ],
+          "answer": "A calendar quarter is one of four three-month periods in a year: January–March, April–June, July–September or October–December."
+        },
+        {
+          "question": "What is the difference between a.m. and p.m.?",
+          "keywords": [
+            "am",
+            "pm",
+            "time",
+            "clock"
+          ],
+          "answer": "A.m. refers to the period from midnight up to before noon; p.m. refers to the period from noon up to before midnight."
+        },
+        {
+          "question": "What is a time zone?",
+          "keywords": [
+            "time",
+            "zone",
+            "UTC",
+            "longitude"
+          ],
+          "answer": "A time zone is a region that uses the same standard time. Nigeria uses West Africa Time (WAT), UTC+1."
+        },
+        {
+          "question": "What is a calendar date?",
+          "keywords": [
+            "calendar",
+            "date",
+            "day",
+            "month",
+            "year"
+          ],
+          "answer": "A calendar date identifies a particular day, commonly written using a day, month and year."
+        },
+        {
+          "question": "Why do months have different lengths?",
+          "keywords": [
+            "month",
+            "length",
+            "calendar",
+            "history"
+          ],
+          "answer": "Month lengths come from the historical development of calendar systems. The modern Gregorian calendar uses months of 28 to 31 days to keep the year aligned with Earth's seasons."
+        }
+      ]
+    },
+    {
+      "name": "Health and Disease Education",
+      "entries": [
+        {
+          "question": "What is a disease?",
+          "keywords": [
+            "disease",
+            "health",
+            "condition"
+          ],
+          "answer": "A disease is a condition that affects the normal structure or function of the body or mind. Diseases can have infectious or non-infectious causes."
+        },
+        {
+          "question": "What is an infectious disease?",
+          "keywords": [
+            "infectious",
+            "disease",
+            "pathogen",
+            "spread"
+          ],
+          "answer": "An infectious disease is caused by a pathogen such as a virus, bacterium, fungus or parasite and may spread between hosts or through the environment."
+        },
+        {
+          "question": "What is a non-communicable disease?",
+          "keywords": [
+            "non",
+            "communicable",
+            "disease",
+            "NCD"
+          ],
+          "answer": "A non-communicable disease does not spread directly from person to person. Examples include some heart diseases, cancers and diabetes."
+        },
+        {
+          "question": "What is a pathogen?",
+          "keywords": [
+            "pathogen",
+            "microorganism",
+            "disease"
+          ],
+          "answer": "A pathogen is a biological agent that can cause disease, including certain bacteria, viruses, fungi and parasites."
+        },
+        {
+          "question": "What is a virus?",
+          "keywords": [
+            "virus",
+            "biology",
+            "infection"
+          ],
+          "answer": "A virus is a tiny infectious agent that reproduces inside living host cells. Antibiotics do not treat viral infections."
+        },
+        {
+          "question": "What is a bacterium?",
+          "keywords": [
+            "bacteria",
+            "microorganism"
+          ],
+          "answer": "A bacterium is a single-celled microorganism. Many bacteria are harmless or helpful, while some can cause infections."
+        },
+        {
+          "question": "What is an antibiotic?",
+          "keywords": [
+            "antibiotic",
+            "bacteria",
+            "medicine"
+          ],
+          "answer": "An antibiotic is a medicine used to treat certain bacterial infections. It does not work against viruses, and it should only be used as directed by a qualified health professional."
+        },
+        {
+          "question": "What is vaccination?",
+          "keywords": [
+            "vaccination",
+            "vaccine",
+            "immune",
+            "system"
+          ],
+          "answer": "Vaccination trains the immune system to recognise a disease-causing organism or part of it, helping reduce the risk or severity of specific infections."
+        },
+        {
+          "question": "What is immunity?",
+          "keywords": [
+            "immunity",
+            "immune",
+            "system",
+            "protection"
+          ],
+          "answer": "Immunity is the body's ability to resist or respond to infection. It involves barriers, immune cells and molecules such as antibodies."
+        },
+        {
+          "question": "What is malaria?",
+          "keywords": [
+            "malaria",
+            "plasmodium",
+            "mosquito"
+          ],
+          "answer": "Malaria is an infectious disease caused by Plasmodium parasites and transmitted through bites from infected female Anopheles mosquitoes. Suspected malaria requires testing and advice from a health professional."
+        },
+        {
+          "question": "What is tuberculosis?",
+          "keywords": [
+            "tuberculosis",
+            "TB",
+            "bacteria",
+            "lungs"
+          ],
+          "answer": "Tuberculosis (TB) is an infectious disease caused by bacteria, most often affecting the lungs. It spreads through the air when a person with infectious TB coughs or sneezes."
+        },
+        {
+          "question": "What is cholera?",
+          "keywords": [
+            "cholera",
+            "vibrio",
+            "contaminated",
+            "water"
+          ],
+          "answer": "Cholera is an acute diarrhoeal infection caused by ingesting food or water contaminated with Vibrio cholerae. Safe water, sanitation and prompt medical care are important."
+        },
+        {
+          "question": "What is diabetes?",
+          "keywords": [
+            "diabetes",
+            "blood",
+            "glucose",
+            "insulin"
+          ],
+          "answer": "Diabetes is a chronic condition in which blood glucose levels are too high because the body does not make enough insulin or cannot use it effectively."
+        },
+        {
+          "question": "What is hypertension?",
+          "keywords": [
+            "hypertension",
+            "high",
+            "blood",
+            "pressure"
+          ],
+          "answer": "Hypertension means persistently raised blood pressure. It often has no obvious symptoms and is identified by measuring blood pressure."
+        },
+        {
+          "question": "What is asthma?",
+          "keywords": [
+            "asthma",
+            "airways",
+            "inflammation"
+          ],
+          "answer": "Asthma is a long-term condition in which airways become inflamed and narrowed, sometimes causing wheezing, coughing, chest tightness or breathing difficulty."
+        },
+        {
+          "question": "What is anaemia?",
+          "keywords": [
+            "anaemia",
+            "hemoglobin",
+            "red",
+            "blood",
+            "cells"
+          ],
+          "answer": "Anaemia is a condition in which the blood has too little haemoglobin or too few healthy red blood cells to carry oxygen effectively. Causes vary and need proper assessment."
+        },
+        {
+          "question": "What is dehydration?",
+          "keywords": [
+            "dehydration",
+            "body",
+            "water",
+            "fluids"
+          ],
+          "answer": "Dehydration occurs when the body loses more fluid than it takes in. It can happen during illness, heavy sweating or inadequate fluid intake."
+        },
+        {
+          "question": "What is heat exhaustion?",
+          "keywords": [
+            "heat",
+            "exhaustion",
+            "heat",
+            "illness"
+          ],
+          "answer": "Heat exhaustion is a heat-related illness that can involve heavy sweating, weakness, headache, dizziness or nausea. Move to a cooler place, rest and seek medical advice; urgent help is needed if symptoms are severe or worsening."
+        },
+        {
+          "question": "What is heatstroke?",
+          "keywords": [
+            "heatstroke",
+            "emergency",
+            "heat",
+            "illness"
+          ],
+          "answer": "Heatstroke is a life-threatening heat emergency involving dangerous overheating and possible changes in brain function. Call emergency medical services immediately if suspected."
+        },
+        {
+          "question": "What is cancer?",
+          "keywords": [
+            "cancer",
+            "abnormal",
+            "cells",
+            "disease"
+          ],
+          "answer": "Cancer is a group of diseases in which abnormal cells grow uncontrollably and may invade nearby tissues or spread. Types, causes and treatments differ; medical professionals provide diagnosis and care."
+        },
+        {
+          "question": "What is an allergy?",
+          "keywords": [
+            "allergy",
+            "immune",
+            "response",
+            "allergen"
+          ],
+          "answer": "An allergy is an immune response to a substance that is usually harmless to most people, such as pollen, some foods or dust mites."
+        },
+        {
+          "question": "What is inflammation?",
+          "keywords": [
+            "inflammation",
+            "immune",
+            "response",
+            "tissue"
+          ],
+          "answer": "Inflammation is part of the body's response to injury or infection. It can cause redness, warmth, swelling or pain, but persistent symptoms need assessment."
+        },
+        {
+          "question": "What is the purpose of handwashing?",
+          "keywords": [
+            "handwashing",
+            "hygiene",
+            "infection",
+            "prevention"
+          ],
+          "answer": "Handwashing with soap and clean running water helps remove germs and reduce the spread of many infections."
+        },
+        {
+          "question": "What is public health?",
+          "keywords": [
+            "public",
+            "health",
+            "prevention",
+            "population"
+          ],
+          "answer": "Public health protects and improves the health of communities through prevention, education, surveillance, safe environments and access to services."
+        },
+        {
+          "question": "What is epidemiology?",
+          "keywords": [
+            "epidemiology",
+            "disease",
+            "patterns",
+            "population"
+          ],
+          "answer": "Epidemiology studies how health conditions are distributed in populations, what influences them and how they can be prevented or controlled."
+        }
+      ]
+    },
+    {
+      "name": "Human Body and Health Science",
+      "entries": [
+        {
+          "question": "What is the circulatory system?",
+          "keywords": [
+            "circulatory",
+            "cardiovascular",
+            "heart",
+            "blood"
+          ],
+          "answer": "The circulatory system includes the heart, blood and blood vessels. It transports oxygen, nutrients, hormones and waste products around the body."
+        },
+        {
+          "question": "What is the respiratory system?",
+          "keywords": [
+            "respiratory",
+            "lungs",
+            "breathing"
+          ],
+          "answer": "The respiratory system moves air into and out of the lungs and allows oxygen and carbon dioxide to be exchanged."
+        },
+        {
+          "question": "What is the digestive system?",
+          "keywords": [
+            "digestive",
+            "system",
+            "stomach",
+            "intestine"
+          ],
+          "answer": "The digestive system breaks food into nutrients that can be absorbed and used by the body, while waste is removed."
+        },
+        {
+          "question": "What is the nervous system?",
+          "keywords": [
+            "nervous",
+            "system",
+            "brain",
+            "spinal",
+            "cord",
+            "nerves"
+          ],
+          "answer": "The nervous system includes the brain, spinal cord and nerves. It receives information, processes it and coordinates responses."
+        },
+        {
+          "question": "What is the immune system?",
+          "keywords": [
+            "immune",
+            "system",
+            "defence",
+            "cells"
+          ],
+          "answer": "The immune system is a network of cells, tissues and organs that helps the body recognise and defend against harmful microbes and other threats."
+        },
+        {
+          "question": "What is a balanced diet?",
+          "keywords": [
+            "balanced",
+            "diet",
+            "nutrients",
+            "food",
+            "groups"
+          ],
+          "answer": "A balanced diet provides a variety of foods and nutrients in suitable amounts to support growth, energy and normal body functions."
+        },
+        {
+          "question": "What are carbohydrates?",
+          "keywords": [
+            "carbohydrates",
+            "energy",
+            "nutrients"
+          ],
+          "answer": "Carbohydrates are nutrients that provide the body with energy. They include sugars, starches and fibre."
+        },
+        {
+          "question": "What are proteins?",
+          "keywords": [
+            "protein",
+            "amino",
+            "acids",
+            "growth"
+          ],
+          "answer": "Proteins are nutrients made of amino acids. They support growth, tissue repair, enzymes and many body functions."
+        },
+        {
+          "question": "What are vitamins?",
+          "keywords": [
+            "vitamins",
+            "micronutrients",
+            "body",
+            "function"
+          ],
+          "answer": "Vitamins are nutrients needed in small amounts for normal growth and body processes. Different vitamins have different roles."
+        },
+        {
+          "question": "What is first aid?",
+          "keywords": [
+            "first",
+            "aid",
+            "immediate",
+            "assistance"
+          ],
+          "answer": "First aid is the immediate, basic assistance given to someone who is ill or injured while arranging appropriate professional help when needed."
+        }
+      ]
+    },
+    {
+      "name": "Nigeria and African Studies",
+      "entries": [
+        {
+          "question": "What is the capital of Nigeria?",
+          "keywords": [
+            "Nigeria",
+            "capital",
+            "Abuja"
+          ],
+          "answer": "Abuja is the capital city of Nigeria."
+        },
+        {
+          "question": "What is Nigeria's currency?",
+          "keywords": [
+            "Nigeria",
+            "currency",
+            "naira"
+          ],
+          "answer": "Nigeria's currency is the naira, represented by the symbol ₦ and the code NGN."
+        },
+        {
+          "question": "What is Nigeria's time zone?",
+          "keywords": [
+            "Nigeria",
+            "time",
+            "WAT",
+            "UTC",
+            "plus",
+            "one"
+          ],
+          "answer": "Nigeria uses West Africa Time (WAT), which is UTC+1 throughout the year."
+        },
+        {
+          "question": "What are Nigeria's three major ethnic groups?",
+          "keywords": [
+            "Nigeria",
+            "ethnic",
+            "groups",
+            "Hausa",
+            "Yoruba",
+            "Igbo"
+          ],
+          "answer": "Hausa, Yoruba and Igbo are commonly described as three of Nigeria's largest ethnic groups. Nigeria is home to many other ethnic communities too."
+        },
+        {
+          "question": "What are Nigeria's official languages?",
+          "keywords": [
+            "Nigeria",
+            "official",
+            "language",
+            "English"
+          ],
+          "answer": "English is Nigeria's official language. Many Nigerian languages are widely spoken, including Hausa, Yoruba, Igbo, Fulfulde, Kanuri, Tiv and Edo."
+        },
+        {
+          "question": "What is the African Union?",
+          "keywords": [
+            "African",
+            "Union",
+            "AU",
+            "organisation"
+          ],
+          "answer": "The African Union is a continental organisation of African states that works on cooperation, peace, development and integration."
+        },
+        {
+          "question": "What is ECOWAS?",
+          "keywords": [
+            "ECOWAS",
+            "West",
+            "African",
+            "regional",
+            "organisation"
+          ],
+          "answer": "The Economic Community of West African States is a regional organisation that promotes cooperation and integration among West African countries."
+        },
+        {
+          "question": "What is the Nigerian National Assembly?",
+          "keywords": [
+            "Nigeria",
+            "National",
+            "Assembly",
+            "Senate",
+            "House",
+            "Representatives"
+          ],
+          "answer": "Nigeria's National Assembly is the federal legislature. It consists of the Senate and the House of Representatives."
+        },
+        {
+          "question": "What is a local government area?",
+          "keywords": [
+            "Nigeria",
+            "LGA",
+            "local",
+            "government"
+          ],
+          "answer": "A local government area is a level of local administration in Nigeria, responsible for certain community services and local functions under the constitution and laws."
+        },
+        {
+          "question": "What is the Niger River?",
+          "keywords": [
+            "Niger",
+            "River",
+            "West",
+            "Africa"
+          ],
+          "answer": "The Niger River is a major West African river that flows through several countries, including Guinea, Mali, Niger and Nigeria, before reaching the Gulf of Guinea."
+        }
+      ]
+    },
+    {
+      "name": "Climate, Weather and Heat Awareness",
+      "entries": [
+        {
+          "question": "What is a heatwave?",
+          "keywords": [
+            "heatwave",
+            "extreme",
+            "temperature",
+            "weather"
+          ],
+          "answer": "A heatwave is a period of unusually hot weather for a location and season, often lasting several days. Official definitions vary by country and climate."
+        },
+        {
+          "question": "What is heat index?",
+          "keywords": [
+            "heat",
+            "index",
+            "humidity",
+            "temperature",
+            "feels",
+            "like"
+          ],
+          "answer": "The heat index combines air temperature and humidity to estimate how hot conditions feel to people."
+        },
+        {
+          "question": "What is humidity?",
+          "keywords": [
+            "humidity",
+            "water",
+            "vapour",
+            "air"
+          ],
+          "answer": "Humidity describes the amount of water vapour in the air. High humidity can make it harder for sweat to evaporate and cool the body."
+        },
+        {
+          "question": "What is the urban heat island effect?",
+          "keywords": [
+            "urban",
+            "heat",
+            "island",
+            "city",
+            "temperature"
+          ],
+          "answer": "The urban heat island effect occurs when built-up areas are warmer than nearby less-developed areas because roads and buildings absorb and retain heat and there is often less vegetation."
+        },
+        {
+          "question": "What is El Niño?",
+          "keywords": [
+            "El",
+            "Nino",
+            "Pacific",
+            "ocean",
+            "climate"
+          ],
+          "answer": "El Niño is a natural climate pattern involving unusually warm sea-surface temperatures in parts of the tropical Pacific. It can influence weather patterns around the world."
+        },
+        {
+          "question": "What is climate change?",
+          "keywords": [
+            "climate",
+            "change",
+            "global",
+            "warming",
+            "greenhouse",
+            "gases"
+          ],
+          "answer": "Climate change refers to long-term changes in temperatures and weather patterns. Recent global warming is mainly driven by human greenhouse-gas emissions."
+        },
+        {
+          "question": "How can people reduce heat exposure?",
+          "keywords": [
+            "heat",
+            "safety",
+            "shade",
+            "water",
+            "ventilation"
+          ],
+          "answer": "Use shade and well-ventilated or cool spaces, drink safe water regularly, take breaks and reduce strenuous activity during the hottest part of the day. Follow local weather and health advisories."
+        },
+        {
+          "question": "What is a weather forecast?",
+          "keywords": [
+            "weather",
+            "forecast",
+            "prediction",
+            "meteorology"
+          ],
+          "answer": "A weather forecast is an estimate of future atmospheric conditions based on observations and computer models. Forecasts can change as new data arrives."
+        },
+        {
+          "question": "What is the difference between weather and climate?",
+          "keywords": [
+            "weather",
+            "climate",
+            "difference"
+          ],
+          "answer": "Weather describes short-term atmospheric conditions; climate describes long-term patterns and averages over many years."
+        },
+        {
+          "question": "What is a monsoon?",
+          "keywords": [
+            "monsoon",
+            "seasonal",
+            "wind",
+            "rainfall"
+          ],
+          "answer": "A monsoon is a seasonal shift in winds that often brings a marked change in rainfall, especially in parts of Asia and nearby regions."
+        },
+        {
+          "question": "What is a drought?",
+          "keywords": [
+            "drought",
+            "lack",
+            "rainfall",
+            "water"
+          ],
+          "answer": "A drought is an extended period of unusually low rainfall that can reduce water availability and affect agriculture, ecosystems and communities."
+        },
+        {
+          "question": "What is a flood?",
+          "keywords": [
+            "flood",
+            "water",
+            "overflow"
+          ],
+          "answer": "A flood occurs when water covers land that is usually dry. Flooding can result from heavy rain, overflowing rivers, storm surges or drainage problems."
+        }
+      ]
+    },
+    {
+      "name": "News Literacy and Current Affairs",
+      "entries": [
+        {
+          "question": "What is breaking news?",
+          "keywords": [
+            "breaking",
+            "news",
+            "latest",
+            "developing",
+            "event"
+          ],
+          "answer": "Breaking news is newly reported information about an event that is still developing. Early details can be incomplete and should be checked against reliable updates."
+        },
+        {
+          "question": "What is a news source?",
+          "keywords": [
+            "news",
+            "source",
+            "journalism",
+            "report"
+          ],
+          "answer": "A news source is a person, organisation, document or dataset that provides information for a news report. Reliable reporting identifies sources and checks claims."
+        },
+        {
+          "question": "How can I verify a news story?",
+          "keywords": [
+            "fact",
+            "check",
+            "verify",
+            "news",
+            "source"
+          ],
+          "answer": "Check the publication date, compare coverage from multiple reputable outlets, find the original statement or data, and distinguish confirmed facts from claims or opinion."
+        },
+        {
+          "question": "What is misinformation?",
+          "keywords": [
+            "misinformation",
+            "false",
+            "information"
+          ],
+          "answer": "Misinformation is false or inaccurate information shared regardless of whether the person sharing it intends to mislead."
+        },
+        {
+          "question": "What is disinformation?",
+          "keywords": [
+            "disinformation",
+            "deliberate",
+            "false",
+            "information"
+          ],
+          "answer": "Disinformation is false information deliberately created or shared to mislead people."
+        },
+        {
+          "question": "What is a headline?",
+          "keywords": [
+            "headline",
+            "news",
+            "title"
+          ],
+          "answer": "A headline is the title of a news report. It summarises the main point but may simplify details, so read the full report before drawing conclusions."
+        },
+        {
+          "question": "What is an editorial?",
+          "keywords": [
+            "editorial",
+            "opinion",
+            "newspaper"
+          ],
+          "answer": "An editorial is a publication's opinion or argument about an issue. It should be distinguished from straight news reporting."
+        },
+        {
+          "question": "What is a press release?",
+          "keywords": [
+            "press",
+            "release",
+            "official",
+            "statement"
+          ],
+          "answer": "A press release is an official statement issued by an organisation to communicate information to the media and public. Its claims may need independent verification."
+        },
+        {
+          "question": "What is a developing story?",
+          "keywords": [
+            "developing",
+            "story",
+            "updates"
+          ],
+          "answer": "A developing story is an event for which information is still emerging. Details, figures and official responses may change."
+        },
+        {
+          "question": "What is a news archive?",
+          "keywords": [
+            "news",
+            "archive",
+            "historical",
+            "reports"
+          ],
+          "answer": "A news archive is a collection of past news reports organised by date, topic or publication."
+        },
+        {
+          "question": "How should CYBERAI answer questions about today's news?",
+          "keywords": [
+            "today",
+            "current",
+            "latest",
+            "news",
+            "live",
+            "update"
+          ],
+          "answer": "Today's news must be retrieved from current, reliable sources at the time of the question. A saved knowledge file is not a live news feed; show the publication date and link to the original report."
+        },
+        {
+          "question": "How should CYBERAI answer questions about current weather?",
+          "keywords": [
+            "current",
+            "weather",
+            "live",
+            "forecast",
+            "today"
+          ],
+          "answer": "Current weather and heat alerts must come from a live meteorological source. State the location, observation or forecast time and source; never present an old saved reading as current."
+        }
+      ]
+    },
+    {
+      "name": "Economics and Financial Literacy",
+      "entries": [
+        {
+          "question": "What is inflation?",
+          "keywords": [
+            "inflation",
+            "prices",
+            "purchasing",
+            "power"
+          ],
+          "answer": "Inflation is a general rise in prices over time, which reduces the purchasing power of money."
+        },
+        {
+          "question": "What is an exchange rate?",
+          "keywords": [
+            "exchange",
+            "rate",
+            "currency",
+            "conversion"
+          ],
+          "answer": "An exchange rate is the price of one currency expressed in another currency. It changes with market conditions and official policies."
+        },
+        {
+          "question": "What is supply and demand?",
+          "keywords": [
+            "supply",
+            "demand",
+            "economics",
+            "price"
+          ],
+          "answer": "Supply is how much sellers are willing to offer; demand is how much buyers are willing to purchase. Their interaction influences market prices."
+        },
+        {
+          "question": "What is a central bank?",
+          "keywords": [
+            "central",
+            "bank",
+            "monetary",
+            "policy",
+            "currency"
+          ],
+          "answer": "A central bank manages a country's monetary system, issues or oversees currency and may influence interest rates and financial stability."
+        },
+        {
+          "question": "What is interest?",
+          "keywords": [
+            "interest",
+            "borrowing",
+            "saving",
+            "money"
+          ],
+          "answer": "Interest is the cost of borrowing money or the return earned on savings, usually expressed as a percentage."
+        },
+        {
+          "question": "What is compound interest?",
+          "keywords": [
+            "compound",
+            "interest",
+            "interest",
+            "on",
+            "interest"
+          ],
+          "answer": "Compound interest is calculated on the original amount and on interest already added. It can cause savings or debts to grow faster over time."
+        },
+        {
+          "question": "What is a tax?",
+          "keywords": [
+            "tax",
+            "government",
+            "revenue"
+          ],
+          "answer": "A tax is a compulsory payment collected by government to fund public services and other public responsibilities."
+        },
+        {
+          "question": "What is GDP?",
+          "keywords": [
+            "GDP",
+            "gross",
+            "domestic",
+            "product",
+            "economy"
+          ],
+          "answer": "Gross domestic product is the monetary value of final goods and services produced within a country over a specified period."
+        },
+        {
+          "question": "What is unemployment?",
+          "keywords": [
+            "unemployment",
+            "labour",
+            "force"
+          ],
+          "answer": "Unemployment generally refers to people in the labour force who are available for work and actively seeking work but do not have a job."
+        },
+        {
+          "question": "What is entrepreneurship?",
+          "keywords": [
+            "entrepreneur",
+            "business",
+            "opportunity"
+          ],
+          "answer": "Entrepreneurship is the process of developing and organising a venture to provide a product or service while managing uncertainty."
+        }
+      ]
+    },
+    {
+      "name": "Engineering and Technology",
+      "entries": [
+        {
+          "question": "What is engineering?",
+          "keywords": [
+            "engineering",
+            "design",
+            "solve",
+            "problems"
+          ],
+          "answer": "Engineering applies mathematics, science and design to develop solutions, structures, machines, systems and processes."
+        },
+        {
+          "question": "What is civil engineering?",
+          "keywords": [
+            "civil",
+            "engineering",
+            "buildings",
+            "roads",
+            "bridges"
+          ],
+          "answer": "Civil engineering focuses on infrastructure such as buildings, roads, bridges, water systems and transport networks."
+        },
+        {
+          "question": "What is electrical engineering?",
+          "keywords": [
+            "electrical",
+            "engineering",
+            "circuits",
+            "power"
+          ],
+          "answer": "Electrical engineering deals with electrical systems, circuits, power generation and distribution, electronics and control."
+        },
+        {
+          "question": "What is mechanical engineering?",
+          "keywords": [
+            "mechanical",
+            "engineering",
+            "machines",
+            "motion"
+          ],
+          "answer": "Mechanical engineering applies mechanics, materials and energy principles to design and maintain machines and mechanical systems."
+        },
+        {
+          "question": "What is a sensor?",
+          "keywords": [
+            "sensor",
+            "detect",
+            "measure",
+            "environment"
+          ],
+          "answer": "A sensor detects a physical condition such as temperature, light, pressure or motion and converts it into a signal."
+        },
+        {
+          "question": "What is robotics?",
+          "keywords": [
+            "robotics",
+            "robot",
+            "sensors",
+            "control"
+          ],
+          "answer": "Robotics combines engineering, computing and control systems to design machines that sense, process information and perform tasks."
+        },
+        {
+          "question": "What is 3D printing?",
+          "keywords": [
+            "3D",
+            "printing",
+            "additive",
+            "manufacturing"
+          ],
+          "answer": "3D printing is an additive manufacturing process that builds a physical object layer by layer from a digital design."
+        },
+        {
+          "question": "What is the Internet of Things?",
+          "keywords": [
+            "IoT",
+            "connected",
+            "devices",
+            "internet"
+          ],
+          "answer": "The Internet of Things is a network of physical devices with sensors or software that exchange data over networks."
+        },
+        {
+          "question": "What is an operating system?",
+          "keywords": [
+            "operating",
+            "system",
+            "software",
+            "computer"
+          ],
+          "answer": "An operating system manages computer hardware and software resources and provides services for applications."
+        },
+        {
+          "question": "What is cybersecurity?",
+          "keywords": [
+            "cybersecurity",
+            "protect",
+            "systems",
+            "information"
+          ],
+          "answer": "Cybersecurity is the practice of protecting devices, networks, applications and information from unauthorised access, disruption or damage."
+        }
+      ]
+    },
+    {
+      "name": "Agriculture and Food Science",
+      "entries": [
+        {
+          "question": "What is agriculture?",
+          "keywords": [
+            "agriculture",
+            "farming",
+            "crops",
+            "livestock"
+          ],
+          "answer": "Agriculture is the practice and science of cultivating crops, raising animals and managing resources to produce food and other materials."
+        },
+        {
+          "question": "What is crop rotation?",
+          "keywords": [
+            "crop",
+            "rotation",
+            "soil",
+            "farming"
+          ],
+          "answer": "Crop rotation is growing different crops in sequence on the same land to support soil health and help manage pests and diseases."
+        },
+        {
+          "question": "What is irrigation?",
+          "keywords": [
+            "irrigation",
+            "water",
+            "crops"
+          ],
+          "answer": "Irrigation is the controlled supply of water to crops when rainfall is insufficient."
+        },
+        {
+          "question": "What is soil fertility?",
+          "keywords": [
+            "soil",
+            "fertility",
+            "nutrients",
+            "plant",
+            "growth"
+          ],
+          "answer": "Soil fertility is the ability of soil to supply essential nutrients in suitable amounts for plant growth."
+        },
+        {
+          "question": "What is food preservation?",
+          "keywords": [
+            "food",
+            "preservation",
+            "storage",
+            "spoilage"
+          ],
+          "answer": "Food preservation uses methods such as refrigeration, drying, canning and fermentation to slow spoilage and extend food storage life."
+        },
+        {
+          "question": "What is fermentation?",
+          "keywords": [
+            "fermentation",
+            "microorganisms",
+            "food"
+          ],
+          "answer": "Fermentation is a process in which microorganisms such as yeast or bacteria convert substances, often sugars, into other products."
+        },
+        {
+          "question": "What is food safety?",
+          "keywords": [
+            "food",
+            "safety",
+            "hygiene",
+            "contamination"
+          ],
+          "answer": "Food safety involves handling, preparing and storing food in ways that reduce contamination and foodborne illness."
+        },
+        {
+          "question": "What is photosynthesis in crops?",
+          "keywords": [
+            "crop",
+            "photosynthesis",
+            "sunlight",
+            "leaves"
+          ],
+          "answer": "Crop plants use photosynthesis to convert light energy, water and carbon dioxide into sugars that support growth."
+        },
+        {
+          "question": "What is aquaculture?",
+          "keywords": [
+            "aquaculture",
+            "fish",
+            "farming",
+            "water"
+          ],
+          "answer": "Aquaculture is the farming of aquatic organisms such as fish, shellfish and aquatic plants under managed conditions."
+        },
+        {
+          "question": "What is sustainable agriculture?",
+          "keywords": [
+            "sustainable",
+            "agriculture",
+            "soil",
+            "water",
+            "environment"
+          ],
+          "answer": "Sustainable agriculture aims to produce food while conserving soil, water, biodiversity and resources for future generations."
+        }
+      ]
+    },
+    {
+      "name": "Space and Astronomy",
+      "entries": [
+        {
+          "question": "What is the Solar System?",
+          "keywords": [
+            "solar",
+            "system",
+            "sun",
+            "planets"
+          ],
+          "answer": "The Solar System consists of the Sun and the objects gravitationally bound to it, including planets, dwarf planets, moons, asteroids and comets."
+        },
+        {
+          "question": "What is a galaxy?",
+          "keywords": [
+            "galaxy",
+            "stars",
+            "gas",
+            "dust"
+          ],
+          "answer": "A galaxy is a vast system of stars, gas, dust and dark matter held together by gravity."
+        },
+        {
+          "question": "What is a light-year?",
+          "keywords": [
+            "light",
+            "year",
+            "distance",
+            "astronomy"
+          ],
+          "answer": "A light-year is a unit of distance: how far light travels in a vacuum in one year."
+        },
+        {
+          "question": "What is a black hole?",
+          "keywords": [
+            "black",
+            "hole",
+            "gravity",
+            "event",
+            "horizon"
+          ],
+          "answer": "A black hole is a region of space where gravity is so strong that nothing, not even light, can escape from within its event horizon."
+        },
+        {
+          "question": "What causes day and night?",
+          "keywords": [
+            "Earth",
+            "rotation",
+            "day",
+            "night"
+          ],
+          "answer": "Day and night occur because Earth rotates on its axis. The side facing the Sun experiences day while the opposite side experiences night."
+        },
+        {
+          "question": "What causes the seasons?",
+          "keywords": [
+            "seasons",
+            "Earth",
+            "axial",
+            "tilt",
+            "orbit"
+          ],
+          "answer": "Seasons are mainly caused by Earth's axial tilt as it orbits the Sun, changing the angle and duration of sunlight in each hemisphere."
+        },
+        {
+          "question": "What is a lunar eclipse?",
+          "keywords": [
+            "lunar",
+            "eclipse",
+            "Earth",
+            "shadow",
+            "moon"
+          ],
+          "answer": "A lunar eclipse occurs when Earth passes between the Sun and the Moon and Earth's shadow falls on the Moon."
+        },
+        {
+          "question": "What is a solar eclipse?",
+          "keywords": [
+            "solar",
+            "eclipse",
+            "moon",
+            "Sun",
+            "Earth"
+          ],
+          "answer": "A solar eclipse occurs when the Moon passes between Earth and the Sun and blocks some or all of the Sun from view in a region."
+        },
+        {
+          "question": "What is a planet?",
+          "keywords": [
+            "planet",
+            "orbit",
+            "star",
+            "astronomy"
+          ],
+          "answer": "A planet is a celestial body that orbits a star, is nearly round due to its own gravity and meets the recognised orbital-clearing criteria for its system."
+        },
+        {
+          "question": "What is a constellation?",
+          "keywords": [
+            "constellation",
+            "star",
+            "pattern",
+            "sky"
+          ],
+          "answer": "A constellation is a recognised region of the sky, often associated with a pattern of stars as seen from Earth."
+        }
+      ]
+    },
+    {
+      "name": "Current Affairs and News",
+      "entries": [
+        {
+          "question": "Lagos heat advisory reported on 2 November 2026",
+          "keywords": [
+            "Lagos",
+            "heat",
+            "advisory",
+            "El",
+            "Nino",
+            "November",
+            "2026"
+          ],
+          "answer": "A Guardian Nigeria report dated 2 November 2026 said the Lagos State Government urged residents to prepare for possible extreme heat as the dry season approaches and El Niño strengthens. The advice included drinking safe water, reducing prolonged direct sun exposure, wearing light clothing and limiting strenuous outdoor activity during the hottest hours.",
+          "publishedAt": "2026-11-02",
+          "sourceName": "The Guardian Nigeria",
+          "sourceUrl": "https://guardian.ng/news/el-nino-lagos-warns-residents-to-avoid-sunlight-stay-hydrated/"
+        },
+        {
+          "question": "Lagos Island electricity protest reported on 3 November 2026",
+          "keywords": [
+            "Lagos",
+            "Island",
+            "electricity",
+            "protest",
+            "heat",
+            "November",
+            "2026"
+          ],
+          "answer": "Pulse Nigeria reported on 3 November 2026 that residents in parts of Lagos Island protested electricity outages amid hot conditions. The report said the protest followed the state's warning about possible extreme heat. Details may develop; check the original report and official statements for updates.",
+          "publishedAt": "2026-11-03",
+          "sourceName": "Pulse Nigeria",
+          "sourceUrl": "https://www.pulse.ng/story/lagos-island-electricity-protest-heatwave-2026110312392191016"
+        },
+        {
+          "question": "Nigeria heat risk and El Niño explainer reported on 31 October 2026",
+          "keywords": [
+            "Nigeria",
+            "heatwave",
+            "heat",
+            "El",
+            "Nino",
+            "health",
+            "October",
+            "2026"
+          ],
+          "answer": "Premium Times published a heat-safety explainer on 31 October 2026 discussing possible heat-related risks in Nigeria during El Niño conditions. It highlighted hydration, ventilation, shade and reducing exposure to intense heat. The article also summarised expert discussion of heat exhaustion and heatstroke. For personal health concerns, seek advice from a qualified health professional.",
+          "publishedAt": "2026-10-31",
+          "sourceName": "Premium Times",
+          "sourceUrl": "https://www.premiumtimesng.com/health/health-interviews/921711-pt-health-watch-how-to-stay-safe-as-el-nino-raises-heat-risks-in-nigeria.html"
+        },
+        {
+          "question": "Lagos Ikeja weather observation on 3 November 2026",
+          "keywords": [
+            "Lagos",
+            "Ikeja",
+            "weather",
+            "temperature",
+            "humidity",
+            "November",
+            "2026"
+          ],
+          "answer": "A NOAA-linked aviation observation for Lagos/Ikeja at 14:00 UTC on 3 November 2026 reported 31°C air temperature, 23°C dew point, 62% relative humidity, partly cloudy skies and a heat index of 34.4°C. This is a dated observation, not a forecast or a current live reading.",
+          "publishedAt": "2026-11-03T14:00:00Z",
+          "sourceName": "NOAA weather observation",
+          "sourceUrl": "https://tgftp.nws.noaa.gov/weather/current/DNMM.html"
+        }
+      ]
     }
-  ]
+  ],
+  "metadata": {
+    "updatedAt": "2026-11-03",
+    "description": "Expanded educational reference library. Dated current-affairs records are snapshots, not a live news feed. For breaking news and current weather, retrieve live sources and display timestamps.",
+    "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice."
+  }
 }
