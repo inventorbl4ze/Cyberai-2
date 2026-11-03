@@ -284,9 +284,8 @@ textarea{resize:vertical;min-height:48px}
 <div class="panel">
   <h3>Knowledge Library</h3>
   <p id="libraryStatus" class="small">Loading knowledge.json...</p>
-  <p class="small">Live AI connection plus local knowledge library.</p>
-  <button onclick="configureAIConnection()">Connect AI backend</button>
-  <p id="aiConnectionStatus" class="small">AI backend not connected yet.</p>
+  <p class="small">Offline mode: answers come only from CYBERAI’s local knowledge library. No paid AI service or API connection is used.</p>
+  <p id="aiConnectionStatus" class="small">Live AI connection is disabled. Knowledge-library mode is active.</p>
 </div>
 
 </section>
@@ -571,7 +570,7 @@ async function loadKnowledge(){
       "Loaded " + knowledgeLibrary.length + " knowledge entries across the expanded library.";
   }catch(error){
     $("libraryStatus").textContent =
-      "Knowledge library unavailable. Built-in conversation still works.";
+      "Knowledge library unavailable. Please check that knowledge.json and knowledge-expanded.json are published.";
   }
 }
 
