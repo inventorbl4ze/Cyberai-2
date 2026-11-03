@@ -8,16 +8,20 @@
 
 <style>
 :root {
-  --blue:#00c8ff;
-  --dark:#050b18;
-  --panel:#0b1830;
-  --text:#eaf8ff;
-  --muted:#8da9c5;
+  --blue:#48e5ff;
+  --violet:#9b7bff;
+  --pink:#ff70c8;
+  --mint:#5cf2c2;
+  --gold:#ffd36e;
+  --dark:#080b20;
+  --panel:#111a3b;
+  --text:#f3f5ff;
+  --muted:#aab7d6;
 }
 *{box-sizing:border-box}
 body{
   margin:0;
-  background:radial-gradient(circle at top,#102d55,#050b18 65%);
+  background:radial-gradient(circle at 8% 0%,#293b78 0,transparent 34%),radial-gradient(circle at 95% 12%,#54265f 0,transparent 30%),linear-gradient(145deg,#080b20,#101633 55%,#081d35);
   color:var(--text);
   font-family:Arial,sans-serif;
 }
@@ -31,7 +35,7 @@ button{
   cursor:pointer;
 }
 button:active{transform:scale(.97)}
-button:hover{background:#10466c}
+button:hover{background:linear-gradient(135deg,#216b91,#6948a8);box-shadow:0 0 18px #5b77ff55}
 header{
   padding:17px;
   display:flex;
@@ -52,10 +56,10 @@ main{max-width:850px;margin:auto;padding:15px}
   border-radius:17px;
   padding:15px;
   margin-bottom:14px;
-  box-shadow:0 0 20px #001c35;
+  box-shadow:0 12px 35px #0007,0 0 22px #6d66ff22;
 }
 .hidden{display:none!important}
-h2{color:var(--blue)}
+h2{color:var(--blue);text-shadow:0 0 18px #48e5ff44}
 input,textarea{
   width:100%;
   padding:13px;
@@ -86,7 +90,7 @@ textarea{resize:vertical;min-height:48px}
 }
 .user{
   align-self:flex-end;
-  background:#075078;
+  background:linear-gradient(120deg,#075078,#3155a3);
 }
 .bot{
   align-self:flex-start;
@@ -100,7 +104,7 @@ textarea{resize:vertical;min-height:48px}
   position:fixed;
   inset:0;
   z-index:20;
-  background:#030914;
+  background:radial-gradient(circle at 50% 15%,#252b65,#080b20 58%,#050817);
   display:flex;
   flex-direction:column;
   padding:14px;
@@ -123,7 +127,7 @@ textarea{resize:vertical;min-height:48px}
   width:min(55vw,240px);
   aspect-ratio:1;
   border-radius:50%;
-  border:2px solid var(--blue);
+  border:2px solid var(--pink);
   background:radial-gradient(circle,#164b77,#071326 70%);
   box-shadow:0 0 35px #008cff;
   display:flex;
@@ -136,7 +140,7 @@ textarea{resize:vertical;min-height:48px}
 .robotName{color:var(--blue);font-weight:bold;margin-top:10px}
 @keyframes glow{
   from{box-shadow:0 0 15px #008cff}
-  to{box-shadow:0 0 45px #00d9ff}
+  to{box-shadow:0 0 45px #ff70c8aa}
 }
 .speaking .robot{animation:glow .35s infinite alternate}
 #cameraPreview{
@@ -172,6 +176,40 @@ textarea{resize:vertical;min-height:48px}
   .logo{font-size:20px}
   #messages{height:40vh}
 }
+
+/* Colourful interface and human-like AI avatar */
+.panel{backdrop-filter:blur(12px)}
+.logo{background:linear-gradient(90deg,#48e5ff,#b69aff,#ff85ce);-webkit-background-clip:text;background-clip:text;color:transparent}
+.actions button:nth-child(6n+1){border-color:#4b9dff}
+.actions button:nth-child(6n+2){border-color:#b17cff}
+.actions button:nth-child(6n+3){border-color:#ff70c8}
+.actions button:nth-child(6n+4){border-color:#4dddb5}
+.actions button:nth-child(6n+5){border-color:#ffc76a}
+#callScreen{background:radial-gradient(circle at 50% 18%,#32336e 0,#11152f 44%,#070a19 100%)}
+.ai-presence{position:relative;overflow:hidden;width:min(76vw,330px);aspect-ratio:1/1.12;border-radius:44% 44% 38% 38%;border:1px solid #a58bff;background:linear-gradient(155deg,#353b79,#151a3c 70%);box-shadow:0 0 45px #8e7aff66;animation:glow 2.2s infinite alternate}
+.avatar-halo{position:absolute;inset:8% 12% 18%;border-radius:50%;background:radial-gradient(circle,#ff9bd533,transparent 68%);filter:blur(8px)}
+.human-avatar{position:absolute;inset:8% 0 22%;display:flex;justify-content:center;align-items:center}
+.avatar-face{position:absolute;z-index:3;top:18%;width:43%;height:55%;border-radius:46% 46% 48% 48%;background:linear-gradient(110deg,#9d654e,#e6b08e 48%,#a96f58);box-shadow:inset -9px -5px 14px #693d3b66,inset 5px 4px 10px #ffe0b366}
+.avatar-hair{position:absolute;z-index:4;top:9%;width:49%;height:36%;border-radius:52% 52% 25% 25%;background:linear-gradient(110deg,#17152a,#3b2940 65%,#141326);clip-path:polygon(8% 15%,23% 0,76% 0,96% 19%,91% 85%,82% 62%,76% 35%,30% 30%,18% 70%,9% 100%,0 45%)}
+.avatar-ear{position:absolute;z-index:2;top:42%;width:7%;height:15%;border-radius:50%;background:#bd8068}
+.avatar-ear.left{left:27%}.avatar-ear.right{right:27%}
+.avatar-neck{position:absolute;z-index:2;top:65%;width:15%;height:18%;background:#a96f58;border-radius:8px}
+.avatar-shoulders{position:absolute;z-index:1;bottom:-2%;width:78%;height:31%;border-radius:55% 55% 0 0;background:linear-gradient(100deg,#3d4e91,#8a5e9e 55%,#324a83)}
+.avatar-brow{position:absolute;top:32%;width:24%;height:4px;border-radius:8px;background:#442b2a}
+.avatar-brow.left{left:15%}.avatar-brow.right{right:15%}
+.avatar-eye{position:absolute;top:40%;width:17%;height:8px;border-radius:50%;background:#292332;box-shadow:0 0 0 2px #f0c4a8}
+.avatar-eye.left{left:18%}.avatar-eye.right{right:18%}
+.avatar-nose{position:absolute;top:43%;left:46%;width:9%;height:17%;border-right:2px solid #8d574b;border-bottom:2px solid #8d574b;transform:skew(-10deg);opacity:.8}
+.avatar-mouth{position:absolute;top:72%;left:39%;width:23%;height:9px;border-bottom:3px solid #713d48;border-radius:0 0 50% 50%}
+.robotName{position:absolute;bottom:12%;z-index:5;margin:0;color:#b8eaff}
+.avatar-caption{position:absolute;bottom:5%;z-index:5;font-size:9px;letter-spacing:3px;color:#b6a8ff}
+.live-dot{display:inline-block;width:7px;height:7px;background:#5cf2c2;border-radius:50%;box-shadow:0 0 10px #5cf2c2}
+.speaking .ai-presence{filter:brightness(1.14);box-shadow:0 0 55px #ff70c8aa}
+.callInfo{min-height:30px}
+.callControls button{box-shadow:0 5px 18px #0006}
+.callControls .endCall{background:linear-gradient(135deg,#b51f55,#ed4160)}
+@media(max-width:500px){.ai-presence{width:min(70vw,270px)}}
+
 </style>
 </head>
 
@@ -261,9 +299,21 @@ textarea{resize:vertical;min-height:48px}
   </div>
 
   <div class="callStage" id="callStage">
-    <div class="robot">
-      <div class="robotFace">🤖</div>
-      <div class="robotName">CYBERAI</div>
+    <div class="robot ai-presence" aria-label="CYBERAI human-like digital avatar">
+      <div class="avatar-halo"></div>
+      <div class="human-avatar">
+        <div class="avatar-hair"></div>
+        <div class="avatar-ear left"></div><div class="avatar-ear right"></div>
+        <div class="avatar-neck"></div>
+        <div class="avatar-face">
+          <div class="avatar-brow left"></div><div class="avatar-brow right"></div>
+          <div class="avatar-eye left"></div><div class="avatar-eye right"></div>
+          <div class="avatar-nose"></div><div class="avatar-mouth"></div>
+        </div>
+        <div class="avatar-shoulders"></div>
+      </div>
+      <div class="robotName">CYBERAI <span class="live-dot"></span></div>
+      <div class="avatar-caption">AI AVATAR</div>
     </div>
     <video id="cameraPreview" autoplay muted playsinline class="hidden"></video>
   </div>
@@ -473,6 +523,7 @@ async function loadKnowledge(){
 
     if(Array.isArray(data.categories)){
       data.categories.forEach(category=>{
+        if(/disease|medical|health/i.test(category.name || "")) return;
         if(Array.isArray(category.entries)){
           category.entries.forEach(entry=>{
             knowledgeLibrary.push({...entry,category:category.name});
@@ -489,8 +540,19 @@ async function loadKnowledge(){
       });
     }
 
+    try{
+      const expandedResponse = await fetch("./knowledge-expanded.json");
+      if(expandedResponse.ok){
+        const expanded = await expandedResponse.json();
+        (expanded.categories || []).forEach(category=>{
+          (category.entries || []).forEach(entry=>{
+            knowledgeLibrary.push({...entry,category:category.name});
+          });
+        });
+      }
+    }catch(expandedError){}
     $("libraryStatus").textContent =
-      "Loaded " + knowledgeLibrary.length + " knowledge entries.";
+      "Loaded " + knowledgeLibrary.length + " knowledge entries across the expanded library.";
   }catch(error){
     $("libraryStatus").textContent =
       "Knowledge library unavailable. Built-in conversation still works.";
@@ -670,10 +732,11 @@ async function startCall(mode){
       $("cameraButton").textContent = "📷 Camera on";
     }
 
-    $("callStatus").textContent = "Connected locally";
-    $("callInfo").textContent =
-      "Speak naturally. CYBERAI will listen and reply using its local knowledge.";
-    beginCallListening();
+    $("callStatus").textContent = "Microphone connected";
+    $("callInfo").textContent = mode === "video"
+      ? "Your camera is on. CYBERAI's animated avatar is displayed; live visual understanding needs a vision-enabled service."
+      : "Speak naturally. CYBERAI will listen and answer aloud.";
+    if(window.beginCallListening) window.beginCallListening();
 
   }catch(error){
     $("callStatus").textContent = "Permission needed";
