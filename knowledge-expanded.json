@@ -1,0 +1,964 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "name": "Mathematics",
+      "entries": [
+        {
+          "question": "What is algebra?",
+          "keywords": [
+            "algebra",
+            "variables",
+            "equations"
+          ],
+          "answer": "Algebra uses letters and symbols to represent numbers and relationships. It helps solve unknown values in equations."
+        },
+        {
+          "question": "What is a prime number?",
+          "keywords": [
+            "prime",
+            "number",
+            "factors"
+          ],
+          "answer": "A prime number is a whole number greater than 1 with exactly two positive factors: 1 and itself. Examples include 2, 3, 5 and 7."
+        },
+        {
+          "question": "What is a fraction?",
+          "keywords": [
+            "fraction",
+            "numerator",
+            "denominator"
+          ],
+          "answer": "A fraction represents part of a whole. The numerator counts selected parts, while the denominator shows how many equal parts make the whole."
+        },
+        {
+          "question": "What is percentage?",
+          "keywords": [
+            "percentage",
+            "percent",
+            "hundred"
+          ],
+          "answer": "A percentage is a way of expressing a number as a fraction of 100. For example, 25% means 25 out of 100."
+        },
+        {
+          "question": "What is a ratio?",
+          "keywords": [
+            "ratio",
+            "proportion",
+            "comparison"
+          ],
+          "answer": "A ratio compares quantities by division. A ratio of 2:3 means that for every 2 parts of one quantity there are 3 parts of another."
+        },
+        {
+          "question": "What is a quadratic equation?",
+          "keywords": [
+            "quadratic",
+            "equation",
+            "x",
+            "squared"
+          ],
+          "answer": "A quadratic equation is an equation whose highest power of the variable is 2. Its general form is ax² + bx + c = 0, where a is not zero."
+        }
+      ]
+    },
+    {
+      "name": "Physics",
+      "entries": [
+        {
+          "question": "What is force?",
+          "keywords": [
+            "force",
+            "newton",
+            "motion"
+          ],
+          "answer": "Force is a push or pull that can change an object's motion, direction or shape. Its SI unit is the newton."
+        },
+        {
+          "question": "What is pressure?",
+          "keywords": [
+            "pressure",
+            "force",
+            "area"
+          ],
+          "answer": "Pressure is force acting per unit area. Its formula is pressure = force ÷ area, and its SI unit is the pascal."
+        },
+        {
+          "question": "What is density?",
+          "keywords": [
+            "density",
+            "mass",
+            "volume"
+          ],
+          "answer": "Density is mass per unit volume. Density = mass ÷ volume, and its SI unit is kilogram per cubic metre."
+        },
+        {
+          "question": "What is energy?",
+          "keywords": [
+            "energy",
+            "work",
+            "capacity"
+          ],
+          "answer": "Energy is the ability to do work or cause change. Common forms include kinetic, potential, chemical, electrical, thermal and light energy."
+        },
+        {
+          "question": "What is Newton's first law?",
+          "keywords": [
+            "newton",
+            "first",
+            "law",
+            "inertia"
+          ],
+          "answer": "An object remains at rest or continues moving at constant velocity in a straight line unless acted on by a resultant external force."
+        },
+        {
+          "question": "What is current electricity?",
+          "keywords": [
+            "electric",
+            "current",
+            "charge",
+            "time"
+          ],
+          "answer": "Electric current is the rate at which electric charge flows. Current = charge ÷ time, measured in amperes."
+        }
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "entries": [
+        {
+          "question": "What is an atom?",
+          "keywords": [
+            "atom",
+            "proton",
+            "neutron",
+            "electron"
+          ],
+          "answer": "An atom is the smallest unit of an element that retains that element's chemical identity. It has a nucleus containing protons and usually neutrons, with electrons around it."
+        },
+        {
+          "question": "What is a molecule?",
+          "keywords": [
+            "molecule",
+            "atoms",
+            "bond"
+          ],
+          "answer": "A molecule is a group of two or more atoms chemically bonded together. The atoms may be the same element or different elements."
+        },
+        {
+          "question": "What is a chemical reaction?",
+          "keywords": [
+            "chemical",
+            "reaction",
+            "reactants",
+            "products"
+          ],
+          "answer": "A chemical reaction changes substances called reactants into new substances called products through rearrangement of atoms and chemical bonds."
+        },
+        {
+          "question": "What is the periodic table?",
+          "keywords": [
+            "periodic",
+            "table",
+            "elements",
+            "groups",
+            "periods"
+          ],
+          "answer": "The periodic table arranges chemical elements by increasing atomic number and recurring chemical properties. Rows are periods and columns are groups."
+        },
+        {
+          "question": "What is an acid?",
+          "keywords": [
+            "acid",
+            "ph",
+            "indicator"
+          ],
+          "answer": "An acid is a substance that donates hydrogen ions in aqueous solution or acts as a proton donor. Acids commonly turn blue litmus paper red."
+        },
+        {
+          "question": "What is a mixture?",
+          "keywords": [
+            "mixture",
+            "substances",
+            "separation"
+          ],
+          "answer": "A mixture contains two or more substances physically combined, not chemically bonded. Its components can often be separated by physical methods."
+        }
+      ]
+    },
+    {
+      "name": "Biology",
+      "entries": [
+        {
+          "question": "What is a cell?",
+          "keywords": [
+            "cell",
+            "biology",
+            "organelle"
+          ],
+          "answer": "A cell is the basic structural and functional unit of living organisms. Some organisms consist of one cell, while others contain many specialised cells."
+        },
+        {
+          "question": "What is photosynthesis?",
+          "keywords": [
+            "photosynthesis",
+            "chlorophyll",
+            "sunlight"
+          ],
+          "answer": "Photosynthesis is the process by which green plants use light energy to make glucose from carbon dioxide and water, releasing oxygen."
+        },
+        {
+          "question": "What is respiration in biology?",
+          "keywords": [
+            "cellular",
+            "respiration",
+            "glucose",
+            "energy"
+          ],
+          "answer": "Cellular respiration is the process cells use to release usable energy from food molecules such as glucose."
+        },
+        {
+          "question": "What is an ecosystem?",
+          "keywords": [
+            "ecosystem",
+            "habitat",
+            "organisms",
+            "environment"
+          ],
+          "answer": "An ecosystem includes living organisms and the non-living environment interacting in a particular area."
+        },
+        {
+          "question": "What is heredity?",
+          "keywords": [
+            "heredity",
+            "genetics",
+            "inheritance",
+            "genes"
+          ],
+          "answer": "Heredity is the passing of characteristics from parents to offspring through genetic information."
+        },
+        {
+          "question": "What is a food chain?",
+          "keywords": [
+            "food",
+            "chain",
+            "producer",
+            "consumer"
+          ],
+          "answer": "A food chain shows how energy and nutrients pass from one organism to another as organisms feed."
+        }
+      ]
+    },
+    {
+      "name": "Computer Science",
+      "entries": [
+        {
+          "question": "What is an algorithm?",
+          "keywords": [
+            "algorithm",
+            "steps",
+            "problem",
+            "solving"
+          ],
+          "answer": "An algorithm is a clear sequence of finite steps for solving a problem or completing a task."
+        },
+        {
+          "question": "What is a programming language?",
+          "keywords": [
+            "programming",
+            "language",
+            "code",
+            "software"
+          ],
+          "answer": "A programming language is a formal language used to write instructions that a computer can interpret or execute."
+        },
+        {
+          "question": "What is HTML?",
+          "keywords": [
+            "html",
+            "web",
+            "markup"
+          ],
+          "answer": "HTML is the markup language used to structure content on web pages, such as headings, paragraphs, images and links."
+        },
+        {
+          "question": "What is CSS?",
+          "keywords": [
+            "css",
+            "styling",
+            "web",
+            "design"
+          ],
+          "answer": "CSS is used to control the appearance and layout of web pages, including colours, spacing, fonts and responsive design."
+        },
+        {
+          "question": "What is JavaScript?",
+          "keywords": [
+            "javascript",
+            "programming",
+            "browser"
+          ],
+          "answer": "JavaScript is a programming language commonly used to make websites interactive and to build applications on servers and other platforms."
+        },
+        {
+          "question": "What is a database?",
+          "keywords": [
+            "database",
+            "data",
+            "records",
+            "tables"
+          ],
+          "answer": "A database is an organised collection of information that can be stored, searched, updated and managed efficiently."
+        }
+      ]
+    },
+    {
+      "name": "Internet and Digital Safety",
+      "entries": [
+        {
+          "question": "What is phishing?",
+          "keywords": [
+            "phishing",
+            "online",
+            "scam",
+            "email"
+          ],
+          "answer": "Phishing is an attempt to trick people into revealing private information or opening harmful links by pretending to be a trusted person or organisation."
+        },
+        {
+          "question": "What is a strong password?",
+          "keywords": [
+            "password",
+            "security",
+            "passphrase"
+          ],
+          "answer": "A strong password is long, unique and difficult to guess. A password manager can help create and store different passwords for different accounts."
+        },
+        {
+          "question": "What is two-factor authentication?",
+          "keywords": [
+            "2fa",
+            "multi",
+            "factor",
+            "authentication"
+          ],
+          "answer": "Two-factor authentication adds a second proof of identity, such as an authenticator code, to a password when signing in."
+        },
+        {
+          "question": "What is cloud computing?",
+          "keywords": [
+            "cloud",
+            "computing",
+            "internet",
+            "servers"
+          ],
+          "answer": "Cloud computing provides computing resources such as storage, software and processing power over the internet."
+        },
+        {
+          "question": "What is a VPN?",
+          "keywords": [
+            "vpn",
+            "virtual",
+            "private",
+            "network"
+          ],
+          "answer": "A virtual private network creates an encrypted connection between a device and a VPN service. It can protect data on some networks, but it does not make someone completely anonymous."
+        },
+        {
+          "question": "What is a digital footprint?",
+          "keywords": [
+            "digital",
+            "footprint",
+            "online",
+            "identity"
+          ],
+          "answer": "A digital footprint is the trail of information created by someone's online activities, posts, searches and interactions."
+        }
+      ]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "entries": [
+        {
+          "question": "What is artificial intelligence?",
+          "keywords": [
+            "artificial",
+            "intelligence",
+            "AI",
+            "machine",
+            "learning"
+          ],
+          "answer": "Artificial intelligence is a field of computing that builds systems able to perform tasks that usually require human-like abilities, such as recognising patterns, understanding language and making predictions."
+        },
+        {
+          "question": "What is machine learning?",
+          "keywords": [
+            "machine",
+            "learning",
+            "data",
+            "model"
+          ],
+          "answer": "Machine learning is a branch of AI in which computer systems learn patterns from data to make predictions or decisions."
+        },
+        {
+          "question": "What is a large language model?",
+          "keywords": [
+            "LLM",
+            "language",
+            "model",
+            "chatbot"
+          ],
+          "answer": "A large language model is an AI system trained on large amounts of text to recognise language patterns and generate responses."
+        },
+        {
+          "question": "What is a prompt?",
+          "keywords": [
+            "prompt",
+            "instruction",
+            "AI"
+          ],
+          "answer": "A prompt is the instruction or information given to an AI system to guide the response it produces."
+        },
+        {
+          "question": "What is generative AI?",
+          "keywords": [
+            "generative",
+            "artificial",
+            "intelligence",
+            "images",
+            "text"
+          ],
+          "answer": "Generative AI creates new content such as text, images, audio or code based on patterns learned during training."
+        },
+        {
+          "question": "What are AI hallucinations?",
+          "keywords": [
+            "AI",
+            "hallucination",
+            "inaccurate",
+            "output"
+          ],
+          "answer": "An AI hallucination is an answer that sounds confident but contains invented or incorrect information. Important claims should be checked against reliable sources."
+        }
+      ]
+    },
+    {
+      "name": "Geography and Environment",
+      "entries": [
+        {
+          "question": "What is geography?",
+          "keywords": [
+            "geography",
+            "earth",
+            "places",
+            "people"
+          ],
+          "answer": "Geography studies Earth's places, environments and the relationships between people and their surroundings."
+        },
+        {
+          "question": "What is the water cycle?",
+          "keywords": [
+            "water",
+            "cycle",
+            "evaporation",
+            "condensation",
+            "precipitation"
+          ],
+          "answer": "The water cycle is the continuous movement of water through evaporation, condensation, precipitation, collection and related processes."
+        },
+        {
+          "question": "What is climate?",
+          "keywords": [
+            "climate",
+            "weather",
+            "long",
+            "term"
+          ],
+          "answer": "Climate describes the long-term pattern of weather conditions in a region, usually assessed over many years."
+        },
+        {
+          "question": "What is weather?",
+          "keywords": [
+            "weather",
+            "atmosphere",
+            "temperature",
+            "rain"
+          ],
+          "answer": "Weather is the condition of the atmosphere at a particular place and time, including temperature, wind, cloud and rainfall."
+        },
+        {
+          "question": "What is renewable energy?",
+          "keywords": [
+            "renewable",
+            "energy",
+            "solar",
+            "wind",
+            "hydro"
+          ],
+          "answer": "Renewable energy comes from sources that are naturally replenished, such as sunlight, wind, flowing water and geothermal heat."
+        },
+        {
+          "question": "What is recycling?",
+          "keywords": [
+            "recycling",
+            "waste",
+            "materials",
+            "reuse"
+          ],
+          "answer": "Recycling is the process of collecting and processing used materials so they can be made into new products."
+        }
+      ]
+    },
+    {
+      "name": "History and Civics",
+      "entries": [
+        {
+          "question": "What is history?",
+          "keywords": [
+            "history",
+            "past",
+            "events",
+            "evidence"
+          ],
+          "answer": "History is the study of past events and people using evidence such as documents, objects, oral accounts and buildings."
+        },
+        {
+          "question": "What is democracy?",
+          "keywords": [
+            "democracy",
+            "government",
+            "voting",
+            "citizens"
+          ],
+          "answer": "Democracy is a system of government in which people have a role in choosing leaders and influencing public decisions."
+        },
+        {
+          "question": "What is a constitution?",
+          "keywords": [
+            "constitution",
+            "law",
+            "government",
+            "rights"
+          ],
+          "answer": "A constitution is a set of fundamental rules and principles that establishes how a country or organisation is governed."
+        },
+        {
+          "question": "What is citizenship?",
+          "keywords": [
+            "citizenship",
+            "rights",
+            "duties",
+            "community"
+          ],
+          "answer": "Citizenship is membership of a political community and usually includes rights, responsibilities and participation in society."
+        },
+        {
+          "question": "What is a primary historical source?",
+          "keywords": [
+            "primary",
+            "source",
+            "history",
+            "evidence"
+          ],
+          "answer": "A primary source is evidence created during the period or event being studied, such as a letter, photograph, speech or official record."
+        },
+        {
+          "question": "What is the rule of law?",
+          "keywords": [
+            "rule",
+            "of",
+            "law",
+            "fairness",
+            "law"
+          ],
+          "answer": "The rule of law means that everyone, including public officials, is subject to the law and that laws should be applied fairly."
+        }
+      ]
+    },
+    {
+      "name": "English and Communication",
+      "entries": [
+        {
+          "question": "What is a noun?",
+          "keywords": [
+            "noun",
+            "grammar",
+            "naming",
+            "word"
+          ],
+          "answer": "A noun is a word used to name a person, place, thing, animal or idea."
+        },
+        {
+          "question": "What is a verb?",
+          "keywords": [
+            "verb",
+            "grammar",
+            "action",
+            "state"
+          ],
+          "answer": "A verb expresses an action, occurrence or state of being, such as run, think, become or is."
+        },
+        {
+          "question": "What is an adjective?",
+          "keywords": [
+            "adjective",
+            "describing",
+            "word"
+          ],
+          "answer": "An adjective describes or gives more information about a noun or pronoun."
+        },
+        {
+          "question": "What is a metaphor?",
+          "keywords": [
+            "metaphor",
+            "figure",
+            "speech",
+            "comparison"
+          ],
+          "answer": "A metaphor describes one thing as another to suggest a similarity, without using 'like' or 'as' for a direct comparison."
+        },
+        {
+          "question": "What is active voice?",
+          "keywords": [
+            "active",
+            "voice",
+            "grammar",
+            "sentence"
+          ],
+          "answer": "In the active voice, the subject performs the action expressed by the verb."
+        },
+        {
+          "question": "What is public speaking?",
+          "keywords": [
+            "public",
+            "speaking",
+            "presentation",
+            "communication"
+          ],
+          "answer": "Public speaking is presenting information or ideas to an audience. Clear structure, practice, suitable pace and audience awareness help make it effective."
+        }
+      ]
+    },
+    {
+      "name": "Business and Money Skills",
+      "entries": [
+        {
+          "question": "What is entrepreneurship?",
+          "keywords": [
+            "entrepreneurship",
+            "business",
+            "innovation"
+          ],
+          "answer": "Entrepreneurship is the process of identifying an opportunity and organising resources to create a product, service or business."
+        },
+        {
+          "question": "What is a budget?",
+          "keywords": [
+            "budget",
+            "income",
+            "expenses",
+            "planning"
+          ],
+          "answer": "A budget is a plan for how money will be received, saved and spent over a period of time."
+        },
+        {
+          "question": "What is profit?",
+          "keywords": [
+            "profit",
+            "revenue",
+            "costs",
+            "business"
+          ],
+          "answer": "Profit is the amount left when total costs are subtracted from revenue."
+        },
+        {
+          "question": "What is saving?",
+          "keywords": [
+            "saving",
+            "money",
+            "goals"
+          ],
+          "answer": "Saving means setting aside part of available money for future needs, goals or unexpected expenses."
+        },
+        {
+          "question": "What is customer service?",
+          "keywords": [
+            "customer",
+            "service",
+            "business",
+            "support"
+          ],
+          "answer": "Customer service is the assistance a business provides before, during and after a customer uses its product or service."
+        },
+        {
+          "question": "What is marketing?",
+          "keywords": [
+            "marketing",
+            "audience",
+            "product",
+            "promotion"
+          ],
+          "answer": "Marketing involves understanding an audience and communicating the value of a product, service or idea to them."
+        }
+      ]
+    },
+    {
+      "name": "Creative Arts and Design",
+      "entries": [
+        {
+          "question": "What is visual art?",
+          "keywords": [
+            "visual",
+            "art",
+            "drawing",
+            "painting",
+            "sculpture"
+          ],
+          "answer": "Visual art is creative work that is mainly experienced through sight, including drawing, painting, sculpture, photography and design."
+        },
+        {
+          "question": "What is colour theory?",
+          "keywords": [
+            "colour",
+            "theory",
+            "primary",
+            "secondary",
+            "complementary"
+          ],
+          "answer": "Colour theory explains how colours relate and how combinations can create contrast, harmony and emphasis."
+        },
+        {
+          "question": "What is perspective in drawing?",
+          "keywords": [
+            "perspective",
+            "drawing",
+            "depth",
+            "horizon"
+          ],
+          "answer": "Perspective is a method for representing three-dimensional space on a flat surface so that objects appear to have depth and distance."
+        },
+        {
+          "question": "What is graphic design?",
+          "keywords": [
+            "graphic",
+            "design",
+            "typography",
+            "layout"
+          ],
+          "answer": "Graphic design communicates ideas visually using elements such as typography, images, colour, shape and layout."
+        },
+        {
+          "question": "What is storytelling?",
+          "keywords": [
+            "storytelling",
+            "plot",
+            "character",
+            "setting"
+          ],
+          "answer": "Storytelling communicates events and ideas through characters, setting, conflict and a sequence of events."
+        },
+        {
+          "question": "What is photography composition?",
+          "keywords": [
+            "photography",
+            "composition",
+            "framing",
+            "rule",
+            "thirds"
+          ],
+          "answer": "Composition is the arrangement of elements within a photograph. Framing, balance, leading lines and the rule of thirds can guide attention."
+        }
+      ]
+    },
+    {
+      "name": "Music and Performing Arts",
+      "entries": [
+        {
+          "question": "What is rhythm?",
+          "keywords": [
+            "music",
+            "rhythm",
+            "beat",
+            "pattern"
+          ],
+          "answer": "Rhythm is the pattern of sounds and silences over time. It helps organise music into beats and phrases."
+        },
+        {
+          "question": "What is melody?",
+          "keywords": [
+            "music",
+            "melody",
+            "notes",
+            "tune"
+          ],
+          "answer": "A melody is a sequence of musical notes perceived as a tune, often forming the main musical idea."
+        },
+        {
+          "question": "What is harmony?",
+          "keywords": [
+            "music",
+            "harmony",
+            "chords"
+          ],
+          "answer": "Harmony occurs when two or more notes sound together or support a melody through chord progressions."
+        },
+        {
+          "question": "What is tempo?",
+          "keywords": [
+            "music",
+            "tempo",
+            "speed",
+            "bpm"
+          ],
+          "answer": "Tempo is the speed of a piece of music, often measured in beats per minute."
+        },
+        {
+          "question": "What is drama?",
+          "keywords": [
+            "drama",
+            "theatre",
+            "acting",
+            "performance"
+          ],
+          "answer": "Drama is a form of storytelling performed by actors through dialogue, movement, expression and stage action."
+        },
+        {
+          "question": "What is choreography?",
+          "keywords": [
+            "choreography",
+            "dance",
+            "movement"
+          ],
+          "answer": "Choreography is the planning and arrangement of movements in a dance or performance."
+        }
+      ]
+    },
+    {
+      "name": "Sports and Games",
+      "entries": [
+        {
+          "question": "What is teamwork in sports?",
+          "keywords": [
+            "sports",
+            "teamwork",
+            "cooperation"
+          ],
+          "answer": "Teamwork in sports means players communicate, support one another and coordinate their roles to work toward a shared result."
+        },
+        {
+          "question": "What is fair play?",
+          "keywords": [
+            "sports",
+            "fair",
+            "play",
+            "respect",
+            "rules"
+          ],
+          "answer": "Fair play means following the rules, respecting opponents and officials, and behaving honestly during sport."
+        },
+        {
+          "question": "What is strategy in a game?",
+          "keywords": [
+            "game",
+            "strategy",
+            "planning",
+            "tactics"
+          ],
+          "answer": "A game strategy is a plan for making decisions and using available resources to reach an objective."
+        },
+        {
+          "question": "What is chess checkmate?",
+          "keywords": [
+            "chess",
+            "checkmate",
+            "king"
+          ],
+          "answer": "Checkmate occurs when a king is in check and there is no legal move that can remove the threat."
+        },
+        {
+          "question": "What is an esports game?",
+          "keywords": [
+            "esports",
+            "competitive",
+            "video",
+            "gaming"
+          ],
+          "answer": "Esports is organised competitive gaming in which individuals or teams play video games under agreed rules."
+        },
+        {
+          "question": "What is game design?",
+          "keywords": [
+            "game",
+            "design",
+            "mechanics",
+            "levels",
+            "player"
+          ],
+          "answer": "Game design is the process of planning a game's rules, goals, mechanics, challenges, story and player experience."
+        }
+      ]
+    },
+    {
+      "name": "Everyday Life and Study Skills",
+      "entries": [
+        {
+          "question": "How can I plan a study session?",
+          "keywords": [
+            "study",
+            "skills",
+            "revision",
+            "timetable"
+          ],
+          "answer": "Choose one clear topic, set a realistic time, remove distractions, study actively, take short breaks and finish by testing what you remember."
+        },
+        {
+          "question": "What is active recall?",
+          "keywords": [
+            "active",
+            "recall",
+            "memory",
+            "learning"
+          ],
+          "answer": "Active recall is a learning method in which you try to remember information without looking at the notes, then check and correct your answer."
+        },
+        {
+          "question": "What is spaced repetition?",
+          "keywords": [
+            "spaced",
+            "repetition",
+            "revision",
+            "memory"
+          ],
+          "answer": "Spaced repetition means reviewing information at increasing intervals to strengthen long-term memory."
+        },
+        {
+          "question": "How can I solve a problem?",
+          "keywords": [
+            "problem",
+            "solving",
+            "steps"
+          ],
+          "answer": "Define the problem, gather relevant information, consider possible solutions, compare their effects, choose an approach and review the result."
+        },
+        {
+          "question": "What is critical thinking?",
+          "keywords": [
+            "critical",
+            "thinking",
+            "evidence",
+            "reasoning"
+          ],
+          "answer": "Critical thinking means examining information carefully, checking evidence, identifying assumptions and reaching reasoned conclusions."
+        },
+        {
+          "question": "What is communication?",
+          "keywords": [
+            "communication",
+            "listening",
+            "speaking"
+          ],
+          "answer": "Communication is the exchange of information, thoughts and feelings through speaking, writing, signs or other forms."
+        }
+      ]
+    }
+  ]
+}
