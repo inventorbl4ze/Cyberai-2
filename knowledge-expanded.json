@@ -119,6 +119,20 @@
             "time"
           ],
           "answer": "Electric current is the rate at which electric charge flows. Current = charge ÷ time, measured in amperes."
+        },
+        {
+          "question": "Explain the pressure law using kinetic theory.",
+          "keywords": [
+            "pressure law",
+            "kinetic theory",
+            "Gay-Lussac law",
+            "Amontons law",
+            "constant volume",
+            "gas molecules"
+          ],
+          "answer": "For a fixed amount of gas in a sealed rigid container, heating raises the molecules' average kinetic energy, so they move faster. They hit the container walls more frequently and with greater momentum change, increasing the pressure. Cooling has the opposite effect. Therefore, at constant volume and amount of gas, pressure is directly proportional to absolute temperature: P ∝ T and P₁/T₁ = P₂/T₂. Temperature must be in kelvin.",
+          "sourceName": "OpenStax Chemistry",
+          "sourceUrl": "https://openstax.org/books/chemistry/pages/9-5-the-kinetic-molecular-theory"
         }
       ]
     },
@@ -698,6 +712,16 @@
             "promotion"
           ],
           "answer": "Marketing involves understanding an audience and communicating the value of a product, service or idea to them."
+        },
+        {
+          "question": "What is cash flow in a business?",
+          "keywords": [
+            "cash flow",
+            "money in",
+            "money out",
+            "business finance"
+          ],
+          "answer": "Cash flow is the movement of money into and out of a business over a period. Positive cash flow means more cash came in than went out during that period; negative cash flow means more went out than came in. A business can report a profit and still face cash-flow problems if customers pay late."
         }
       ]
     },
@@ -766,6 +790,18 @@
             "thirds"
           ],
           "answer": "Composition is the arrangement of elements within a photograph. Framing, balance, leading lines and the rule of thirds can guide attention."
+        },
+        {
+          "question": "What is contrast in art and design?",
+          "keywords": [
+            "contrast",
+            "art",
+            "design",
+            "colour",
+            "value",
+            "emphasis"
+          ],
+          "answer": "Contrast is the noticeable difference between visual elements, such as light and dark, large and small, smooth and rough, or complementary colours. Artists and designers use contrast to create emphasis, improve clarity and make compositions more interesting."
         }
       ]
     },
@@ -1102,6 +1138,26 @@
             "proof"
           ],
           "answer": "Mathematical induction is a proof method: establish a base case, then show that if a statement holds for n=k, it also holds for n=k+1."
+        },
+        {
+          "question": "What is the chain rule in differentiation?",
+          "keywords": [
+            "chain rule",
+            "differentiation",
+            "composite function",
+            "derivative"
+          ],
+          "answer": "The chain rule is used to differentiate a composite function. If y = f(g(x)), then dy/dx = f'(g(x)) × g'(x). In words, differentiate the outside function while keeping the inside expression, then multiply by the derivative of the inside function."
+        },
+        {
+          "question": "What is the binomial probability formula?",
+          "keywords": [
+            "binomial probability",
+            "binomial distribution",
+            "independent trials",
+            "probability"
+          ],
+          "answer": "For n independent trials with the same probability p of success on each trial, the probability of exactly r successes is P(X = r) = nCr × p^r × (1 − p)^(n − r). Here nCr is the number of ways to choose r successes from n trials."
         }
       ]
     },
@@ -1250,6 +1306,16 @@
             "theorem"
           ],
           "answer": "A mathematical proof is a logical argument showing that a statement follows from accepted definitions, axioms and previously established results."
+        },
+        {
+          "question": "What is a confidence interval?",
+          "keywords": [
+            "confidence interval",
+            "statistics",
+            "confidence level",
+            "population parameter"
+          ],
+          "answer": "A confidence interval is a range calculated from sample data to estimate an unknown population value. A 95% confidence level means that, over many repeated samples, about 95% of intervals made by the same method would contain the true population value. It does not mean there is a 95% probability that one already-calculated fixed interval contains that value."
         }
       ]
     },
@@ -1957,7 +2023,10 @@
             "water",
             "ventilation"
           ],
-          "answer": "Use shade and well-ventilated or cool spaces, drink safe water regularly, take breaks and reduce strenuous activity during the hottest part of the day. Follow local weather and health advisories."
+          "answer": "Use shade or a cool, well-ventilated place; reduce strenuous activity during the hottest part of the day; wear light, loose clothing; and drink water regularly. Follow official local heat warnings. Never leave a child or animal in a parked vehicle. These are general prevention steps, not a substitute for medical care.",
+          "sourceName": "World Health Organization",
+          "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health",
+          "sourceUpdatedAt": "2026-07-31"
         },
         {
           "question": "What is a weather forecast?",
@@ -2006,6 +2075,19 @@
             "overflow"
           ],
           "answer": "A flood occurs when water covers land that is usually dry. Flooding can result from heavy rain, overflowing rivers, storm surges or drainage problems."
+        },
+        {
+          "question": "Where can people check official weather forecasts and alerts in Nigeria?",
+          "keywords": [
+            "Nigeria weather forecast",
+            "NiMet",
+            "official weather alert",
+            "meteorological agency",
+            "forecast bulletin"
+          ],
+          "answer": "The Nigerian Meteorological Agency (NiMet) is Nigeria's national meteorological authority. Use its official website for weather services, operational displays, forecast bulletins and hazard information. Check the issue date and the period the bulletin is valid for; an older bulletin is not a current forecast.",
+          "sourceName": "Nigerian Meteorological Agency (NiMet)",
+          "sourceUrl": "https://nimet.gov.ng/"
         }
       ]
     },
@@ -2131,7 +2213,9 @@
             "forecast",
             "today"
           ],
-          "answer": "Current weather and heat alerts must come from a live meteorological source. State the location, observation or forecast time and source; never present an old saved reading as current."
+          "answer": "Current weather and heat alerts must come from a live, authoritative meteorological source. For Nigeria, check NiMet's operational weather display and current forecast bulletins. State the location, station if available, observation or issue time, timezone and forecast-valid period. Do not treat a seasonal outlook or an expired alert as today's weather; if a current time-stamped reading cannot be verified, say so.",
+          "sourceName": "Nigerian Meteorological Agency (NiMet)",
+          "sourceUrl": "https://nimet.gov.ng/index.php/weatherapi"
         }
       ]
     },
@@ -2618,6 +2702,97 @@
           "publishedAt": "2026-11-03T14:00:00Z",
           "sourceName": "NOAA weather observation",
           "sourceUrl": "https://tgftp.nws.noaa.gov/weather/current/DNMM.html"
+        },
+        {
+          "question": "Nigeria state police constitutional amendment update reported on 3 November 2026",
+          "keywords": [
+            "Nigeria",
+            "state police",
+            "constitutional amendment",
+            "28 states",
+            "National Assembly",
+            "November 2026"
+          ],
+          "answer": "Reuters reported on 3 November 2026 that 28 of Nigeria's 36 state legislatures had approved the constitutional amendment for state police, exceeding the required minimum of 24 states. The proposal was then due to be prepared for transmission to the President for assent. This was a legislative milestone, not confirmation that state police had already become law. Check later official updates for subsequent steps.",
+          "publishedAt": "2026-11-03",
+          "sourceName": "Reuters",
+          "sourceUrl": "https://www.reuters.com/world/africa/nigeria-state-police-bill-clears-constitutional-hurdle-after-28-states-approve-2026-11-03/"
+        },
+        {
+          "question": "South Africa municipal elections held on 4 November 2026",
+          "keywords": [
+            "South Africa",
+            "municipal elections",
+            "local government",
+            "ANC",
+            "coalition",
+            "November 4 2026"
+          ],
+          "answer": "Reuters reported on 4 November 2026 that South Africans were voting in municipal elections amid concerns about corruption, crime, unemployment, housing, and unreliable water and electricity services. The report said coalition governments were likely in several cities and that results were expected on Sunday. This is an election-day snapshot; consult the Electoral Commission of South Africa and later reporting for certified results.",
+          "publishedAt": "2026-11-04",
+          "sourceName": "Reuters",
+          "sourceUrl": "https://www.reuters.com/world/africa/south-africa-votes-local-polls-expected-further-weaken-anc-grip-2026-11-03/"
+        },
+        {
+          "question": "South Africa and Rwanda AGOA trade-benefit announcement reported on 3 November 2026",
+          "keywords": [
+            "South Africa",
+            "Rwanda",
+            "AGOA",
+            "African Growth and Opportunity Act",
+            "US trade",
+            "January 2027"
+          ],
+          "answer": "Reuters reported on 3 November 2026 that the United States had announced plans to suspend South Africa and Rwanda from the African Growth and Opportunity Act (AGOA) from January 2027, ending their preferential duty-free access for eligible goods under the programme. The report noted that the likely impact would vary by sector and that most South African exports to the United States already fell outside AGOA. This records the announcement as reported on that date; later policy decisions may change the position.",
+          "publishedAt": "2026-11-03",
+          "sourceName": "Reuters",
+          "sourceUrl": "https://www.reuters.com/world/africa/south-africa-braces-some-job-losses-us-trade-benefits-end-2026-11-03/"
+        },
+        {
+          "question": "Nigeria Ebola response situation report published on 27 October 2026",
+          "keywords": [
+            "Nigeria",
+            "NCDC",
+            "Bundibugyo virus disease",
+            "Ebola",
+            "situation report",
+            "October 2026"
+          ],
+          "answer": "In its situation report dated 27 October 2026, the Nigeria Centre for Disease Control and Prevention recorded one confirmed Bundibugyo Ebola disease case in the FCT, detected on 20 October. The report said the patient had been evacuated to Switzerland, 62 contacts had been identified and followed up by the reporting period of 26 October, no contacts had tested positive, and no deaths were recorded in the report's summary table. These are historical figures from that report, not a live outbreak status. Check the latest NCDC and WHO updates for current information.",
+          "publishedAt": "2026-10-27",
+          "sourceName": "Nigeria Centre for Disease Control and Prevention (NCDC)",
+          "sourceUrl": "https://ncdc.gov.ng/themes/common/files/sitreps/dc0c30cd121aa2a4ad4eec05f44030cb.pdf"
+        },
+        {
+          "question": "Global currency markets reacted to US election results and AI regulation concerns on 4 November 2026",
+          "keywords": [
+            "world news",
+            "US dollar",
+            "AI regulation",
+            "currency markets",
+            "November 2026",
+            "Reuters"
+          ],
+          "answer": "Reuters reported on 4 November 2026 that the US dollar fell to a one-month low as investors assessed US midterm election results and possible tougher scrutiny of the artificial-intelligence sector. The report also described movements in bond yields and major currencies. This is a dated market-news snapshot, not financial advice or a live exchange-rate quote.",
+          "publishedAt": "2026-11-04",
+          "sourceName": "Reuters",
+          "sourceUrl": "https://www.reuters.com/world/africa/dollar-dips-with-us-midterm-results-focus-2026-11-04/"
+        },
+        {
+          "question": "South African municipal debt and electricity-utility finances reported on 3 November 2026",
+          "keywords": [
+            "South Africa",
+            "municipal debt",
+            "Eskom",
+            "electricity",
+            "water boards",
+            "local government",
+            "November 2026"
+          ],
+          "answer": "Reuters reported on 3 November 2026 that South African municipalities owed the electricity utility Eskom 122.5 billion rand, while households and businesses owed municipalities 484.5 billion rand. The report said municipalities collected 63.9% of what they were owed, creating pressure on payments to Eskom and water boards. These figures are a dated report snapshot and should not be treated as current balances.",
+          "publishedAt": "2026-11-03",
+          "sourceName": "Reuters",
+          "sourceUrl": "https://www.reuters.com/world/africa/south-african-votes-put-eskom-municipal-debt-clean-up-risk-2026-11-03/"
         }
       ]
     },
@@ -2873,6 +3048,17 @@
             "fake offer"
           ],
           "answer": "Be cautious of urgent demands, unrealistic prizes, requests for passwords or payment, suspicious links and messages pretending to be officials. Verify through a trusted official channel before acting."
+        },
+        {
+          "question": "What is multi-factor authentication?",
+          "keywords": [
+            "multi factor authentication",
+            "MFA",
+            "two factor authentication",
+            "2FA",
+            "account security"
+          ],
+          "answer": "Multi-factor authentication (MFA) asks a person to prove their identity using at least two different types of evidence, such as something they know (a password) and something they have (an authenticator app or security key). It adds protection if a password is exposed. Never share one-time verification codes with anyone."
         }
       ]
     },
@@ -2913,6 +3099,26 @@
             "comparison"
           ],
           "answer": "A simile compares things using words such as 'like' or 'as'. A metaphor describes one thing as another to create a direct comparison."
+        },
+        {
+          "question": "What is hyperbole?",
+          "keywords": [
+            "hyperbole",
+            "figure of speech",
+            "exaggeration",
+            "literary device"
+          ],
+          "answer": "Hyperbole is deliberate exaggeration used for emphasis or effect. It is not usually meant to be understood literally. Example: 'I have told you a million times.'"
+        },
+        {
+          "question": "What is synecdoche?",
+          "keywords": [
+            "synecdoche",
+            "figure of speech",
+            "part for whole",
+            "whole for part"
+          ],
+          "answer": "Synecdoche is a figure of speech in which a part represents the whole, or the whole represents a part. For example, 'all hands on deck' uses 'hands' to mean the people or workers."
         }
       ]
     },
@@ -3272,9 +3478,11 @@
     }
   ],
   "metadata": {
-    "updatedAt": "2026-11-03",
-    "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Dated current-affairs records are snapshots, not a live news feed.",
+    "updatedAt": "2026-11-04",
+    "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Current-affairs entries are dated, source-linked snapshots rather than a live news feed. Weather observations and forecasts must be checked against current time-stamped meteorological sources.",
     "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice.",
-    "offlineMode": "CYBERAI answers from these local records and built-in rules only; it does not generate new facts from a live language model."
+    "offlineMode": "CYBERAI answers from these local records and built-in rules only; it does not generate new facts from a live language model.",
+    "latestResearchRun": "2026-11-04",
+    "weatherDataPolicy": "No live weather observation was added in this update because a verifiable current time-stamped NiMet reading was not available from the reviewed public page. Do not infer current conditions from seasonal outlooks or expired alerts."
   }
 }
