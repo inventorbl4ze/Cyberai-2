@@ -696,6 +696,16 @@ function getAnswer(text){
   const local = localConversation(text);
   if(local) return local;
 
+  const q = normalize(text);
+  const asksForFreshInformation =
+    /\b(today|todays|current|currently|latest|live|now|right now|this morning|this afternoon|tonight)\b/.test(q);
+  const asksAboutChangingInformation =
+    /\b(news|weather|forecast|temperature|heat|current affairs|headlines|election|president|minister|government|exchange rate|stock price|market price|nigeria|africa)\b/.test(q);
+
+  if(asksForFreshInformation && asksAboutChangingInformation){
+    return "I am running in offline knowledge-library mode, so I cannot verify live news, weather, forecasts, election results or market prices. My saved records are dated snapshots, not live updates. Please check the linked official or original source and confirm its publication date and, for weather, its forecast-valid period.";
+  }
+
   const match = searchKnowledge(text);
   if(match){
     return (match.answer || "I found this topic in my library.") +
