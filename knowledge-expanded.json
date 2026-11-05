@@ -2281,7 +2281,7 @@
             "live",
             "update"
           ],
-          "answer": "Today's news must be retrieved from current, reliable sources at the time of the question. A saved knowledge file is not a live news feed; show the publication date and link to the original report."
+          "answer": "CYBERAI 2.0 is operating offline and cannot retrieve live news. It should say this clearly, provide saved dated records only when a user asks about a specific event or date, show the original source and publication date, and never label an old snapshot as today's or the latest news. Users should check the linked original source for later developments."
         },
         {
           "question": "How should CYBERAI answer questions about current weather?",
@@ -2292,7 +2292,7 @@
             "forecast",
             "today"
           ],
-          "answer": "Current weather and heat alerts must come from a live, authoritative meteorological source. For Nigeria, check NiMet's operational weather display and current forecast bulletins. State the location, station if available, observation or issue time, timezone and forecast-valid period. Do not treat a seasonal outlook or an expired alert as today's weather; if a current time-stamped reading cannot be verified, say so.",
+          "answer": "CYBERAI 2.0 is operating offline and cannot retrieve current weather or heat alerts. It should say it cannot verify live conditions. A saved forecast may be shown only as a dated snapshot with its region, issue time, timezone and validity period, and must not be described as current after it expires. For live Nigerian weather, users should check NiMet's official website and current bulletins: https://nimet.gov.ng/ .",
           "sourceName": "Nigerian Meteorological Agency (NiMet)",
           "sourceUrl": "https://nimet.gov.ng/index.php/weatherapi"
         }
