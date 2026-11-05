@@ -519,6 +519,21 @@
             "reuse"
           ],
           "answer": "Recycling is the process of collecting and processing used materials so they can be made into new products."
+        },
+        {
+          "question": "What is the greenhouse effect?",
+          "keywords": [
+            "greenhouse effect",
+            "greenhouse gases",
+            "infrared radiation",
+            "carbon dioxide",
+            "climate science",
+            "global warming"
+          ],
+          "answer": "The greenhouse effect is the natural process in which gases in Earth's atmosphere absorb and emit some of the infrared energy radiated by the surface, keeping the planet warmer than it would otherwise be. Important greenhouse gases include water vapour, carbon dioxide, methane and nitrous oxide. Human activities have increased concentrations of several greenhouse gases, strengthening this warming effect and contributing to global warming. Source: https://science.nasa.gov/climate-change/faq/what-is-the-greenhouse-effect/",
+          "entryType": "evergreen_reference",
+          "source": "https://science.nasa.gov/climate-change/faq/what-is-the-greenhouse-effect/",
+          "sourceName": "NASA Science"
         }
       ]
     },
@@ -1158,6 +1173,21 @@
             "probability"
           ],
           "answer": "For n independent trials with the same probability p of success on each trial, the probability of exactly r successes is P(X = r) = nCr × p^r × (1 − p)^(n − r). Here nCr is the number of ways to choose r successes from n trials."
+        },
+        {
+          "question": "What are eigenvalues and eigenvectors?",
+          "keywords": [
+            "eigenvalue",
+            "eigenvector",
+            "matrix",
+            "linear algebra",
+            "characteristic equation",
+            "determinant"
+          ],
+          "answer": "For a square matrix A, a nonzero vector v is an eigenvector if A v = λ v for some scalar λ. The scalar λ is its eigenvalue. The matrix changes the vector's length (and may reverse its direction) without changing its line of direction. Eigenvalues can be found by solving det(A − λI) = 0, then finding nonzero vectors that satisfy (A − λI)v = 0. Source: https://textbooks.math.gatech.edu/ila/eigenvectors.html",
+          "entryType": "evergreen_reference",
+          "source": "https://textbooks.math.gatech.edu/ila/eigenvectors.html",
+          "sourceName": "Georgia Tech Linear Algebra"
         }
       ]
     },
@@ -1316,6 +1346,21 @@
             "population parameter"
           ],
           "answer": "A confidence interval is a range calculated from sample data to estimate an unknown population value. A 95% confidence level means that, over many repeated samples, about 95% of intervals made by the same method would contain the true population value. It does not mean there is a 95% probability that one already-calculated fixed interval contains that value."
+        },
+        {
+          "question": "What is Bayes' theorem?",
+          "keywords": [
+            "Bayes theorem",
+            "conditional probability",
+            "prior probability",
+            "likelihood",
+            "posterior probability",
+            "statistics"
+          ],
+          "answer": "Bayes' theorem updates the probability of an event A when evidence B is observed: P(A|B) = [P(B|A) × P(A)] / P(B), provided P(B) is greater than zero. P(A) is the prior probability, P(B|A) is the likelihood, P(B) is the probability of the evidence, and P(A|B) is the updated or posterior probability. It is useful in statistics and data science, but its result depends on using suitable data and assumptions. Source: https://openstax.org/books/principles-data-science/pages/3-4-probability-theory",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/principles-data-science/pages/3-4-probability-theory",
+          "sourceName": "OpenStax"
         }
       ]
     },
@@ -1726,6 +1771,20 @@
             "population"
           ],
           "answer": "Epidemiology studies how health conditions are distributed in populations, what influences them and how they can be prevented or controlled."
+        },
+        {
+          "question": "What is herd immunity?",
+          "keywords": [
+            "herd immunity",
+            "population immunity",
+            "community protection",
+            "vaccination",
+            "infectious disease spread"
+          ],
+          "answer": "Herd immunity, also called population immunity, is indirect protection that can occur when enough people in a population are immune to a particular infectious disease, making sustained spread less likely and helping protect some people who are not immune. The proportion needed varies by disease and other factors; there is no single percentage that applies to every infection. The World Health Organization supports building population immunity through vaccination rather than allowing disease to spread, because uncontrolled infection causes avoidable illness. This is general public-health education, not personal medical advice. Source: https://www.who.int/news-room/questions-and-answers/item/herd-immunity-lockdowns-and-covid-19",
+          "entryType": "evergreen_reference",
+          "source": "https://www.who.int/news-room/questions-and-answers/item/herd-immunity-lockdowns-and-covid-19",
+          "sourceName": "World Health Organization"
         }
       ]
     },
@@ -2088,6 +2147,26 @@
           "answer": "The Nigerian Meteorological Agency (NiMet) is Nigeria's national meteorological authority. Use its official website for weather services, operational displays, forecast bulletins and hazard information. Check the issue date and the period the bulletin is valid for; an older bulletin is not a current forecast.",
           "sourceName": "Nigerian Meteorological Agency (NiMet)",
           "sourceUrl": "https://nimet.gov.ng/"
+        },
+        {
+          "question": "What was NiMet's regional weather forecast for Nigeria on 5 November 2026?",
+          "keywords": [
+            "NiMet",
+            "Nigeria weather forecast",
+            "5 November 2026",
+            "Lagos",
+            "thunderstorms",
+            "heat stress",
+            "weather outlook"
+          ],
+          "answer": "DATED FORECAST — not a live observation. NiMet's daily outlook for Nigeria, issued 4 November 2026 at 19:40 UTC (20:40 WAT), was valid from 00:00 to 23:59 UTC on 5 November 2026. It forecast sunny and dry conditions in northern states; sunny skies with patches of cloud in central states; and cloudy conditions with intervals of sunshine in southern states. Afternoon or evening thunderstorms with light rainfall were forecast over parts of Lagos, Delta, Rivers, Cross River, Bayelsa and Akwa Ibom. NiMet also issued a high-temperature/heat-stress safety advisory, advising hydration, reduced prolonged direct sun exposure and cool, well-ventilated spaces. This is a regional forecast, not a station observation, and it expires after the stated validity period. Sources: https://x.com/nimetnigeria/status/2118065888121287145 ; https://nimet.gov.ng/",
+          "entryType": "dated_forecast",
+          "date": "2026-11-05",
+          "issuedAt": "2026-11-04T19:40:00Z",
+          "validFrom": "2026-11-05T00:00:00Z",
+          "validUntil": "2026-11-05T23:59:00Z",
+          "source": "https://x.com/nimetnigeria/status/2118065888121287145",
+          "sourceName": "Nigerian Meteorological Agency (NiMet)"
         }
       ]
     },
@@ -2793,6 +2872,122 @@
           "publishedAt": "2026-11-03",
           "sourceName": "Reuters",
           "sourceUrl": "https://www.reuters.com/world/africa/south-african-votes-put-eskom-municipal-debt-clean-up-risk-2026-11-03/"
+        },
+        {
+          "question": "Nigeria's revised $7.7 billion external borrowing request reported on 4 November 2026",
+          "keywords": [
+            "Nigeria",
+            "Tinubu",
+            "7.7 billion dollars",
+            "external borrowing",
+            "2026 budget",
+            "Senate",
+            "November 4 2026"
+          ],
+          "answer": "Reuters reported on 4 November 2026 that President Bola Tinubu had asked lawmakers to approve a new $7.7 billion external borrowing plan to help fund projects and programmes in the 2026 budget. Senate President Godswill Akpabio said the request superseded an earlier proposal of about $20.52 billion. The report described a request awaiting legislative approval, not a loan already approved or received. These are figures reported on that date and may be superseded by later parliamentary action. Source: https://www.reuters.com/world/africa/nigerias-tinubu-seeks-new-77-billion-borrowing-replaces-earlier-205-billion-2026-11-04/",
+          "entryType": "dated_news",
+          "date": "2026-11-04",
+          "source": "https://www.reuters.com/world/africa/nigerias-tinubu-seeks-new-77-billion-borrowing-replaces-earlier-205-billion-2026-11-04/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "Ethiopia and Sudan close each other's consulates amid diplomatic tensions, reported on 4 November 2026",
+          "keywords": [
+            "Ethiopia",
+            "Sudan",
+            "consulates",
+            "diplomatic relations",
+            "Horn of Africa",
+            "November 4 2026"
+          ],
+          "answer": "Reuters reported on 4 November 2026 that Ethiopia and Sudan had closed each other's consulates near their shared border and expelled or ordered the departure of diplomats. The move followed mutual allegations that each side was supporting opponents in the other's conflict; both countries deny the allegations made against them. The report described a diplomatic escalation and fears of wider regional instability, not a declaration of war. Source: https://www.reuters.com/world/africa/ethiopia-expels-sudanese-diplomats-after-fresh-allegations-support-rsf-2026-11-04/",
+          "entryType": "dated_news",
+          "date": "2026-11-04",
+          "source": "https://www.reuters.com/world/africa/ethiopia-expels-sudanese-diplomats-after-fresh-allegations-support-rsf-2026-11-04/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "South Africa's early municipal election results reported on 5 November 2026",
+          "keywords": [
+            "South Africa",
+            "municipal elections",
+            "ANC",
+            "Democratic Alliance",
+            "early results",
+            "November 5 2026"
+          ],
+          "answer": "Reuters reported on 5 November 2026 that, with about 12% of votes counted, the African National Congress was on roughly 32% and the Democratic Alliance on roughly 31%. Counting was still at a preliminary stage, so these figures were not final or certified results. The election will shape local councils, and coalition negotiations may be needed in some municipalities. Check South Africa's Electoral Commission for official final results. Source: https://www.reuters.com/world/africa/south-africas-anc-32-vote-with-12-votes-counted-municipal-election-2026-11-05/",
+          "entryType": "dated_news",
+          "date": "2026-11-05",
+          "source": "https://www.reuters.com/world/africa/south-africas-anc-32-vote-with-12-votes-counted-municipal-election-2026-11-05/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "Kenya's Safaricom reports higher first-half earnings on 5 November 2026",
+          "keywords": [
+            "Kenya",
+            "Safaricom",
+            "telecommunications",
+            "first half results",
+            "Ethiopia",
+            "November 5 2026"
+          ],
+          "answer": "Reuters reported on 5 November 2026 that Kenyan telecommunications company Safaricom's earnings before interest and tax rose 40% to 91.1 billion Kenyan shillings for the six months ending September 2026. The report said losses at its Ethiopian operation narrowed while its Kenyan business performed strongly. The company maintained its full-year guidance. These are company results reported for a specific half-year period, not a forecast of future performance. Source: https://www.reuters.com/world/africa/kenyas-safaricom-first-half-group-ebit-911-bln-shillings-2026-11-05/",
+          "entryType": "dated_news",
+          "date": "2026-11-05",
+          "source": "https://www.reuters.com/world/africa/kenyas-safaricom-first-half-group-ebit-911-bln-shillings-2026-11-05/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "WMO reports record greenhouse-gas concentrations for 2025 on 27 October 2026",
+          "keywords": [
+            "WMO",
+            "greenhouse gases",
+            "carbon dioxide",
+            "426.8 ppm",
+            "methane",
+            "nitrous oxide",
+            "climate report",
+            "October 27 2026"
+          ],
+          "answer": "The World Meteorological Organization's Greenhouse Gas Bulletin No. 22, released on 27 October 2026, reported that global average surface concentrations in 2025 reached 426.8 parts per million for carbon dioxide, 1,948 parts per billion for methane and 339.1 parts per billion for nitrous oxide. These are atmospheric concentration measurements for 2025 published in a 2026 report; they are not emissions totals for a single day. Source: https://public.wmo.int/resources/publication-series/greenhouse-gas-bulletin/no-22",
+          "entryType": "dated_news",
+          "date": "2026-10-27",
+          "source": "https://public.wmo.int/resources/publication-series/greenhouse-gas-bulletin/no-22",
+          "sourceName": "World Meteorological Organization"
+        },
+        {
+          "question": "Global markets react to US midterm results and Middle East uncertainty on 5 November 2026",
+          "keywords": [
+            "world markets",
+            "Brent crude futures",
+            "US midterm elections",
+            "oil prices",
+            "global economy",
+            "November 5 2026"
+          ],
+          "answer": "Reuters reported on 5 November 2026 that Brent crude futures fell below $100 per barrel as investors assessed US midterm election results and the possibility of reduced escalation in the Middle East. The report also described changes in bond yields, currencies and Asian equity markets. These are time-specific market movements, not live prices or investment advice. Source: https://www.reuters.com/world/china/global-markets-view-europe-2026-11-05/",
+          "entryType": "dated_news",
+          "date": "2026-11-05",
+          "source": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-05/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "Nigeria reports negative tests for two suspected Ebola cases on 1 November 2026",
+          "keywords": [
+            "Nigeria",
+            "NCDC",
+            "Ebola",
+            "suspected cases",
+            "negative tests",
+            "Bundibugyo",
+            "November 1 2026"
+          ],
+          "answer": "Reuters reported on 1 November 2026 that Nigeria's Centre for Disease Control and Prevention said samples from two suspected Ebola cases in the northeast tested negative after two rounds of testing. The report also referred to a separate previously confirmed imported case. This is a dated report and must not be treated as a live outbreak count; consult the NCDC and WHO for current public-health updates. Source: https://www.reuters.com/business/healthcare-pharmaceuticals/samples-two-suspected-ebola-cases-nigeria-turn-out-negative-2026-11-01/",
+          "entryType": "dated_news",
+          "date": "2026-11-01",
+          "source": "https://www.reuters.com/business/healthcare-pharmaceuticals/samples-two-suspected-ebola-cases-nigeria-turn-out-negative-2026-11-01/",
+          "sourceName": "Reuters"
         }
       ]
     },
@@ -2920,6 +3115,21 @@
             "screen sizes"
           ],
           "answer": "Responsive web design makes a website adapt to different screen sizes and devices. It commonly uses flexible layouts, responsive images and CSS media queries."
+        },
+        {
+          "question": "What is DNS?",
+          "keywords": [
+            "DNS",
+            "domain name system",
+            "domain lookup",
+            "IP address",
+            "website address",
+            "name resolution"
+          ],
+          "answer": "DNS means Domain Name System. It translates a human-readable domain name, such as example.com, into an IP address that computers use to locate the correct internet service. This allows people to use memorable website names instead of remembering numerical addresses. DNS lookup is one of the steps that normally happens when a browser opens a website. Source: https://developers.cloudflare.com/dns/concepts/",
+          "entryType": "evergreen_reference",
+          "source": "https://developers.cloudflare.com/dns/concepts/",
+          "sourceName": "Cloudflare DNS documentation"
         }
       ]
     },
@@ -3478,11 +3688,12 @@
     }
   ],
   "metadata": {
-    "updatedAt": "2026-11-04",
-    "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Current-affairs entries are dated, source-linked snapshots rather than a live news feed. Weather observations and forecasts must be checked against current time-stamped meteorological sources.",
+    "updatedAt": "2026-11-05",
+    "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Dated news and weather entries are historical snapshots with source links and explicit dates; they are not a live news or weather feed.",
     "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice.",
-    "offlineMode": "CYBERAI answers from these local records and built-in rules only; it does not generate new facts from a live language model.",
-    "latestResearchRun": "2026-11-04",
-    "weatherDataPolicy": "No live weather observation was added in this update because a verifiable current time-stamped NiMet reading was not available from the reviewed public page. Do not infer current conditions from seasonal outlooks or expired alerts."
+    "offlineMode": "CYBERAI answers from local records and built-in rules only; it cannot retrieve live news, weather, market prices or current election results.",
+    "latestResearchRun": "2026-11-05",
+    "weatherDataPolicy": "A NiMet regional forecast for 5 November 2026 was added. It was issued 4 November 2026 at 19:40 UTC and valid 00:00-23:59 UTC on 5 November 2026. It is a forecast, not a station observation, and must not be presented as current after its validity period. The offline app must state that it cannot verify live weather.",
+    "newsDataPolicy": "Current-affairs records are dated source-linked snapshots. The offline app must not present them as today's or latest news; direct users to the original source for later developments."
   }
 }
