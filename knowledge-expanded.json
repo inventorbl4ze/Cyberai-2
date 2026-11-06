@@ -133,6 +133,22 @@
           "answer": "For a fixed amount of gas in a sealed rigid container, heating raises the molecules' average kinetic energy, so they move faster. They hit the container walls more frequently and with greater momentum change, increasing the pressure. Cooling has the opposite effect. Therefore, at constant volume and amount of gas, pressure is directly proportional to absolute temperature: P ∝ T and P₁/T₁ = P₂/T₂. Temperature must be in kelvin.",
           "sourceName": "OpenStax Chemistry",
           "sourceUrl": "https://openstax.org/books/chemistry/pages/9-5-the-kinetic-molecular-theory"
+        },
+        {
+          "question": "What is the principle of moments?",
+          "keywords": [
+            "principle of moments",
+            "moment",
+            "torque",
+            "pivot",
+            "clockwise",
+            "anticlockwise",
+            "rotational equilibrium"
+          ],
+          "answer": "The principle of moments states that when a body is in rotational equilibrium, the total clockwise moment about a chosen pivot equals the total anticlockwise moment. For a perpendicular force, moment = force × perpendicular distance from the pivot. Rotational equilibrium is one condition for static equilibrium; the resultant force must also be zero.",
+          "entryType": "evergreen_reference",
+          "sourceName": "OpenStax, University Physics Volume 1 — Conditions for Static Equilibrium",
+          "sourceUrl": "https://openstax.org/books/university-physics-volume-1/pages/12-1-conditions-for-static-equilibrium"
         }
       ]
     },
@@ -534,6 +550,22 @@
           "entryType": "evergreen_reference",
           "source": "https://science.nasa.gov/climate-change/faq/what-is-the-greenhouse-effect/",
           "sourceName": "NASA Science"
+        },
+        {
+          "question": "What are ecosystem services?",
+          "keywords": [
+            "ecosystem services",
+            "nature benefits",
+            "pollination",
+            "freshwater",
+            "flood regulation",
+            "soil formation",
+            "ecosystem"
+          ],
+          "answer": "Ecosystem services are the direct and indirect benefits people receive from ecosystems. Examples include food and freshwater, pollination, flood and climate regulation, soil formation, recreation and cultural value. Healthy ecosystems support human wellbeing and livelihoods.",
+          "entryType": "evergreen_reference",
+          "sourceName": "United Nations Economic Commission for Europe (UNECE)",
+          "sourceUrl": "https://unece.org/ecosystem-services-0"
         }
       ]
     },
@@ -817,6 +849,22 @@
             "emphasis"
           ],
           "answer": "Contrast is the noticeable difference between visual elements, such as light and dark, large and small, smooth and rough, or complementary colours. Artists and designers use contrast to create emphasis, improve clarity and make compositions more interesting."
+        },
+        {
+          "question": "What is a Creative Commons licence?",
+          "keywords": [
+            "Creative Commons",
+            "CC licence",
+            "copyright",
+            "attribution",
+            "reuse",
+            "share alike",
+            "adaptation"
+          ],
+          "answer": "A Creative Commons (CC) licence is a standard way for a creator to give the public permission to share or adapt a copyrighted work under stated conditions. Conditions may require attribution, sharing adaptations under the same licence, limiting commercial use or prohibiting adaptations. A CC licence does not mean a work has no copyright; users must follow its terms.",
+          "entryType": "evergreen_reference",
+          "sourceName": "UNESCO — The Creative Commons licences",
+          "sourceUrl": "https://www.unesco.org/en/open-access/creative-commons"
         }
       ]
     },
@@ -1188,6 +1236,21 @@
           "entryType": "evergreen_reference",
           "source": "https://textbooks.math.gatech.edu/ila/eigenvectors.html",
           "sourceName": "Georgia Tech Linear Algebra"
+        },
+        {
+          "question": "What is a Markov chain?",
+          "keywords": [
+            "Markov chain",
+            "stochastic process",
+            "Markov property",
+            "transition probability",
+            "transition matrix",
+            "states"
+          ],
+          "answer": "A Markov chain is a sequence of random states in which the probability of the next state depends on the current state, not on the full sequence of earlier states. This is called the Markov property. A transition matrix can show the probabilities of moving from one state to another. A simple model with states such as sunny and rainy can illustrate the idea.",
+          "entryType": "evergreen_reference",
+          "sourceName": "Wolfram MathWorld",
+          "sourceUrl": "https://mathworld.wolfram.com/MarkovChain.html"
         }
       ]
     },
@@ -2988,6 +3051,123 @@
           "date": "2026-11-01",
           "source": "https://www.reuters.com/business/healthcare-pharmaceuticals/samples-two-suspected-ebola-cases-nigeria-turn-out-negative-2026-11-01/",
           "sourceName": "Reuters"
+        },
+        {
+          "question": "Nigeria's military rules out a ceasefire with Boko Haram and ISWAP on 5 November 2026",
+          "keywords": [
+            "Nigeria",
+            "military",
+            "ceasefire",
+            "Boko Haram",
+            "ISWAP",
+            "security",
+            "November 2026"
+          ],
+          "answer": "Reuters reported on 5 November 2026 that Nigeria's military spokesperson said there was no ceasefire with Boko Haram or Islamic State West Africa Province (ISWAP) and that military operations would continue. Reuters also reported that attacks on military positions in the north-east had increased in recent weeks. This is a dated news report, not a real-time security assessment; consult current official advisories for local conditions.",
+          "entryType": "dated_news",
+          "date": "2026-11-05",
+          "source": "https://www.reuters.com/world/africa/nigeria-rules-out-ceasefire-with-islamists-vows-sustained-military-offensive-2026-11-05/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "NCDC's Ebola situation update for Nigeria as of 4 November 2026",
+          "keywords": [
+            "Nigeria",
+            "NCDC",
+            "Ebola",
+            "Bundibugyo",
+            "outbreak",
+            "situation report",
+            "contacts",
+            "November 2026"
+          ],
+          "answer": "The NCDC's official outbreak page, generated on 5 November and marked as of 4 November 2026, recorded one confirmed case in the FCT, four negative cases, no deaths, 62 identified contacts, 56 contacts still under follow-up and six who had completed follow-up. The page labelled the national risk level high. These are figures from that dated snapshot, not a live count or a personal medical assessment; check NCDC's latest situation report for later changes.",
+          "entryType": "dated_news",
+          "date": "2026-11-04",
+          "publishedAt": "2026-11-05",
+          "source": "https://evdmicrosite.ncdc.gov.ng/en/outbreaks/ebola-2026",
+          "sourceName": "Nigeria Centre for Disease Control and Prevention (NCDC)"
+        },
+        {
+          "question": "Dangote launches a $2.5 billion fuel-storage project in Namibia on 4 November 2026",
+          "keywords": [
+            "Dangote",
+            "Namibia",
+            "Walvis Bay",
+            "fuel storage",
+            "pipeline",
+            "Southern Africa",
+            "energy security",
+            "November 2026"
+          ],
+          "answer": "Reuters reported on 4 November 2026 that Aliko Dangote launched a $2.5 billion fuel-storage and distribution project at Walvis Bay, Namibia. The planned tank farm is designed for about 600 million litres of storage, including 360 million litres of diesel, and was reported as expected to take 18 to 20 months to complete. A regional pipeline network was also discussed as a possible part of the wider plan; the facilities were not yet completed. This is a dated project announcement, not evidence that the infrastructure is operational.",
+          "entryType": "dated_news",
+          "date": "2026-11-04",
+          "source": "https://www.reuters.com/world/africa/billionaire-industrialist-dangote-launches-25-billion-namibia-fuel-storage-2026-11-04/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "COP31 climate conference opens in Antalya on 6 November 2026",
+          "keywords": [
+            "COP31",
+            "climate conference",
+            "Antalya",
+            "Turkey",
+            "climate finance",
+            "adaptation",
+            "fossil fuels",
+            "November 2026"
+          ],
+          "answer": "The Associated Press reported that the COP31 United Nations climate conference opened in Antalya, Türkiye, on 6 November 2026. Negotiators were expected to focus on implementing commitments to move away from fossil fuels and on financing climate adaptation, clean-energy transitions and recovery from climate impacts. This describes the opening-day agenda, not the conference's final decisions or outcomes.",
+          "entryType": "dated_news",
+          "date": "2026-11-06",
+          "source": "https://apnews.com/article/6ce625b0e3d4ed0ab093df4e5f9c86ad",
+          "sourceName": "Associated Press (AP)"
+        },
+        {
+          "question": "Asian stock markets fall after an AI-related Wall Street selloff on 6 November 2026",
+          "keywords": [
+            "Asia",
+            "stock markets",
+            "AI investment",
+            "Wall Street",
+            "Nikkei",
+            "KOSPI",
+            "technology shares",
+            "November 2026"
+          ],
+          "answer": "The Associated Press reported on 6 November 2026 that several Asian stock markets fell after a sharp Wall Street selloff in technology shares linked to investor concerns about AI-company valuations, data-centre spending and possible policy changes. Japan's Nikkei and South Korea's KOSPI recorded large intraday declines. These are dated market-news observations, not live prices, investment advice or proof that long-term AI investment has stopped.",
+          "entryType": "dated_news",
+          "date": "2026-11-06",
+          "source": "https://apnews.com/article/bba6f0bf9035a6e6b1c4fef3e8230b89",
+          "sourceName": "Associated Press (AP)"
+        },
+        {
+          "question": "NiMet regional weather forecast for Nigeria on 6 November 2026",
+          "keywords": [
+            "NiMet",
+            "Nigeria weather",
+            "6 November 2026",
+            "regional forecast",
+            "heat stress",
+            "thunderstorms",
+            "rainfall",
+            "Taraba",
+            "Edo",
+            "Delta",
+            "Rivers",
+            "Cross River",
+            "Bayelsa",
+            "Akwa Ibom"
+          ],
+          "answer": "NiMet's regional outlook for Friday 6 November 2026 was valid from 00:00 to 23:59 UTC. It forecast generally sunny and dry conditions across most northern states, with possible isolated light thunderstorms over southern Taraba; partly cloudy skies across central states; and cloudy conditions with intervals of sunshine in the south, with isolated light thunderstorms over parts of Edo, Delta, Rivers, Cross River, Bayelsa and Akwa Ibom. NiMet also issued a high-temperature/heat-stress advisory, recommending hydration, lightweight clothing, cool well-ventilated spaces and avoiding prolonged direct sun. During thunderstorms, it advised staying indoors and away from trees, power lines and open spaces. This is a regional forecast for the stated date, not a station-specific observation or live reading, and it expires at 23:59 UTC on 6 November 2026.",
+          "entryType": "dated_forecast",
+          "date": "2026-11-06",
+          "validFrom": "2026-11-06T00:00:00Z",
+          "validTo": "2026-11-06T23:59:00Z",
+          "location": "Nigeria — regional outlook for northern, central and southern states",
+          "source": "https://x.com/NiMetNigeria",
+          "sourceName": "Nigerian Meteorological Agency (NiMet), official account"
         }
       ]
     },
@@ -3269,6 +3449,21 @@
             "account security"
           ],
           "answer": "Multi-factor authentication (MFA) asks a person to prove their identity using at least two different types of evidence, such as something they know (a password) and something they have (an authenticator app or security key). It adds protection if a password is exposed. Never share one-time verification codes with anyone."
+        },
+        {
+          "question": "What is public-key cryptography?",
+          "keywords": [
+            "public-key cryptography",
+            "asymmetric cryptography",
+            "public key",
+            "private key",
+            "digital signature",
+            "encryption"
+          ],
+          "answer": "Public-key cryptography, also called asymmetric cryptography, uses a mathematically related pair of keys: a public key that may be shared and a private key that must be kept secret. Depending on the algorithm, the public key can encrypt data or verify a digital signature made with the matching private key. The matching private key can decrypt data or create the signature.",
+          "entryType": "evergreen_reference",
+          "sourceName": "National Institute of Standards and Technology (NIST)",
+          "sourceUrl": "https://csrc.nist.gov/glossary/term/public_key_cryptography"
         }
       ]
     },
@@ -3695,5 +3890,7 @@
     "latestResearchRun": "2026-11-05",
     "weatherDataPolicy": "A NiMet regional forecast for 5 November 2026 was added. It was issued 4 November 2026 at 19:40 UTC and valid 00:00-23:59 UTC on 5 November 2026. It is a forecast, not a station observation, and must not be presented as current after its validity period. The offline app must state that it cannot verify live weather.",
     "newsDataPolicy": "Current-affairs records are dated source-linked snapshots. The offline app must not present them as today's or latest news; direct users to the original source for later developments."
-  }
+  },
+  "updatedAt": "2026-11-06",
+  "policy": "Evergreen reference entries are labelled evergreen_reference. Current-affairs reports are dated_news snapshots, and forecasts are dated_forecast records with explicit validity periods and locations. The offline app must not present dated records as today's or latest information; direct users to the original source for later developments."
 }
