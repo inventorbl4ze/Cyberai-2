@@ -59,7 +59,8 @@
           ],
           "answer": "A quadratic equation is an equation whose highest power of the variable is 2. Its general form is ax² + bx + c = 0, where a is not zero."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Physics",
@@ -149,8 +150,24 @@
           "entryType": "evergreen_reference",
           "sourceName": "OpenStax, University Physics Volume 1 — Conditions for Static Equilibrium",
           "sourceUrl": "https://openstax.org/books/university-physics-volume-1/pages/12-1-conditions-for-static-equilibrium"
+        },
+        {
+          "question": "What is Faraday's law of electromagnetic induction?",
+          "keywords": [
+            "Faraday's law",
+            "electromagnetic induction",
+            "induced emf",
+            "magnetic flux",
+            "Lenz's law",
+            "physics"
+          ],
+          "answer": "Faraday's law states that the magnitude of the electromotive force (emf) induced in a coil is proportional to how quickly the magnetic flux through it changes. For a coil of N turns, ε = −N(ΔΦB/Δt), where ΦB is magnetic flux. The negative sign expresses Lenz's law: the induced effect opposes the change in flux that produces it. This principle is used in electric generators and transformers.",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/college-physics/pages/23-2-faradays-law-of-induction-lenzs-law",
+          "sourceName": "OpenStax College Physics"
         }
-      ]
+      ],
+      "count": 9
     },
     {
       "name": "Chemistry",
@@ -213,7 +230,8 @@
           ],
           "answer": "A mixture contains two or more substances physically combined, not chemically bonded. Its components can often be separated by physical methods."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Biology",
@@ -276,7 +294,8 @@
           ],
           "answer": "A food chain shows how energy and nutrients pass from one organism to another as organisms feed."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Computer Science",
@@ -339,7 +358,8 @@
           ],
           "answer": "A database is an organised collection of information that can be stored, searched, updated and managed efficiently."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Internet and Digital Safety",
@@ -402,8 +422,24 @@
             "identity"
           ],
           "answer": "A digital footprint is the trail of information created by someone's online activities, posts, searches and interactions."
+        },
+        {
+          "question": "What is data minimisation in online privacy?",
+          "keywords": [
+            "data minimisation",
+            "data minimization",
+            "privacy",
+            "personal information",
+            "data collection",
+            "online safety"
+          ],
+          "answer": "Data minimisation is the practice of collecting and keeping only the personal information that is adequate, relevant and necessary for a clearly stated purpose. For an online user, a useful habit is to share only the details a service genuinely needs, review app permissions and avoid posting private information publicly. The exact legal requirements differ by country; this explanation is a general privacy principle, not legal advice.",
+          "entryType": "evergreen_reference",
+          "source": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/data-minimisation/",
+          "sourceName": "UK Information Commissioner's Office"
         }
-      ]
+      ],
+      "count": 7
     },
     {
       "name": "Artificial Intelligence",
@@ -469,7 +505,8 @@
           ],
           "answer": "An AI hallucination is an answer that sounds confident but contains invented or incorrect information. Important claims should be checked against reliable sources."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Geography and Environment",
@@ -566,8 +603,24 @@
           "entryType": "evergreen_reference",
           "sourceName": "United Nations Economic Commission for Europe (UNECE)",
           "sourceUrl": "https://unece.org/ecosystem-services-0"
+        },
+        {
+          "question": "What is biodiversity?",
+          "keywords": [
+            "biodiversity",
+            "species diversity",
+            "genetic diversity",
+            "ecosystems",
+            "conservation",
+            "environment"
+          ],
+          "answer": "Biodiversity is the variety of life in a place or across the planet. It includes variation within species, the range of different species, and the variety of ecosystems. Biodiversity supports ecological processes and contributes to human wellbeing, so habitat protection and sustainable use of natural resources are important for conservation.",
+          "entryType": "evergreen_reference",
+          "source": "https://www.unesco.org/en/query-list/b/biodiversity",
+          "sourceName": "UNESCO"
         }
-      ]
+      ],
+      "count": 9
     },
     {
       "name": "History and Civics",
@@ -633,7 +686,8 @@
           ],
           "answer": "The rule of law means that everyone, including public officials, is subject to the law and that laws should be applied fairly."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "English and Communication",
@@ -697,7 +751,8 @@
           ],
           "answer": "Public speaking is presenting information or ideas to an audience. Clear structure, practice, suitable pace and audience awareness help make it effective."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Business and Money Skills",
@@ -770,7 +825,8 @@
           ],
           "answer": "Cash flow is the movement of money into and out of a business over a period. Positive cash flow means more cash came in than went out during that period; negative cash flow means more went out than came in. A business can report a profit and still face cash-flow problems if customers pay late."
         }
-      ]
+      ],
+      "count": 7
     },
     {
       "name": "Creative Arts and Design",
@@ -866,7 +922,8 @@
           "sourceName": "UNESCO — The Creative Commons licences",
           "sourceUrl": "https://www.unesco.org/en/open-access/creative-commons"
         }
-      ]
+      ],
+      "count": 8
     },
     {
       "name": "Music and Performing Arts",
@@ -929,7 +986,8 @@
           ],
           "answer": "Choreography is the planning and arrangement of movements in a dance or performance."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Sports and Games",
@@ -994,7 +1052,8 @@
           ],
           "answer": "Game design is the process of planning a game's rules, goals, mechanics, challenges, story and player experience."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Everyday Life and Study Skills",
@@ -1057,7 +1116,8 @@
           ],
           "answer": "Communication is the exchange of information, thoughts and feelings through speaking, writing, signs or other forms."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Further Mathematics",
@@ -1252,7 +1312,8 @@
           "sourceName": "Wolfram MathWorld",
           "sourceUrl": "https://mathworld.wolfram.com/MarkovChain.html"
         }
-      ]
+      ],
+      "count": 19
     },
     {
       "name": "Advanced Mathematics and Statistics",
@@ -1425,7 +1486,8 @@
           "source": "https://openstax.org/books/principles-data-science/pages/3-4-probability-theory",
           "sourceName": "OpenStax"
         }
-      ]
+      ],
+      "count": 17
     },
     {
       "name": "Calendar, Months and Days",
@@ -1587,7 +1649,8 @@
           ],
           "answer": "Month lengths come from the historical development of calendar systems. The modern Gregorian calendar uses months of 28 to 31 days to keep the year aligned with Earth's seasons."
         }
-      ]
+      ],
+      "count": 15
     },
     {
       "name": "Health and Disease Education",
@@ -1848,8 +1911,24 @@
           "entryType": "evergreen_reference",
           "source": "https://www.who.int/news-room/questions-and-answers/item/herd-immunity-lockdowns-and-covid-19",
           "sourceName": "World Health Organization"
+        },
+        {
+          "question": "What is antimicrobial resistance?",
+          "keywords": [
+            "antimicrobial resistance",
+            "AMR",
+            "antibiotic resistance",
+            "microorganisms",
+            "medicine effectiveness",
+            "public health"
+          ],
+          "answer": "Antimicrobial resistance (AMR) happens when microorganisms such as bacteria, viruses, fungi or parasites no longer respond to medicines that previously worked against them. Misuse and overuse of antimicrobial medicines can speed up the development and spread of resistance. Antibiotics act against bacteria, not viruses. Medicines should be used only as directed by a qualified health professional; do not share antibiotics or use leftover medicines. This is general public-health education, not personal medical advice.",
+          "entryType": "evergreen_reference",
+          "source": "https://www.who.int/health-topics/antimicrobial-resistance",
+          "sourceName": "World Health Organization"
         }
-      ]
+      ],
+      "count": 27
     },
     {
       "name": "Human Body and Health Science",
@@ -1955,7 +2034,8 @@
           ],
           "answer": "First aid is the immediate, basic assistance given to someone who is ill or injured while arranging appropriate professional help when needed."
         }
-      ]
+      ],
+      "count": 10
     },
     {
       "name": "Nigeria and African Studies",
@@ -2065,7 +2145,8 @@
           ],
           "answer": "The Niger River is a major West African river that flows through several countries, including Guinea, Mali, Niger and Nigeria, before reaching the Gulf of Guinea."
         }
-      ]
+      ],
+      "count": 10
     },
     {
       "name": "Climate, Weather and Heat Awareness",
@@ -2231,7 +2312,8 @@
           "source": "https://x.com/nimetnigeria/status/2118065888121287145",
           "sourceName": "Nigerian Meteorological Agency (NiMet)"
         }
-      ]
+      ],
+      "count": 14
     },
     {
       "name": "News Literacy and Current Affairs",
@@ -2359,7 +2441,8 @@
           "sourceName": "Nigerian Meteorological Agency (NiMet)",
           "sourceUrl": "https://nimet.gov.ng/index.php/weatherapi"
         }
-      ]
+      ],
+      "count": 12
     },
     {
       "name": "Economics and Financial Literacy",
@@ -2455,7 +2538,8 @@
           ],
           "answer": "Unemployment generally refers to people in the labour force who are available for work and actively seeking work but do not have a job."
         }
-      ]
+      ],
+      "count": 9
     },
     {
       "name": "Engineering and Technology",
@@ -2561,7 +2645,8 @@
           ],
           "answer": "Cybersecurity is the practice of protecting devices, networks, applications and information from unauthorised access, disruption or damage."
         }
-      ]
+      ],
+      "count": 10
     },
     {
       "name": "Agriculture and Food Science",
@@ -2666,7 +2751,8 @@
           ],
           "answer": "Sustainable agriculture aims to produce food while conserving soil, water, biodiversity and resources for future generations."
         }
-      ]
+      ],
+      "count": 10
     },
     {
       "name": "Space and Astronomy",
@@ -2775,7 +2861,8 @@
           ],
           "answer": "A constellation is a recognised region of the sky, often associated with a pattern of stars as seen from Earth."
         }
-      ]
+      ],
+      "count": 10
     },
     {
       "name": "Current Affairs and News",
@@ -3168,8 +3255,77 @@
           "location": "Nigeria — regional outlook for northern, central and southern states",
           "source": "https://x.com/NiMetNigeria",
           "sourceName": "Nigerian Meteorological Agency (NiMet), official account"
+        },
+        {
+          "question": "Nigerian court voids Atiku Abubakar's ADC presidential nomination on 5 November 2026",
+          "keywords": [
+            "Nigeria",
+            "Atiku Abubakar",
+            "African Democratic Congress",
+            "ADC",
+            "court ruling",
+            "2027 election",
+            "November 5 2026"
+          ],
+          "answer": "Reuters reported on 5 November 2026 that a Nigerian court set aside the processes that produced the African Democratic Congress (ADC) executive and voided Atiku Abubakar's nomination as the party's presidential candidate for the January 2027 election. The ADC rejected the ruling and said it would appeal. This is a dated report of a court decision and the party's stated response; it should not be treated as the final outcome of any appeal or as a live election update. Source: https://www.reuters.com/world/africa/nigerian-court-voids-candidacy-opposition-adcs-atiku-2027-election-2026-11-05/",
+          "entryType": "dated_news",
+          "date": "2026-11-05",
+          "source": "https://www.reuters.com/world/africa/nigerian-court-voids-candidacy-opposition-adcs-atiku-2027-election-2026-11-05/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "South Africa's municipal election count reaches 90 percent on 6 November 2026",
+          "keywords": [
+            "South Africa",
+            "municipal elections",
+            "ANC",
+            "Democratic Alliance",
+            "DA",
+            "election results",
+            "November 6 2026"
+          ],
+          "answer": "Reuters reported on 6 November 2026, using election-commission data, that after about 90% of the vote had been counted, the African National Congress (ANC) had around 32% and the Democratic Alliance (DA) around 24%. A Council for Scientific and Industrial Research projection suggested final shares of about 31% and 24.5%, respectively. These were preliminary figures and projections, not a certified final result. This update is later than the earlier partial-count snapshot in this library. Source: https://www.reuters.com/world/africa/south-africas-anc-32-da-24-municipal-vote-count-enters-final-stretch-2026-11-06/",
+          "entryType": "dated_news",
+          "date": "2026-11-06",
+          "source": "https://www.reuters.com/world/africa/south-africas-anc-32-da-24-municipal-vote-count-enters-final-stretch-2026-11-06/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "Missile attack damages buildings in Kyiv on 7 November 2026",
+          "keywords": [
+            "Ukraine",
+            "Kyiv",
+            "Russia",
+            "missile attack",
+            "infrastructure",
+            "November 7 2026"
+          ],
+          "answer": "Reuters reported on 7 November 2026 that Russian forces launched a missile attack on Kyiv. City officials said debris damaged residential buildings and a building housing a kindergarten; the city's military administration reported two people injured. Officials warned residents that further strikes were possible. This is a dated report based on statements by local officials, not a live safety assessment. Source: https://www.reuters.com/world/russian-forces-launch-missile-attack-ukrainian-capital-kyiv-mayor-says-2026-11-07/",
+          "entryType": "dated_news",
+          "date": "2026-11-07",
+          "source": "https://www.reuters.com/world/russian-forces-launch-missile-attack-ukrainian-capital-kyiv-mayor-says-2026-11-07/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "China confirms discussions about a possible Xi-Trump-Putin meeting in November 2026",
+          "keywords": [
+            "China",
+            "Xi Jinping",
+            "Donald Trump",
+            "Vladimir Putin",
+            "possible summit",
+            "Shenzhen",
+            "APEC",
+            "November 2026"
+          ],
+          "answer": "The Associated Press reported on 7 November 2026 that China's foreign ministry had confirmed discussions with relevant parties about a possible meeting involving Xi Jinping, Donald Trump and Vladimir Putin on the sidelines of a regional summit in Shenzhen later in November. No plan had been finalised. The report described a possibility under discussion, not a confirmed meeting or an agreed outcome. Source: https://apnews.com/article/putin-trump-xi-shenzhen-summit-685503bde099612212fb9d6f716422e4",
+          "entryType": "dated_news",
+          "date": "2026-11-07",
+          "source": "https://apnews.com/article/putin-trump-xi-shenzhen-summit-685503bde099612212fb9d6f716422e4",
+          "sourceName": "Associated Press (AP)"
         }
-      ]
+      ],
+      "count": 27
     },
     {
       "name": "WAEC, JAMB and Exam Preparation",
@@ -3247,7 +3403,8 @@
           ],
           "answer": "Learn the meaning of each formula, practise calculations regularly, show your working, check units and signs, and review every error so you understand how to correct it."
         }
-      ]
+      ],
+      "count": 8
     },
     {
       "name": "Web Development",
@@ -3311,7 +3468,8 @@
           "source": "https://developers.cloudflare.com/dns/concepts/",
           "sourceName": "Cloudflare DNS documentation"
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Programming Concepts",
@@ -3389,7 +3547,8 @@
           ],
           "answer": "An API, or Application Programming Interface, defines how software components can request data or services from one another using agreed rules."
         }
-      ]
+      ],
+      "count": 8
     },
     {
       "name": "Cybersecurity Fundamentals",
@@ -3465,7 +3624,8 @@
           "sourceName": "National Institute of Standards and Technology (NIST)",
           "sourceUrl": "https://csrc.nist.gov/glossary/term/public_key_cryptography"
         }
-      ]
+      ],
+      "count": 7
     },
     {
       "name": "English Grammar and Writing",
@@ -3525,7 +3685,8 @@
           ],
           "answer": "Synecdoche is a figure of speech in which a part represents the whole, or the whole represents a part. For example, 'all hands on deck' uses 'hands' to mean the people or workers."
         }
-      ]
+      ],
+      "count": 6
     },
     {
       "name": "Nigerian Education and Careers",
@@ -3603,7 +3764,8 @@
           ],
           "answer": "Explore subjects and activities you enjoy, identify skills you want to develop, research real job tasks and training requirements, and speak with teachers or trusted career advisers. Keep your options open as you learn."
         }
-      ]
+      ],
+      "count": 8
     },
     {
       "name": "Research and Information Literacy",
@@ -3671,7 +3833,8 @@
           ],
           "answer": "A research conclusion summarises what the evidence indicates, explains how it relates to the research question and notes important limitations."
         }
-      ]
+      ],
+      "count": 7
     },
     {
       "name": "Everyday Science and Practical Knowledge",
@@ -3721,7 +3884,8 @@
           ],
           "answer": "Condensation is the change of a gas or vapour into a liquid. It occurs when the vapour loses enough energy or reaches conditions where liquid can form."
         }
-      ]
+      ],
+      "count": 5
     },
     {
       "name": "Digital Productivity and Office Skills",
@@ -3799,7 +3963,8 @@
           ],
           "answer": "GitHub is an online platform for hosting Git repositories and collaborating on projects. It supports code review, issue tracking, documentation and project workflows."
         }
-      ]
+      ],
+      "count": 8
     },
     {
       "name": "Mathematics: Formulas and Applications",
@@ -3879,18 +4044,19 @@
           ],
           "answer": "Simple interest is calculated using I = PRT/100 when the rate R is a percentage per time period, P is principal and T is the number of matching periods."
         }
-      ]
+      ],
+      "count": 8
     }
   ],
   "metadata": {
-    "updatedAt": "2026-11-05",
+    "updatedAt": "2026-11-07",
     "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Dated news and weather entries are historical snapshots with source links and explicit dates; they are not a live news or weather feed.",
     "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice.",
     "offlineMode": "CYBERAI answers from local records and built-in rules only; it cannot retrieve live news, weather, market prices or current election results.",
-    "latestResearchRun": "2026-11-05",
-    "weatherDataPolicy": "A NiMet regional forecast for 5 November 2026 was added. It was issued 4 November 2026 at 19:40 UTC and valid 00:00-23:59 UTC on 5 November 2026. It is a forecast, not a station observation, and must not be presented as current after its validity period. The offline app must state that it cannot verify live weather.",
-    "newsDataPolicy": "Current-affairs records are dated source-linked snapshots. The offline app must not present them as today's or latest news; direct users to the original source for later developments."
+    "latestResearchRun": "2026-11-07",
+    "weatherDataPolicy": "NiMet's official Weather Forecast Bulletin and Hazard Watch pages were checked on 7 November 2026. The accessible public pages did not expose a dated daily forecast or heat advisory valid for 7 November, so no new daily forecast or observation was added. The saved 6 November 2026 regional forecast expired at 23:59 UTC on 6 November and is historical only. Never present it as current; check NiMet's official bulletin and hazard-watch pages for the latest verified information: https://nimet.gov.ng/weather_forecast_bulletin and https://nimet.gov.ng/hazardwatch.",
+    "newsDataPolicy": "Current-affairs records are dated, source-linked snapshots. Court rulings, election counts, diplomatic proposals and conflict reports must retain their reported status and caveats; preliminary figures and possible meetings must never be described as final or confirmed. The offline app must not present any saved record as today's or latest news; direct users to the original source for later developments."
   },
-  "updatedAt": "2026-11-06",
-  "policy": "Evergreen reference entries are labelled evergreen_reference. Current-affairs reports are dated_news snapshots, and forecasts are dated_forecast records with explicit validity periods and locations. The offline app must not present dated records as today's or latest information; direct users to the original source for later developments."
+  "updatedAt": "2026-11-07",
+  "policy": "Evergreen reference entries are labelled evergreen_reference. Current-affairs reports are dated_news snapshots, and forecasts are dated_forecast records with explicit validity periods and locations. The offline app must not present dated records as today's or latest information; direct users to original sources for later developments. Never add a weather forecast unless its issuing authority, issue time, location or region, and validity period can be verified. Never present a forecast as an observation."
 }
