@@ -165,9 +165,24 @@
           "entryType": "evergreen_reference",
           "source": "https://openstax.org/books/college-physics/pages/23-2-faradays-law-of-induction-lenzs-law",
           "sourceName": "OpenStax College Physics"
+        },
+        {
+          "question": "What is an electromagnetic wave?",
+          "keywords": [
+            "electromagnetic wave",
+            "electric field",
+            "magnetic field",
+            "radio waves",
+            "light",
+            "electromagnetic radiation"
+          ],
+          "answer": "An electromagnetic wave is a travelling disturbance made of changing electric and magnetic fields. In a plane wave in free space, the fields are perpendicular to each other and to the direction of travel. Electromagnetic waves can travel through a vacuum; in a vacuum they travel at the speed of light. Radio waves, microwaves, infrared, visible light, ultraviolet, X-rays and gamma rays are parts of the electromagnetic spectrum.",
+          "entryType": "evergreen_reference",
+          "sourceName": "OpenStax University Physics Volume 2 — Plane Electromagnetic Waves",
+          "source": "https://openstax.org/books/university-physics-volume-2/pages/16-2-plane-electromagnetic-waves"
         }
       ],
-      "count": 9
+      "count": 10
     },
     {
       "name": "Chemistry",
@@ -685,9 +700,23 @@
             "law"
           ],
           "answer": "The rule of law means that everyone, including public officials, is subject to the law and that laws should be applied fairly."
+        },
+        {
+          "question": "What is federalism?",
+          "keywords": [
+            "federalism",
+            "federal system",
+            "federal government",
+            "state government",
+            "division of powers"
+          ],
+          "answer": "Federalism is a system of government in which public powers are constitutionally divided between a national or federal government and regional governments, such as states or provinces. Each level has responsibilities and areas of authority set by the constitution. The exact division differs from country to country. Nigeria is a federation, and its Constitution sets out powers and responsibilities for the different levels of government.",
+          "entryType": "evergreen_reference",
+          "sourceName": "Princeton Encyclopedia of Self-Determination — Federalism and Federation; Federal Republic of Nigeria Constitution",
+          "source": "https://pesd.princeton.edu/node/431"
         }
       ],
-      "count": 6
+      "count": 7
     },
     {
       "name": "English and Communication",
@@ -1051,9 +1080,25 @@
             "player"
           ],
           "answer": "Game design is the process of planning a game's rules, goals, mechanics, challenges, story and player experience."
+        },
+        {
+          "question": "South Africa defeats Italy 66–7 in the Nations Championship on 7 November 2026",
+          "keywords": [
+            "South Africa",
+            "Springboks",
+            "Italy",
+            "rugby",
+            "Nations Championship",
+            "66-7"
+          ],
+          "answer": "Reuters reported on 7 November 2026 that South Africa defeated Italy 66–7 in Turin in the Nations Championship. South Africa scored nine tries and led 45–0 at half-time. The result extended the Springboks' winning run in the competition. This is a dated match result, not a live score or current ranking.",
+          "entryType": "dated_news",
+          "date": "2026-11-07",
+          "sourceName": "Reuters",
+          "source": "https://www.reuters.com/sports/south-africa-thump-italy-stay-perfect-nations-championship-2026-11-07/"
         }
       ],
-      "count": 6
+      "count": 7
     },
     {
       "name": "Everyday Life and Study Skills",
@@ -1311,9 +1356,37 @@
           "entryType": "evergreen_reference",
           "sourceName": "Wolfram MathWorld",
           "sourceUrl": "https://mathworld.wolfram.com/MarkovChain.html"
+        },
+        {
+          "question": "What is a partial derivative?",
+          "keywords": [
+            "partial derivative",
+            "multivariable calculus",
+            "partial differentiation",
+            "rate of change",
+            "functions of two variables"
+          ],
+          "answer": "A partial derivative measures how a function of two or more variables changes when one variable changes while the other variables are held constant. For z = f(x,y), the partial derivative with respect to x is written ∂f/∂x. For example, if f(x,y) = 3x² + 2xy + y², then ∂f/∂x = 6x + 2y. Partial derivatives are used in physics, economics, engineering and optimisation.",
+          "entryType": "evergreen_reference",
+          "sourceName": "OpenStax Calculus Volume 3 — Partial Derivatives",
+          "source": "https://openstax.org/books/calculus-volume-3/pages/4-3-partial-derivatives"
+        },
+        {
+          "question": "What is the gradient of a multivariable function?",
+          "keywords": [
+            "gradient",
+            "gradient vector",
+            "directional derivative",
+            "multivariable calculus",
+            "steepest increase"
+          ],
+          "answer": "For a differentiable scalar function f(x,y), its gradient is the vector ∇f = (∂f/∂x, ∂f/∂y). The gradient points in the direction of the steepest local increase of the function, and its magnitude gives the maximum rate of increase at that point. The directional derivative in a unit direction u is ∇f · u. In three variables, the gradient has three partial-derivative components.",
+          "entryType": "evergreen_reference",
+          "sourceName": "OpenStax Calculus Volume 3 — Directional Derivatives and the Gradient",
+          "source": "https://openstax.org/books/calculus-volume-3/pages/4-6-directional-derivatives-and-the-gradient"
         }
       ],
-      "count": 19
+      "count": 21
     },
     {
       "name": "Advanced Mathematics and Statistics",
@@ -2311,9 +2384,28 @@
           "validUntil": "2026-11-05T23:59:00Z",
           "source": "https://x.com/nimetnigeria/status/2118065888121287145",
           "sourceName": "Nigerian Meteorological Agency (NiMet)"
+        },
+        {
+          "question": "What was the weather observation at Lagos/Ikeja airport at 04:00 UTC on 8 November 2026?",
+          "keywords": [
+            "Lagos weather observation",
+            "Ikeja",
+            "DNMM",
+            "METAR",
+            "8 November 2026",
+            "temperature",
+            "humidity"
+          ],
+          "answer": "DATED STATION OBSERVATION — not a forecast and not a heat advisory. The U.S. National Weather Service page reported the Lagos/Ikeja airport observation (station DNMM) for 8 November 2026 at 04:00 UTC: air temperature 27°C, dew point 26°C, relative humidity 94%, wind from the west at 3 knots, mostly clear sky, visibility greater than 7 miles and pressure 1013 hPa. This is one airport-station observation and may not represent conditions across all of Lagos. No current NiMet daily forecast or heat advisory could be verified from the accessible official NiMet bulletin and hazard-watch pages during this research run.",
+          "entryType": "dated_observation",
+          "date": "2026-11-08",
+          "observedAt": "2026-11-08T04:00:00Z",
+          "location": "Lagos / Ikeja airport, Nigeria (DNMM)",
+          "source": "https://tgftp.nws.noaa.gov/weather/current/DNMM.html",
+          "sourceName": "U.S. National Weather Service / NOAA aviation weather observation"
         }
       ],
-      "count": 14
+      "count": 15
     },
     {
       "name": "News Literacy and Current Affairs",
@@ -3323,9 +3415,58 @@
           "date": "2026-11-07",
           "source": "https://apnews.com/article/putin-trump-xi-shenzhen-summit-685503bde099612212fb9d6f716422e4",
           "sourceName": "Associated Press (AP)"
+        },
+        {
+          "question": "Nigeria's Flamingos win the FIFA U-17 Women's World Cup on 7 November 2026",
+          "keywords": [
+            "Nigeria",
+            "Flamingos",
+            "U-17 Women's World Cup",
+            "Japan",
+            "Awawu Bashiru",
+            "Oluebube Umejiaku",
+            "African football"
+          ],
+          "answer": "The Confederation of African Football reported on 7 November 2026 that Nigeria defeated Japan 2–1 in the FIFA U-17 Women's World Cup final in Rabat, Morocco. Awawu Bashiru scored in the 39th minute and Oluebube Umejiaku in the 47th; Fuki Ito scored for Japan in the 80th minute. CAF described Nigeria as the first African nation to win this competition. This is a completed tournament result, not a live score.",
+          "entryType": "dated_news",
+          "date": "2026-11-07",
+          "sourceName": "Confederation of African Football (CAF)",
+          "source": "https://www.cafonline.com/womens-football/news/fifa-u-17-women-s-world-cup-africa-on-top-of-the-world-as-nigeria-wins-the-title-for-the-first-time/"
+        },
+        {
+          "question": "Senegal's parliamentary finance committee requests withdrawal of the 2027 budget bill on 5 November 2026",
+          "keywords": [
+            "Senegal",
+            "2027 budget",
+            "National Assembly",
+            "finance committee",
+            "IMF programme",
+            "public debt"
+          ],
+          "answer": "Reuters reported on 5 November 2026 that Senegal's parliamentary finance committee had asked the finance ministry to withdraw the 2027 budget bill amid a dispute involving President Bassirou Diomaye Faye and former prime minister Ousmane Sonko. The committee said the request was intended to support institutional dialogue and that only the government could decide whether to withdraw or retain the bill. Reuters said the dispute could delay a proposed $2.2 billion IMF programme. The request itself did not mean the bill had been formally withdrawn.",
+          "entryType": "dated_news",
+          "date": "2026-11-05",
+          "sourceName": "Reuters",
+          "source": "https://www.reuters.com/world/africa/senegals-parliament-requests-withdrawal-2027-budget-bill-2026-11-05/"
+        },
+        {
+          "question": "Saudi-led coalition reports intercepting missiles directed towards Riyadh on 8 November 2026",
+          "keywords": [
+            "Saudi Arabia",
+            "Riyadh",
+            "Yemen",
+            "Houthis",
+            "missile interception",
+            "Middle East"
+          ],
+          "answer": "Reuters reported on 8 November 2026 that the Saudi-led coalition said it intercepted and destroyed two ballistic missiles fired towards Riyadh. The coalition later reported intercepting two cruise missiles in Riyadh and southern Saudi Arabia. Saudi authorities subsequently said the immediate danger had passed. The interception claims are attributed to the coalition; this dated report is not a live security alert.",
+          "entryType": "dated_news",
+          "date": "2026-11-08",
+          "sourceName": "Reuters",
+          "source": "https://www.reuters.com/world/middle-east/loud-booms-heard-saudi-capital-riyadh-after-early-warning-alert-issued-2026-11-08/"
         }
       ],
-      "count": 27
+      "count": 30
     },
     {
       "name": "WAEC, JAMB and Exam Preparation",
@@ -3467,9 +3608,23 @@
           "entryType": "evergreen_reference",
           "source": "https://developers.cloudflare.com/dns/concepts/",
           "sourceName": "Cloudflare DNS documentation"
+        },
+        {
+          "question": "What is an application programming interface (API)?",
+          "keywords": [
+            "API",
+            "application programming interface",
+            "software interface",
+            "web API",
+            "application integration"
+          ],
+          "answer": "An application programming interface (API) is a defined set of rules and operations that lets one software component request information or services from another. A web API commonly exposes endpoints and data formats that an application can use. APIs help websites, mobile apps, browsers and servers exchange information without needing to know each other's internal implementation.",
+          "entryType": "evergreen_reference",
+          "sourceName": "MDN Web Docs — Web APIs",
+          "source": "https://developer.mozilla.org/en-US/docs/Web/API"
         }
       ],
-      "count": 6
+      "count": 7
     },
     {
       "name": "Programming Concepts",
@@ -4049,14 +4204,14 @@
     }
   ],
   "metadata": {
-    "updatedAt": "2026-11-07",
+    "updatedAt": "2026-11-08",
     "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Dated news and weather entries are historical snapshots with source links and explicit dates; they are not a live news or weather feed.",
     "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice.",
     "offlineMode": "CYBERAI answers from local records and built-in rules only; it cannot retrieve live news, weather, market prices or current election results.",
-    "latestResearchRun": "2026-11-07",
-    "weatherDataPolicy": "NiMet's official Weather Forecast Bulletin and Hazard Watch pages were checked on 7 November 2026. The accessible public pages did not expose a dated daily forecast or heat advisory valid for 7 November, so no new daily forecast or observation was added. The saved 6 November 2026 regional forecast expired at 23:59 UTC on 6 November and is historical only. Never present it as current; check NiMet's official bulletin and hazard-watch pages for the latest verified information: https://nimet.gov.ng/weather_forecast_bulletin and https://nimet.gov.ng/hazardwatch.",
-    "newsDataPolicy": "Current-affairs records are dated, source-linked snapshots. Court rulings, election counts, diplomatic proposals and conflict reports must retain their reported status and caveats; preliminary figures and possible meetings must never be described as final or confirmed. The offline app must not present any saved record as today's or latest news; direct users to the original source for later developments."
+    "latestResearchRun": "2026-11-08",
+    "weatherDataPolicy": "On 8 November 2026, NiMet's official Weather Forecast Bulletin and Hazard Watch pages were checked, but the accessible pages did not expose a dated daily forecast or heat advisory. A station observation from the U.S. National Weather Service for Lagos/Ikeja airport (DNMM) at 04:00 UTC on 8 November 2026 was saved only as a dated observation: 27°C, dew point 26°C, relative humidity 94%, west wind 3 kt, mostly clear, visibility greater than 7 miles, pressure 1013 hPa. It represents the airport station, not all of Lagos, and is not a heat alert. Check NiMet's official pages for current Nigerian forecasts and hazards: https://nimet.gov.ng/weather_forecast_bulletin and https://nimet.gov.ng/hazardwatch. Never present a past station report as current.",
+    "newsDataPolicy": "Current-affairs records are dated, source-linked snapshots. The 8 November 2026 update includes Nigeria's 7 November FIFA U-17 Women's World Cup victory, Senegal's 5 November budget-committee request, and Reuters' 8 November report of missile interceptions claimed by the Saudi-led coalition. Preserve attribution, publication dates and status caveats. The offline app must not present any saved record as today's or latest news; direct users to the original source for later developments."
   },
-  "updatedAt": "2026-11-07",
-  "policy": "Evergreen reference entries are labelled evergreen_reference. Current-affairs reports are dated_news snapshots, and forecasts are dated_forecast records with explicit validity periods and locations. The offline app must not present dated records as today's or latest information; direct users to original sources for later developments. Never add a weather forecast unless its issuing authority, issue time, location or region, and validity period can be verified. Never present a forecast as an observation."
+  "updatedAt": "2026-11-08",
+  "policy": "Evergreen reference entries are labelled evergreen_reference. Current-affairs and sports reports are dated_news snapshots; weather observations are dated_observation records with station and observation time; forecasts are dated_forecast records with issue time, location and validity period. The offline app must not present dated records as today's or latest information; direct users to original sources for later developments. Never present a station observation as a forecast or general city-wide condition. Never add a weather forecast unless its issuing authority, issue time, location or region, and validity period can be verified. Never infer or invent a heat advisory."
 }
