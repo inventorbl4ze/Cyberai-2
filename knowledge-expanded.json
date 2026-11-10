@@ -244,6 +244,21 @@
             "separation"
           ],
           "answer": "A mixture contains two or more substances physically combined, not chemically bonded. Its components can often be separated by physical methods."
+        },
+        {
+          "question": "What does the pH scale measure?",
+          "keywords": [
+            "pH scale",
+            "acidity",
+            "alkalinity",
+            "hydronium ions",
+            "logarithm",
+            "acid base"
+          ],
+          "answer": "The pH scale describes how acidic or basic an aqueous solution is. In a common chemistry definition, pH = −log₁₀[H₃O⁺], where [H₃O⁺] is the molar concentration of hydronium ions. At 25°C, pH 7 is neutral, values below 7 are acidic and values above 7 are basic. A change of one pH unit represents a tenfold change in hydronium-ion concentration.",
+          "entryType": "evergreen_reference",
+          "sourceName": "OpenStax Chemistry 2e",
+          "sourceUrl": "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh"
         }
       ],
       "count": 6
@@ -308,6 +323,21 @@
             "consumer"
           ],
           "answer": "A food chain shows how energy and nutrients pass from one organism to another as organisms feed."
+        },
+        {
+          "question": "What is meiosis?",
+          "keywords": [
+            "meiosis",
+            "cell division",
+            "haploid",
+            "diploid",
+            "gametes",
+            "crossing over"
+          ],
+          "answer": "Meiosis is a type of cell division in which one round of chromosome replication is followed by two divisions. In many animals, it produces four haploid cells from one diploid starting cell. The chromosome number is reduced by half, and processes such as crossing over and independent assortment help create genetic variation. Meiosis is important in the formation of gametes for sexual reproduction.",
+          "entryType": "evergreen_reference",
+          "sourceName": "OpenStax Biology 2e",
+          "sourceUrl": "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis"
         }
       ],
       "count": 6
@@ -1384,6 +1414,20 @@
           "entryType": "evergreen_reference",
           "sourceName": "OpenStax Calculus Volume 3 — Directional Derivatives and the Gradient",
           "source": "https://openstax.org/books/calculus-volume-3/pages/4-6-directional-derivatives-and-the-gradient"
+        },
+        {
+          "question": "What is de Moivre's theorem?",
+          "keywords": [
+            "de moivre theorem",
+            "complex numbers",
+            "polar form",
+            "powers of complex numbers",
+            "trigonometry"
+          ],
+          "answer": "De Moivre's theorem states that for an integer n, [r(cos θ + i sin θ)]ⁿ = rⁿ[cos(nθ) + i sin(nθ)], where r is the modulus of a complex number, θ is its argument in radians or degrees used consistently, and i² = −1. It is useful for finding integer powers of complex numbers in polar form and for deriving multiple-angle identities. For example, squaring doubles the argument and squares the modulus.",
+          "entryType": "evergreen_reference",
+          "sourceName": "Wolfram MathWorld",
+          "sourceUrl": "https://mathworld.wolfram.com/deMoivresIdentity.html"
         }
       ],
       "count": 21
@@ -1999,6 +2043,24 @@
           "entryType": "evergreen_reference",
           "source": "https://www.who.int/health-topics/antimicrobial-resistance",
           "sourceName": "World Health Organization"
+        },
+        {
+          "question": "What did WHO report about Bundibugyo Ebola disease in the DRC, Kenya and Nigeria on 6 November 2026?",
+          "keywords": [
+            "WHO",
+            "Bundibugyo virus disease",
+            "Ebola",
+            "Nigeria",
+            "DRC",
+            "Kenya",
+            "outbreak update",
+            "6 November 2026"
+          ],
+          "answer": "In a Disease Outbreak News update dated 6 November 2026, WHO reported that as of 3 November the Bundibugyo virus disease outbreak continued to have high-level transmission in the Democratic Republic of the Congo. WHO reported no new cases from Nigeria or Kenya since its previous update on 23 October. Nigeria's one imported confirmed case, reported on 20 October, had been medically evacuated to Switzerland on 26 October. As of 3 November, 62 contacts had been identified in Nigeria and six had completed the 21-day follow-up period. These are dated surveillance figures, not a live count or personal medical advice. Check WHO and NCDC for later updates. Source: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625",
+          "entryType": "dated_news",
+          "date": "2026-11-06",
+          "source": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625",
+          "sourceName": "World Health Organization (WHO)"
         }
       ],
       "count": 27
@@ -2403,6 +2465,32 @@
           "location": "Lagos / Ikeja airport, Nigeria (DNMM)",
           "source": "https://tgftp.nws.noaa.gov/weather/current/DNMM.html",
           "sourceName": "U.S. National Weather Service / NOAA aviation weather observation"
+        },
+        {
+          "question": "What was NiMet's regional weather forecast for Nigeria on 10 November 2026?",
+          "keywords": [
+            "NiMet",
+            "Nigeria weather",
+            "10 November 2026",
+            "regional forecast",
+            "dust haze",
+            "thunderstorms",
+            "rainfall",
+            "FCT",
+            "Kano",
+            "Jigawa",
+            "Katsina",
+            "Lagos"
+          ],
+          "answer": "NiMet's daily regional outlook for Tuesday 10 November 2026 was valid from 00:00 to 23:59 UTC. Northern states were forecast to be sunny and hazy, with slight dust haze possible in parts of Kano, Jigawa and Katsina. Central states were forecast to have sunny intervals in the morning, with isolated thunderstorms and light rainfall possible in parts of the FCT, Kogi, Benue and Kwara later. Southern states were forecast to be cloudy with sunny intervals in the morning, with thunderstorms possible in parts of Abia, Ebonyi, Cross River, Akwa Ibom and Rivers, followed by isolated thunderstorms and light rainfall over most of the region later. NiMet advised limiting prolonged exposure to dust in hazy areas and taking precautions during thunderstorms. This regional forecast contained no explicit high-temperature or heat-stress advisory. It is not a station observation and expires at 23:59 UTC on 10 November 2026. Source: https://x.com/NiMetNigeria",
+          "entryType": "dated_forecast",
+          "date": "2026-11-10",
+          "validFrom": "2026-11-10T00:00:00Z",
+          "validTo": "2026-11-10T23:59:00Z",
+          "location": "Nigeria — regional outlook for northern, central and southern states",
+          "source": "https://x.com/NiMetNigeria",
+          "sourceMirror": "https://teapawt.org/nimetnigeria",
+          "sourceName": "Nigerian Meteorological Agency (NiMet), official @NiMetNigeria account"
         }
       ],
       "count": 15
@@ -3464,6 +3552,104 @@
           "date": "2026-11-08",
           "sourceName": "Reuters",
           "source": "https://www.reuters.com/world/middle-east/loud-booms-heard-saudi-capital-riyadh-after-early-warning-alert-issued-2026-11-08/"
+        },
+        {
+          "question": "South Africa's 4 November 2026 local election result shifts toward coalition negotiations, reported on 9 November 2026",
+          "keywords": [
+            "South Africa",
+            "local elections",
+            "ANC",
+            "DA",
+            "coalition",
+            "municipal government",
+            "9 November 2026"
+          ],
+          "answer": "Reuters reported on 9 November 2026 that the African National Congress (ANC) received less than one-third of the vote in South Africa's 4 November local elections, its worst local-election result. The ANC did not win any major city outright, while the Democratic Alliance led in five of eight metropolitan areas. Coalition negotiations were expected over the following two weeks in municipalities without a clear majority. These negotiations were still pending in the report; this is not a final account of all municipal governments. Source: https://www.reuters.com/world/africa/south-african-voters-rebuff-anc-accelerating-shift-to-coalition-politics-2026-11-09/",
+          "entryType": "dated_news",
+          "date": "2026-11-09",
+          "source": "https://www.reuters.com/world/africa/south-african-voters-rebuff-anc-accelerating-shift-to-coalition-politics-2026-11-09/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "Police report 11 killed and 13 abducted in a Zamfara attack, reported on 9 November 2026",
+          "keywords": [
+            "Nigeria",
+            "Zamfara",
+            "Gidan Taba",
+            "Maradun",
+            "security incident",
+            "9 November 2026"
+          ],
+          "answer": "Reuters reported on 9 November 2026 that police said 11 people were killed and 13 others abducted during a weekend attack in Gidan Taba, Maradun district, Zamfara State. Police said security forces had been deployed and were working to secure the abducted people's release. This is a brief, dated report based on the police statement; it does not describe graphic details. Source: https://www.reuters.com/world/africa/gunmen-kill-11-relatives-of-security-volunteer-in-northwest-nigeria-abduct-13-2026-11-09/",
+          "entryType": "dated_news",
+          "date": "2026-11-09",
+          "source": "https://www.reuters.com/world/africa/gunmen-kill-11-relatives-of-security-volunteer-in-northwest-nigeria-abduct-13-2026-11-09/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "Vodacom reports a 25.7% increase in half-year earnings, reported on 10 November 2026",
+          "keywords": [
+            "Vodacom",
+            "Safaricom",
+            "telecommunications",
+            "Africa",
+            "half-year results",
+            "10 November 2026"
+          ],
+          "answer": "Reuters reported on 10 November 2026 that South African telecommunications group Vodacom recorded a 25.7% rise in headline earnings per share to 5.87 rand for the six months ended 30 September 2026. Revenue rose 25.6% to 102.5 billion rand. The company attributed growth partly to stronger performance across African markets and the consolidation of a larger Safaricom stake. These are company-reported half-year results, not a forecast. Source: https://www.reuters.com/world/africa/south-africas-vodacom-half-year-profit-surges-257-africa-wide-growth-2026-11-10/",
+          "entryType": "dated_news",
+          "date": "2026-11-10",
+          "source": "https://www.reuters.com/world/africa/south-africas-vodacom-half-year-profit-surges-257-africa-wide-growth-2026-11-10/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "Botswana plans to increase its De Beers stake to 30%, reported on 10 November 2026",
+          "keywords": [
+            "Botswana",
+            "De Beers",
+            "diamonds",
+            "Anglo American",
+            "mining",
+            "10 November 2026"
+          ],
+          "answer": "The Associated Press reported on 10 November 2026 that Botswana plans to increase its stake in diamond company De Beers to 30% if a proposed consortium purchase of Anglo American's 85% holding goes ahead. The proposed transaction had not been finalised. If completed as described, Botswana would become De Beers' largest single shareholder. This is a stated plan conditional on a future transaction, not a completed acquisition. Source: https://apnews.com/article/0dcd7fec7d7ca7ac53a584054de105c6",
+          "entryType": "dated_news",
+          "date": "2026-11-10",
+          "source": "https://apnews.com/article/0dcd7fec7d7ca7ac53a584054de105c6",
+          "sourceName": "The Associated Press"
+        },
+        {
+          "question": "China's goods trade surplus reaches $1.04 trillion in the first ten months of 2026, reported on 10 November 2026",
+          "keywords": [
+            "China",
+            "trade surplus",
+            "exports",
+            "AI infrastructure",
+            "semiconductors",
+            "global trade",
+            "10 November 2026"
+          ],
+          "answer": "Reuters reported on 10 November 2026 that China's goods trade surplus reached about $1.04 trillion for January–October 2026. Customs data showed exports rose 35.2% year on year in October. In US-dollar terms, semiconductor exports increased 111.1% over the first ten months and high-tech product shipments rose 47.9%. Reuters said global investment in AI infrastructure helped support demand, while weak domestic consumption and possible trade restrictions remained risks. These are dated trade statistics, not a prediction. Source: https://www.reuters.com/world/asia-pacific/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-2026-11-10/",
+          "entryType": "dated_news",
+          "date": "2026-11-10",
+          "source": "https://www.reuters.com/world/asia-pacific/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-2026-11-10/",
+          "sourceName": "Reuters"
+        },
+        {
+          "question": "Brazil presents a roadmap for transition away from fossil fuels at COP31, reported on 10 November 2026",
+          "keywords": [
+            "Brazil",
+            "COP31",
+            "climate talks",
+            "fossil fuels",
+            "renewable energy",
+            "10 November 2026"
+          ],
+          "answer": "The Associated Press reported on 10 November 2026 that Brazil was presenting a roadmap at the COP31 UN climate talks to help countries develop practical steps for moving from coal, oil and gas toward renewable energy. Suggested policy levers included avoiding new fossil-fuel power infrastructure and reviewing subsidies that make fossil fuels cheaper. The roadmap is guidance being presented for discussion; it is not itself a binding international agreement. Source: https://apnews.com/article/climate-cop31-turkey-fossil-fuels-renewable-energy-1a76dbefe56039c8841e9aeb49468048",
+          "entryType": "dated_news",
+          "date": "2026-11-10",
+          "source": "https://apnews.com/article/climate-cop31-turkey-fossil-fuels-renewable-energy-1a76dbefe56039c8841e9aeb49468048",
+          "sourceName": "The Associated Press"
         }
       ],
       "count": 30
@@ -3839,6 +4025,20 @@
             "whole for part"
           ],
           "answer": "Synecdoche is a figure of speech in which a part represents the whole, or the whole represents a part. For example, 'all hands on deck' uses 'hands' to mean the people or workers."
+        },
+        {
+          "question": "What is irony in literature?",
+          "keywords": [
+            "irony",
+            "verbal irony",
+            "situational irony",
+            "dramatic irony",
+            "literary device"
+          ],
+          "answer": "Irony is a contrast between what is expected and what actually happens, or between what is said and what is meant. Verbal irony occurs when a speaker's intended meaning differs from the literal words. Situational irony occurs when the outcome differs significantly from what was expected. Dramatic irony occurs when the audience knows something important that a character does not. Sarcasm is often a sharp form of verbal irony, but not all irony is sarcastic.",
+          "entryType": "evergreen_reference",
+          "sourceName": "Texas A&M University Writing Center",
+          "sourceUrl": "https://writingcenter.tamu.edu/guides/resources/rhetorical-terms.html"
         }
       ],
       "count": 6
@@ -4198,20 +4398,34 @@
             "time"
           ],
           "answer": "Simple interest is calculated using I = PRT/100 when the rate R is a percentage per time period, P is principal and T is the number of matching periods."
+        },
+        {
+          "question": "What is the quadratic formula and how is it used?",
+          "keywords": [
+            "quadratic formula",
+            "quadratic equation",
+            "discriminant",
+            "roots",
+            "solve quadratic"
+          ],
+          "answer": "For a quadratic equation in standard form ax² + bx + c = 0, where a ≠ 0, the solutions are x = (−b ± √(b² − 4ac))/(2a). Identify a, b and c with their signs, substitute them into the formula, and simplify. Example: x² − 5x + 6 = 0 has a = 1, b = −5 and c = 6, so x = (5 ± √1)/2, giving x = 2 or x = 3. The discriminant b² − 4ac helps classify the roots: positive gives two distinct real roots, zero gives a repeated real root, and negative gives a pair of non-real complex conjugate roots.",
+          "entryType": "evergreen_reference",
+          "sourceName": "OpenStax College Algebra 2e",
+          "sourceUrl": "https://openstax.org/books/college-algebra-2e/pages/2-5-quadratic-equations"
         }
       ],
       "count": 8
     }
   ],
   "metadata": {
-    "updatedAt": "2026-11-08",
-    "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Dated news and weather entries are historical snapshots with source links and explicit dates; they are not a live news or weather feed.",
+    "updatedAt": "2026-11-10",
+    "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Evergreen reference entries are distinct from dated news, observations and forecasts. Dated records are historical snapshots with source links and explicit dates; they are not a live news or weather feed.",
     "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice.",
     "offlineMode": "CYBERAI answers from local records and built-in rules only; it cannot retrieve live news, weather, market prices or current election results.",
-    "latestResearchRun": "2026-11-08",
-    "weatherDataPolicy": "On 8 November 2026, NiMet's official Weather Forecast Bulletin and Hazard Watch pages were checked, but the accessible pages did not expose a dated daily forecast or heat advisory. A station observation from the U.S. National Weather Service for Lagos/Ikeja airport (DNMM) at 04:00 UTC on 8 November 2026 was saved only as a dated observation: 27°C, dew point 26°C, relative humidity 94%, west wind 3 kt, mostly clear, visibility greater than 7 miles, pressure 1013 hPa. It represents the airport station, not all of Lagos, and is not a heat alert. Check NiMet's official pages for current Nigerian forecasts and hazards: https://nimet.gov.ng/weather_forecast_bulletin and https://nimet.gov.ng/hazardwatch. Never present a past station report as current.",
-    "newsDataPolicy": "Current-affairs records are dated, source-linked snapshots. The 8 November 2026 update includes Nigeria's 7 November FIFA U-17 Women's World Cup victory, Senegal's 5 November budget-committee request, and Reuters' 8 November report of missile interceptions claimed by the Saudi-led coalition. Preserve attribution, publication dates and status caveats. The offline app must not present any saved record as today's or latest news; direct users to the original source for later developments."
+    "latestResearchRun": "2026-11-10",
+    "weatherDataPolicy": "On 10 November 2026, NiMet's daily regional outlook was checked from its public @NiMetNigeria feed as displayed in a public feed mirror. The forecast was valid 00:00–23:59 UTC and covered northern, central and southern Nigeria: sunny/hazy conditions in the north with slight dust haze possible in parts of Kano, Jigawa and Katsina; isolated light thunderstorms possible in parts of the FCT, Kogi, Benue and Kwara; and thunderstorms/light rainfall possible across parts of the south. The forecast contained no explicit high-temperature or heat-stress advisory. It is a regional forecast, not a station observation, and must be treated as expired after 23:59 UTC on 10 November. Source account: https://x.com/NiMetNigeria; public feed mirror used for verification: https://teapawt.org/nimetnigeria. No current station observation was added.",
+    "newsDataPolicy": "Current-affairs and public-health updates are dated, source-linked snapshots. The 10 November 2026 update adds South Africa's 4 November local-election outcome as reported 9 November; a police-reported Zamfara security incident from 9 November; Vodacom's half-year results; Botswana's conditional De Beers ownership plan; China's January–October trade data; Brazil's COP31 fossil-fuel transition roadmap; and WHO's 6 November Bundibugyo virus disease update with Nigeria figures explicitly dated as of 3 November. Preserve attribution, publication dates, provisional or conditional status, and all caveats. Never present saved records as today's or latest news; direct users to the original source for later developments."
   },
-  "updatedAt": "2026-11-08",
-  "policy": "Evergreen reference entries are labelled evergreen_reference. Current-affairs and sports reports are dated_news snapshots; weather observations are dated_observation records with station and observation time; forecasts are dated_forecast records with issue time, location and validity period. The offline app must not present dated records as today's or latest information; direct users to original sources for later developments. Never present a station observation as a forecast or general city-wide condition. Never add a weather forecast unless its issuing authority, issue time, location or region, and validity period can be verified. Never infer or invent a heat advisory."
+  "updatedAt": "2026-11-10",
+  "policy": "Evergreen reference entries are labelled evergreen_reference. Current-affairs and public-health reports are dated_news snapshots; weather observations are dated_observation records with station and observation time; forecasts are dated_forecast records with location and validity period. The offline app must not present dated records as today's or latest information; direct users to original sources for later developments. Never present a station observation as a forecast or general city-wide condition. Never add a weather forecast unless its issuing authority, source, location or region, and validity period can be verified. Never infer or invent a heat advisory."
 }
