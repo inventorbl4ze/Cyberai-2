@@ -634,10 +634,16 @@ const stopWords = new Set([
 function searchKnowledge(question){
   const q = normalize(question);
   const words = q.split(" ").filter(w=>w.length>2 && !stopWords.has(w));
+  const definitionStyle =
+    /^(what is|what are|define|explain|difference between|how does|how do|why does|why do)\b/.test(q);
+  const explicitDate =
+    /\b20\d{2}\b|\b\d{1,2}\s+(january|february|march|april|may|june|july|august|september|october|november|december)\s+20\d{2}\b|\b(january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{1,2},?\s+20\d{2}\b/.test(q);
   let best = null;
   let bestScore = 0;
 
   knowledgeLibrary.forEach(entry=>{
+    // Do not let a dated news or forecast snapshot win a general definition question.
+    if(definitionStyle && !explicitDate && String(entry.entryType || "").startsWith("dated_")) return;
     const questionText = normalize(entry.question || "");
     const keywordText = normalize((entry.keywords || []).join(" "));
     let score = 0;
@@ -664,7 +670,6 @@ function searchKnowledge(question){
 
   return bestScore >= 3 ? best : null;
 }
-
 function localConversation(text){
   const q = normalize(text);
 
@@ -715,7 +720,8 @@ function getAnswer(text){
   const match = searchKnowledge(text);
   const asksForDefinition =
     /^(what is|what are|define|explain|difference between|how does|how do|why does|why do)\b/.test(q) &&
-    !(/\b(in|at|near|today|tomorrow|this|latest|current|currently|right now|tonight)\b/.test(q) && asksAboutChangingInformation);
+    !(/\b(in|at|near|today|tomorrow|this|latest|current|currently|right now|tonight)\b/.test(q) && asksAboutChangingInformation) &&
+    !(/\b(news|headlines|election|president|minister|government|exchange rate|inflation rate|policy rate|stock price|market price|market update|current affairs|breaking news|results)\b/.test(q));
   const offlineNotice =
     "I am running in offline knowledge-library mode, so I cannot verify live news, weather, forecasts, election results or market prices. My saved records are dated snapshots, not live updates. Please check the linked official or original source and confirm its publication date and, for weather, its forecast-valid period.";
 
