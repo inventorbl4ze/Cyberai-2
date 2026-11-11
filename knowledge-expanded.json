@@ -649,6 +649,22 @@
             "output"
           ],
           "answer": "An AI hallucination is an answer that sounds confident but contains invented or incorrect information. Important claims should be checked against reliable sources."
+        },
+        {
+          "question": "Why does local context matter in AI datasets?",
+          "keywords": [
+            "local data",
+            "AI datasets",
+            "local context",
+            "language",
+            "representation",
+            "bias",
+            "data quality"
+          ],
+          "answer": "EVERGREEN REFERENCE — AI systems learn patterns from the data used to train and evaluate them. Datasets that fairly represent local languages, accents, geography, institutions and everyday conditions can help AI tools work better for the communities using them and reduce blind spots. However, local data alone does not guarantee accuracy or fairness. Data should be relevant, high-quality and lawfully collected, with privacy protection, appropriate consent, bias checks and clear governance. Source: https://www.unesco.org/en/en/data-governance-digital-age/about",
+          "entryType": "evergreen_reference",
+          "source": "https://www.unesco.org/en/en/data-governance-digital-age/about",
+          "sourceName": "UNESCO"
         }
       ],
       "count": 6
@@ -1682,6 +1698,48 @@
           ],
           "answer": "A Taylor series represents a sufficiently differentiable function near a chosen point a using its derivatives: f(x) = f(a) + f′(a)(x−a) + f″(a)(x−a)²/2! + … . It can approximate a function with a polynomial when the series converges to that function. A Maclaurin series is the special case a = 0. Always consider the interval where the series converges.",
           "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What is integration by parts?",
+          "keywords": [
+            "integration by parts",
+            "integration",
+            "calculus",
+            "product rule",
+            "integral"
+          ],
+          "answer": "EVERGREEN REFERENCE — Integration by parts is a method for integrating a product of functions. It is based on the product rule for differentiation. Its formula is ∫u dv = uv − ∫v du, where u and v are chosen so that the new integral is easier to evaluate. For a definite integral, evaluate uv at the upper and lower limits and subtract the remaining definite integral. For an indefinite integral, include the constant of integration C. Source: https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts",
+          "sourceName": "OpenStax, Calculus Volume 2"
+        },
+        {
+          "question": "What is partial fraction decomposition?",
+          "keywords": [
+            "partial fractions",
+            "partial fraction decomposition",
+            "rational function",
+            "integration",
+            "algebra"
+          ],
+          "answer": "EVERGREEN REFERENCE — Partial fraction decomposition rewrites a rational expression as a sum of simpler fractions. First factor the denominator; then choose terms that match its factors, including repeated or irreducible quadratic factors. If the numerator's degree is not lower than the denominator's degree, perform polynomial division first. The method is useful in algebra and in integrating rational functions. Source: https://openstax.org/books/calculus-volume-2/pages/3-4-partial-fractions",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/calculus-volume-2/pages/3-4-partial-fractions",
+          "sourceName": "OpenStax, Calculus Volume 2"
+        },
+        {
+          "question": "What is the order of a differential equation?",
+          "keywords": [
+            "order of differential equation",
+            "highest derivative",
+            "first order",
+            "second order",
+            "differential equations"
+          ],
+          "answer": "EVERGREEN REFERENCE — The order of a differential equation is the order of the highest derivative of the unknown function that appears in it. For example, y'' + 3y' + 2y = 0 is second order because its highest derivative is y''. The order is determined by the derivative, not by the power of the derivative. Source: https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations",
+          "sourceName": "OpenStax, Calculus Volume 2"
         }
       ],
       "count": 21
@@ -2360,6 +2418,52 @@
           "answer": "Oral rehydration solution (ORS) is a carefully balanced solution of clean water, glucose and salts that helps replace water and electrolytes lost during diarrhoea. Commercial ORS sachets should be prepared exactly as their packet instructions state. ORS does not replace medical assessment: urgent professional care is important when dehydration is severe or a person cannot keep fluids down. This is general health education, not personal medical advice. Source: https://www.who.int/health-topics/diarrhoea",
           "entryType": "evergreen_reference",
           "source": "https://www.who.int/health-topics/diarrhoea",
+          "sourceName": "World Health Organization (WHO)"
+        },
+        {
+          "question": "What is dengue?",
+          "keywords": [
+            "dengue",
+            "dengue virus",
+            "Aedes mosquito",
+            "mosquito-borne disease",
+            "fever",
+            "vector control"
+          ],
+          "answer": "EVERGREEN REFERENCE — Dengue is a viral infection caused by the dengue virus and spread mainly through the bites of infected Aedes mosquitoes, which often bite during the day. Some infected people have no symptoms; illness can include fever, headache, pain behind the eyes, muscle or joint aches, nausea and rash. Severe dengue can occur and requires urgent professional medical care. Prevention includes avoiding mosquito bites and reducing breeding sites: cover, empty and clean water-storage containers regularly, remove items that collect water, use window screens and apply approved repellents according to their labels. Symptoms alone cannot confirm dengue; diagnosis requires appropriate health assessment and testing. This is general health education, not a diagnosis. Source: https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+          "entryType": "evergreen_reference",
+          "source": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+          "sourceName": "World Health Organization (WHO)"
+        },
+        {
+          "question": "What is chikungunya?",
+          "keywords": [
+            "chikungunya",
+            "chikungunya virus",
+            "Aedes mosquito",
+            "mosquito-borne disease",
+            "joint pain",
+            "fever"
+          ],
+          "answer": "EVERGREEN REFERENCE — Chikungunya is a viral disease transmitted to people by infected mosquitoes, mainly Aedes aegypti and Aedes albopictus. Common symptoms can include a sudden fever, joint pain, muscle pain, headache, nausea, tiredness and rash. Its symptoms can resemble dengue and other infections, so a health professional and suitable laboratory testing may be needed to distinguish them. Prevention focuses on avoiding mosquito bites and reducing standing-water breeding sites by regularly emptying and cleaning containers, covering stored water, using screens and wearing protective clothing. This is general health education, not a diagnosis. Source: https://www.who.int/news-room/fact-sheets/detail/Chikungunya",
+          "entryType": "evergreen_reference",
+          "source": "https://www.who.int/news-room/fact-sheets/detail/Chikungunya",
+          "sourceName": "World Health Organization (WHO)"
+        },
+        {
+          "question": "Why should every fever not be assumed to be malaria?",
+          "keywords": [
+            "fever",
+            "malaria",
+            "dengue",
+            "chikungunya",
+            "diagnosis",
+            "testing",
+            "Nigeria"
+          ],
+          "answer": "EVERGREEN REFERENCE — Fever is a symptom, not a diagnosis. Malaria is an important cause of fever in Nigeria, but other infections, including dengue and chikungunya, can also cause fever and overlapping symptoms. The correct cause cannot reliably be identified from fever alone. A qualified health professional can assess the person and arrange appropriate testing or treatment. Avoid assuming that every fever is malaria or using medicines without suitable clinical guidance. Seek prompt medical assessment if a fever persists, worsens or causes concern. This is general health education, not personal medical advice. Sources: https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue ; https://www.who.int/news-room/fact-sheets/detail/Chikungunya",
+          "entryType": "evergreen_reference",
+          "source": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
           "sourceName": "World Health Organization (WHO)"
         }
       ],
@@ -3271,6 +3375,35 @@
           "entryType": "evergreen_reference",
           "source": "https://csrc.nist.gov/pubs/sp/800/145/final",
           "sourceName": "National Institute of Standards and Technology (NIST)"
+        },
+        {
+          "question": "What is data governance?",
+          "keywords": [
+            "data governance",
+            "data quality",
+            "data privacy",
+            "data security",
+            "accountability",
+            "AI governance"
+          ],
+          "answer": "EVERGREEN REFERENCE — Data governance is the set of people, roles, processes, policies and technologies used to guide how data is collected, stored, accessed, shared, protected and used. Good governance supports trustworthy data, privacy, security, accountability, fairness and responsible reuse. It helps organisations create value from data while reducing risks and harm. Source: https://www.unesco.org/en/en/data-governance-digital-age/about",
+          "entryType": "evergreen_reference",
+          "source": "https://www.unesco.org/en/en/data-governance-digital-age/about",
+          "sourceName": "UNESCO"
+        },
+        {
+          "question": "What is data sovereignty?",
+          "keywords": [
+            "data sovereignty",
+            "digital sovereignty",
+            "data control",
+            "data rights",
+            "data governance"
+          ],
+          "answer": "EVERGREEN REFERENCE — Data sovereignty is a policy concept about the ability of people, communities, organisations or governments to exercise control over their digital future and the conditions under which data is accessed, shared and used. There is no single universally accepted definition. It can involve infrastructure, technical standards and rules, as well as data access and flows. It is not automatically the same as requiring all data to be stored inside one country. Responsible approaches should also protect privacy, rights, security and fair benefit-sharing. Source: UNESCO Working Group Report on Data Governance in the Digital Age: https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_7df25505-39f6-4f20-82d0-435bdae27a78?_=394518eng.pdf",
+          "entryType": "evergreen_reference",
+          "source": "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_7df25505-39f6-4f20-82d0-435bdae27a78?_=394518eng.pdf",
+          "sourceName": "UNESCO Working Group on Data Governance in the Digital Age"
         }
       ],
       "count": 10
@@ -4142,6 +4275,60 @@
           "source": "https://apnews.com/article/cop31-turkey-climate-change-fossil-fuels-solar-485bafe52db2c4ab240b9017dcaf8259",
           "sourceName": "The Associated Press",
           "date": "2026-11-11"
+        },
+        {
+          "question": "What did Nigeria's health authorities report about Ebola and mosquito-borne diseases on 11 November 2026?",
+          "keywords": [
+            "Nigeria",
+            "NCDC",
+            "Ebola",
+            "Bundibugyo",
+            "dengue",
+            "chikungunya",
+            "Sokoto",
+            "Zamfara",
+            "11 November 2026"
+          ],
+          "answer": "DATED NEWS — The News Agency of Nigeria reported on 11 November 2026, quoting NCDC Director-General Dr Jide Idris, that Nigeria had recorded no additional Ebola case in the 21 days after confirming an imported Bundibugyo virus infection. The update said 62 contacts had been identified, 34 had completed their 21-day monitoring period and 28 remained under surveillance; the response and contact tracing were still active. The same update said dengue had been confirmed in Sokoto and Zamfara States and chikungunya in Sokoto, with surveillance and response activities intensified. For comparison, NCDC's official situation report dated 8 November recorded 26 contacts as having completed follow-up by that earlier reporting point. These are dated snapshots, not live case counts, and the later report does not mean the response had ended. Fever can have several causes; appropriate clinical assessment and testing are needed rather than assuming every fever is malaria. Sources: https://nannews.ng/nigeria-records-no-new-ebola-case-21-days-after-imported-infection-ncdc/ ; https://ncdc.gov.ng/themes/common/files/sitreps/15c77724006c3aa49a953ebd09cdc438.pdf",
+          "entryType": "dated_news",
+          "source": "https://nannews.ng/nigeria-records-no-new-ebola-case-21-days-after-imported-infection-ncdc/",
+          "sourceName": "News Agency of Nigeria, quoting the Nigeria Centre for Disease Control and Prevention (NCDC)",
+          "date": "2026-11-11"
+        },
+        {
+          "question": "What did an Africa-focused data-sovereignty symposium discuss in Nairobi on 10–11 November 2026?",
+          "keywords": [
+            "Africa",
+            "data sovereignty",
+            "data governance",
+            "APHRC",
+            "Science for Africa Foundation",
+            "GSMA",
+            "Nairobi",
+            "November 2026"
+          ],
+          "answer": "DATED NEWS — Science Africa reported on 10 November 2026 that the two-day 2026 Africa Health and Development Annual Research Symposium in Nairobi, scheduled for 10–11 November, was convened by the African Population and Health Research Center (APHRC) with the Science for Africa Foundation and GSMA. Speakers called for African institutions and researchers to play a stronger role in governing, analysing and using data generated by African communities, and for technology to reflect local needs such as language access. The discussion emphasised local capacity, infrastructure, accountability and community benefit. These were views and priorities expressed at a symposium, not a binding continental agreement or proof that a new policy had been adopted. Source: https://news.scienceafrica.co.ke/africa-urged-to-take-control-of-its-data/",
+          "entryType": "dated_news",
+          "source": "https://news.scienceafrica.co.ke/africa-urged-to-take-control-of-its-data/",
+          "sourceName": "Science Africa",
+          "date": "2026-11-10"
+        },
+        {
+          "question": "What did Voice of Nigeria report about World Science Day and science diplomacy on 10 November 2026?",
+          "keywords": [
+            "Nigeria",
+            "World Science Day",
+            "science diplomacy",
+            "Common Ground Through Science Diplomacy",
+            "research",
+            "innovation",
+            "November 2026"
+          ],
+          "answer": "DATED NEWS — Voice of Nigeria published a commentary on 10 November 2026 about the 2026 World Science Day for Peace and Development and its theme, “Common Ground Through Science Diplomacy”. It discussed how cross-border scientific cooperation can support work on climate change, food security, public health and development. The article also described Nigeria's research and innovation funding plans, science partnerships and negotiations on cooperation with the European Union. The article presents opportunities and policy developments; it should not be read as evidence that every proposed partnership has been completed or has already produced results. Source: https://von.gov.ng/bridging-borders-through-science-nigerias-strategic-role-in-global-innovation-and-diplomacy/",
+          "entryType": "dated_news",
+          "source": "https://von.gov.ng/bridging-borders-through-science-nigerias-strategic-role-in-global-innovation-and-diplomacy/",
+          "sourceName": "Voice of Nigeria",
+          "date": "2026-11-10"
         }
       ],
       "count": 30
@@ -4951,14 +5138,14 @@
     "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice.",
     "offlineMode": "CYBERAI answers from local records and built-in rules only; it cannot retrieve live news, weather, market prices or current election results.",
     "latestResearchRun": "2026-11-11",
-    "weatherDataPolicy": "On 11 November 2026, NiMet's official @NiMetNigeria account was checked via its public feed mirror. Its daily regional forecast for Nigeria was valid 00:00–23:59 UTC on 11 November (01:00–00:59 WAT spanning into 12 November): sunny/dry in the North, sunny with cloud patches in the Central region, and cloudy with sunshine intervals in the South; slim prospects of isolated afternoon/evening thunderstorms with light rain were listed for parts of Oyo, Ekiti, Ondo, Osun, Imo, Abia, Lagos, Delta, Bayelsa, Cross River, Akwa Ibom and Rivers. This is a dated regional forecast, not a station observation or city-wide measurement. NiMet's national November 2026 outlook, posted 10 November, gave maximum temperatures of 28.6–37.7°C, minimum temperatures of 14.6–25.8°C and rainfall of 2.2–217.7 mm, with increased thermal discomfort especially in North-Central and Southern Nigeria. This monthly outlook is not a formal city-specific heat alert. No current station observation or separate heat warning was verified or added. Sources: https://x.com/NiMetNigeria ; public feed mirror: https://teapawt.org/nimetnigeria. Forecasts expire at their stated validity times.",
-    "newsDataPolicy": "The 11 November 2026 research update adds: Nigeria's proposed West African capital-market reforms (Reuters, 10 November; proposals, not enacted); the DRC Bundibugyo virus outbreak figures reported by AP from health-ministry data on 11 November (11,042 infections and 5,387 deaths; keep distinct from WHO's 6 November bulletin whose DRC data were as of 3 November); Nigeria's endorsement of a voluntary, non-binding global rooftop-solar declaration at COP31 (AP, 11 November); TSMC's announced investment plans involving OpenAI and Anthropic (Reuters, 10 November; planned, not necessarily closed); and WMO's 9 November 2026 climate update. Preserve publication dates, reporting source, provisional status and all caveats. These are dated snapshots, not live news.",
+    "weatherDataPolicy": "On 11 November 2026, NiMet's official @NiMetNigeria account was checked via its public feed mirror. Its daily regional forecast for Nigeria was valid 00:00–23:59 UTC on 11 November (01:00–00:59 WAT spanning into 12 November): sunny/dry in the North, sunny with cloud patches in the Central region, and cloudy with sunshine intervals in the South; slim prospects of isolated afternoon/evening thunderstorms with light rain were listed for parts of Oyo, Ekiti, Ondo, Osun, Imo, Abia, Lagos, Delta, Bayelsa, Cross River, Akwa Ibom and Rivers. This is a dated regional forecast, not a station observation or city-wide measurement. NiMet's national November 2026 outlook, posted 10 November, gave maximum temperatures of 28.6–37.7°C, minimum temperatures of 14.6–25.8°C and rainfall of 2.2–217.7 mm, with increased thermal discomfort especially in North-Central and Southern Nigeria. This monthly outlook is not a formal city-specific heat alert. No current station observation or separate heat warning was verified or added. Sources: https://x.com/NiMetNigeria ; public feed mirror: https://teapawt.org/nimetnigeria. Forecasts expire at their stated validity times. Rechecked on 11 November 2026 using NiMet's official website and its linked operational display. The display showed a latest observation timestamp of 06:00 UTC and a forecast panel, but the retrieved view did not identify the selected city or observing station; these figures were therefore not added as a location-specific observation. NiMet's public alert widget displayed general and storm-alert headings without detailed, dated, location-specific alert text. No new station-specific observation or separate heat advisory was verified. The existing Nigeria-wide regional forecast for 11 November remains a dated forecast valid only for its stated period. Official reference: https://nimet.gov.ng/ ; alerts: https://nimet.gov.ng/widget/alert.",
+    "newsDataPolicy": "The 11 November 2026 research update adds: Nigeria's proposed West African capital-market reforms (Reuters, 10 November; proposals, not enacted); the DRC Bundibugyo virus outbreak figures reported by AP from health-ministry data on 11 November (11,042 infections and 5,387 deaths; keep distinct from WHO's 6 November bulletin whose DRC data were as of 3 November); Nigeria's endorsement of a voluntary, non-binding global rooftop-solar declaration at COP31 (AP, 11 November); TSMC's announced investment plans involving OpenAI and Anthropic (Reuters, 10 November; planned, not necessarily closed); and WMO's 9 November 2026 climate update. Preserve publication dates, reporting source, provisional status and all caveats. These are dated snapshots, not live news. The 11 November 2026 research run adds a NAN report quoting a subsequent NCDC national health-security update on Nigeria's imported Bundibugyo Ebola case and reported dengue/chikungunya activity; the NCDC 8 November situation report is retained only as an earlier dated comparison. It also adds Science Africa's 10 November report from the 10–11 November Africa Health and Development Annual Research Symposium on African data governance, and Voice of Nigeria's 10 November commentary on World Science Day and science diplomacy. These are dated reports and conference statements, not live status or proof that proposed policies have been implemented.",
     "latestUpdateSummary": {
       "date": "2026-11-11",
-      "datedEntriesAdded": 7,
-      "evergreenEntriesAdded": 31,
+      "datedEntriesAdded": 3,
+      "evergreenEntriesAdded": 9,
       "liveWeatherObservationAdded": false,
-      "note": "Research snapshots only. CYBERAI remains offline and cannot retrieve live news or weather."
+      "note": "Added three dated Nigeria/Africa current-affairs reports and nine evergreen lessons in health, Further Mathematics, data governance and AI. The NiMet review did not verify a location-labelled observation or detailed local heat alert. CYBERAI remains offline and cannot retrieve live news or weather."
     }
   },
   "updatedAt": "2026-11-11",
