@@ -58,6 +58,30 @@
             "squared"
           ],
           "answer": "A quadratic equation is an equation whose highest power of the variable is 2. Its general form is ax² + bx + c = 0, where a is not zero."
+        },
+        {
+          "question": "How do you solve a pair of simultaneous linear equations?",
+          "keywords": [
+            "simultaneous equations",
+            "linear equations",
+            "substitution",
+            "elimination",
+            "unknowns"
+          ],
+          "answer": "Simultaneous linear equations are two or more equations that share the same unknowns. A solution must satisfy every equation at once. Common methods are substitution (make one variable the subject and substitute it into the other equation) and elimination (add or subtract suitably multiplied equations to remove one variable). For example, x + y = 7 and x − y = 1 give 2x = 8, so x = 4 and y = 3. Check both values in the original equations.",
+          "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What is a trigonometric identity?",
+          "keywords": [
+            "trigonometric identity",
+            "sine",
+            "cosine",
+            "tangent",
+            "trigonometry"
+          ],
+          "answer": "A trigonometric identity is an equality involving trigonometric functions that is true for every angle in its domain. A key identity is sin²θ + cos²θ = 1. Dividing this identity by cos²θ gives tan²θ + 1 = sec²θ when cosθ is not zero. Identities are used to simplify expressions and prove that two trigonometric expressions are equivalent.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 6
@@ -180,6 +204,30 @@
           "entryType": "evergreen_reference",
           "sourceName": "OpenStax University Physics Volume 2 — Plane Electromagnetic Waves",
           "source": "https://openstax.org/books/university-physics-volume-2/pages/16-2-plane-electromagnetic-waves"
+        },
+        {
+          "question": "What is specific heat capacity?",
+          "keywords": [
+            "specific heat capacity",
+            "heat",
+            "thermal energy",
+            "Q equals mc delta T",
+            "temperature change"
+          ],
+          "answer": "Specific heat capacity is the energy needed to raise the temperature of 1 kilogram of a substance by 1 kelvin (or 1°C). For a temperature change without a change of state, the relationship is Q = mcΔT, where Q is thermal energy in joules, m is mass in kilograms, c is specific heat capacity in J kg⁻¹ K⁻¹, and ΔT is the temperature change. Specific heat capacity is a property of the material; heat capacity refers to a whole object.",
+          "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What is the law of conservation of momentum?",
+          "keywords": [
+            "conservation of momentum",
+            "momentum",
+            "p equals mv",
+            "isolated system",
+            "collision"
+          ],
+          "answer": "Momentum is mass multiplied by velocity: p = mv. The law of conservation of momentum states that the total momentum of a closed or isolated system remains constant if the net external force on the system is zero. Therefore, total momentum before an interaction equals total momentum after it. Momentum is a vector, so direction and signs must be included in calculations.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 10
@@ -259,6 +307,34 @@
           "entryType": "evergreen_reference",
           "sourceName": "OpenStax Chemistry 2e",
           "sourceUrl": "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh"
+        },
+        {
+          "question": "What is the mole concept in chemistry?",
+          "keywords": [
+            "mole",
+            "Avogadro constant",
+            "amount of substance",
+            "6.02214076 times 10 to the 23"
+          ],
+          "answer": "The mole (symbol mol) is the SI unit for amount of substance. One mole contains exactly 6.02214076 × 10²³ specified elementary entities, such as atoms, molecules or ions. The mole lets chemists connect the number of microscopic particles to measurable quantities such as mass. The molar mass is the mass of one mole of a substance, usually expressed in g mol⁻¹. Source: https://goldbook.iupac.org/terms/view/M03980",
+          "entryType": "evergreen_reference",
+          "source": "https://goldbook.iupac.org/terms/view/M03980",
+          "sourceName": "International Union of Pure and Applied Chemistry (IUPAC)"
+        },
+        {
+          "question": "What is electrolysis?",
+          "keywords": [
+            "electrolysis",
+            "electrolyte",
+            "electrodes",
+            "anode",
+            "cathode",
+            "ions"
+          ],
+          "answer": "Electrolysis uses an external electrical supply to drive a chemical change in an electrolyte. Positive ions (cations) move towards the cathode, where reduction occurs; negative ions (anions) move towards the anode, where oxidation occurs. The products depend on the ions present, the electrodes and the conditions. Source: https://edu.rsc.org/ideas/5-ways-to-explain-electrolysis/4012108.article",
+          "entryType": "evergreen_reference",
+          "source": "https://edu.rsc.org/ideas/5-ways-to-explain-electrolysis/4012108.article",
+          "sourceName": "Royal Society of Chemistry Education"
         }
       ],
       "count": 6
@@ -338,6 +414,30 @@
           "entryType": "evergreen_reference",
           "sourceName": "OpenStax Biology 2e",
           "sourceUrl": "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis"
+        },
+        {
+          "question": "What is homeostasis?",
+          "keywords": [
+            "homeostasis",
+            "internal environment",
+            "negative feedback",
+            "body temperature",
+            "blood glucose"
+          ],
+          "answer": "Homeostasis is the regulation of an organism's internal conditions within suitable ranges despite changes inside or outside the body. Examples include controlling body temperature, blood glucose and water balance. Receptors detect a change, a control system processes information, and effectors produce a response. Negative feedback reduces the original change and helps return a condition towards its normal range.",
+          "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What is transpiration in plants?",
+          "keywords": [
+            "transpiration",
+            "water loss",
+            "stomata",
+            "xylem",
+            "guard cells"
+          ],
+          "answer": "Transpiration is the loss of water vapour from a plant, mainly through stomata in its leaves. Evaporation from leaf surfaces helps create a pull that draws water and dissolved mineral ions upwards through the xylem. Guard cells regulate the opening and closing of stomata, balancing gas exchange with water conservation.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 6
@@ -663,6 +763,33 @@
           "entryType": "evergreen_reference",
           "source": "https://www.unesco.org/en/query-list/b/biodiversity",
           "sourceName": "UNESCO"
+        },
+        {
+          "question": "What are latitude and longitude?",
+          "keywords": [
+            "latitude",
+            "longitude",
+            "geographic coordinates",
+            "equator",
+            "prime meridian",
+            "map location"
+          ],
+          "answer": "Latitude and longitude are angular coordinates used to describe locations on Earth. Latitude measures how far north or south a place is from the Equator, from 0° to 90° in either direction. Longitude measures how far east or west a place is from the Prime Meridian, up to 180°. Together, they help identify a position on a map or globe.",
+          "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What is a watershed or drainage basin?",
+          "keywords": [
+            "watershed",
+            "drainage basin",
+            "catchment",
+            "river system",
+            "drainage divide"
+          ],
+          "answer": "A watershed (also called a drainage basin or catchment) is the area of land from which rainfall and streams drain towards a shared outlet, such as a river, lake or reservoir. Higher ridges form drainage divides between neighbouring watersheds. Land use across a watershed can affect the amount and quality of water reaching its rivers. Source: https://www.usgs.gov/water-science-school/science/watersheds-and-drainage-basins",
+          "entryType": "evergreen_reference",
+          "source": "https://www.usgs.gov/water-science-school/science/watersheds-and-drainage-basins",
+          "sourceName": "U.S. Geological Survey (USGS)"
         }
       ],
       "count": 9
@@ -744,6 +871,32 @@
           "entryType": "evergreen_reference",
           "sourceName": "Princeton Encyclopedia of Self-Determination — Federalism and Federation; Federal Republic of Nigeria Constitution",
           "source": "https://pesd.princeton.edu/node/431"
+        },
+        {
+          "question": "What is the separation of powers?",
+          "keywords": [
+            "separation of powers",
+            "legislature",
+            "executive",
+            "judiciary",
+            "checks and balances"
+          ],
+          "answer": "The separation of powers is a constitutional principle that divides public authority among different branches of government. In a common model, the legislature makes laws, the executive carries them out, and the judiciary interprets laws and resolves legal disputes. The exact arrangement differs by country. The aim is to prevent excessive concentration of power and support accountability.",
+          "entryType": "evergreen_reference"
+        },
+        {
+          "question": "When did Nigeria gain independence?",
+          "keywords": [
+            "Nigeria independence",
+            "1 October 1960",
+            "British rule",
+            "Independence Day",
+            "history of Nigeria"
+          ],
+          "answer": "Nigeria became independent from British colonial rule on 1 October 1960. The 1960 Independence Constitution established a federal parliamentary system, with an elected prime minister and a ceremonial head of state. Nigeria became a republic on 1 October 1963. Source: https://fmino.gov.ng/nigerias-independence-day/",
+          "entryType": "evergreen_reference",
+          "source": "https://fmino.gov.ng/nigerias-independence-day/",
+          "sourceName": "Federal Ministry of Information and National Orientation, Nigeria"
         }
       ],
       "count": 7
@@ -883,6 +1036,33 @@
             "business finance"
           ],
           "answer": "Cash flow is the movement of money into and out of a business over a period. Positive cash flow means more cash came in than went out during that period; negative cash flow means more went out than came in. A business can report a profit and still face cash-flow problems if customers pay late."
+        },
+        {
+          "question": "What is the break-even point in a business?",
+          "keywords": [
+            "break even point",
+            "break even analysis",
+            "fixed costs",
+            "variable costs",
+            "revenue",
+            "business planning"
+          ],
+          "answer": "The break-even point is the level of sales at which total revenue equals total costs, so the business makes neither a profit nor a loss. In units, a simple formula is fixed costs ÷ (selling price per unit − variable cost per unit), provided the contribution per unit is positive. A break-even estimate helps a business plan sales targets, but it depends on realistic cost and price assumptions. Source: https://www.sba.gov/counseling/plan-your-business/",
+          "entryType": "evergreen_reference",
+          "source": "https://www.sba.gov/counseling/plan-your-business/",
+          "sourceName": "U.S. Small Business Administration"
+        },
+        {
+          "question": "What is the difference between fixed costs and variable costs?",
+          "keywords": [
+            "fixed costs",
+            "variable costs",
+            "business expenses",
+            "production costs",
+            "overheads"
+          ],
+          "answer": "Fixed costs are expenses that usually remain the same over a chosen time period even when output changes, such as a monthly rent payment. Variable costs change with the amount produced or sold, such as materials used for each item. Some costs are mixed or semi-variable. Businesses use these categories when preparing budgets, pricing products and estimating the break-even point.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 7
@@ -980,6 +1160,32 @@
           "entryType": "evergreen_reference",
           "sourceName": "UNESCO — The Creative Commons licences",
           "sourceUrl": "https://www.unesco.org/en/open-access/creative-commons"
+        },
+        {
+          "question": "What is typography?",
+          "keywords": [
+            "typography",
+            "typeface",
+            "font",
+            "letter spacing",
+            "readability",
+            "graphic design"
+          ],
+          "answer": "Typography is the design and arrangement of written characters so that text is readable and communicates an appropriate visual tone. Designers consider typeface, size, weight, line length, spacing, alignment and contrast. Good typography creates a clear reading order and makes information easier to understand.",
+          "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What is visual hierarchy in design?",
+          "keywords": [
+            "visual hierarchy",
+            "design layout",
+            "emphasis",
+            "contrast",
+            "size",
+            "composition"
+          ],
+          "answer": "Visual hierarchy is the arrangement of design elements so viewers can recognise the most important information first. Designers create hierarchy through size, contrast, colour, position, spacing, alignment and typography. A clear hierarchy guides attention without making the layout confusing or overcrowded.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 8
@@ -1044,6 +1250,18 @@
             "movement"
           ],
           "answer": "Choreography is the planning and arrangement of movements in a dance or performance."
+        },
+        {
+          "question": "What is a time signature in music?",
+          "keywords": [
+            "time signature",
+            "meter",
+            "beats per bar",
+            "4 4 time",
+            "music notation"
+          ],
+          "answer": "A time signature is the pair of numbers written at the beginning of a piece of music to show its metre. The top number tells how many beats or counted units are in each bar; the bottom number shows which note value represents one unit. For example, 4/4 commonly has four quarter-note beats in each bar.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 6
@@ -1190,6 +1408,18 @@
             "speaking"
           ],
           "answer": "Communication is the exchange of information, thoughts and feelings through speaking, writing, signs or other forms."
+        },
+        {
+          "question": "What is time blocking?",
+          "keywords": [
+            "time blocking",
+            "time management",
+            "schedule",
+            "study planning",
+            "focus"
+          ],
+          "answer": "Time blocking is a planning method in which you reserve specific periods in a calendar for particular tasks, study, rest or other responsibilities. A useful plan gives tasks realistic time, includes breaks and leaves some flexible space for unexpected events. It is a guide, not a requirement to fill every minute.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 6
@@ -1428,6 +1658,30 @@
           "entryType": "evergreen_reference",
           "sourceName": "Wolfram MathWorld",
           "sourceUrl": "https://mathworld.wolfram.com/deMoivresIdentity.html"
+        },
+        {
+          "question": "What is the Newton–Raphson method?",
+          "keywords": [
+            "Newton Raphson",
+            "numerical methods",
+            "root approximation",
+            "iteration",
+            "derivative"
+          ],
+          "answer": "The Newton–Raphson method is an iterative numerical technique for approximating a root of f(x) = 0. Starting from an initial estimate x₀, calculate xₙ₊₁ = xₙ − f(xₙ)/f′(xₙ), provided f′(xₙ) is not zero. Repeat until the estimates are sufficiently close. A poor starting value or a derivative close to zero can make the method fail or move away from a root, so results should be checked.",
+          "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What is a Taylor series?",
+          "keywords": [
+            "Taylor series",
+            "power series",
+            "derivatives",
+            "polynomial approximation",
+            "Maclaurin series"
+          ],
+          "answer": "A Taylor series represents a sufficiently differentiable function near a chosen point a using its derivatives: f(x) = f(a) + f′(a)(x−a) + f″(a)(x−a)²/2! + … . It can approximate a function with a polynomial when the series converges to that function. A Maclaurin series is the special case a = 0. Always consider the interval where the series converges.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 21
@@ -2061,6 +2315,52 @@
           "date": "2026-11-06",
           "source": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625",
           "sourceName": "World Health Organization (WHO)"
+        },
+        {
+          "question": "What did the Associated Press report about the Bundibugyo virus outbreak in the DRC on 11 November 2026?",
+          "keywords": [
+            "Democratic Republic of the Congo",
+            "DRC",
+            "Bundibugyo virus disease",
+            "Ebola",
+            "outbreak",
+            "11 November 2026",
+            "health ministry data"
+          ],
+          "answer": "DATED PUBLIC-HEALTH NEWS — on 11 November 2026, the Associated Press reported figures from the Democratic Republic of the Congo's health ministry showing 11,042 infections and 5,387 deaths in the ongoing Bundibugyo virus disease outbreak, which had spread across eight provinces. These are figures reported by the health ministry through AP, not a live counter or a new WHO surveillance table. WHO's separate 6 November bulletin reported its own DRC figures as of 3 November; the dates and reporting sources must not be mixed. For later figures and public-health guidance, check WHO and the relevant health authorities. This entry is educational and is not personal medical advice. Source: https://apnews.com/article/congo-ebola-outbreak-cae4cef6e48c1d2210a59c72676bff29",
+          "entryType": "dated_news",
+          "source": "https://apnews.com/article/congo-ebola-outbreak-cae4cef6e48c1d2210a59c72676bff29",
+          "sourceName": "The Associated Press",
+          "date": "2026-11-11"
+        },
+        {
+          "question": "What are vector-borne diseases?",
+          "keywords": [
+            "vector borne disease",
+            "mosquito",
+            "tick",
+            "pathogen transmission",
+            "malaria",
+            "dengue"
+          ],
+          "answer": "Vector-borne diseases are illnesses caused by pathogens that are transmitted between people or from animals to people by living carriers called vectors. Examples include malaria transmitted by Anopheles mosquitoes and some diseases spread by ticks. Prevention depends on the disease and may include vector control, protective barriers, vaccination where available, surveillance and community health measures. This is general public-health education, not a diagnosis. Source: https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases",
+          "entryType": "evergreen_reference",
+          "source": "https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases",
+          "sourceName": "World Health Organization (WHO)"
+        },
+        {
+          "question": "What is oral rehydration solution (ORS)?",
+          "keywords": [
+            "oral rehydration solution",
+            "ORS",
+            "dehydration",
+            "electrolytes",
+            "diarrhoea"
+          ],
+          "answer": "Oral rehydration solution (ORS) is a carefully balanced solution of clean water, glucose and salts that helps replace water and electrolytes lost during diarrhoea. Commercial ORS sachets should be prepared exactly as their packet instructions state. ORS does not replace medical assessment: urgent professional care is important when dehydration is severe or a person cannot keep fluids down. This is general health education, not personal medical advice. Source: https://www.who.int/health-topics/diarrhoea",
+          "entryType": "evergreen_reference",
+          "source": "https://www.who.int/health-topics/diarrhoea",
+          "sourceName": "World Health Organization (WHO)"
         }
       ],
       "count": 27
@@ -2279,6 +2579,20 @@
             "Africa"
           ],
           "answer": "The Niger River is a major West African river that flows through several countries, including Guinea, Mali, Niger and Nigeria, before reaching the Gulf of Guinea."
+        },
+        {
+          "question": "What is the African Continental Free Trade Area (AfCFTA)?",
+          "keywords": [
+            "AfCFTA",
+            "African Continental Free Trade Area",
+            "African Union",
+            "intra African trade",
+            "single market"
+          ],
+          "answer": "The African Continental Free Trade Area (AfCFTA) is an African Union initiative to create a continent-wide market for goods and services and deepen economic integration. It aims to reduce trade barriers, encourage trade between African countries and strengthen Africa's position in global trade. Its benefits depend on implementation, infrastructure, customs cooperation and the ability of businesses to meet trade rules. Source: https://au.int/en/african-continental-free-trade-area",
+          "entryType": "evergreen_reference",
+          "source": "https://au.int/en/african-continental-free-trade-area",
+          "sourceName": "African Union"
         }
       ],
       "count": 10
@@ -2491,6 +2805,66 @@
           "source": "https://x.com/NiMetNigeria",
           "sourceMirror": "https://teapawt.org/nimetnigeria",
           "sourceName": "Nigerian Meteorological Agency (NiMet), official @NiMetNigeria account"
+        },
+        {
+          "question": "What was NiMet's daily weather forecast for Nigeria on 11 November 2026?",
+          "keywords": [
+            "NiMet",
+            "Nigeria",
+            "daily forecast",
+            "11 November 2026",
+            "Lagos",
+            "thunderstorms",
+            "rainfall",
+            "heat discomfort"
+          ],
+          "answer": "DATED REGIONAL FORECAST — not a live observation. NiMet's outlook for Wednesday 11 November 2026 was valid from 00:00 to 23:59 UTC (01:00 to 00:59 WAT, spanning into 12 November). Northern states were forecast sunny and dry; central states sunny with patches of cloud; and southern states cloudy with sunshine intervals in the morning. There were slim prospects of isolated afternoon/evening thunderstorms with light rain in parts of Oyo, Ekiti, Ondo, Osun, Imo, Abia, Lagos, Delta, Bayelsa, Cross River, Akwa Ibom and Rivers. NiMet advised people in storm-affected areas to stay indoors during storms, avoid trees and power lines, disconnect sensitive electrical appliances, and drive cautiously on wet roads. It also advised hydration and limiting prolonged direct sun exposure in hot, sunny areas. This is a regional forecast, not a Lagos-wide or station observation, and it expires at the stated validity end. No station observation was added. Sources: https://x.com/NiMetNigeria https://teapawt.org/nimetnigeria",
+          "entryType": "dated_forecast",
+          "source": "https://x.com/NiMetNigeria",
+          "sourceName": "Nigerian Meteorological Agency (NiMet), official @NiMetNigeria account",
+          "date": "2026-11-11",
+          "validFrom": "2026-11-11T00:00:00Z",
+          "validUntil": "2026-11-11T23:59:00Z",
+          "location": "Nigeria — regional outlook for northern, central and southern states",
+          "sourceMirror": "https://teapawt.org/nimetnigeria"
+        },
+        {
+          "question": "What did NiMet's November 2026 national weather outlook say about temperatures and heat discomfort?",
+          "keywords": [
+            "NiMet",
+            "November 2026",
+            "Nigeria weather outlook",
+            "temperature range",
+            "heat discomfort",
+            "rainfall",
+            "dry season"
+          ],
+          "answer": "DATED MONTHLY OUTLOOK — published 10 November 2026 for November 2026, not a live daily forecast. NiMet's national outlook gave expected maximum temperatures of 28.6°C–37.7°C, minimum temperatures of 14.6°C–25.8°C and rainfall totals of 2.2–217.7 mm, with coastal areas likely to receive more rain. It highlighted increased thermal discomfort, particularly in North-Central and Southern Nigeria, while noting that some coastal rainfall may continue. NiMet advised hydration, avoiding prolonged direct sunlight, maintaining ventilation and continued malaria vigilance in the South. These are national monthly ranges, not a prediction for every town or a formal city-specific heat warning. Check NiMet for updated local bulletins. Sources: https://x.com/NiMetNigeria https://teapawt.org/nimetnigeria",
+          "entryType": "dated_forecast",
+          "source": "https://x.com/NiMetNigeria",
+          "sourceName": "Nigerian Meteorological Agency (NiMet), official @NiMetNigeria account",
+          "date": "2026-11-10",
+          "validFrom": "2026-11-01",
+          "validUntil": "2026-11-30",
+          "location": "Nigeria — national monthly outlook; ranges are not city-specific",
+          "sourceMirror": "https://teapawt.org/nimetnigeria"
+        },
+        {
+          "question": "What did the WMO's State of the Climate Update for COP31 report on 9 November 2026?",
+          "keywords": [
+            "WMO",
+            "State of the Climate 2026",
+            "COP31",
+            "global temperature",
+            "El Niño",
+            "ocean heat",
+            "sea level"
+          ],
+          "answer": "DATED CLIMATE REPORT — published 9 November 2026. The World Meteorological Organization said 2026 was on track to be one of the four warmest years on record. Global average surface temperature for January–September 2026 was about 1.47°C above the 1850–1900 pre-industrial average. WMO reported that El Niño had intensified since August and was expected to strengthen further by December, increasing the risk of extreme heat, drought and heavy rainfall into 2027. The report's data extended, where available, through September 2026 and therefore did not include the latest El Niño impacts. These are global climate findings, not a forecast for a particular Nigerian city. Source: https://public.wmo.int/resources/publication-series/state-of-climate-update-cop/state-of-climate-update-cop31",
+          "entryType": "dated_news",
+          "source": "https://public.wmo.int/resources/publication-series/state-of-climate-update-cop/state-of-climate-update-cop31",
+          "sourceName": "World Meteorological Organization (WMO)",
+          "date": "2026-11-09"
         }
       ],
       "count": 15
@@ -2717,6 +3091,34 @@
             "force"
           ],
           "answer": "Unemployment generally refers to people in the labour force who are available for work and actively seeking work but do not have a job."
+        },
+        {
+          "question": "What is monetary policy?",
+          "keywords": [
+            "monetary policy",
+            "central bank",
+            "interest rate",
+            "money supply",
+            "inflation"
+          ],
+          "answer": "Monetary policy is the set of actions a central bank uses to influence monetary and financial conditions, often to support price stability and economic activity. Tools can include policy interest rates and operations that affect liquidity in the financial system. Changes can influence borrowing costs, spending, saving, exchange rates and inflation, but effects take time and vary across economies. Source: https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/monetary-policy",
+          "entryType": "evergreen_reference",
+          "source": "https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/monetary-policy",
+          "sourceName": "International Monetary Fund (IMF)"
+        },
+        {
+          "question": "What is fiscal policy?",
+          "keywords": [
+            "fiscal policy",
+            "government spending",
+            "taxation",
+            "public budget",
+            "government revenue"
+          ],
+          "answer": "Fiscal policy is the use of government spending and taxation to influence economic activity and public finances. Governments may adjust spending, taxes or transfers to support demand, provide public services, redistribute resources or manage economic conditions. The effects depend on the size, timing, design and financing of the measures. Source: https://www.imf.org/en/publications/fandd/issues/series/back-to-basics/fiscal-policy",
+          "entryType": "evergreen_reference",
+          "source": "https://www.imf.org/en/publications/fandd/issues/series/back-to-basics/fiscal-policy",
+          "sourceName": "International Monetary Fund (IMF)"
         }
       ],
       "count": 9
@@ -2824,6 +3226,51 @@
             "information"
           ],
           "answer": "Cybersecurity is the practice of protecting devices, networks, applications and information from unauthorised access, disruption or damage."
+        },
+        {
+          "question": "TSMC plans up to $1 billion of investments across OpenAI and Anthropic, reported on 10 November 2026",
+          "keywords": [
+            "TSMC",
+            "OpenAI",
+            "Anthropic",
+            "AI industry",
+            "semiconductor chips",
+            "10 November 2026"
+          ],
+          "answer": "DATED TECHNOLOGY NEWS — Reuters reported on 10 November 2026 that Taiwan Semiconductor Manufacturing Company (TSMC) had approved plans to invest up to $500 million in Anthropic shares at its IPO price and up to $500 million in preferred stock in OpenAI. The proposed investments illustrate how a major chip manufacturer is seeking exposure to AI developers as well as supplying hardware used by AI systems. The report describes board-approved investment plans; it should not be read as confirmation that every transaction had already closed. Source: https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/",
+          "entryType": "dated_news",
+          "source": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/",
+          "sourceName": "Reuters",
+          "date": "2026-11-10"
+        },
+        {
+          "question": "What is machine learning?",
+          "keywords": [
+            "machine learning",
+            "AI",
+            "data",
+            "model training",
+            "prediction",
+            "pattern recognition"
+          ],
+          "answer": "Machine learning is a branch of computing in which systems use data to learn patterns that help them make predictions or decisions, rather than relying only on a list of hand-written rules. A model is trained using data and then evaluated on data it has not seen. Results can be inaccurate when data is incomplete, biased, outdated or unlike the situations where the model is used. Source: https://csrc.nist.gov/glossary/term/machine_learning",
+          "entryType": "evergreen_reference",
+          "source": "https://csrc.nist.gov/glossary/term/machine_learning",
+          "sourceName": "National Institute of Standards and Technology (NIST)"
+        },
+        {
+          "question": "What is cloud computing?",
+          "keywords": [
+            "cloud computing",
+            "internet services",
+            "remote servers",
+            "storage",
+            "on demand computing"
+          ],
+          "answer": "Cloud computing is a way to access computing resources—such as servers, storage, networks and software—over a network when needed. Users can often scale resources up or down without owning all the physical equipment themselves. Cloud services still require attention to security, privacy, availability, cost and data-backup arrangements. Reference: NIST Special Publication 800-145, https://csrc.nist.gov/pubs/sp/800/145/final",
+          "entryType": "evergreen_reference",
+          "source": "https://csrc.nist.gov/pubs/sp/800/145/final",
+          "sourceName": "National Institute of Standards and Technology (NIST)"
         }
       ],
       "count": 10
@@ -2930,6 +3377,18 @@
             "environment"
           ],
           "answer": "Sustainable agriculture aims to produce food while conserving soil, water, biodiversity and resources for future generations."
+        },
+        {
+          "question": "What is composting?",
+          "keywords": [
+            "composting",
+            "organic waste",
+            "soil improvement",
+            "decomposition",
+            "nutrients"
+          ],
+          "answer": "Composting is the managed breakdown of suitable organic materials by microorganisms into a stable material that can improve soil structure and add organic matter. A well-managed compost pile needs a balance of carbon-rich dry materials, nitrogen-rich green materials, moisture and air. Compost quality depends on the materials and management used.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 10
@@ -3650,6 +4109,39 @@
           "date": "2026-11-10",
           "source": "https://apnews.com/article/climate-cop31-turkey-fossil-fuels-renewable-energy-1a76dbefe56039c8841e9aeb49468048",
           "sourceName": "The Associated Press"
+        },
+        {
+          "question": "Nigeria proposes West African regional bond market reforms, reported on 10 November 2026",
+          "keywords": [
+            "Nigeria",
+            "West Africa",
+            "regional bond market",
+            "capital markets",
+            "Taiwo Oyedele",
+            "cross-border investment",
+            "10 November 2026"
+          ],
+          "answer": "DATED NEWS — Reuters reported on 10 November 2026 that Nigeria was proposing reforms to make cross-border bond and equity investment easier across ten West African countries. Finance Minister Taiwo Oyedele described proposals including a regional passport for approved issuers, a shared investor-identification system and better links between trading, settlement and payment infrastructure, including local-currency settlement. The proposed group comprises Nigeria, Ghana, Benin, Burkina Faso, Côte d'Ivoire, Guinea-Bissau, Mali, Niger, Senegal and Togo. These were proposals, not a completed regional system or enacted agreement; Reuters did not report a detailed implementation timetable. Source: https://www.reuters.com/world/africa/nigeria-proposes-regional-bond-market-reforms-spur-cross-border-investments-2026-11-10/",
+          "entryType": "dated_news",
+          "source": "https://www.reuters.com/world/africa/nigeria-proposes-regional-bond-market-reforms-spur-cross-border-investments-2026-11-10/",
+          "sourceName": "Reuters",
+          "date": "2026-11-10"
+        },
+        {
+          "question": "Nigeria endorses a voluntary global rooftop solar declaration at COP31, reported on 11 November 2026",
+          "keywords": [
+            "Nigeria",
+            "COP31",
+            "rooftop solar",
+            "renewable energy",
+            "Global Rooftop Solar Declaration",
+            "11 November 2026"
+          ],
+          "answer": "DATED NEWS — The Associated Press reported on 11 November 2026 that Nigeria joined Australia, Bangladesh, Kenya and Vanuatu in endorsing a voluntary declaration aiming to increase the number of homes worldwide with rooftop solar from about 150 million to at least 300 million by 2030. The declaration is non-binding. AP noted that achieving the goal would require practical national policies, financing or consumer support, qualified installers, stronger electricity grids and storage. Endorsement does not mean that a country's household target or funding has already been delivered. Source: https://apnews.com/article/cop31-turkey-climate-change-fossil-fuels-solar-485bafe52db2c4ab240b9017dcaf8259",
+          "entryType": "dated_news",
+          "source": "https://apnews.com/article/cop31-turkey-climate-change-fossil-fuels-solar-485bafe52db2c4ab240b9017dcaf8259",
+          "sourceName": "The Associated Press",
+          "date": "2026-11-11"
         }
       ],
       "count": 30
@@ -4039,6 +4531,18 @@
           "entryType": "evergreen_reference",
           "sourceName": "Texas A&M University Writing Center",
           "sourceUrl": "https://writingcenter.tamu.edu/guides/resources/rhetorical-terms.html"
+        },
+        {
+          "question": "What is subject–verb agreement?",
+          "keywords": [
+            "subject verb agreement",
+            "grammar",
+            "singular subject",
+            "plural subject",
+            "verb forms"
+          ],
+          "answer": "Subject–verb agreement means that the verb form matches the subject in person and number. For example, 'The pupil writes' uses a singular verb, while 'The pupils write' uses a plural verb. In longer sentences, identify the main subject rather than choosing the verb to match a nearby noun.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 6
@@ -4187,6 +4691,30 @@
             "evidence"
           ],
           "answer": "A research conclusion summarises what the evidence indicates, explains how it relates to the research question and notes important limitations."
+        },
+        {
+          "question": "What is peer review in research?",
+          "keywords": [
+            "peer review",
+            "research quality",
+            "academic publishing",
+            "experts",
+            "evidence"
+          ],
+          "answer": "Peer review is a process in which other knowledgeable researchers assess a study or manuscript before or after publication. Reviewers may examine the methods, evidence, analysis, clarity and contribution. Peer review can improve research quality, but it does not guarantee that a study is correct or free from bias.",
+          "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What is the difference between correlation and causation?",
+          "keywords": [
+            "correlation",
+            "causation",
+            "cause and effect",
+            "statistics",
+            "confounding variable"
+          ],
+          "answer": "Correlation means that two variables tend to change together. Causation means that a change in one variable produces a change in another. Correlation alone does not prove causation because a third factor, coincidence or reverse direction may explain the relationship. Researchers use study design, evidence and careful analysis to investigate cause and effect.",
+          "entryType": "evergreen_reference"
         }
       ],
       "count": 7
@@ -4418,14 +4946,21 @@
     }
   ],
   "metadata": {
-    "updatedAt": "2026-11-10",
+    "updatedAt": "2026-11-11",
     "description": "Expanded offline reference library for education, technology, everyday knowledge and practical skills. Evergreen reference entries are distinct from dated news, observations and forecasts. Dated records are historical snapshots with source links and explicit dates; they are not a live news or weather feed.",
     "safetyNote": "Health and disease entries are general educational information, not diagnosis or personal medical advice.",
     "offlineMode": "CYBERAI answers from local records and built-in rules only; it cannot retrieve live news, weather, market prices or current election results.",
-    "latestResearchRun": "2026-11-10",
-    "weatherDataPolicy": "On 10 November 2026, NiMet's daily regional outlook was checked from its public @NiMetNigeria feed as displayed in a public feed mirror. The forecast was valid 00:00–23:59 UTC and covered northern, central and southern Nigeria: sunny/hazy conditions in the north with slight dust haze possible in parts of Kano, Jigawa and Katsina; isolated light thunderstorms possible in parts of the FCT, Kogi, Benue and Kwara; and thunderstorms/light rainfall possible across parts of the south. The forecast contained no explicit high-temperature or heat-stress advisory. It is a regional forecast, not a station observation, and must be treated as expired after 23:59 UTC on 10 November. Source account: https://x.com/NiMetNigeria; public feed mirror used for verification: https://teapawt.org/nimetnigeria. No current station observation was added.",
-    "newsDataPolicy": "Current-affairs and public-health updates are dated, source-linked snapshots. The 10 November 2026 update adds South Africa's 4 November local-election outcome as reported 9 November; a police-reported Zamfara security incident from 9 November; Vodacom's half-year results; Botswana's conditional De Beers ownership plan; China's January–October trade data; Brazil's COP31 fossil-fuel transition roadmap; and WHO's 6 November Bundibugyo virus disease update with Nigeria figures explicitly dated as of 3 November. Preserve attribution, publication dates, provisional or conditional status, and all caveats. Never present saved records as today's or latest news; direct users to the original source for later developments."
+    "latestResearchRun": "2026-11-11",
+    "weatherDataPolicy": "On 11 November 2026, NiMet's official @NiMetNigeria account was checked via its public feed mirror. Its daily regional forecast for Nigeria was valid 00:00–23:59 UTC on 11 November (01:00–00:59 WAT spanning into 12 November): sunny/dry in the North, sunny with cloud patches in the Central region, and cloudy with sunshine intervals in the South; slim prospects of isolated afternoon/evening thunderstorms with light rain were listed for parts of Oyo, Ekiti, Ondo, Osun, Imo, Abia, Lagos, Delta, Bayelsa, Cross River, Akwa Ibom and Rivers. This is a dated regional forecast, not a station observation or city-wide measurement. NiMet's national November 2026 outlook, posted 10 November, gave maximum temperatures of 28.6–37.7°C, minimum temperatures of 14.6–25.8°C and rainfall of 2.2–217.7 mm, with increased thermal discomfort especially in North-Central and Southern Nigeria. This monthly outlook is not a formal city-specific heat alert. No current station observation or separate heat warning was verified or added. Sources: https://x.com/NiMetNigeria ; public feed mirror: https://teapawt.org/nimetnigeria. Forecasts expire at their stated validity times.",
+    "newsDataPolicy": "The 11 November 2026 research update adds: Nigeria's proposed West African capital-market reforms (Reuters, 10 November; proposals, not enacted); the DRC Bundibugyo virus outbreak figures reported by AP from health-ministry data on 11 November (11,042 infections and 5,387 deaths; keep distinct from WHO's 6 November bulletin whose DRC data were as of 3 November); Nigeria's endorsement of a voluntary, non-binding global rooftop-solar declaration at COP31 (AP, 11 November); TSMC's announced investment plans involving OpenAI and Anthropic (Reuters, 10 November; planned, not necessarily closed); and WMO's 9 November 2026 climate update. Preserve publication dates, reporting source, provisional status and all caveats. These are dated snapshots, not live news.",
+    "latestUpdateSummary": {
+      "date": "2026-11-11",
+      "datedEntriesAdded": 7,
+      "evergreenEntriesAdded": 31,
+      "liveWeatherObservationAdded": false,
+      "note": "Research snapshots only. CYBERAI remains offline and cannot retrieve live news or weather."
+    }
   },
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "policy": "Evergreen reference entries are labelled evergreen_reference. Current-affairs and public-health reports are dated_news snapshots; weather observations are dated_observation records with station and observation time; forecasts are dated_forecast records with location and validity period. The offline app must not present dated records as today's or latest information; direct users to original sources for later developments. Never present a station observation as a forecast or general city-wide condition. Never add a weather forecast unless its issuing authority, source, location or region, and validity period can be verified. Never infer or invent a heat advisory."
 }
