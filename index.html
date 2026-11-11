@@ -494,11 +494,29 @@ function hideHistory(){
 function renderMessage(text,role){
   const div = document.createElement("div");
   div.className = "message " + (role === "user" ? "user" : "bot");
-  div.textContent = text;
+  if(role === "bot"){
+    const parts = String(text).split(/(https?:\/\/[^\s]+)/g);
+    parts.forEach(part=>{
+      if(/^https?:\/\//i.test(part)){
+        const link = document.createElement("a");
+        link.href = part;
+        link.textContent = part;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.referrerPolicy = "no-referrer";
+        link.style.color = "var(--blue)";
+        link.style.overflowWrap = "anywhere";
+        div.appendChild(link);
+      }else{
+        div.appendChild(document.createTextNode(part));
+      }
+    });
+  }else{
+    div.textContent = text;
+  }
   $("messages").appendChild(div);
   $("messages").scrollTop = $("messages").scrollHeight;
 }
-
 function addUserMessage(text){
   currentMessages.push({role:"user",text});
   renderMessage(text,"user");
@@ -689,23 +707,33 @@ function getAnswer(text){
 
   const q = normalize(text);
   const asksForFreshInformation =
-    /\b(today|todays|current|currently|latest|live|now|right now|this morning|this afternoon|tonight)\b/.test(q);
+    /\b(today|todays|current|currently|latest|live|now|right now|this morning|this afternoon|tonight|this week|this month)\b/.test(q);
   const asksAboutChangingInformation =
-    /\b(news|weather|forecast|temperature|heat|current affairs|headlines|election|president|minister|government|exchange rate|stock price|market price|nigeria|africa)\b/.test(q);
+    /\b(news|weather|forecast|temperature|heat advisory|headlines|election|president|minister|government|exchange rate|inflation rate|policy rate|stock price|market price|market update|current affairs|breaking news|rainfall|rain forecast|results)\b/.test(q);
+  const explicitDate =
+    /\b20\d{2}\b|\b\d{1,2}\s+(january|february|march|april|may|june|july|august|september|october|november|december)\s+20\d{2}\b|\b(january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{1,2},?\s+20\d{2}\b/.test(q);
+  const match = searchKnowledge(text);
+  const asksForDefinition =
+    /^(what is|what are|define|explain|difference between|how does|how do|why does|why do)\b/.test(q);
+  const offlineNotice =
+    "I am running in offline knowledge-library mode, so I cannot verify live news, weather, forecasts, election results or market prices. My saved records are dated snapshots, not live updates. Please check the linked official or original source and confirm its publication date and, for weather, its forecast-valid period.";
 
   if(asksForFreshInformation && asksAboutChangingInformation){
-    return "I am running in offline knowledge-library mode, so I cannot verify live news, weather, forecasts, election results or market prices. My saved records are dated snapshots, not live updates. Please check the linked official or original source and confirm its publication date and, for weather, its forecast-valid period.";
+    return offlineNotice;
   }
-
-  const match = searchKnowledge(text);
+  if(match && String(match.entryType || "").startsWith("dated_") && !explicitDate){
+    return offlineNotice;
+  }
+  if(!match && asksAboutChangingInformation && !asksForDefinition && !explicitDate){
+    return offlineNotice;
+  }
   if(match){
     return (match.answer || "I found this topic in my library.") +
       (match.category ? "\n\nTopic: " + match.category : "");
   }
 
-  return "I do not have a reliable answer to that in my offline knowledge library yet. Try asking in a different way, or add this topic to knowledge.json. I am working without an external AI engine.";
+  return "I do not have a reliable answer to that in my offline knowledge library yet. Try rephrasing, or add this topic to the local knowledge library. I am working without an external AI engine.";
 }
-
 function sendMessage(){
   const input = $("messageInput");
   const text = input.value.trim();
