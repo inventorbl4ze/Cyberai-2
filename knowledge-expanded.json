@@ -806,9 +806,24 @@
           "entryType": "evergreen_reference",
           "source": "https://www.usgs.gov/water-science-school/science/watersheds-and-drainage-basins",
           "sourceName": "U.S. Geological Survey (USGS)"
+        },
+        {
+          "question": "What is map scale?",
+          "keywords": [
+            "map scale",
+            "cartographic scale",
+            "representative fraction",
+            "scale bar",
+            "map distance",
+            "geography"
+          ],
+          "answer": "Map scale shows the relationship between a distance measured on a map and the corresponding distance on the ground. It may be written as a ratio, shown as a bar, or described in words. For example, at a scale of 1:50,000, 1 centimetre on the map represents 50,000 centimetres, or 500 metres, on the ground. Always use the same units on both sides of a ratio. Source: https://education.nationalgeographic.org/resource/map-scale/",
+          "entryType": "evergreen_reference",
+          "source": "https://education.nationalgeographic.org/resource/map-scale/",
+          "sourceName": "National Geographic Education"
         }
       ],
-      "count": 9
+      "count": 12
     },
     {
       "name": "History and Civics",
@@ -913,9 +928,24 @@
           "entryType": "evergreen_reference",
           "source": "https://fmino.gov.ng/nigerias-independence-day/",
           "sourceName": "Federal Ministry of Information and National Orientation, Nigeria"
+        },
+        {
+          "question": "What is oral history?",
+          "keywords": [
+            "oral history",
+            "recorded interview",
+            "historical memory",
+            "firsthand account",
+            "community history",
+            "archives"
+          ],
+          "answer": "Oral history is a method of recording, preserving and interpreting people's memories and experiences, usually through planned interviews. It can add perspectives that may be missing from written records and help explain how people experienced events and everyday life. Memories are personal, so researchers consider the narrator's perspective and compare accounts with other available evidence. Public sharing or archiving should respect the narrator's permission and agreed conditions. Source: https://oralhistory.org/about/do-oral-history/ ; https://www.loc.gov/classroom-materials/oral-history-and-social-history/",
+          "entryType": "evergreen_reference",
+          "source": "https://oralhistory.org/about/do-oral-history/",
+          "sourceName": "Oral History Association; Library of Congress"
         }
       ],
-      "count": 7
+      "count": 10
     },
     {
       "name": "English and Communication",
@@ -1079,9 +1109,24 @@
           ],
           "answer": "Fixed costs are expenses that usually remain the same over a chosen time period even when output changes, such as a monthly rent payment. Variable costs change with the amount produced or sold, such as materials used for each item. Some costs are mixed or semi-variable. Businesses use these categories when preparing budgets, pricing products and estimating the break-even point.",
           "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What is the difference between revenue and profit?",
+          "keywords": [
+            "revenue",
+            "profit",
+            "sales income",
+            "business expenses",
+            "net income",
+            "accounting"
+          ],
+          "answer": "Revenue is the value a business earns from providing goods or services during a period. Profit is what remains after the relevant expenses are subtracted from revenue. A business can receive cash before or after revenue is recognised, so revenue, profit and cash flow are related but are not interchangeable. A simple introductory calculation is profit = revenue − expenses. Source: https://openstax.org/books/principles-finance/pages/4-5-what-is-profit-versus-loss-for-the-company",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/principles-finance/pages/4-5-what-is-profit-versus-loss-for-the-company",
+          "sourceName": "OpenStax Principles of Finance"
         }
       ],
-      "count": 7
+      "count": 10
     },
     {
       "name": "Creative Arts and Design",
@@ -1202,9 +1247,24 @@
           ],
           "answer": "Visual hierarchy is the arrangement of design elements so viewers can recognise the most important information first. Designers create hierarchy through size, contrast, colour, position, spacing, alignment and typography. A clear hierarchy guides attention without making the layout confusing or overcrowded.",
           "entryType": "evergreen_reference"
+        },
+        {
+          "question": "What are positive and negative space in art?",
+          "keywords": [
+            "positive space",
+            "negative space",
+            "visual art",
+            "composition",
+            "figure ground",
+            "design"
+          ],
+          "answer": "Positive space is the part of an artwork occupied by its main subject or areas of interest. Negative space is the surrounding area and the spaces between or within those forms. Artists and designers shape both: the spaces around a subject can affect balance, emphasis and how clearly the subject is seen. Source: https://whitney.org/education/schools-educators/K-12/teaching-materials/activities/115",
+          "entryType": "evergreen_reference",
+          "source": "https://whitney.org/education/schools-educators/K-12/teaching-materials/activities/115",
+          "sourceName": "Whitney Museum of American Art"
         }
       ],
-      "count": 8
+      "count": 11
     },
     {
       "name": "Music and Performing Arts",
@@ -1740,9 +1800,38 @@
           "entryType": "evergreen_reference",
           "source": "https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations",
           "sourceName": "OpenStax, Calculus Volume 2"
+        },
+        {
+          "question": "What is a definite integral?",
+          "keywords": [
+            "definite integral",
+            "limits of integration",
+            "integrand",
+            "net area",
+            "accumulation",
+            "calculus"
+          ],
+          "answer": "A definite integral of a function from a to b is a number that represents the function's net accumulation over that interval. Geometrically, it can be interpreted as signed area: contributions above the horizontal axis are positive and contributions below it are negative. The notation is ∫ₐᵇ f(x) dx, where a and b are the limits and f(x) is the integrand. Source: https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral",
+          "sourceName": "OpenStax Calculus Volume 1"
+        },
+        {
+          "question": "What is the derivative of the natural exponential function e^x?",
+          "keywords": [
+            "derivative of e to the x",
+            "natural exponential",
+            "exponential differentiation",
+            "chain rule",
+            "calculus"
+          ],
+          "answer": "The natural exponential function has the special property that its derivative is itself: d(e^x)/dx = e^x. More generally, if y = e^(g(x)), the chain rule gives dy/dx = e^(g(x)) × g'(x). This rule is useful in models of continuous growth and decay. Source: https://openstax.org/books/calculus-volume-1/pages/3-9-derivatives-of-exponential-and-logarithmic-functions",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/calculus-volume-1/pages/3-9-derivatives-of-exponential-and-logarithmic-functions",
+          "sourceName": "OpenStax Calculus Volume 1"
         }
       ],
-      "count": 21
+      "count": 29
     },
     {
       "name": "Advanced Mathematics and Statistics",
@@ -2465,9 +2554,23 @@
           "entryType": "evergreen_reference",
           "source": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
           "sourceName": "World Health Organization (WHO)"
+        },
+        {
+          "question": "What is mental health?",
+          "keywords": [
+            "mental health",
+            "mental well-being",
+            "emotional well-being",
+            "public health",
+            "support"
+          ],
+          "answer": "Mental health is a state of mental well-being that helps a person cope with everyday stresses, use their abilities, learn and work, and contribute to their community. It is part of overall health and is influenced by personal, family, social and environmental factors. A general definition cannot diagnose an individual. If difficulties persist or affect daily life, speaking with a trusted adult or qualified health professional can help. Source: https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response",
+          "entryType": "evergreen_reference",
+          "source": "https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response",
+          "sourceName": "World Health Organization (WHO)"
         }
       ],
-      "count": 27
+      "count": 35
     },
     {
       "name": "Human Body and Health Science",
@@ -3223,9 +3326,23 @@
           "entryType": "evergreen_reference",
           "source": "https://www.imf.org/en/publications/fandd/issues/series/back-to-basics/fiscal-policy",
           "sourceName": "International Monetary Fund (IMF)"
+        },
+        {
+          "question": "What is opportunity cost?",
+          "keywords": [
+            "opportunity cost",
+            "next best alternative",
+            "trade-off",
+            "economic choice",
+            "scarcity"
+          ],
+          "answer": "Opportunity cost is the value of the next-best alternative given up when a choice is made. If you use a limited amount of money to buy one item, the opportunity cost is what the best alternative use of that money would have provided—not the sum of every option you did not choose. Source: https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint",
+          "sourceName": "OpenStax Principles of Economics 3e"
         }
       ],
-      "count": 9
+      "count": 12
     },
     {
       "name": "Engineering and Technology",
@@ -3404,9 +3521,26 @@
           "entryType": "evergreen_reference",
           "source": "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_7df25505-39f6-4f20-82d0-435bdae27a78?_=394518eng.pdf",
           "sourceName": "UNESCO Working Group on Data Governance in the Digital Age"
+        },
+        {
+          "question": "What is digital accessibility?",
+          "keywords": [
+            "digital accessibility",
+            "web accessibility",
+            "WCAG",
+            "perceivable",
+            "operable",
+            "understandable",
+            "robust",
+            "assistive technology"
+          ],
+          "answer": "Digital accessibility means designing websites, apps and digital information so that people with different abilities can use them. The Web Content Accessibility Guidelines organise key requirements around four principles: content should be perceivable, operable, understandable and robust. Examples include text alternatives for images, keyboard-accessible controls, clear instructions and compatibility with assistive technologies. Source: https://www.w3.org/WAI/WCAG22/Understanding/intro",
+          "entryType": "evergreen_reference",
+          "source": "https://www.w3.org/WAI/WCAG22/Understanding/intro",
+          "sourceName": "W3C Web Accessibility Initiative (WCAG 2.2)"
         }
       ],
-      "count": 10
+      "count": 16
     },
     {
       "name": "Agriculture and Food Science",
@@ -4329,9 +4463,45 @@
           "source": "https://von.gov.ng/bridging-borders-through-science-nigerias-strategic-role-in-global-innovation-and-diplomacy/",
           "sourceName": "Voice of Nigeria",
           "date": "2026-11-10"
+        },
+        {
+          "question": "What did AP report about the Abuja court's 10 November 2026 decision in Daniel Ojukwu's case?",
+          "keywords": [
+            "Nigeria",
+            "Abuja",
+            "Daniel Ojukwu",
+            "Foundation for Investigative Journalism",
+            "media freedom",
+            "cybercrime law",
+            "11 November 2026"
+          ],
+          "answer": "DATED NEWS — The Associated Press reported on 11 November 2026 that an Abuja court had ordered investigative journalist Daniel Ojukwu to remain in custody pending a bail hearing scheduled for 1 December 2026. AP said the case involved a 12-count charge alleging violations of Nigeria's cybercrime law and related to reporting about alleged financial mismanagement. The allegations are not a finding of guilt; this entry records the reported court status as of 11 November 2026. Source: https://apnews.com/article/nigeria-media-freedom-1df3907d7b909947c7580c7a640a5113",
+          "entryType": "dated_news",
+          "date": "2026-11-11",
+          "source": "https://apnews.com/article/nigeria-media-freedom-1df3907d7b909947c7580c7a640a5113",
+          "sourceName": "The Associated Press"
+        },
+        {
+          "question": "What did the African Union announce after its education, science and technology committee session on 9 November 2026?",
+          "keywords": [
+            "African Union",
+            "AU",
+            "education",
+            "science",
+            "technology",
+            "STC-EST 6",
+            "qualifications framework",
+            "AI governance",
+            "November 9 2026"
+          ],
+          "answer": "DATED NEWS — In a press release published on 9 November 2026, the African Union Commission said the ministerial session of its Sixth Ordinary Session of the Specialized Technical Committee on Education, Science and Technology was held in Addis Ababa on 6 November, with participation from 32 AU Member States. The AU reported that ministers adopted the 10-level African Continental Qualifications Framework and endorsed roadmaps covering foundational learning, higher education and technical and vocational education and training. The release also records decisions and requests concerning responsible AI governance, research collaboration and a continental semiconductor strategy; follow-through depends on later implementation. Source: https://au.int/en/pressreleases/20261109/african-union-concludes-6th-ordinary-session-specialized-technical-committee",
+          "entryType": "dated_news",
+          "date": "2026-11-09",
+          "source": "https://au.int/en/pressreleases/20261109/african-union-concludes-6th-ordinary-session-specialized-technical-committee",
+          "sourceName": "African Union Commission"
         }
       ],
-      "count": 30
+      "count": 43
     },
     {
       "name": "WAEC, JAMB and Exam Preparation",
@@ -5130,6 +5300,27 @@
         }
       ],
       "count": 8
+    },
+    {
+      "name": "Science",
+      "entries": [
+        {
+          "question": "What is a scientific hypothesis?",
+          "keywords": [
+            "scientific hypothesis",
+            "testable explanation",
+            "prediction",
+            "experiment",
+            "scientific method",
+            "evidence"
+          ],
+          "answer": "A scientific hypothesis is a proposed explanation for an observation that can be tested and could be shown to be inconsistent with evidence. Researchers use it to make predictions and plan observations or experiments. If results do not support the hypothesis, it should be reconsidered; scientific explanations remain open to revision when new evidence appears. Source: https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology",
+          "entryType": "evergreen_reference",
+          "source": "https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology",
+          "sourceName": "OpenStax Biology 2e"
+        }
+      ],
+      "count": 1
     }
   ],
   "metadata": {
