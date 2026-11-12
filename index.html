@@ -586,7 +586,7 @@ async function loadKnowledge(){
       function addEntry(entry, category){
         const question = String(entry.question || "").trim();
         if(!question) return;
-        const key = String(category || "") + "|" + question.toLowerCase().replace(/\\s+/g," ");
+        const key = String(category || "") + "|" + question.toLowerCase().replace(/\s+/g," ");
         if(seenEntries.has(key)) return;
         seenEntries.add(key);
         knowledgeLibrary.push({...entry,category});
