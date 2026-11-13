@@ -230,6 +230,8 @@ async def health():
         "model": MODEL_NAME,
         "fallback_model": FALLBACK_MODEL,
         "api_key_configured": bool(API_KEY),
+        "openai_fallback_configured": bool(OPENAI_API_KEY),
+        "openai_fallback_enabled": bool(OPENAI_FALLBACK_ENABLED and OPENAI_API_KEY),
     }
 
 
