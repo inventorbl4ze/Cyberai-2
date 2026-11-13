@@ -137,8 +137,6 @@ def generate_openai_answer(payload: ChatRequest) -> tuple[str, str]:
             raise RuntimeError("OpenAI returned an empty response.")
         return answer, f"openai:{OPENAI_MODEL}"
     finally:
-        with _live_lock:
-            _live_sessions = max(0, _live_sessions - 1)
         client.close()
 
 
@@ -387,4 +385,6 @@ async def live_voice(websocket: WebSocket):
         except Exception:
             pass
     finally:
+        with _live_lock:
+            _live_sessions = max(0, _live_sessions - 1)
         client.close()
