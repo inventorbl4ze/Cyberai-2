@@ -12,6 +12,8 @@ on:
   pull_request:
     paths:
       - "index.html"
+      - "knowledge-library.json"
+      - "sw.js"
       - "manifest.webmanifest"
       - "backend/**"
       - ".github/workflows/**"
