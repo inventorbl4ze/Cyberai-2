@@ -79,6 +79,9 @@ class ChatResponse(BaseModel):
 
 RATE_LIMIT = 15
 RATE_WINDOW_SECONDS = 60
+MAX_LIVE_SESSIONS = max(1, int(os.getenv("MAX_LIVE_SESSIONS", "3")))
+_live_sessions = 0
+_live_lock = Lock()
 _request_times: dict[str, deque[float]] = defaultdict(deque)
 _rate_lock = Lock()
 
@@ -134,6 +137,8 @@ def generate_openai_answer(payload: ChatRequest) -> tuple[str, str]:
             raise RuntimeError("OpenAI returned an empty response.")
         return answer, f"openai:{OPENAI_MODEL}"
     finally:
+        with _live_lock:
+            _live_sessions = max(0, _live_sessions - 1)
         client.close()
 
 
@@ -306,7 +311,17 @@ async def live_voice(websocket: WebSocket):
             }
         },
         "system_instruction": SYSTEM_INSTRUCTION,
+        "input_audio_transcription": {},
+        "output_audio_transcription": {},
     }
+
+    global _live_sessions
+    with _live_lock:
+        if _live_sessions >= MAX_LIVE_SESSIONS:
+            client.close()
+            await websocket.close(code=1013, reason="Live voice is busy. Please try again shortly.")
+            return
+        _live_sessions += 1
 
     try:
         async with client.aio.live.connect(model=live_model, config=config) as session:
