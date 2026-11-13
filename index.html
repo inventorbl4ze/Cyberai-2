@@ -63,7 +63,7 @@ $("mobileHistoryToggle").onclick=()=>{$("mobileHistoryPanel").hidden=!$("mobileH
 function exportCurrentChat(){const messages=Array.from($("messages").children).map(n=>({role:n.classList.contains("user")?"You":"CYRA",text:n.querySelector("span")?.textContent||n.textContent}));if(!messages.length){addMessage("ai","There is no conversation to export yet.");return}const blob=new Blob([messages.map(m=>m.role+"\\n"+m.text).join("\\n\\n")],{type:"text/plain;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="cyberai-conversation.txt";a.click();URL.revokeObjectURL(url)}
 $("exportChat").onclick=$("mobileExport").onclick=exportCurrentChat;
 $("clearHistory").onclick=$("mobileClearHistory").onclick=()=>{if(!confirm("Delete all saved conversations from this browser? This cannot be undone."))return;saved=[];activeSavedId=null;try{localStorage.removeItem("cyberai2_chats")}catch{}
-let liveSocket=null, liveStream=null, liveAudioContext=null, liveProcessor=null, liveSource=null, livePlaybackAt=0;
+let liveSocket=null, liveStream=null, liveAudioContext=null, liveProcessor=null, liveSource=null, liveMuteGain=null, livePlaybackAt=0;
 function setLiveStatus(text){$("connection").textContent=text}
 function pcmToBase64(floatData){
  const pcm=new Int16Array(floatData.length);
@@ -87,6 +87,7 @@ function playLivePcm(encoded){
 async function stopLiveVoice(){
  if(liveProcessor){liveProcessor.disconnect();liveProcessor.onaudioprocess=null;liveProcessor=null}
  if(liveSource){liveSource.disconnect();liveSource=null}
+ if(liveMuteGain){liveMuteGain.disconnect();liveMuteGain=null}
  if(liveStream){liveStream.getTracks().forEach(track=>track.stop());liveStream=null}
  if(liveSocket&&liveSocket.readyState===WebSocket.OPEN){try{liveSocket.send(JSON.stringify({type:"stop"}))}catch{};liveSocket.close()}
  liveSocket=null;
@@ -101,7 +102,7 @@ async function startLiveVoice(){
   liveAudioContext=new (window.AudioContext||window.webkitAudioContext)();
   await liveAudioContext.resume();
   const wsBase=API_BASE.replace(/^http/,"ws");liveSocket=new WebSocket(wsBase+"/api/live");
-  await new Promise((resolve,reject)=>{liveSocket.onopen=resolve;liveSocket.onerror=()=>reject(new Error("Could not connect to the live voice service."));setTimeout(()=>reject(new Error("Live voice connection timed out.")),12000)});
+  await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(new Error("Live voice connection timed out.")),12000);liveSocket.onopen=()=>{clearTimeout(timer);resolve()};liveSocket.onerror=()=>{clearTimeout(timer);reject(new Error("Could not connect to the live voice service."))}});
   liveSocket.onmessage=event=>{let packet;try{packet=JSON.parse(event.data)}catch{return}
    if(packet.type==="audio")playLivePcm(packet.data);
    else if(packet.type==="transcript"&&packet.text)addMessage("user","🎙 "+packet.text);
@@ -111,12 +112,13 @@ async function startLiveVoice(){
   liveSocket.onclose=()=>{if(liveStream)stopLiveVoice()};
   liveSource=liveAudioContext.createMediaStreamSource(liveStream);
   liveProcessor=liveAudioContext.createScriptProcessor(4096,1,1);
+  liveMuteGain=liveAudioContext.createGain();liveMuteGain.gain.value=0;
   liveProcessor.onaudioprocess=event=>{
    if(!liveSocket||liveSocket.readyState!==WebSocket.OPEN)return;
    const input=event.inputBuffer.getChannelData(0);const sampled=downsampleTo16k(input,liveAudioContext.sampleRate);
    liveSocket.send(JSON.stringify({audio:pcmToBase64(sampled)}))
   };
-  liveSource.connect(liveProcessor);liveProcessor.connect(liveAudioContext.destination);
+  liveSource.connect(liveProcessor);liveProcessor.connect(liveMuteGain);liveMuteGain.connect(liveAudioContext.destination);
   $("liveVoice").textContent="■";$("liveVoice").title="Stop live voice conversation";$("liveVoice").setAttribute("aria-label","Stop live voice conversation");setLiveStatus("Live voice connected · speak naturally");
  }catch(error){addMessage("ai",error.message||"Live voice could not start.","error");await stopLiveVoice()}
  finally{$("liveVoice").disabled=false}
