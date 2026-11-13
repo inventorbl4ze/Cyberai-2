@@ -1,0 +1,47 @@
+name: Validate CYBERAI 2.0
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "manifest.webmanifest"
+      - "backend/**"
+      - ".github/workflows/**"
+  pull_request:
+    paths:
+      - "index.html"
+      - "manifest.webmanifest"
+      - "backend/**"
+      - ".github/workflows/**"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check Python syntax
+        run: python -m py_compile backend/main.py
+      - name: Check frontend JavaScript syntax
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          html = Path("index.html").read_text(encoding="utf-8")
+          scripts = re.findall(r"<script>(.*?)</script>", html, re.S)
+          if not scripts:
+              raise SystemExit("No inline application script was found.")
+          Path("/tmp/cyra-inline.js").write_text("\n".join(scripts), encoding="utf-8")
+          PY
+          node --check /tmp/cyra-inline.js
+      - name: Check web app manifest
+        run: python -m json.tool manifest.webmanifest > /dev/null
+      - name: Check whitespace errors
+        run: git diff --check
