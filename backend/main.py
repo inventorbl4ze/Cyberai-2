@@ -20,12 +20,16 @@ from fastapi.concurrency import run_in_threadpool
 from fastapi.middleware.cors import CORSMiddleware
 from google import genai
 from google.genai import types
+from openai import OpenAI
 from pydantic import BaseModel, Field
 
 APP_NAME = "CYBERAI 2.0"
 MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 FALLBACK_MODEL = os.getenv("GEMINI_FALLBACK_MODEL", "gemini-3.5-flash-lite")
 API_KEY = os.getenv("GEMINI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-6-luna")
+OPENAI_FALLBACK_ENABLED = os.getenv("ENABLE_OPENAI_FALLBACK", "false").lower() == "true"
 
 app = FastAPI(
     title=APP_NAME,
@@ -104,6 +108,33 @@ def _http_status(exc: Exception) -> int | None:
         except (TypeError, ValueError):
             pass
     return None
+
+
+def generate_openai_answer(payload: ChatRequest) -> tuple[str, str]:
+    """Optional text-only backup. Disabled unless explicitly enabled on the host."""
+    if not OPENAI_FALLBACK_ENABLED or not OPENAI_API_KEY:
+        raise RuntimeError("OpenAI fallback is not enabled or configured.")
+    if payload.attachments:
+        raise RuntimeError("OpenAI fallback currently supports text-only requests.")
+    client = OpenAI(api_key=OPENAI_API_KEY)
+    try:
+        conversation = [
+            {"role": item.role, "content": item.content}
+            for item in payload.history[-12:]
+        ]
+        conversation.append({"role": "user", "content": payload.message})
+        response = client.responses.create(
+            model=OPENAI_MODEL,
+            instructions=SYSTEM_INSTRUCTION,
+            input=conversation,
+            max_output_tokens=2048,
+        )
+        answer = (response.output_text or "").strip()
+        if not answer:
+            raise RuntimeError("OpenAI returned an empty response.")
+        return answer, f"openai:{OPENAI_MODEL}"
+    finally:
+        client.close()
 
 
 def generate_answer(payload: ChatRequest) -> tuple[str, str]:
@@ -228,9 +259,19 @@ async def chat(payload: ChatRequest, request: Request):
         raise
     except TemporaryGeminiUnavailable:
         logger.error("Gemini remained temporarily unavailable after retries (model=%s)", MODEL_NAME)
+        if OPENAI_FALLBACK_ENABLED and OPENAI_API_KEY and not payload.attachments:
+            try:
+                answer, used_model = await run_in_threadpool(generate_openai_answer, payload)
+                return ChatResponse(answer=answer, model=used_model)
+            except Exception as fallback_exc:
+                logger.exception(
+                    "Optional OpenAI fallback failed (model=%s, exception_type=%s)",
+                    OPENAI_MODEL,
+                    type(fallback_exc).__name__,
+                )
         raise HTTPException(
             status_code=503,
-            detail="Google's AI service is temporarily busy. Please try again shortly.",
+            detail="The primary AI service is temporarily busy. Please try again shortly.",
         )
     except Exception as exc:
         # Keep provider details in server logs only; never expose them to clients.
