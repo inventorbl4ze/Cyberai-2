@@ -3,6 +3,8 @@
 The Gemini API key is read only from the server environment. Never place it
 in frontend code, source control, or a client application.
 """
+import base64
+import binascii
 import logging
 import os
 import time
@@ -51,9 +53,16 @@ class HistoryMessage(BaseModel):
     content: str = Field(min_length=1, max_length=4000)
 
 
+class ChatAttachment(BaseModel):
+    name: str = Field(min_length=1, max_length=160)
+    mime_type: Literal["image/jpeg", "image/png", "image/webp", "application/pdf"]
+    data_base64: str = Field(min_length=1, max_length=11_200_000)
+
+
 class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=4000)
     history: list[HistoryMessage] = Field(default_factory=list, max_length=12)
+    attachments: list[ChatAttachment] = Field(default_factory=list, max_length=3)
 
 
 class ChatResponse(BaseModel):
@@ -105,12 +114,18 @@ def generate_answer(payload: ChatRequest) -> tuple[str, str]:
             )
         )
 
-    contents.append(
-        types.Content(
-            role="user",
-            parts=[types.Part.from_text(text=payload.message)],
-        )
-    )
+    user_parts = [types.Part.from_text(text=payload.message)]
+    for attachment in payload.attachments:
+        try:
+            raw = base64.b64decode(attachment.data_base64, validate=True)
+        except (binascii.Error, ValueError) as exc:
+            raise HTTPException(status_code=400, detail="One of the attachments is not valid base64 data.") from exc
+        if not raw or len(raw) > 8 * 1024 * 1024:
+            raise HTTPException(status_code=413, detail="Each attachment must be smaller than 8 MB.")
+        user_parts.append(types.Part.from_text(text=f"Attached file: {attachment.name}"))
+        user_parts.append(types.Part.from_bytes(data=raw, mime_type=attachment.mime_type))
+
+    contents.append(types.Content(role="user", parts=user_parts))
 
     try:
         # Try the primary model first, then a lighter model if Google is overloaded.
