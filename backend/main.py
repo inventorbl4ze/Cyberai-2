@@ -235,6 +235,9 @@ async def health():
         "api_key_configured": bool(API_KEY),
         "openai_fallback_configured": bool(OPENAI_API_KEY),
         "openai_fallback_enabled": bool(OPENAI_FALLBACK_ENABLED and OPENAI_API_KEY),
+        "live_model": os.getenv("GEMINI_LIVE_MODEL", "gemini-3.8-live"),
+        "live_sessions_active": _live_sessions,
+        "live_sessions_limit": MAX_LIVE_SESSIONS,
     }
 
 
