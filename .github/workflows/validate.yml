@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "knowledge-library.json"
+      - "sw.js"
       - "manifest.webmanifest"
       - "backend/**"
       - ".github/workflows/**"
@@ -43,5 +45,9 @@ jobs:
           node --check /tmp/cyra-inline.js
       - name: Check web app manifest
         run: python -m json.tool manifest.webmanifest > /dev/null
+      - name: Check knowledge library JSON
+        run: python -m json.tool knowledge-library.json > /dev/null
+      - name: Check service worker JavaScript
+        run: node --check sw.js
       - name: Check whitespace errors
         run: git diff --check
