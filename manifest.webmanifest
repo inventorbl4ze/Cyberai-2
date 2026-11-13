@@ -1,0 +1,19 @@
+{
+  "name": "CYBERAI 2.0",
+  "short_name": "CYBERAI",
+  "description": "Knowledge, Conversation, Creativity — Meet CYRA.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#080b18",
+  "theme_color": "#080b18",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
