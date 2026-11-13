@@ -22,8 +22,19 @@ CYBERAI 2.0 is a mobile-first web AI assistant with a shared Python API backend.
 - Speech playback for assistant replies
 - Experimental real-time Gemini Live voice sessions (requires Live API model access and microphone permission)
 - Recent chats stored locally in the browser
+- Searchable local knowledge library with evergreen lessons, dated news and time-bounded weather forecasts
 - PWA manifest, app icon and offline website shell
 - Basic per-IP request throttling on the API
+
+## Knowledge library and freshness
+
+The website's **Learn something** and **Explore topics** sections open the searchable `knowledge-library.json` file. It keeps three kinds of information separate:
+
+- `evergreen`: stable educational reference lessons with source links.
+- `news`: dated reports, including a publication date and a data cut-off where applicable.
+- `weather`: official forecasts with issue and validity times. These are not live observations; expired forecasts are labelled as expired in the library.
+
+The knowledge library is a curated static snapshot. It does not make the chat backend a live news or weather service. Open the linked original source for the newest information.
 
 ## Install on Android
 
