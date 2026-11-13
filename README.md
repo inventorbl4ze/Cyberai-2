@@ -20,6 +20,7 @@ CYBERAI 2.0 is a mobile-first web AI assistant with a shared Python API backend.
 - TXT, Markdown and CSV text import
 - Browser voice input where supported
 - Speech playback for assistant replies
+- Experimental real-time Gemini Live voice sessions (requires Live API model access and microphone permission)
 - Recent chats stored locally in the browser
 - PWA manifest, app icon and offline website shell
 - Basic per-IP request throttling on the API
@@ -43,6 +44,8 @@ Configure these private environment variables on the backend host:
 - `GEMINI_MODEL` — optional primary model (default: `gemini-3.8-flash`)
 - `GEMINI_FALLBACK_MODEL` — optional fallback (default: `gemini-3.5-flash-lite`)
 - `ALLOWED_ORIGINS` — comma-separated allowed browser origins
+- `GEMINI_LIVE_MODEL` — optional Live API model (default: `gemini-3.8-live`)
+- `MAX_LIVE_SESSIONS` — maximum concurrent Live Voice sessions per backend process (default: `3`)
 - `OPENAI_API_KEY` — optional OpenAI API key for a text-only backup provider
 - `OPENAI_MODEL` — optional backup model (default: `gpt-6-luna`)
 - `ENABLE_OPENAI_FALLBACK` — set to `true` only after an adult account owner approves billing; defaults to `false`
