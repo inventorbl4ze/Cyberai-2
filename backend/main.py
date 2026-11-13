@@ -5,6 +5,7 @@ in frontend code, source control, or a client application.
 """
 import logging
 import os
+import time
 from typing import Literal
 
 logger = logging.getLogger("cyberai")
@@ -67,6 +68,10 @@ anything unless the relevant information is actually provided to you.
 """
 
 
+class TemporaryGeminiUnavailable(Exception):
+    """Raised when Gemini remains temporarily unavailable after retries."""
+
+
 def generate_answer(payload: ChatRequest) -> str:
     if not API_KEY:
         raise RuntimeError("GEMINI_API_KEY is not configured on the server.")
@@ -92,19 +97,36 @@ def generate_answer(payload: ChatRequest) -> str:
     )
 
     try:
-        response = client.models.generate_content(
-            model=MODEL_NAME,
-            contents=contents,
-            config=types.GenerateContentConfig(
-                system_instruction=SYSTEM_INSTRUCTION,
-                temperature=0.7,
-                max_output_tokens=2048,
-            ),
-        )
-        answer = (response.text or "").strip()
-        if not answer:
-            raise RuntimeError("The model returned an empty response.")
-        return answer
+        # Retry temporary overload/rate-limit responses with short backoff.
+        for attempt, delay in enumerate((1, 2, 4), start=1):
+            try:
+                response = client.models.generate_content(
+                    model=MODEL_NAME,
+                    contents=contents,
+                    config=types.GenerateContentConfig(
+                        system_instruction=SYSTEM_INSTRUCTION,
+                        temperature=0.7,
+                        max_output_tokens=2048,
+                    ),
+                )
+                answer = (response.text or "").strip()
+                if not answer:
+                    raise RuntimeError("The model returned an empty response.")
+                return answer
+            except Exception as exc:
+                status_code = getattr(exc, "status_code", None)
+                if status_code not in (429, 500, 502, 503, 504):
+                    raise
+                if attempt == 3:
+                    raise TemporaryGeminiUnavailable() from exc
+                logger.warning(
+                    "Gemini temporarily unavailable (status=%s); retry %s/3 in %s seconds",
+                    status_code,
+                    attempt,
+                    delay,
+                )
+                time.sleep(delay)
+        raise TemporaryGeminiUnavailable()
     finally:
         client.close()
 
@@ -139,6 +161,12 @@ async def chat(payload: ChatRequest, request: Request):
     try:
         answer = await run_in_threadpool(generate_answer, payload)
         return ChatResponse(answer=answer, model=MODEL_NAME)
+    except TemporaryGeminiUnavailable:
+        logger.error("Gemini remained temporarily unavailable after retries (model=%s)", MODEL_NAME)
+        raise HTTPException(
+            status_code=503,
+            detail="Google's AI service is temporarily busy. Please try again shortly.",
+        )
     except Exception as exc:
         # Keep provider details in server logs only; never expose them to clients.
         logger.exception(
