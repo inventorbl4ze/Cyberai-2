@@ -3,6 +3,7 @@
 The Gemini API key is read only from the server environment. Never place it
 in frontend code, source control, or a client application.
 """
+import asyncio
 import base64
 import binascii
 import logging
@@ -14,7 +15,7 @@ from typing import Literal
 
 logger = logging.getLogger("cyberai")
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect
 from fastapi.concurrency import run_in_threadpool
 from fastapi.middleware.cors import CORSMiddleware
 from google import genai
@@ -242,3 +243,90 @@ async def chat(payload: ChatRequest, request: Request):
             status_code=502,
             detail="CYRA could not complete that message. Please try again.",
         )
+
+
+@app.websocket("/api/live")
+async def live_voice(websocket: WebSocket):
+    """Optional real-time voice session. The Gemini key remains server-side."""
+    if not API_KEY:
+        await websocket.close(code=1011, reason="AI service is not configured.")
+        return
+
+    await websocket.accept()
+    client = genai.Client(api_key=API_KEY)
+    live_model = os.getenv("GEMINI_LIVE_MODEL", "gemini-3.8-live")
+    config = {
+        "response_modalities": ["AUDIO"],
+        "speech_config": {
+            "voice_config": {
+                "prebuilt_voice_config": {"voice_name": "Kore"}
+            }
+        },
+        "system_instruction": SYSTEM_INSTRUCTION,
+    }
+
+    try:
+        async with client.aio.live.connect(model=live_model, config=config) as session:
+            async def send_browser_input():
+                while True:
+                    packet = await websocket.receive_json()
+                    if packet.get("type") == "stop":
+                        return
+                    if packet.get("text"):
+                        await session.send_realtime_input(text=str(packet["text"])[:2000])
+                    audio = packet.get("audio")
+                    if audio:
+                        try:
+                            raw = base64.b64decode(audio, validate=True)
+                        except (binascii.Error, ValueError):
+                            await websocket.send_json({"type": "error", "message": "Invalid audio packet."})
+                            continue
+                        if raw and len(raw) <= 128_000:
+                            await session.send_realtime_input(
+                                audio=types.Blob(data=raw, mime_type="audio/pcm;rate=16000")
+                            )
+
+            async def receive_model_output():
+                async for message in session.receive():
+                    content = getattr(message, "server_content", None)
+                    if not content:
+                        continue
+                    transcription = getattr(content, "input_transcription", None)
+                    if transcription and getattr(transcription, "text", None):
+                        await websocket.send_json({"type": "transcript", "text": transcription.text})
+                    turn = getattr(content, "model_turn", None)
+                    if turn:
+                        for part in (getattr(turn, "parts", None) or []):
+                            inline = getattr(part, "inline_data", None)
+                            if inline and getattr(inline, "data", None):
+                                encoded = base64.b64encode(inline.data).decode("ascii")
+                                await websocket.send_json({"type": "audio", "data": encoded})
+                            elif getattr(part, "text", None):
+                                await websocket.send_json({"type": "text", "text": part.text})
+                    if getattr(content, "turn_complete", False):
+                        await websocket.send_json({"type": "turn_complete"})
+
+            input_task = asyncio.create_task(send_browser_input())
+            output_task = asyncio.create_task(receive_model_output())
+            done, pending = await asyncio.wait(
+                {input_task, output_task}, return_when=asyncio.FIRST_COMPLETED
+            )
+            for task in pending:
+                task.cancel()
+            for task in done:
+                exception = task.exception()
+                if exception:
+                    raise exception
+    except WebSocketDisconnect:
+        pass
+    except Exception as exc:
+        logger.exception("Gemini Live voice session failed")
+        try:
+            await websocket.send_json({
+                "type": "error",
+                "message": "Live voice could not start. Check the Live API model access and try again."
+            })
+        except Exception:
+            pass
+    finally:
+        client.close()
