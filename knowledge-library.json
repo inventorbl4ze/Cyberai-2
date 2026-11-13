@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "project": "CYBERAI 2.0",
+  "creator": "Oduyebo Abiola",
+  "updatedAt": "2026-11-13T08:16:48+01:00",
+  "contentPolicy": {
+    "evergreen": "Reference lessons are stable educational explanations and should be reviewed periodically.",
+    "news": "News entries are dated snapshots. Their event dates and data cut-offs are shown separately where relevant.",
+    "weather": "Weather entries are forecasts or observations only when explicitly labelled. Expired forecasts must never be described as current.",
+    "health": "Health content is educational and non-diagnostic. It does not replace advice from qualified health professionals or current public-health authorities."
+  },
+  "news": [
+    {
+      "id": "ng-ebola-patient-discharge-2026-11-12",
+      "category": "Nigeria",
+      "publishedAt": "2026-11-12",
+      "eventDate": "2026-11-11",
+      "type": "news",
+      "title": "Patient evacuated from Nigeria after Bundibugyo Ebola infection discharged in Geneva",
+      "summary": "Geneva University Hospitals said the woman evacuated from Abuja after Nigeria's imported Bundibugyo virus disease case was discharged on 11 November after doctors confirmed her recovery. This is a patient-outcome update, not a declaration that Nigeria has been officially declared Ebola-free. WHO's 6 November bulletin gave Nigeria contact-tracing figures as of 3 November: 62 contacts identified and six had completed the 21-day follow-up. Those figures are a dated snapshot and may since have changed; follow later NCDC and WHO updates for the current response.",
+      "dataAsOf": "2026-11-03",
+      "status": "dated update; not a live outbreak status",
+      "sources": [
+        {
+          "label": "Reuters, 12 November 2026",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/swiss-woman-with-ebola-released-hospital-statement-says-2026-11-12/"
+        },
+        {
+          "label": "WHO Disease Outbreak News, 6 November 2026",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625"
+        },
+        {
+          "label": "Reuters fact check, 9 November 2026",
+          "url": "https://www.reuters.com/fact-check/who-did-not-declare-nigeria-ebola-free-upon-patients-evacuation-2026-11-09/"
+        }
+      ],
+      "tags": [
+        "Nigeria",
+        "public health",
+        "Bundibugyo virus",
+        "Ebola",
+        "contact tracing"
+      ]
+    },
+    {
+      "id": "kenya-ebola-countdown-2026-11-11",
+      "category": "East Africa",
+      "publishedAt": "2026-11-11",
+      "eventDate": "2026-11-11",
+      "type": "news",
+      "title": "Kenya discharges its last Ebola patient and begins a 42-day countdown",
+      "summary": "WHO reported that Kenya discharged its final patient on 11 November and that the last 11 contacts completed monitoring. The 42-day countdown began on 12 November; Kenya may be declared free of the outbreak on or about 23 December only if no new case is recorded during the period. The country had no patient under treatment and no contacts in quarantine at the time of the announcement, but the response and surveillance continued.",
+      "status": "dated milestone; Kenya had not yet completed the 42-day countdown",
+      "sources": [
+        {
+          "label": "WHO Regional Office for Africa, 11 November 2026",
+          "url": "https://www.afro.who.int/countries/kenya/news/kenyas-last-ebola-patient-goes-home-42-day-countdown-begins"
+        }
+      ],
+      "tags": [
+        "Kenya",
+        "East Africa",
+        "public health",
+        "Bundibugyo virus",
+        "surveillance"
+      ]
+    },
+    {
+      "id": "drc-bundibugyo-who-2026-11-06",
+      "category": "Central Africa",
+      "publishedAt": "2026-11-06",
+      "dataAsOf": "2026-11-03",
+      "type": "news",
+      "title": "WHO reports continued high Bundibugyo virus transmission in the Democratic Republic of the Congo",
+      "summary": "WHO's 6 November Disease Outbreak News reported 10,668 confirmed cases and 5,198 deaths in the DRC as of 3 November, across 67 health zones in eight provinces; 51 zones had reported at least one new case in the preceding 21 days. Average daily contact follow-up was 86%, below WHO's 95% target. These are WHO figures for the DRC at the stated cut-off, not current live totals and not figures for the whole African region.",
+      "status": "dated epidemiological snapshot; use the latest WHO bulletin for newer totals",
+      "sources": [
+        {
+          "label": "WHO Disease Outbreak News, 6 November 2026",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625"
+        }
+      ],
+      "tags": [
+        "Democratic Republic of the Congo",
+        "Africa",
+        "Ebola",
+        "Bundibugyo virus",
+        "WHO"
+      ]
+    },
+    {
+      "id": "who-together-science-health-2026-11-10",
+      "category": "Global Science",
+      "publishedAt": "2026-11-10",
+      "type": "news",
+      "title": "WHO launches a global movement to strengthen trust in science and health",
+      "summary": "WHO announced the Together for Science and Health movement, bringing together more than 240 organisations. Its stated priorities are connecting science and society, strengthening the use of evidence in health policy, and improving science communication. The initiative was launched around World Science Day for Peace and Development.",
+      "status": "dated announcement",
+      "sources": [
+        {
+          "label": "World Health Organization, 10 November 2026",
+          "url": "https://www.who.int/news/item/10-11-2026-who-launches-together-for-science-and-health-movement-to-strengthen-trust-worldwide"
+        }
+      ],
+      "tags": [
+        "science",
+        "health",
+        "evidence",
+        "science communication",
+        "WHO"
+      ]
+    }
+  ],
+  "weather": [
+    {
+      "id": "nimet-outlook-2026-11-13",
+      "category": "Nigeria Weather",
+      "type": "forecast",
+      "issuedAt": "2026-11-11",
+      "validFrom": "2026-11-12T00:00:00Z",
+      "validTo": "2026-11-14T23:59:00Z",
+      "forecastFor": "2026-11-13",
+      "region": "Nigeria: Northern, North-Central and Southern regions",
+      "title": "NiMet three-day outlook: Friday 13 November 2026",
+      "summary": "For Friday 13 November, NiMet forecast sunny and dry conditions across the Northern region; sunny skies with patches of cloud in the North-Central region; and a cloudy morning with intervals of sunshine across the Southern region. Isolated afternoon or evening thunderstorms with light rain were forecast for parts of Cross River, Delta, Bayelsa and Rivers states. This is a regional forecast, not a Lagos-specific hourly forecast or a live observation.",
+      "advisory": "NiMet advised that strong winds may precede thunderstorms. In affected areas, secure loose objects, disconnect electrical appliances from sockets and stay away from tall trees. The bulletin did not give a temperature reading or issue a separate heat alert.",
+      "sourceLabel": "NiMet Central Forecast Office",
+      "sourceUrl": "https://nimet.gov.ng/downloader?file=admin/uploads/forecastbulletin/6af5a5da8bbac0.72188239_Weather_Outlook_Issued_on_the_11TH_November__2026.pdf",
+      "sourcePage": "https://nimet.gov.ng/weather_forecast_bulletin_detail?id=1505",
+      "status": "forecast only; expires after 14 November 2026; not a live observation",
+      "tags": [
+        "Nigeria",
+        "NiMet",
+        "forecast",
+        "thunderstorm",
+        "weather safety"
+      ]
+    }
+  ],
+  "evergreen": [
+    {
+      "id": "english-paragraph-unity",
+      "category": "English Language",
+      "title": "Building a clear paragraph",
+      "summary": "A paragraph develops one main idea. A topic sentence introduces the focus, supporting sentences explain it with reasons or evidence, and transitions help the ideas flow.",
+      "explanation": "Keep related sentences together. Check that each supporting detail helps explain the paragraph's main point. A paragraph may use examples, facts, explanations or comparisons to develop the idea.",
+      "example": "Topic: Reading improves vocabulary. Support: regular reading exposes learners to words in context; noting unfamiliar words and using them in sentences helps reinforce meaning.",
+      "sourceLabel": "Purdue University Online Writing Lab",
+      "sourceUrl": "https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/index.html",
+      "tags": [
+        "English",
+        "writing",
+        "paragraphs",
+        "communication"
+      ]
+    },
+    {
+      "id": "math-quadratic-formula",
+      "category": "Mathematics",
+      "title": "Solving quadratic equations",
+      "summary": "A quadratic equation has the form ax² + bx + c = 0, where a is not zero. Its solutions can be found with x = (−b ± √(b² − 4ac)) / 2a.",
+      "explanation": "The expression b² − 4ac is the discriminant. If it is positive, there are two distinct real roots; if it is zero, there is one repeated real root; if it is negative, the roots are a complex-conjugate pair.",
+      "example": "For x² − 5x + 6 = 0, factor it as (x − 2)(x − 3) = 0, so x = 2 or x = 3.",
+      "sourceLabel": "OpenStax Algebra and Trigonometry 2e",
+      "sourceUrl": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-5-quadratic-equations",
+      "tags": [
+        "mathematics",
+        "algebra",
+        "quadratics",
+        "equations"
+      ]
+    },
+    {
+      "id": "further-complex-numbers",
+      "category": "Further Mathematics",
+      "title": "Complex numbers",
+      "summary": "A complex number is written a + bi, where a and b are real numbers and i² = −1. The real part is a and the imaginary part is b.",
+      "explanation": "Add or subtract complex numbers by combining their real parts and imaginary parts separately. Multiply by expanding brackets and replacing i² with −1. A complex number can be plotted as a point on the complex plane.",
+      "example": "(3 + 2i) + (1 − 5i) = 4 − 3i.",
+      "sourceLabel": "OpenStax Precalculus",
+      "sourceUrl": "https://openstax.org/books/precalculus/pages/3-1-complex-numbers",
+      "tags": [
+        "further mathematics",
+        "complex numbers",
+        "algebra"
+      ]
+    },
+    {
+      "id": "further-power-rule",
+      "category": "Further Mathematics",
+      "title": "The power rule for differentiation",
+      "summary": "For a differentiable power function xⁿ, the derivative is n xⁿ⁻¹. The exponent becomes the coefficient and the new exponent is one less.",
+      "explanation": "Use the constant multiple, sum and difference rules alongside the power rule to differentiate polynomials term by term.",
+      "example": "If f(x) = 4x³ − 2x² + 7, then f′(x) = 12x² − 4x.",
+      "sourceLabel": "OpenStax Calculus Volume 1",
+      "sourceUrl": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules",
+      "tags": [
+        "further mathematics",
+        "calculus",
+        "differentiation"
+      ]
+    },
+    {
+      "id": "further-integration-by-parts",
+      "category": "Further Mathematics",
+      "title": "Integration by parts",
+      "summary": "Integration by parts is a technique for integrating products of functions. Its formula is ∫u dv = uv − ∫v du.",
+      "explanation": "Choose u and dv so that differentiating u and integrating dv make the remaining integral simpler. For a definite integral, evaluate uv at the upper and lower limits before subtracting the remaining integral.",
+      "example": "For ∫x cos(x) dx, choose u = x and dv = cos(x) dx. Then du = dx and v = sin(x), giving x sin(x) − ∫sin(x) dx.",
+      "sourceLabel": "OpenStax Calculus Volume 2",
+      "sourceUrl": "https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts",
+      "tags": [
+        "further mathematics",
+        "calculus",
+        "integration"
+      ]
+    },
+    {
+      "id": "further-matrices",
+      "category": "Further Mathematics",
+      "title": "Matrices and their dimensions",
+      "summary": "A matrix is a rectangular arrangement of numbers. Its dimensions are written as rows × columns.",
+      "explanation": "Matrices can represent data and systems of linear equations. Addition and subtraction require matrices of the same dimensions; matrix multiplication is possible when the first matrix's column count equals the second matrix's row count.",
+      "example": "A matrix with 2 rows and 3 columns has dimensions 2 × 3.",
+      "sourceLabel": "OpenStax Algebra and Trigonometry 2e",
+      "sourceUrl": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/11-5-matrices-and-matrix-operations",
+      "tags": [
+        "further mathematics",
+        "matrices",
+        "linear algebra"
+      ]
+    },
+    {
+      "id": "biology-photosynthesis",
+      "category": "Biology",
+      "title": "Photosynthesis",
+      "summary": "Photosynthesis converts light energy into chemical energy stored in sugars. Plants use carbon dioxide and water, and oxygen is released.",
+      "explanation": "In the simplified overall equation, carbon dioxide and water, using light energy, form glucose and oxygen: 6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂. The process takes place in chloroplasts in photosynthetic organisms.",
+      "example": "A green leaf receives light, takes in carbon dioxide and uses water supplied by the plant to make energy-rich carbohydrates.",
+      "sourceLabel": "OpenStax Biology 2e",
+      "sourceUrl": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis",
+      "tags": [
+        "biology",
+        "photosynthesis",
+        "plants",
+        "energy"
+      ]
+    },
+    {
+      "id": "biology-atp",
+      "category": "Biology",
+      "title": "ATP: a cell's immediate energy carrier",
+      "summary": "ATP (adenosine triphosphate) transfers usable energy for many cellular processes.",
+      "explanation": "Cells can transfer energy from nutrients into ATP. When ATP is converted to ADP and phosphate, energy becomes available to support cellular work. ATP is continually made and used rather than serving as a long-term energy store.",
+      "example": "Muscle cells use ATP to power contraction; cells also use it for active transport and biosynthesis.",
+      "sourceLabel": "OpenStax Biology 2e",
+      "sourceUrl": "https://openstax.org/books/biology-2e/pages/6-1-energy-and-metabolism",
+      "tags": [
+        "biology",
+        "ATP",
+        "cell biology",
+        "metabolism"
+      ]
+    },
+    {
+      "id": "physics-newtons-laws",
+      "category": "Physics",
+      "title": "Newton's three laws of motion",
+      "summary": "Newton's laws describe how forces affect motion: inertia, acceleration from net force, and equal-and-opposite interaction forces.",
+      "explanation": "The first law says an object's motion does not change unless a net external force acts. The second law is commonly written Fnet = ma. The third law says interacting bodies exert equal and opposite forces on each other; the forces act on different bodies.",
+      "example": "A trolley accelerates more when the same net force acts on a smaller mass.",
+      "sourceLabel": "OpenStax College Physics",
+      "sourceUrl": "https://openstax.org/books/college-physics/pages/4-introduction-to-dynamics-newtons-laws-of-motion",
+      "tags": [
+        "physics",
+        "mechanics",
+        "forces",
+        "motion"
+      ]
+    },
+    {
+      "id": "physics-ohms-law",
+      "category": "Physics",
+      "title": "Ohm's law",
+      "summary": "For an ohmic conductor under constant physical conditions, voltage V equals current I multiplied by resistance R: V = IR.",
+      "explanation": "Rearrange the relationship to find I = V/R or R = V/I. Use volts for voltage, amperes for current and ohms for resistance. Not every electrical component behaves ohmically over all conditions.",
+      "example": "A 6 Ω resistor with 12 V across it carries 2 A, because I = 12/6.",
+      "sourceLabel": "OpenStax College Physics",
+      "sourceUrl": "https://openstax.org/books/college-physics/pages/20-introduction-to-electric-current-resistance-and-ohms-law",
+      "tags": [
+        "physics",
+        "electricity",
+        "circuits",
+        "Ohm's law"
+      ]
+    },
+    {
+      "id": "chemistry-acids-bases",
+      "category": "Chemistry",
+      "title": "Acids and bases: the Brønsted–Lowry model",
+      "summary": "A Brønsted–Lowry acid donates a proton (H⁺), while a Brønsted–Lowry base accepts a proton.",
+      "explanation": "When an acid donates a proton it becomes its conjugate base. When a base accepts a proton it becomes its conjugate acid. This model helps explain proton-transfer reactions in aqueous and non-aqueous systems.",
+      "example": "In the reaction NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, ammonia accepts a proton and acts as a base.",
+      "sourceLabel": "OpenStax Chemistry 2e",
+      "sourceUrl": "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
+      "tags": [
+        "chemistry",
+        "acids",
+        "bases",
+        "pH"
+      ]
+    },
+    {
+      "id": "chemistry-mole-si",
+      "category": "Chemistry",
+      "title": "The mole and Avogadro constant",
+      "summary": "One mole contains exactly 6.02214076 × 10²³ specified elementary entities.",
+      "explanation": "The entities may be atoms, molecules, ions or other specified particles. The mole links the microscopic number of particles to measurable amounts of substance.",
+      "example": "One mole of carbon-12 atoms contains 6.02214076 × 10²³ carbon-12 atoms.",
+      "sourceLabel": "National Institute of Standards and Technology (NIST)",
+      "sourceUrl": "https://www.nist.gov/pml/owm/si-units",
+      "tags": [
+        "chemistry",
+        "mole",
+        "Avogadro constant",
+        "measurement"
+      ]
+    },
+    {
+      "id": "health-vaccines",
+      "category": "Health Education",
+      "title": "How vaccines help the immune system",
+      "summary": "Vaccines expose the immune system to an antigen or instructions for making one, helping it build a defence without requiring the person to experience the full disease.",
+      "explanation": "The immune response can produce antibodies and immune memory. Protection is not always complete, and the number and timing of doses depend on the vaccine and current national recommendations.",
+      "example": "A vaccine can prepare immune cells to recognise a disease-causing organism if the person encounters it later.",
+      "sourceLabel": "US Centers for Disease Control and Prevention (CDC)",
+      "sourceUrl": "https://www.cdc.gov/vaccines/basics/explaining-how-vaccines-work.html",
+      "tags": [
+        "health",
+        "vaccines",
+        "immunity",
+        "public health"
+      ]
+    },
+    {
+      "id": "health-antibiotics",
+      "category": "Health Education",
+      "title": "Antibiotics do not treat viral infections",
+      "summary": "Antibiotics act against bacteria, not viruses. They do not cure common viral illnesses such as colds or influenza.",
+      "explanation": "Using antibiotics when they are not needed contributes to antimicrobial resistance. Medicine choices should be made with a qualified health professional; do not start, share or change prescribed medicines based only on an online explanation.",
+      "example": "A cold caused by a virus is not treated with an antibiotic. A clinician can assess whether a bacterial infection or another condition is present.",
+      "sourceLabel": "World Health Organization",
+      "sourceUrl": "https://www.who.int/news/item/16-11-2015-who-multi-country-survey-reveals-widespread-public-misunderstanding-about-antibiotic-resistance",
+      "tags": [
+        "health",
+        "antibiotics",
+        "viruses",
+        "antimicrobial resistance"
+      ]
+    },
+    {
+      "id": "health-heat-safety",
+      "category": "Health Education",
+      "title": "Understanding heat stress",
+      "summary": "Very hot conditions can make it harder for the body to regulate its temperature and can increase the risk of heat-related illness.",
+      "explanation": "General protective measures include spending time in shade or a cool place, reducing strenuous activity during the hottest part of the day, drinking water regularly and following official local heat alerts. People who feel unwell in hot conditions should seek appropriate medical advice; severe symptoms require urgent help.",
+      "example": "During a hot afternoon, plan outdoor tasks for a cooler time and take breaks in a shaded or ventilated place.",
+      "sourceLabel": "World Health Organization",
+      "sourceUrl": "https://www.who.int/en/news-room/fact-sheets/detail/climate-change-heat-and-health",
+      "tags": [
+        "health",
+        "heat",
+        "hydration",
+        "climate"
+      ]
+    },
+    {
+      "id": "technology-phishing",
+      "category": "Technology",
+      "title": "Recognising phishing attempts",
+      "summary": "Phishing is a deceptive message or website designed to trick someone into revealing information or taking an unsafe action.",
+      "explanation": "Warning signs can include unexpected requests, pressure to act quickly, unfamiliar links, unusual sender addresses and requests for passwords or payment details. Verify through a website or contact method you already know is genuine, and use multi-factor authentication where available.",
+      "example": "If a message claims your account will close unless you click a link, open the service's official app or type its known address yourself instead of following the message link.",
+      "sourceLabel": "US Federal Trade Commission",
+      "sourceUrl": "https://consumer.ftc.gov/consumer-alerts/2025/04/protect-yourself-phishing-scams",
+      "tags": [
+        "technology",
+        "cybersecurity",
+        "phishing",
+        "online safety"
+      ]
+    },
+    {
+      "id": "technology-accessibility",
+      "category": "Technology",
+      "title": "The four principles of web accessibility",
+      "summary": "WCAG groups accessibility guidance around four principles: content should be perceivable, operable, understandable and robust.",
+      "explanation": "For example, meaningful images need text alternatives; controls should work with a keyboard; instructions should be clear; and pages should work with assistive technologies and a range of browsers.",
+      "example": "A form field should have a visible label and a clear error message that assistive technology can identify.",
+      "sourceLabel": "World Wide Web Consortium (W3C)",
+      "sourceUrl": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "tags": [
+        "technology",
+        "accessibility",
+        "web design",
+        "WCAG"
+      ]
+    },
+    {
+      "id": "science-evidence",
+      "category": "Science",
+      "title": "Scientific explanations and evidence",
+      "summary": "Science builds explanations by collecting observations, asking testable questions, testing ideas and comparing results with evidence.",
+      "explanation": "Scientific conclusions are open to revision when stronger or new evidence appears. A single result is not automatically proof; methods, sample size, uncertainty and independent checks all matter.",
+      "example": "If a class investigates whether light affects plant growth, it should keep other important conditions as similar as possible and record measurements consistently.",
+      "sourceLabel": "OpenStax Biology 2e",
+      "sourceUrl": "https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology",
+      "tags": [
+        "science",
+        "evidence",
+        "experiments",
+        "research"
+      ]
+    },
+    {
+      "id": "arts-colour-wheel",
+      "category": "Creative Arts",
+      "title": "Using a colour wheel",
+      "summary": "A colour wheel arranges hues so artists can explore relationships such as neighbouring colours and contrasting colours.",
+      "explanation": "In a traditional painting model, mixing red, yellow and blue is used to introduce secondary colours such as orange, green and purple. Digital screens use a different additive RGB light model, so colour systems depend on the medium.",
+      "example": "An artist may choose neighbouring colours for a calm, related palette or opposing colours for stronger contrast.",
+      "sourceLabel": "Smithsonian Libraries and Archives",
+      "sourceUrl": "https://www.si.edu/object/silgoi_110715",
+      "tags": [
+        "arts",
+        "creative arts",
+        "colour",
+        "design"
+      ]
+    },
+    {
+      "id": "business-bookkeeping",
+      "category": "Business Studies",
+      "title": "Bookkeeping and the balance sheet",
+      "summary": "Bookkeeping records business transactions. A balance sheet gives a snapshot of assets, liabilities and owner's equity at a particular date.",
+      "explanation": "Tracking income, expenses, money owed and available cash helps a business understand its financial position. Profit and cash flow are related but not identical: a sale recorded as revenue may not yet have been paid for.",
+      "example": "A shop can record a sale today as revenue under accrual accounting even if the customer pays next week; the cash arrives later.",
+      "sourceLabel": "US Small Business Administration",
+      "sourceUrl": "https://www.sba.gov/counseling/manage-your-business/",
+      "tags": [
+        "business",
+        "bookkeeping",
+        "accounting",
+        "finance"
+      ]
+    },
+    {
+      "id": "geography-latitude-longitude",
+      "category": "Geography",
+      "title": "Latitude and longitude",
+      "summary": "Latitude measures how far north or south a place is from the Equator. Longitude measures how far east or west it is from the Prime Meridian.",
+      "explanation": "Latitude lines run east–west and are parallel to the Equator. Longitude lines run between the poles. Together, coordinates help identify a location on Earth.",
+      "example": "A coordinate pair gives latitude first and longitude second in the common decimal-degree format.",
+      "sourceLabel": "National Geographic Education",
+      "sourceUrl": "https://education.nationalgeographic.org/resource/latitude/",
+      "tags": [
+        "geography",
+        "maps",
+        "coordinates",
+        "latitude",
+        "longitude"
+      ]
+    },
+    {
+      "id": "history-primary-secondary-sources",
+      "category": "History",
+      "title": "Primary and secondary historical sources",
+      "summary": "A primary source is an original record from the time or event being studied. A secondary source later analyses or interprets evidence.",
+      "explanation": "Letters, photographs, diaries, official records and objects can be primary sources. Textbooks and later historical analyses are usually secondary sources. A source's usefulness depends on the question, creator, purpose, context and possible bias.",
+      "example": "A diary written during an event is a primary source; a modern textbook chapter discussing that diary is a secondary source.",
+      "sourceLabel": "Library of Congress",
+      "sourceUrl": "https://www.loc.gov/programs/teachers/getting-started-with-primary-sources",
+      "tags": [
+        "history",
+        "research",
+        "primary sources",
+        "secondary sources"
+      ]
+    },
+    {
+      "id": "everyday-si-units",
+      "category": "Everyday Knowledge",
+      "title": "The International System of Units (SI)",
+      "summary": "SI is the internationally agreed measurement system used in science, engineering and everyday technical communication.",
+      "explanation": "It has seven base units: metre (length), kilogram (mass), second (time), ampere (electric current), kelvin (temperature), mole (amount of substance) and candela (luminous intensity). Prefixes such as kilo-, centi- and milli- express powers of ten.",
+      "example": "1 kilometre = 1,000 metres; 1 centimetre = 0.01 metre; 1 millimetre = 0.001 metre.",
+      "sourceLabel": "National Institute of Standards and Technology (NIST)",
+      "sourceUrl": "https://www.nist.gov/pml/owm/si-units",
+      "tags": [
+        "everyday knowledge",
+        "measurement",
+        "SI",
+        "units",
+        "mathematics"
+      ]
+    },
+    {
+      "id": "earth-weather-climate",
+      "category": "Geography and Earth Science",
+      "title": "Weather versus climate",
+      "summary": "Weather describes atmospheric conditions over short periods in a particular place. Climate describes long-term patterns and averages for a region.",
+      "explanation": "A rainy afternoon is a weather event. Typical rainfall and temperature patterns measured over many years describe climate. One hot day by itself does not establish a climate trend.",
+      "example": "A forecast for tomorrow describes weather; a 30-year average of rainfall helps describe a region's climate.",
+      "sourceLabel": "NASA Science",
+      "sourceUrl": "https://science.nasa.gov/climate-change/faq/whats-the-difference-between-weather-and-climate/",
+      "tags": [
+        "geography",
+        "earth science",
+        "weather",
+        "climate"
+      ]
+    },
+    {
+      "id": "information-checking-sources",
+      "category": "Everyday Knowledge",
+      "title": "Checking whether information is reliable",
+      "summary": "Before trusting a claim, identify who made it, when it was published, what evidence it gives and whether other reliable sources agree.",
+      "explanation": "Check the original source where possible. Separate a reported fact from an opinion or prediction, look for a date and context, and be cautious when a headline makes a stronger claim than the linked evidence supports.",
+      "example": "For a weather claim, check the national meteorological service's dated bulletin rather than relying only on an undated social-media post.",
+      "sourceLabel": "Purdue University Online Writing Lab",
+      "sourceUrl": "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/research_and_evidence.html",
+      "tags": [
+        "everyday knowledge",
+        "media literacy",
+        "critical thinking",
+        "research"
+      ]
+    }
+  ]
+}
