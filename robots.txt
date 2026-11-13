@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://inventorbl4ze.github.io/Cyberai-2/sitemap.xml
