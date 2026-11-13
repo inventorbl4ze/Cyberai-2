@@ -8,6 +8,8 @@ import binascii
 import logging
 import os
 import time
+from collections import defaultdict, deque
+from threading import Lock
 from typing import Literal
 
 logger = logging.getLogger("cyberai")
@@ -68,6 +70,12 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     answer: str
     model: str
+
+
+RATE_LIMIT = 15
+RATE_WINDOW_SECONDS = 60
+_request_times: dict[str, deque[float]] = defaultdict(deque)
+_rate_lock = Lock()
 
 
 SYSTEM_INSTRUCTION = """
@@ -195,6 +203,17 @@ async def health():
 
 @app.post("/api/chat", response_model=ChatResponse)
 async def chat(payload: ChatRequest, request: Request):
+    # Basic per-process abuse protection. Use a shared rate-limit store at scale.
+    client_ip = request.client.host if request.client else "unknown"
+    now = time.monotonic()
+    with _rate_lock:
+        recent = _request_times[client_ip]
+        while recent and now - recent[0] > RATE_WINDOW_SECONDS:
+            recent.popleft()
+        if len(recent) >= RATE_LIMIT:
+            raise HTTPException(status_code=429, detail="Too many messages in a short time. Please wait a minute and try again.")
+        recent.append(now)
+
     if not API_KEY:
         raise HTTPException(
             status_code=503,
