@@ -36,7 +36,7 @@ main{display:flex;flex-direction:column;min-width:0;min-height:100vh}.top{height
    <button class="card" data-prompt="Help me brainstorm a creative project."><div class="ico">◈</div><strong>Make something</strong><span>Turn ideas into plans</span></button>
    <button class="card" data-prompt="Give me a surprising useful fact and explain it."><div class="ico">⌘</div><strong>Discover more</strong><span>Find a new perspective</span></button>
   </div>
-  <section class="chat"><div class="messages" id="messages" aria-live="polite"></div><div class="typing" id="typing" hidden>CYRA is thinking…</div><div class="attachmeta" id="attachmeta" hidden></div><div class="composer"><button class="toolbtn" id="attach" title="Attach image or PDF" aria-label="Attach image or PDF">＋</button><input class="fileinput" id="files" type="file" accept="image/jpeg,image/png,image/webp,application/pdf,.txt,.md,.csv" multiple><button class="toolbtn" id="voice" title="Voice input" aria-label="Voice input">♩</button><textarea id="prompt" rows="1" placeholder="Message CYRA…"></textarea><button class="send" id="send" aria-label="Send message">➤</button></div><div class="hint">Enter to send · Shift + Enter for a new line · Your saved chats stay in this browser. CYRA can make mistakes, so verify important information.</div></section>
+  <section class="chat"><div class="messages" id="messages" aria-live="polite"></div><div class="typing" id="typing" hidden>CYRA is thinking…</div><div class="attachmeta" id="attachmeta" hidden></div><div class="composer"><button class="toolbtn" id="attach" title="Attach image or PDF" aria-label="Attach image or PDF">＋</button><input class="fileinput" id="files" type="file" accept="image/jpeg,image/png,image/webp,application/pdf,.txt,.md,.csv" multiple><button class="toolbtn" id="voice" title="Voice input" aria-label="Voice input">♩</button><button class="toolbtn" id="liveVoice" title="Start live voice conversation" aria-label="Start live voice conversation">◉</button><textarea id="prompt" rows="1" placeholder="Message CYRA…"></textarea><button class="send" id="send" aria-label="Send message">➤</button></div><div class="hint">Enter to send · Shift + Enter for a new line · Your saved chats stay in this browser. CYRA can make mistakes, so verify important information.</div></section>
   <div class="footer">CYBERAI 2.0 · KNOWLEDGE • CONVERSATION • CREATIVITY · ODUYEBO ABIOLA</div>
  </section>
 </main>
@@ -62,7 +62,68 @@ $("newChat").onclick=$("newChatMobile").onclick=()=>{activeSavedId=null;history=
 $("mobileHistoryToggle").onclick=()=>{$("mobileHistoryPanel").hidden=!$("mobileHistoryPanel").hidden};
 function exportCurrentChat(){const messages=Array.from($("messages").children).map(n=>({role:n.classList.contains("user")?"You":"CYRA",text:n.querySelector("span")?.textContent||n.textContent}));if(!messages.length){addMessage("ai","There is no conversation to export yet.");return}const blob=new Blob([messages.map(m=>m.role+"\\n"+m.text).join("\\n\\n")],{type:"text/plain;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="cyberai-conversation.txt";a.click();URL.revokeObjectURL(url)}
 $("exportChat").onclick=$("mobileExport").onclick=exportCurrentChat;
-$("clearHistory").onclick=$("mobileClearHistory").onclick=()=>{if(!confirm("Delete all saved conversations from this browser? This cannot be undone."))return;saved=[];activeSavedId=null;try{localStorage.removeItem("cyberai2_chats")}catch{}renderHistory();$("mobileHistoryPanel").hidden=true;addMessage("ai","Saved conversation history has been cleared from this browser.")};
+$("clearHistory").onclick=$("mobileClearHistory").onclick=()=>{if(!confirm("Delete all saved conversations from this browser? This cannot be undone."))return;saved=[];activeSavedId=null;try{localStorage.removeItem("cyberai2_chats")}catch{}
+let liveSocket=null, liveStream=null, liveAudioContext=null, liveProcessor=null, liveSource=null, livePlaybackAt=0;
+function setLiveStatus(text){$("connection").textContent=text}
+function pcmToBase64(floatData){
+ const pcm=new Int16Array(floatData.length);
+ for(let i=0;i<floatData.length;i++){const sample=Math.max(-1,Math.min(1,floatData[i]));pcm[i]=sample<0?sample*32768:sample*32767}
+ let binary="";const bytes=new Uint8Array(pcm.buffer);for(let i=0;i<bytes.length;i++)binary+=String.fromCharCode(bytes[i]);return btoa(binary)
+}
+function downsampleTo16k(buffer,sourceRate){
+ if(sourceRate===16000)return buffer;
+ const ratio=sourceRate/16000;const length=Math.floor(buffer.length/ratio);const result=new Float32Array(length);
+ for(let i=0;i<length;i++){const start=Math.floor(i*ratio),end=Math.min(Math.floor((i+1)*ratio),buffer.length);let sum=0;for(let j=start;j<end;j++)sum+=buffer[j];result[i]=sum/Math.max(1,end-start)}
+ return result
+}
+function playLivePcm(encoded){
+ if(!liveAudioContext)return;
+ const raw=atob(encoded),bytes=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);
+ const pcm=new Int16Array(bytes.buffer);const samples=new Float32Array(pcm.length);for(let i=0;i<pcm.length;i++)samples[i]=pcm[i]/32768;
+ const audio=liveAudioContext.createBuffer(1,samples.length,24000);audio.copyToChannel(samples,0);
+ const source=liveAudioContext.createBufferSource();source.buffer=audio;source.connect(liveAudioContext.destination);
+ const start=Math.max(liveAudioContext.currentTime,livePlaybackAt);source.start(start);livePlaybackAt=start+audio.duration;
+}
+async function stopLiveVoice(){
+ if(liveProcessor){liveProcessor.disconnect();liveProcessor.onaudioprocess=null;liveProcessor=null}
+ if(liveSource){liveSource.disconnect();liveSource=null}
+ if(liveStream){liveStream.getTracks().forEach(track=>track.stop());liveStream=null}
+ if(liveSocket&&liveSocket.readyState===WebSocket.OPEN){try{liveSocket.send(JSON.stringify({type:"stop"}))}catch{};liveSocket.close()}
+ liveSocket=null;
+ if(liveAudioContext){await liveAudioContext.close().catch(()=>{});liveAudioContext=null}
+ $("liveVoice").textContent="◉";$("liveVoice").title="Start live voice conversation";$("liveVoice").setAttribute("aria-label","Start live voice conversation");setLiveStatus("Live voice ended")
+}
+async function startLiveVoice(){
+ if(!navigator.mediaDevices?.getUserMedia||!window.isSecureContext){addMessage("ai","Live voice needs a secure browser connection and microphone permission.");return}
+ $("liveVoice").disabled=true;setLiveStatus("Requesting microphone…");
+ try{
+  liveStream=await navigator.mediaDevices.getUserMedia({audio:{channelCount:1,echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
+  liveAudioContext=new (window.AudioContext||window.webkitAudioContext)();
+  await liveAudioContext.resume();
+  const wsBase=API_BASE.replace(/^http/,"ws");liveSocket=new WebSocket(wsBase+"/api/live");
+  await new Promise((resolve,reject)=>{liveSocket.onopen=resolve;liveSocket.onerror=()=>reject(new Error("Could not connect to the live voice service."));setTimeout(()=>reject(new Error("Live voice connection timed out.")),12000)});
+  liveSocket.onmessage=event=>{let packet;try{packet=JSON.parse(event.data)}catch{return}
+   if(packet.type==="audio")playLivePcm(packet.data);
+   else if(packet.type==="transcript"&&packet.text)addMessage("user","🎙 "+packet.text);
+   else if(packet.type==="text"&&packet.text)addMessage("ai",packet.text);
+   else if(packet.type==="error"){addMessage("ai",packet.message,"error");stopLiveVoice()}
+  };
+  liveSocket.onclose=()=>{if(liveStream)stopLiveVoice()};
+  liveSource=liveAudioContext.createMediaStreamSource(liveStream);
+  liveProcessor=liveAudioContext.createScriptProcessor(4096,1,1);
+  liveProcessor.onaudioprocess=event=>{
+   if(!liveSocket||liveSocket.readyState!==WebSocket.OPEN)return;
+   const input=event.inputBuffer.getChannelData(0);const sampled=downsampleTo16k(input,liveAudioContext.sampleRate);
+   liveSocket.send(JSON.stringify({audio:pcmToBase64(sampled)}))
+  };
+  liveSource.connect(liveProcessor);liveProcessor.connect(liveAudioContext.destination);
+  $("liveVoice").textContent="■";$("liveVoice").title="Stop live voice conversation";$("liveVoice").setAttribute("aria-label","Stop live voice conversation");setLiveStatus("Live voice connected · speak naturally");
+ }catch(error){addMessage("ai",error.message||"Live voice could not start.","error");await stopLiveVoice()}
+ finally{$("liveVoice").disabled=false}
+}
+$("liveVoice").onclick=()=>liveSocket?stopLiveVoice():startLiveVoice();
+
+renderHistory();$("mobileHistoryPanel").hidden=true;addMessage("ai","Saved conversation history has been cleared from this browser.")};
 document.querySelectorAll("[data-prompt]").forEach(b=>b.onclick=()=>sendMessage(b.dataset.prompt));
 document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-mode]").forEach(x=>x.classList.remove("active"));b.classList.add("active");if(b.dataset.mode!=="Chat")$("prompt").value="Help me "+b.dataset.mode.toLowerCase()+" something. "});
 const SpeechRecognition=window.SpeechRecognition||window.webkitSpeechRecognition;
