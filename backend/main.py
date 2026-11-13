@@ -318,11 +318,13 @@ async def live_voice(websocket: WebSocket):
 
     global _live_sessions
     with _live_lock:
-        if _live_sessions >= MAX_LIVE_SESSIONS:
-            client.close()
-            await websocket.close(code=1013, reason="Live voice is busy. Please try again shortly.")
-            return
-        _live_sessions += 1
+        at_capacity = _live_sessions >= MAX_LIVE_SESSIONS
+        if not at_capacity:
+            _live_sessions += 1
+    if at_capacity:
+        client.close()
+        await websocket.close(code=1013, reason="Live voice is busy. Please try again shortly.")
+        return
 
     try:
         async with client.aio.live.connect(model=live_model, config=config) as session:
@@ -353,6 +355,9 @@ async def live_voice(websocket: WebSocket):
                     transcription = getattr(content, "input_transcription", None)
                     if transcription and getattr(transcription, "text", None):
                         await websocket.send_json({"type": "transcript", "text": transcription.text})
+                    output_transcription = getattr(content, "output_transcription", None)
+                    if output_transcription and getattr(output_transcription, "text", None):
+                        await websocket.send_json({"type": "text", "text": output_transcription.text})
                     turn = getattr(content, "model_turn", None)
                     if turn:
                         for part in (getattr(turn, "parts", None) or []):
