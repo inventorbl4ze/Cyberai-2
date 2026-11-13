@@ -4,6 +4,9 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "manifest.webmanifest"
+      - "sw.js"
+      - "icon.svg"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 permissions:
