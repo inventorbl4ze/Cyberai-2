@@ -3,8 +3,11 @@
 The Gemini API key is read only from the server environment. Never place it
 in frontend code, source control, or a client application.
 """
+import logging
 import os
 from typing import Literal
+
+logger = logging.getLogger("cyberai")
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.concurrency import run_in_threadpool
@@ -136,8 +139,13 @@ async def chat(payload: ChatRequest, request: Request):
     try:
         answer = await run_in_threadpool(generate_answer, payload)
         return ChatResponse(answer=answer, model=MODEL_NAME)
-    except Exception:
-        # Do not return provider internals, credentials, or stack traces to clients.
+    except Exception as exc:
+        # Keep provider details in server logs only; never expose them to clients.
+        logger.exception(
+            "Gemini request failed (model=%s, exception_type=%s)",
+            MODEL_NAME,
+            type(exc).__name__,
+        )
         raise HTTPException(
             status_code=502,
             detail="CYRA could not complete that message. Please try again.",
