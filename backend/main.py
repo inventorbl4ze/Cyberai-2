@@ -17,7 +17,7 @@ from google.genai import types
 from pydantic import BaseModel, Field
 
 APP_NAME = "CYBERAI 2.0"
-MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 API_KEY = os.getenv("GEMINI_API_KEY")
 
 app = FastAPI(
