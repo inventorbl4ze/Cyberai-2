@@ -223,6 +223,8 @@ async def chat(payload: ChatRequest, request: Request):
     try:
         answer, used_model = await run_in_threadpool(generate_answer, payload)
         return ChatResponse(answer=answer, model=used_model)
+    except HTTPException:
+        raise
     except TemporaryGeminiUnavailable:
         logger.error("Gemini remained temporarily unavailable after retries (model=%s)", MODEL_NAME)
         raise HTTPException(
