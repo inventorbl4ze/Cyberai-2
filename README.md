@@ -43,8 +43,11 @@ Configure these private environment variables on the backend host:
 - `GEMINI_MODEL` — optional primary model (default: `gemini-3.8-flash`)
 - `GEMINI_FALLBACK_MODEL` — optional fallback (default: `gemini-3.5-flash-lite`)
 - `ALLOWED_ORIGINS` — comma-separated allowed browser origins
+- `OPENAI_API_KEY` — optional OpenAI API key for a text-only backup provider
+- `OPENAI_MODEL` — optional backup model (default: `gpt-6-luna`)
+- `ENABLE_OPENAI_FALLBACK` — set to `true` only after an adult account owner approves billing; defaults to `false`
 
-**Never put the Gemini key in this repository, website JavaScript, or an Android package.**
+**Never put either provider key in this repository, website JavaScript, or an Android package.** OpenAI fallback is disabled by default, requires a separately configured key, and only runs after a temporary Gemini capacity/service failure. It currently handles text-only requests; image/PDF attachments remain on Gemini.
 
 ## Important launch hardening
 
