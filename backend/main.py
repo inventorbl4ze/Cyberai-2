@@ -19,6 +19,7 @@ from pydantic import BaseModel, Field
 
 APP_NAME = "CYBERAI 2.0"
 MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+FALLBACK_MODEL = os.getenv("GEMINI_FALLBACK_MODEL", "gemini-3.5-flash-lite")
 API_KEY = os.getenv("GEMINI_API_KEY")
 
 app = FastAPI(
@@ -72,7 +73,22 @@ class TemporaryGeminiUnavailable(Exception):
     """Raised when Gemini remains temporarily unavailable after retries."""
 
 
-def generate_answer(payload: ChatRequest) -> str:
+def _http_status(exc: Exception) -> int | None:
+    """Read the HTTP status across google-genai exception versions."""
+    for value in (
+        getattr(exc, "status_code", None),
+        getattr(exc, "code", None),
+        getattr(getattr(exc, "response", None), "status_code", None),
+    ):
+        try:
+            if value is not None:
+                return int(value)
+        except (TypeError, ValueError):
+            pass
+    return None
+
+
+def generate_answer(payload: ChatRequest) -> tuple[str, str]:
     if not API_KEY:
         raise RuntimeError("GEMINI_API_KEY is not configured on the server.")
 
@@ -97,35 +113,46 @@ def generate_answer(payload: ChatRequest) -> str:
     )
 
     try:
-        # Retry temporary overload/rate-limit responses with short backoff.
-        for attempt, delay in enumerate((1, 2, 4), start=1):
-            try:
-                response = client.models.generate_content(
-                    model=MODEL_NAME,
-                    contents=contents,
-                    config=types.GenerateContentConfig(
-                        system_instruction=SYSTEM_INSTRUCTION,
-                        temperature=0.7,
-                        max_output_tokens=2048,
-                    ),
-                )
-                answer = (response.text or "").strip()
-                if not answer:
-                    raise RuntimeError("The model returned an empty response.")
-                return answer
-            except Exception as exc:
-                status_code = getattr(exc, "status_code", None)
-                if status_code not in (429, 500, 502, 503, 504):
-                    raise
-                if attempt == 3:
+        # Try the primary model first, then a lighter model if Google is overloaded.
+        models = [MODEL_NAME]
+        if FALLBACK_MODEL and FALLBACK_MODEL != MODEL_NAME:
+            models.append(FALLBACK_MODEL)
+
+        for model_index, model_name in enumerate(models):
+            delays = (1, 2, 4) if model_index == 0 else (1,)
+            for attempt, delay in enumerate(delays, start=1):
+                try:
+                    response = client.models.generate_content(
+                        model=model_name,
+                        contents=contents,
+                        config=types.GenerateContentConfig(
+                            system_instruction=SYSTEM_INSTRUCTION,
+                            temperature=0.7,
+                            max_output_tokens=2048,
+                        ),
+                    )
+                    answer = (response.text or "").strip()
+                    if not answer:
+                        raise RuntimeError("The model returned an empty response.")
+                    return answer, model_name
+                except Exception as exc:
+                    status_code = _http_status(exc)
+                    if status_code not in (429, 500, 502, 503, 504):
+                        raise
+                    if attempt < len(delays):
+                        logger.warning(
+                            "Gemini model %s temporarily unavailable (status=%s); retry %s/%s in %s seconds",
+                            model_name, status_code, attempt, len(delays), delay,
+                        )
+                        time.sleep(delay)
+                        continue
+                    if model_index < len(models) - 1:
+                        logger.warning(
+                            "Gemini model %s remained unavailable (status=%s); switching to fallback %s",
+                            model_name, status_code, models[model_index + 1],
+                        )
+                        break
                     raise TemporaryGeminiUnavailable() from exc
-                logger.warning(
-                    "Gemini temporarily unavailable (status=%s); retry %s/3 in %s seconds",
-                    status_code,
-                    attempt,
-                    delay,
-                )
-                time.sleep(delay)
         raise TemporaryGeminiUnavailable()
     finally:
         client.close()
@@ -146,6 +173,7 @@ async def health():
         "ok": True,
         "service": APP_NAME,
         "model": MODEL_NAME,
+        "fallback_model": FALLBACK_MODEL,
         "api_key_configured": bool(API_KEY),
     }
 
@@ -159,8 +187,8 @@ async def chat(payload: ChatRequest, request: Request):
         )
 
     try:
-        answer = await run_in_threadpool(generate_answer, payload)
-        return ChatResponse(answer=answer, model=MODEL_NAME)
+        answer, used_model = await run_in_threadpool(generate_answer, payload)
+        return ChatResponse(answer=answer, model=used_model)
     except TemporaryGeminiUnavailable:
         logger.error("Gemini remained temporarily unavailable after retries (model=%s)", MODEL_NAME)
         raise HTTPException(
