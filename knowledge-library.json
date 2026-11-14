@@ -17,21 +17,21 @@
       "eventDate": "2026-11-11",
       "type": "news",
       "title": "Nigeria's imported Bundibugyo Ebola case patient discharged; contact follow-up continues",
-      "summary": "Geneva University Hospitals reported that the patient evacuated from Abuja after Nigeria’s imported Bundibugyo virus disease case was discharged on 11 November after recovery. ECDC’s 13 November update said 62 contacts had been identified in Nigeria and 52 had completed the 21-day quarantine by 11 November. This patient-outcome update does not mean Nigeria has been declared Ebola-free; follow current NCDC and WHO updates for the response status.",
-      "dataAsOf": "2026-11-11",
-      "status": "dated patient and contact-follow-up update; not a declaration that Nigeria is Ebola-free",
+      "summary": "Geneva University Hospitals said the patient evacuated from Abuja after Nigeria’s imported Bundibugyo virus disease case was discharged on 11 November after recovery. On 13 November, the Nigeria Centre for Disease Control and Prevention said all 62 identified contacts had completed the 21-day monitoring period and none had developed symptoms, so no secondary transmission was detected among those contacts. ECDC’s earlier 13 November update had reported 52 completions as of 11 November; the newer NCDC update supersedes that snapshot. This is an important response milestone, not a formal declaration that Nigeria is Ebola-free.",
+      "dataAsOf": "2026-11-13",
+      "status": "NCDC-reported contact-monitoring milestone on 13 November; not a formal end-of-outbreak declaration",
       "sources": [
         {
-          "label": "Reuters, 12 November 2026",
+          "label": "Reuters, 13 November 2026 — NCDC says all 62 contacts completed monitoring with no secondary transmission",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/nigeria-ends-21-day-ebola-contact-monitoring-with-no-secondary-transmission-2026-11-13/"
+        },
+        {
+          "label": "Reuters, 12 November 2026 — patient discharged in Geneva",
           "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/swiss-woman-with-ebola-released-hospital-statement-says-2026-11-12/"
         },
         {
-          "label": "European Centre for Disease Prevention and Control, 13 November 2026",
+          "label": "European Centre for Disease Prevention and Control, 13 November 2026 — data as of 11 November",
           "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-13"
-        },
-        {
-          "label": "WHO Disease Outbreak News, 6 November 2026",
-          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625"
         }
       ],
       "tags": [
@@ -39,7 +39,8 @@
         "public health",
         "Bundibugyo virus",
         "Ebola",
-        "contact tracing"
+        "contact tracing",
+        "NCDC"
       ]
     },
     {
@@ -149,6 +150,30 @@
         "climate change",
         "information integrity",
         "UNESCO"
+      ]
+    },
+    {
+      "id": "drc-ebola-response-insecurity-2026-11-13",
+      "category": "Central Africa",
+      "publishedAt": "2026-11-13",
+      "eventDate": "2026-11-13",
+      "type": "news",
+      "title": "UN officials identify insecurity as a major obstacle to the Ebola response in eastern DRC",
+      "summary": "Reuters reported that UN health officials saw progress in some former hotspots but said Bundibugyo virus cases were continuing in remote areas of the Democratic Republic of the Congo. WHO’s Chikwe Ihekweazu identified rising insecurity as a major response challenge and cited 80 attacks on health sites and workers. The UN Ebola coordinator said response teams were able to operate about 80% of the time across the vast response area. These are attributed statements about operational conditions, not a new national case-count bulletin.",
+      "status": "dated response assessment; security and access conditions can change",
+      "sources": [
+        {
+          "label": "Reuters, 13 November 2026",
+          "url": "https://www.reuters.com/world/africa/un-hails-progress-ebola-response-cites-insecurity-biggest-challenge-2026-11-13/"
+        }
+      ],
+      "tags": [
+        "Democratic Republic of the Congo",
+        "Central Africa",
+        "public health",
+        "Ebola",
+        "humanitarian access",
+        "security"
       ]
     },
     {
