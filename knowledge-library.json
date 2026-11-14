@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "project": "CYBERAI 2.0",
   "creator": "Oduyebo Abiola",
-  "updatedAt": "2026-11-13T08:16:48+01:00",
+  "updatedAt": "2026-11-14T08:12:13+01:00",
   "contentPolicy": {
     "evergreen": "Reference lessons are stable educational explanations and should be reviewed periodically.",
     "news": "News entries are dated snapshots. Their event dates and data cut-offs are shown separately where relevant.",
@@ -13,25 +13,25 @@
     {
       "id": "ng-ebola-patient-discharge-2026-11-12",
       "category": "Nigeria",
-      "publishedAt": "2026-11-12",
+      "publishedAt": "2026-11-13",
       "eventDate": "2026-11-11",
       "type": "news",
-      "title": "Patient evacuated from Nigeria after Bundibugyo Ebola infection discharged in Geneva",
-      "summary": "Geneva University Hospitals said the woman evacuated from Abuja after Nigeria's imported Bundibugyo virus disease case was discharged on 11 November after doctors confirmed her recovery. This is a patient-outcome update, not a declaration that Nigeria has been officially declared Ebola-free. WHO's 6 November bulletin gave Nigeria contact-tracing figures as of 3 November: 62 contacts identified and six had completed the 21-day follow-up. Those figures are a dated snapshot and may since have changed; follow later NCDC and WHO updates for the current response.",
-      "dataAsOf": "2026-11-03",
-      "status": "dated update; not a live outbreak status",
+      "title": "Nigeria's imported Bundibugyo Ebola case patient discharged; contact follow-up continues",
+      "summary": "Geneva University Hospitals reported that the patient evacuated from Abuja after Nigeria’s imported Bundibugyo virus disease case was discharged on 11 November after recovery. ECDC’s 13 November update said 62 contacts had been identified in Nigeria and 52 had completed the 21-day quarantine by 11 November. This patient-outcome update does not mean Nigeria has been declared Ebola-free; follow current NCDC and WHO updates for the response status.",
+      "dataAsOf": "2026-11-11",
+      "status": "dated patient and contact-follow-up update; not a declaration that Nigeria is Ebola-free",
       "sources": [
         {
           "label": "Reuters, 12 November 2026",
           "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/swiss-woman-with-ebola-released-hospital-statement-says-2026-11-12/"
         },
         {
-          "label": "WHO Disease Outbreak News, 6 November 2026",
-          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625"
+          "label": "European Centre for Disease Prevention and Control, 13 November 2026",
+          "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-13"
         },
         {
-          "label": "Reuters fact check, 9 November 2026",
-          "url": "https://www.reuters.com/fact-check/who-did-not-declare-nigeria-ebola-free-upon-patients-evacuation-2026-11-09/"
+          "label": "WHO Disease Outbreak News, 6 November 2026",
+          "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625"
         }
       ],
       "tags": [
@@ -45,16 +45,20 @@
     {
       "id": "kenya-ebola-countdown-2026-11-11",
       "category": "East Africa",
-      "publishedAt": "2026-11-11",
+      "publishedAt": "2026-11-13",
       "eventDate": "2026-11-11",
       "type": "news",
       "title": "Kenya discharges its last Ebola patient and begins a 42-day countdown",
-      "summary": "WHO reported that Kenya discharged its final patient on 11 November and that the last 11 contacts completed monitoring. The 42-day countdown began on 12 November; Kenya may be declared free of the outbreak on or about 23 December only if no new case is recorded during the period. The country had no patient under treatment and no contacts in quarantine at the time of the announcement, but the response and surveillance continued.",
-      "status": "dated milestone; Kenya had not yet completed the 42-day countdown",
+      "summary": "ECDC’s 13 November update recorded nine confirmed cases and two deaths in Kenya. Seven people had recovered; the last patient was discharged on 11 November, and all contacts under monitoring had completed the 21-day quarantine. The last confirmed case was reported on 20 October. WHO said the 42-day countdown began on 12 November; a possible end-of-outbreak declaration around 23 December is conditional on no further cases and the required public-health checks.",
+      "status": "dated milestone; the 42-day countdown began 12 November and had not yet been completed",
       "sources": [
         {
           "label": "WHO Regional Office for Africa, 11 November 2026",
           "url": "https://www.afro.who.int/countries/kenya/news/kenyas-last-ebola-patient-goes-home-42-day-countdown-begins"
+        },
+        {
+          "label": "European Centre for Disease Prevention and Control, 13 November 2026",
+          "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-13"
         }
       ],
       "tags": [
@@ -62,19 +66,25 @@
         "East Africa",
         "public health",
         "Bundibugyo virus",
+        "Ebola",
         "surveillance"
-      ]
+      ],
+      "dataAsOf": "2026-11-11"
     },
     {
       "id": "drc-bundibugyo-who-2026-11-06",
       "category": "Central Africa",
-      "publishedAt": "2026-11-06",
-      "dataAsOf": "2026-11-03",
+      "publishedAt": "2026-11-13",
+      "dataAsOf": "2026-11-11",
       "type": "news",
-      "title": "WHO reports continued high Bundibugyo virus transmission in the Democratic Republic of the Congo",
-      "summary": "WHO's 6 November Disease Outbreak News reported 10,668 confirmed cases and 5,198 deaths in the DRC as of 3 November, across 67 health zones in eight provinces; 51 zones had reported at least one new case in the preceding 21 days. Average daily contact follow-up was 86%, below WHO's 95% target. These are WHO figures for the DRC at the stated cut-off, not current live totals and not figures for the whole African region.",
-      "status": "dated epidemiological snapshot; use the latest WHO bulletin for newer totals",
+      "title": "ECDC reports continued Bundibugyo virus transmission in the Democratic Republic of the Congo",
+      "summary": "ECDC’s 13 November update reported 11,197 confirmed cases and 5,471 related deaths in the Democratic Republic of the Congo as of 11 November, across eight provinces and 68 health zones. It also reported 3,045 recoveries and 80.9% of identified case contacts under follow-up. Community transmission was ongoing. These are DRC-only figures at the stated cut-off, subject to review; they are not live totals or figures for the whole African region.",
+      "status": "dated epidemiological snapshot; data cut-off 11 November 2026; consult later ECDC, WHO and DRC health-authority updates for newer figures",
       "sources": [
+        {
+          "label": "European Centre for Disease Prevention and Control, 13 November 2026",
+          "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-13"
+        },
         {
           "label": "WHO Disease Outbreak News, 6 November 2026",
           "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625"
@@ -82,10 +92,87 @@
       ],
       "tags": [
         "Democratic Republic of the Congo",
-        "Africa",
-        "Ebola",
+        "Central Africa",
+        "public health",
         "Bundibugyo virus",
-        "WHO"
+        "Ebola",
+        "surveillance"
+      ]
+    },
+    {
+      "id": "african-union-financing-session-2026-11-13",
+      "category": "Africa",
+      "publishedAt": "2026-11-13",
+      "eventDate": "2026-11-13",
+      "type": "news",
+      "title": "African Union leaders discuss greater African ownership of the Union's financing",
+      "summary": "At the African Union Executive Council’s 27th Extraordinary Session in Accra, the AU Commission Chairperson called for greater African ownership and self-reliance in financing continental priorities. Proposals included reviewing the ceiling on statutory contributions, progressively expanding the 0.2% levy on eligible imports, and pairing stronger member-state financing with institutional reform and accountability. These were proposals for consideration, not a statement that all measures had been adopted.",
+      "status": "dated policy discussion; proposals should not be presented as adopted decisions",
+      "sources": [
+        {
+          "label": "African Union Commission, 13 November 2026",
+          "url": "https://au.int/en/pressreleases/20261113/auc-chairperson-calls-greater-african-ownership-self-reliance-financing"
+        }
+      ],
+      "tags": [
+        "Africa",
+        "African Union",
+        "finance",
+        "governance",
+        "Agenda 2063",
+        "regional cooperation"
+      ]
+    },
+    {
+      "id": "cop31-ai-climate-information-integrity-2026-11-13",
+      "category": "Global Science and Technology",
+      "publishedAt": "2026-11-13",
+      "eventDate": "2026-11-13",
+      "type": "news",
+      "title": "COP31 initiative sets priorities for reliable climate information from and about AI",
+      "summary": "At COP31 in Antalya, the Global Initiative for Information Integrity on Climate Change launched priorities for action on AI and climate information integrity. The guidance asks AI developers to assess and disclose how systems affect climate information and to report relevant environmental footprints; it also encourages governments to include information integrity in AI and climate plans. A related advertising charter seeks greater transparency about where online advertising appears and what it funds. Germany announced a EUR 2 million contribution to the Global Fund for Information Integrity on Climate Change.",
+      "status": "dated international initiative announcement; recommendations are not binding law",
+      "sources": [
+        {
+          "label": "UN Climate Change (UNFCCC), 13 November 2026",
+          "url": "https://unfccc.int/news/cop31-new-global-priorities-target-role-of-ai-in-climate-information-integrity"
+        },
+        {
+          "label": "UNESCO COP31 programme",
+          "url": "https://www.unesco.org/en/information-integrity-climate-change/cop31"
+        }
+      ],
+      "tags": [
+        "global",
+        "COP31",
+        "artificial intelligence",
+        "climate change",
+        "information integrity",
+        "UNESCO"
+      ]
+    },
+    {
+      "id": "nigeria-world-science-day-2026-11-11",
+      "category": "Nigeria",
+      "publishedAt": "2026-11-11",
+      "eventDate": "2026-11-10",
+      "type": "news",
+      "title": "Nigeria's science ministry calls for greater investment in research and home-grown innovation",
+      "summary": "At Nigeria’s 2026 World Science Day briefing in Abuja, the Federal Ministry of Innovation, Science and Technology called for stronger investment in science, technology and innovation, with emphasis on applying and commercialising locally developed technologies. The event also featured a secondary-school STEM quiz and project exhibition. These are statements and event outcomes reported by the ministry, not evidence that new funding has already been approved.",
+      "status": "dated government announcement and school STEM event",
+      "sources": [
+        {
+          "label": "Federal Ministry of Information and National Orientation, 11 November 2026",
+          "url": "https://fmino.gov.ng/nigeria-marks-world-science-day-as-fmist-minister-calls-for-greater-investment-in-science-technology-and-innovation/"
+        }
+      ],
+      "tags": [
+        "Nigeria",
+        "science",
+        "technology",
+        "innovation",
+        "education",
+        "STEM"
       ]
     },
     {
@@ -113,6 +200,31 @@
   ],
   "weather": [
     {
+      "id": "nimet-outlook-issued-2026-11-12-valid-2026-11-13-to-15",
+      "category": "Nigeria Weather",
+      "type": "forecast",
+      "issuedAt": "2026-11-12",
+      "validFrom": "2026-11-13T00:00:00Z",
+      "validTo": "2026-11-15T23:59:00Z",
+      "forecastFor": "2026-11-14 and 2026-11-15",
+      "region": "Nigeria: Northern, North-Central and Southern regions",
+      "title": "NiMet three-day outlook: Saturday 14 and Sunday 15 November 2026",
+      "summary": "NiMet’s Central Forecast Office issued this regional outlook on 12 November, valid 13–15 November UTC. For Saturday 14 November, it forecast sunny and hazy conditions in the Northern region, patches of cloud in the North-Central region, and partly cloudy conditions in the South. Morning thunderstorms with light rain were possible in parts of Cross River and Akwa Ibom; isolated afternoon or evening thunderstorms were possible in parts of Cross River, Delta, Bayelsa, Rivers and Akwa Ibom. For Sunday 15 November, sunny and hazy conditions were forecast in the North and North-Central regions. In the South, morning thunderstorms and light rain were possible in parts of Akwa Ibom, with isolated later storms in parts of Bayelsa, Edo, Delta, Rivers, Cross River and Akwa Ibom. This is a regional forecast, not a Lagos-specific hourly forecast or a live observation.",
+      "advisory": "NiMet warned that strong winds may precede rain where thunderstorms are likely. It advised fastening loose objects, disconnecting electrical appliances from sockets and staying away from tall trees. The bulletin gives no temperature values and contains no separate heat advisory; check NiMet for newer warnings.",
+      "sourceLabel": "NiMet Central Forecast Office",
+      "sourceUrl": "https://nimet.gov.ng/downloader?file=admin/uploads/forecastbulletin/6af73ae23cce93.76598338_Weather_Outlook_Issued_on_the_12TH_November__2026.pdf",
+      "sourcePage": "https://nimet.gov.ng/weather_forecast_bulletin_detail?id=1507",
+      "status": "forecast only; valid through 15 November 2026 at 23:59 UTC; not a live observation",
+      "tags": [
+        "Nigeria",
+        "NiMet",
+        "forecast",
+        "thunderstorm",
+        "weather safety",
+        "heat advisory"
+      ]
+    },
+    {
       "id": "nimet-outlook-2026-11-13",
       "category": "Nigeria Weather",
       "type": "forecast",
@@ -127,7 +239,7 @@
       "sourceLabel": "NiMet Central Forecast Office",
       "sourceUrl": "https://nimet.gov.ng/downloader?file=admin/uploads/forecastbulletin/6af5a5da8bbac0.72188239_Weather_Outlook_Issued_on_the_11TH_November__2026.pdf",
       "sourcePage": "https://nimet.gov.ng/weather_forecast_bulletin_detail?id=1505",
-      "status": "forecast only; expires after 14 November 2026; not a live observation",
+      "status": "superseded by a newer NiMet outlook issued 12 November; this remains a historical forecast for 13 November, valid through 14 November 23:59 UTC; not a live observation",
       "tags": [
         "Nigeria",
         "NiMet",
@@ -534,6 +646,166 @@
         "media literacy",
         "critical thinking",
         "research"
+      ]
+    },
+    {
+      "id": "math-mean-median-mode",
+      "category": "Mathematics",
+      "title": "Mean, median and mode",
+      "summary": "Mean, median and mode describe different features of the centre of a data set. The mean is the total divided by the number of values; the median is the middle value after sorting; the mode is the most frequent value.",
+      "explanation": "The mean uses every value and can be pulled by extreme outliers. The median is often more representative when a data set is strongly skewed. A data set may have one mode, more than one mode, or no repeated value.",
+      "example": "For 2, 3, 3, 4, 18, the mean is 6, the median is 3 and the mode is 3.",
+      "sourceLabel": "OpenStax Introductory Statistics 2e",
+      "sourceUrl": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "tags": [
+        "mathematics",
+        "statistics",
+        "mean",
+        "median",
+        "mode",
+        "data"
+      ]
+    },
+    {
+      "id": "further-math-arithmetic-geometric-sequences",
+      "category": "Further Mathematics",
+      "title": "Arithmetic and geometric sequences",
+      "summary": "An arithmetic sequence changes by a constant difference, while a geometric sequence changes by a constant ratio.",
+      "explanation": "For an arithmetic sequence, the nth term is aₙ = a₁ + (n − 1)d, where d is the common difference. For a geometric sequence, aₙ = a₁rⁿ⁻¹, where r is the common ratio. Check consecutive differences first; if they are not constant, check consecutive ratios (when division is defined).",
+      "example": "In 4, 7, 10, 13, the common difference is 3 and the eighth term is 25. In 2, 6, 18, 54, the common ratio is 3 and the fifth term is 162.",
+      "sourceLabel": "OpenStax Precalculus 2e, Sections 11.2 and 11.3",
+      "sourceUrl": "https://openstax.org/books/precalculus-2e/pages/11-2-arithmetic-sequences",
+      "tags": [
+        "further mathematics",
+        "sequences",
+        "series",
+        "arithmetic progression",
+        "geometric progression"
+      ]
+    },
+    {
+      "id": "biology-food-chains-and-food-webs",
+      "category": "Biology",
+      "title": "Food chains, food webs and energy flow",
+      "summary": "A food chain shows one pathway through which energy and nutrients pass as organisms feed on one another. A food web connects many food chains in an ecosystem.",
+      "explanation": "Plants and other photosynthetic organisms are producers. Primary consumers feed on producers; higher-level consumers feed on other consumers. Decomposers break down dead material and return nutrients to the environment. Less energy is available at higher trophic levels because organisms use energy for life processes and energy is lost as heat.",
+      "example": "A simple chain is grass → grasshopper → frog → snake. A real ecosystem usually has many connected feeding relationships, so a food web is more realistic.",
+      "sourceLabel": "OpenStax Biology 2e, Energy Flow through Ecosystems",
+      "sourceUrl": "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems",
+      "tags": [
+        "biology",
+        "ecology",
+        "food chain",
+        "food web",
+        "ecosystems",
+        "energy"
+      ]
+    },
+    {
+      "id": "physics-wave-properties",
+      "category": "Physics",
+      "title": "Basic properties of waves",
+      "summary": "A wave is a disturbance that transfers energy from place to place. Important properties include wavelength, frequency, period and amplitude.",
+      "explanation": "Wavelength (λ) is the distance between matching points on neighbouring waves. Frequency (f) is the number of complete cycles per second, measured in hertz. Period (T) is the time for one cycle, so T = 1/f. For a travelling wave, speed v = fλ. Transverse waves oscillate perpendicular to the direction of travel; longitudinal waves oscillate parallel to it.",
+      "example": "A wave with frequency 4 Hz and wavelength 2 m travels at v = 4 × 2 = 8 m/s.",
+      "sourceLabel": "OpenStax University Physics Volume 1, Traveling Waves",
+      "sourceUrl": "https://openstax.org/books/university-physics-volume-1/pages/16-1-traveling-waves",
+      "tags": [
+        "physics",
+        "waves",
+        "wavelength",
+        "frequency",
+        "amplitude",
+        "wave speed"
+      ]
+    },
+    {
+      "id": "health-community-hand-hygiene",
+      "category": "Health Education",
+      "title": "Community hand hygiene and infection prevention",
+      "summary": "Cleaning hands at important moments with plain soap and water, or an effective alcohol-based hand rub when appropriate, helps reduce the spread of infectious microorganisms.",
+      "explanation": "WHO and UNICEF identify useful times for hand hygiene in community settings: before preparing food; before eating or feeding others; after using the toilet or handling faeces; after coughing, sneezing or blowing the nose; and whenever hands are visibly dirty. Access to clean water, soap or suitable hand rub, and convenient facilities makes the habit easier. Hand hygiene reduces risk but does not prevent every infection.",
+      "example": "Wash with soap and water before preparing a meal and after using the toilet. If hands are visibly dirty, use soap and water rather than relying on hand rub alone.",
+      "sourceLabel": "World Health Organization, Guidelines on hand hygiene in community settings",
+      "sourceUrl": "https://www.who.int/publications/i/item/9789240116559",
+      "tags": [
+        "health education",
+        "public health",
+        "hygiene",
+        "infection prevention",
+        "WHO",
+        "UNICEF"
+      ]
+    },
+    {
+      "id": "technology-multifactor-authentication",
+      "category": "Technology",
+      "title": "Why multi-factor authentication protects online accounts",
+      "summary": "Multi-factor authentication (MFA) asks a person to prove identity using more than one type of factor, adding a security layer beyond a password alone.",
+      "explanation": "A sign-in may combine something you know (such as a password), something you have (such as an authenticator app or security key), or something you are (such as a biometric). Turn MFA on through the genuine service's account settings. Never share one-time codes with another person or enter them after following an unexpected message link. Where supported, prefer passkeys or security keys designed to resist phishing.",
+      "example": "A password plus a code from an authenticator app uses two different factors. A password plus another password does not.",
+      "sourceLabel": "Cybersecurity and Infrastructure Security Agency, Multi-Factor Authentication tip sheet",
+      "sourceUrl": "https://www.cisa.gov/sites/default/files/2024-09/Secure-Our-World-MFA-Tip-Sheet.pdf",
+      "tags": [
+        "technology",
+        "cybersecurity",
+        "account security",
+        "MFA",
+        "authentication",
+        "privacy"
+      ]
+    },
+    {
+      "id": "creative-arts-balance-and-emphasis",
+      "category": "Creative Arts",
+      "title": "Balance and emphasis in visual composition",
+      "summary": "Balance is the distribution of visual weight in an artwork. Emphasis is the area that attracts attention first, often called the focal point.",
+      "explanation": "Symmetrical balance places similar visual weight on either side of an axis. Asymmetrical balance uses different elements that still feel visually stable. Radial balance arranges elements around a centre. Artists create emphasis through contrast in size, colour, shape, texture or position.",
+      "example": "A poster may use a large bright heading as its focal point, then balance it with smaller images and text on the opposite side.",
+      "sourceLabel": "J. Paul Getty Museum, Understanding Formal Analysis",
+      "sourceUrl": "https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html",
+      "tags": [
+        "creative arts",
+        "visual arts",
+        "composition",
+        "balance",
+        "emphasis",
+        "design"
+      ]
+    },
+    {
+      "id": "business-cash-flow-versus-profit",
+      "category": "Business Studies",
+      "title": "Cash flow is different from profit",
+      "summary": "Profit compares income earned with expenses incurred over an accounting period. Cash flow tracks money actually entering and leaving a business.",
+      "explanation": "A credit sale may count as revenue before the customer pays, so a business can report a profit while still waiting for cash. Cash-flow planning helps a business meet wages, supplier bills and other payments when they fall due. Profit and cash flow are both important, but they answer different questions.",
+      "example": "A shop sells goods worth ₦100,000 on credit and records a profit, but if the customer pays next month the shop has not yet received that cash to pay this week's supplier bill.",
+      "sourceLabel": "ACCA learning resource on cash flow and profit",
+      "sourceUrl": "https://www.acowtancy.com/textbook/acca-fa/f5-statements-of-cash-flows-excluding-partnerships/differences-between-profit-and-cash-flow/notes",
+      "tags": [
+        "business studies",
+        "entrepreneurship",
+        "accounting",
+        "cash flow",
+        "profit",
+        "finance"
+      ]
+    },
+    {
+      "id": "geography-map-scale",
+      "category": "Geography",
+      "title": "Understanding map scale",
+      "summary": "Map scale shows the relationship between a distance measured on a map and the corresponding distance on the ground.",
+      "explanation": "A representative fraction such as 1:50,000 means one unit on the map represents 50,000 of the same units on the ground. Convert units carefully after multiplying. A large-scale map usually shows a smaller area in greater detail; a small-scale map shows a larger area with less detail.",
+      "example": "At a scale of 1:50,000, 1 cm on the map represents 50,000 cm, or 500 m, on the ground. A 3 cm map distance represents 1.5 km.",
+      "sourceLabel": "National Geographic Education, Map Scale",
+      "sourceUrl": "https://education.nationalgeographic.org/resource/map-scale/",
+      "tags": [
+        "geography",
+        "cartography",
+        "maps",
+        "distance",
+        "map scale"
       ]
     }
   ]
