@@ -58,8 +58,8 @@ main{display:flex;flex-direction:column;min-width:0;min-height:100vh}.top{height
    <button class="card" data-prompt="Give me a surprising useful fact and explain it."><div class="ico">⌘</div><strong>Discover more</strong><span>Find a new perspective</span></button>
   </div>
   <section class="chat"><div class="library-panel" id="libraryPanel" hidden>
- <div class="library-head"><div><strong>CYRA Knowledge Library</strong><div class="library-note">Evergreen lessons are reference material. News is dated. Weather cards are forecasts with validity windows, not live observations.</div></div><button type="button" class="library-close" id="libraryClose">Close</button></div>
- <div class="library-controls"><input id="librarySearch" type="search" placeholder="Search a subject or topic…" aria-label="Search the knowledge library"><select id="libraryFilter" aria-label="Filter knowledge entries"><option value="all">All entries</option><option value="evergreen">Evergreen learning</option><option value="news">Dated news</option><option value="weather">Weather forecasts</option></select></div>
+ <div class="library-head"><div><strong>CYRA Knowledge Library</strong><div class="library-note">Evergreen lessons are reference material. News is dated. Official dashboard observations are dated snapshots, not live feeds. Weather cards are forecasts with validity windows, not live observations.</div></div><button type="button" class="library-close" id="libraryClose">Close</button></div>
+ <div class="library-controls"><input id="librarySearch" type="search" placeholder="Search a subject or topic…" aria-label="Search the knowledge library"><select id="libraryFilter" aria-label="Filter knowledge entries"><option value="all">All entries</option><option value="evergreen">Evergreen learning</option><option value="news">Dated news</option><option value="observations">Official snapshots</option><option value="weather">Weather forecasts</option></select></div>
  <div class="library-count" id="libraryCount">Loading knowledge library…</div><div class="library-results" id="libraryResults" aria-live="polite"></div>
 </div><div class="messages" id="messages" aria-live="polite"></div><div class="typing" id="typing" hidden>CYRA is thinking…</div><div class="attachmeta" id="attachmeta" hidden></div><div class="composer"><button class="toolbtn" id="attach" title="Attach image or PDF" aria-label="Attach image or PDF">＋</button><input class="fileinput" id="files" type="file" accept="image/jpeg,image/png,image/webp,application/pdf,.txt,.md,.csv" multiple><button class="toolbtn" id="voice" title="Voice input" aria-label="Voice input">♩</button><button class="toolbtn" id="liveVoice" title="Start live voice conversation" aria-label="Start live voice conversation">◉</button><textarea id="prompt" rows="1" placeholder="Message CYRA…"></textarea><button class="send" id="send" aria-label="Send message">➤</button></div><div class="hint">Enter to send · Shift + Enter for a new line · Your saved chats stay in this browser. CYRA can make mistakes, so verify important information.</div></section>
   <div class="footer">CYBERAI 2.0 · KNOWLEDGE • CONVERSATION • CREATIVITY · ODUYEBO ABIOLA</div>
@@ -179,7 +179,7 @@ async function loadKnowledgeLibrary(){
  const response=await fetch("./knowledge-library.json",{cache:"no-store"});
  if(!response.ok)throw new Error("The knowledge library could not be loaded.");
  const data=await response.json();
- if(!Array.isArray(data.evergreen)||!Array.isArray(data.news)||!Array.isArray(data.weather))throw new Error("The knowledge library format is not valid.");
+ if(!Array.isArray(data.evergreen)||!Array.isArray(data.news)||!Array.isArray(data.weather))throw new Error("The knowledge library format is not valid.");if(!Array.isArray(data.observations))data.observations=[];
  libraryData=data;return libraryData;
 }
 function closeLibrary(){
@@ -193,6 +193,7 @@ function renderLibrary(){
  const all=[
   ...libraryData.evergreen.map(entry=>({...entry,entryType:"evergreen"})),
   ...libraryData.news.map(entry=>({...entry,entryType:"news"})),
+  ...libraryData.observations.map(entry=>({...entry,entryType:"observation"})),
   ...libraryData.weather.map(entry=>({...entry,entryType:"weather"}))
  ];
  const query=$("librarySearch").value.trim().toLowerCase();
@@ -209,6 +210,7 @@ function renderLibrary(){
   const meta=document.createElement("div");meta.className="library-meta";
   if(entry.entryType==="evergreen")meta.textContent=entry.category+" · Evergreen reference";
   else if(entry.entryType==="news")meta.textContent=entry.category+" · News · Published "+entry.publishedAt+(entry.dataAsOf?" · data as of "+entry.dataAsOf:"");
+  else if(entry.entryType==="observation")meta.textContent=entry.category+" · Official snapshot · as of "+entry.observedAt+" · retrieved "+String(entry.retrievedAt||"").slice(0,10)+" · not live";
   else{const expired=entry.validTo&&Date.now()>Date.parse(entry.validTo);meta.textContent=entry.category+" · Forecast · issued "+entry.issuedAt+" · valid through "+entry.validTo.slice(0,10)+(expired?" · EXPIRED":" · not live");}
   const title=document.createElement("strong");title.textContent=entry.title;
   const summary=document.createElement("p");summary.textContent=entry.summary||"";
@@ -217,7 +219,7 @@ function renderLibrary(){
   if(entry.example){const example=document.createElement("p");example.textContent="Example: "+entry.example;card.appendChild(example)}
   if(entry.advisory){const advisory=document.createElement("p");advisory.textContent="Safety advisory: "+entry.advisory;card.appendChild(advisory)}
   if(entry.status){const status=document.createElement("p");status.className="library-status";status.textContent=entry.status;card.appendChild(status)}
-  const sources=entry.sources||[];
+  const sources=[...(entry.sources||[])];
   if(entry.sourceUrl)sources.push({label:entry.sourceLabel||"Original source",url:entry.sourceUrl});
   if(entry.sourcePage)sources.push({label:"NiMet bulletin page",url:entry.sourcePage});
   if(sources.length){const links=document.createElement("div");links.className="library-source";sources.forEach(source=>{if(!/^https:\/\//i.test(source.url||""))return;const a=document.createElement("a");a.href=source.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Source: "+source.label;links.appendChild(a)});card.appendChild(links)}
