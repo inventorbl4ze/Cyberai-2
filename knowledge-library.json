@@ -1,15 +1,41 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "project": "CYBERAI 2.0",
   "creator": "Oduyebo Abiola",
-  "updatedAt": "2026-11-14T08:12:13+01:00",
+  "updatedAt": "2026-11-15T08:41:08+01:00",
   "contentPolicy": {
     "evergreen": "Reference lessons are stable educational explanations and should be reviewed periodically.",
     "news": "News entries are dated snapshots. Their event dates and data cut-offs are shown separately where relevant.",
     "weather": "Weather entries are forecasts or observations only when explicitly labelled. Expired forecasts must never be described as current.",
-    "health": "Health content is educational and non-diagnostic. It does not replace advice from qualified health professionals or current public-health authorities."
+    "health": "Health content is educational and non-diagnostic. It does not replace advice from qualified health professionals or current public-health authorities.",
+    "observations": "Official dashboard and instrument readings are dated snapshots. Always show the observation or generation time and retrieval time; do not present a static snapshot as a live feed."
   },
   "news": [
+    {
+      "id": "africa-day-cop31-water-climate-finance-2026-11-14",
+      "category": "Africa",
+      "publishedAt": "2026-11-14",
+      "eventDate": "2026-11-12",
+      "type": "news",
+      "title": "African Union highlights water security, climate resilience and accessible finance at COP31",
+      "summary": "At Africa Day during COP31 in Antalya, African Union representatives and partners called for investment in climate-resilient water and sanitation infrastructure, stronger multi-hazard early-warning systems, anticipatory action and ecosystem restoration. Participants also urged more accessible and predictable adaptation finance for African countries and identified preparedness for the anticipated 2026–2027 El Niño as a priority. These are stated priorities and calls for action, not evidence that funding or projects have already been approved.",
+      "status": "dated policy discussion and priorities; calls for action are not binding COP decisions",
+      "sources": [
+        {
+          "label": "African Union Commission, 14 November 2026",
+          "url": "https://www.au.int/en/pressreleases/20261114/africa-day-cop31-water-security-climate-resilience-and-accessible-finance"
+        }
+      ],
+      "tags": [
+        "Africa",
+        "African Union",
+        "COP31",
+        "water security",
+        "climate resilience",
+        "early warning",
+        "adaptation finance"
+      ]
+    },
     {
       "id": "ng-ebola-patient-discharge-2026-11-12",
       "category": "Nigeria",
@@ -177,6 +203,54 @@
       ]
     },
     {
+      "id": "nigeria-health-sector-review-2026-11-13",
+      "category": "Nigeria",
+      "publishedAt": "2026-11-13",
+      "eventDate": "2026-11-10",
+      "type": "news",
+      "title": "Nigeria's health ministry reports progress and remaining gaps at its 2026 sector review",
+      "summary": "At the Third Nigeria Health Sector Joint Annual Review in Abuja, the Federal Ministry of Health reported that 3,526 primary healthcare centres had been revitalised, with work continuing on another 900, and that health-insurance coverage had risen to nearly 24 million people. The ministry said 12 of 13 indicators assessed had improved, while also identifying continuing challenges in stunting, affordability, quality of care and patient satisfaction. These figures are ministry-reported statements from the review, not an independent audit in this library entry.",
+      "status": "dated government-reported review; figures and progress claims are attributed to the Federal Ministry of Health and Social Welfare",
+      "sources": [
+        {
+          "label": "Federal Ministry of Health and Social Welfare, published 13 November 2026; review held 10 November",
+          "url": "https://health.gov.ng/tinubu-administration-achieves-all-41-presidential-health-sector-commitments-pate/"
+        }
+      ],
+      "tags": [
+        "Nigeria",
+        "health policy",
+        "primary healthcare",
+        "health insurance",
+        "public health",
+        "government review"
+      ]
+    },
+    {
+      "id": "cop31-climate-adaptation-finance-gap-2026-11-13",
+      "category": "Global Climate Policy",
+      "publishedAt": "2026-11-13",
+      "eventDate": "2026-11-13",
+      "type": "news",
+      "title": "UN chief warns that adaptation finance remains far below vulnerable countries' needs at COP31",
+      "summary": "During COP31 discussions in Antalya, UN Secretary-General António Guterres warned that even tripling adaptation funding for vulnerable countries would meet less than one-third of their needs. Climate finance, responsibility for funding and support for countries most exposed to climate impacts were central themes in the negotiations. This is a statement made during the conference, not a final COP31 agreement or adopted funding decision.",
+      "status": "dated statement during ongoing COP31 negotiations; not a final conference decision",
+      "sources": [
+        {
+          "label": "United Nations, 13 November 2026",
+          "url": "https://www.un.org/en/cop31-climate-finance-falls-short-calls-grow-polluters-pay"
+        }
+      ],
+      "tags": [
+        "global",
+        "COP31",
+        "climate change",
+        "adaptation finance",
+        "United Nations",
+        "climate justice"
+      ]
+    },
+    {
       "id": "nigeria-world-science-day-2026-11-11",
       "category": "Nigeria",
       "publishedAt": "2026-11-11",
@@ -225,6 +299,32 @@
   ],
   "weather": [
     {
+      "id": "nimet-outlook-2026-11-14-valid-15-to-17",
+      "category": "Nigeria Weather",
+      "type": "forecast",
+      "issuedAt": "2026-11-14",
+      "validFrom": "2026-11-15T00:00:00Z",
+      "validTo": "2026-11-17T23:59:00Z",
+      "forecastFor": "2026-11-15 to 2026-11-17",
+      "region": "Nigeria: Northern, North-Central and Southern regions; Lagos is specifically mentioned in the Southern outlook",
+      "title": "NiMet outlook issued 14 November: national forecast for 15–17 November 2026",
+      "summary": "NiMet’s Central Forecast Office issued this outlook on 14 November, valid from 00:00 UTC on 15 November to 23:59 UTC on 17 November. The Northern region is forecast to be sunny and dry, while the North-Central region is expected to have sunny skies with a few clouds. The South is forecast to be partly cloudy or sunny with a few clouds. For Lagos, Delta, Bayelsa, Rivers, Cross River and Akwa Ibom, thunderstorms with light rain are possible during afternoon or evening hours on 15 November; isolated storms are possible in these areas on 16 November, with slimmer prospects on 17 November. This is a regional forecast, not an hourly city forecast or a live observation.",
+      "advisory": "NiMet says strong winds may precede rain where thunderstorms are likely. Secure loose objects, disconnect electrical appliances from sockets and stay away from tall trees. This bulletin contains no numeric temperature forecast and does not issue a separate heat alert.",
+      "sourceLabel": "NiMet Central Forecast Office, outlook issued 14 November 2026",
+      "sourceUrl": "https://nimet.gov.ng/downloader?file=admin/uploads/forecastbulletin/6af8af653ad368.86359193_Weather_Outlook_Issued_on_the_14TH_November__2026.pdf",
+      "sourcePage": "https://nimet.gov.ng/weather_forecast_bulletin_detail?id=1509",
+      "status": "official regional forecast; valid through 17 November 2026 at 23:59 UTC; not a live observation",
+      "tags": [
+        "Nigeria",
+        "NiMet",
+        "forecast",
+        "Lagos",
+        "thunderstorm",
+        "light rain",
+        "weather safety"
+      ]
+    },
+    {
       "id": "nimet-outlook-issued-2026-11-12-valid-2026-11-13-to-15",
       "category": "Nigeria Weather",
       "type": "forecast",
@@ -239,7 +339,7 @@
       "sourceLabel": "NiMet Central Forecast Office",
       "sourceUrl": "https://nimet.gov.ng/downloader?file=admin/uploads/forecastbulletin/6af73ae23cce93.76598338_Weather_Outlook_Issued_on_the_12TH_November__2026.pdf",
       "sourcePage": "https://nimet.gov.ng/weather_forecast_bulletin_detail?id=1507",
-      "status": "forecast only; valid through 15 November 2026 at 23:59 UTC; not a live observation",
+      "status": "superseded by the newer NiMet outlook issued 14 November 2026; historical forecast only, not a live observation",
       "tags": [
         "Nigeria",
         "NiMet",
@@ -264,7 +364,7 @@
       "sourceLabel": "NiMet Central Forecast Office",
       "sourceUrl": "https://nimet.gov.ng/downloader?file=admin/uploads/forecastbulletin/6af5a5da8bbac0.72188239_Weather_Outlook_Issued_on_the_11TH_November__2026.pdf",
       "sourcePage": "https://nimet.gov.ng/weather_forecast_bulletin_detail?id=1505",
-      "status": "superseded by a newer NiMet outlook issued 12 November; this remains a historical forecast for 13 November, valid through 14 November 23:59 UTC; not a live observation",
+      "status": "expired and superseded by a newer NiMet outlook issued 14 November 2026; historical forecast only, not a live observation",
       "tags": [
         "Nigeria",
         "NiMet",
@@ -831,6 +931,131 @@
         "maps",
         "distance",
         "map scale"
+      ]
+    },
+    {
+      "id": "english-subject-verb-agreement",
+      "category": "English Language",
+      "title": "Subject–verb agreement",
+      "summary": "A verb should agree with its subject in grammatical number and person. A singular subject normally takes a singular verb, while a plural subject normally takes a plural verb.",
+      "explanation": "Do not let nearby words distract you from the real subject. Subjects joined by and are usually plural. With either/or and neither/nor, the verb generally agrees with the nearer subject. Words such as everyone, each and nobody are grammatically singular. Collective nouns such as team or committee are usually treated as singular when the group acts as one unit.",
+      "example": "The list of books is on the table. The learners are ready. Everyone has a notebook.",
+      "sourceLabel": "Purdue University Online Writing Lab — Making Subjects and Verbs Agree",
+      "sourceUrl": "https://owl.purdue.edu/owl/general_writing/grammar/subject_verb_agreement.html",
+      "tags": [
+        "English",
+        "grammar",
+        "verbs",
+        "sentence structure",
+        "writing"
+      ]
+    },
+    {
+      "id": "math-probability-addition-multiplication-rules",
+      "category": "Mathematics",
+      "title": "Basic addition and multiplication rules of probability",
+      "summary": "Probability measures how likely an event is, from 0 (impossible) to 1 (certain). For events A and B, P(A or B) = P(A) + P(B) − P(A and B).",
+      "explanation": "The addition rule avoids counting outcomes shared by both events twice. If A and B are independent, the multiplication rule is P(A and B) = P(A) × P(B). Events are independent when knowing that one occurred does not change the probability of the other.",
+      "example": "For a fair coin and a fair six-sided die, the probability of getting heads and a six is 1/2 × 1/6 = 1/12 because the two outcomes are independent.",
+      "sourceLabel": "OpenStax — Introductory Statistics, Two Basic Rules of Probability",
+      "sourceUrl": "https://openstax.org/books/introductory-statistics/pages/3-3-two-basic-rules-of-probability",
+      "tags": [
+        "Mathematics",
+        "probability",
+        "statistics",
+        "independent events"
+      ]
+    },
+    {
+      "id": "further-math-binomial-theorem",
+      "category": "Further Mathematics",
+      "title": "The binomial theorem",
+      "summary": "The binomial theorem gives a systematic way to expand a binomial raised to a non-negative integer power: (a + b)^n = Σ from r = 0 to n of C(n,r)a^(n−r)b^r.",
+      "explanation": "The coefficient C(n,r), also written as nCr, equals n!/[r!(n−r)!]. In each term, the exponent of a decreases while the exponent of b increases, and the two exponents add to n. The theorem is useful for expansions and for finding a particular term without writing every term.",
+      "example": "(x + 2)^3 = x^3 + 6x^2 + 12x + 8. The coefficients 1, 3, 3, 1 come from the binomial coefficients for n = 3.",
+      "sourceLabel": "OpenStax — Algebra and Trigonometry, Binomial Theorem",
+      "sourceUrl": "https://openstax.org/books/algebra-and-trigonometry/pages/13-6-binomial-theorem",
+      "tags": [
+        "Further Mathematics",
+        "algebra",
+        "binomial expansion",
+        "combinations"
+      ]
+    },
+    {
+      "id": "chemistry-periodic-table-groups-periods",
+      "category": "Chemistry",
+      "title": "Groups and periods in the periodic table",
+      "summary": "The modern periodic table arranges elements by increasing atomic number. Its vertical columns are called groups and its horizontal rows are called periods.",
+      "explanation": "Elements in the same main-group column often have similar chemical properties because their outer-electron arrangements are related. Moving across a period, the atomic number increases by one for each successive element. The table also helps organise metals, non-metals and metalloids.",
+      "example": "Lithium, sodium and potassium are in Group 1 and are alkali metals. Neon and argon are in Group 18 and are noble gases.",
+      "sourceLabel": "OpenStax — Chemistry 2e, The Periodic Table",
+      "sourceUrl": "https://openstax.org/books/chemistry-2e/pages/2-5-the-periodic-table",
+      "tags": [
+        "Chemistry",
+        "periodic table",
+        "elements",
+        "atomic number"
+      ]
+    },
+    {
+      "id": "history-kingdom-of-benin-heritage",
+      "category": "History",
+      "title": "The Kingdom of Benin and the history of its court art",
+      "summary": "The Kingdom of Benin, in present-day Edo State, developed a highly skilled court-art tradition. Metal plaques known as ama recorded people, offices and important aspects of royal life and history.",
+      "explanation": "In February 1897, British forces invaded Benin City and forcibly removed many cultural objects. The objects often called the Benin Bronzes include brass plaques and other works made by specialist guilds. In November 2022, the Horniman Museum transferred ownership of 72 objects to Nigeria’s National Commission for Museums and Monuments; six were physically returned, while others remained on loan for display and research. Historical study should consider the objects’ makers, original purpose, removal and later restitution.",
+      "example": "A learner studying a Benin plaque can examine its figures and symbols, ask what role or event it represents, and compare the museum record with accounts from Edo and Nigerian cultural institutions.",
+      "sourceLabel": "Horniman Museum and Gardens — Kingdom of Benin learning resource",
+      "sourceUrl": "https://www.horniman.ac.uk/resource/ancient-benin/",
+      "tags": [
+        "History",
+        "Nigeria",
+        "Edo",
+        "Benin Kingdom",
+        "heritage",
+        "restitution",
+        "art history"
+      ]
+    },
+    {
+      "id": "creative-arts-rhythm-repetition",
+      "category": "Creative Arts",
+      "title": "Rhythm and repetition in visual art",
+      "summary": "Repetition occurs when an artist uses an element more than once. Rhythm is the sense of organised movement created by repeated visual elements.",
+      "explanation": "Artists can create rhythm by repeating lines, shapes, colours or patterns at regular or changing intervals. Repetition can help unify a composition, while variation keeps it interesting and guides the viewer’s attention.",
+      "example": "A textile pattern that repeats geometric shapes with small changes in colour can create visual rhythm across the fabric.",
+      "sourceLabel": "J. Paul Getty Museum — Understanding Formal Analysis: Principles of Design",
+      "sourceUrl": "https://www.getty.edu/education/teachers/building_lessons/formal_analysis2.html",
+      "tags": [
+        "Creative Arts",
+        "visual art",
+        "design",
+        "rhythm",
+        "repetition",
+        "pattern"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "ncdc-ebola-dashboard-snapshot-2026-11-14",
+      "category": "Nigeria Public Health",
+      "type": "official_snapshot",
+      "observedAt": "2026-11-14",
+      "retrievedAt": "2026-11-15T08:41:08+01:00",
+      "title": "NCDC dashboard snapshot: all 62 identified contacts have exited follow-up, while the outbreak remains listed as active",
+      "summary": "The Nigeria Centre for Disease Control and Prevention dashboard generated on 14 November 2026 listed one confirmed Bundibugyo virus disease case, zero deaths, seven negative cases, 62 identified contacts, zero contacts still under follow-up and 62 contacts who had exited follow-up. The dashboard continued to label the outbreak active and the national risk level High. Completion of contact follow-up is an important surveillance milestone, but it is not the same as a formal outbreak-closure declaration. These are figures from the dated dashboard snapshot, not live counts.",
+      "status": "Official dashboard snapshot generated 14 November 2026 and retrieved 15 November 2026; not a live feed. The dashboard still labels the event an active outbreak with national risk level High.",
+      "sourceLabel": "Nigeria Centre for Disease Control and Prevention (NCDC), dashboard generated 14 November 2026",
+      "sourceUrl": "https://evdmicrosite.ncdc.gov.ng/en/outbreaks/ebola-2026",
+      "tags": [
+        "Nigeria",
+        "NCDC",
+        "Bundibugyo virus",
+        "Ebola",
+        "contact follow-up",
+        "official dashboard",
+        "dated snapshot"
       ]
     }
   ]
