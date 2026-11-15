@@ -32,7 +32,8 @@ The website's **Learn something** and **Explore topics** sections open the searc
 
 - `evergreen`: stable educational reference lessons with source links.
 - `news`: dated reports, including a publication date and a data cut-off where applicable.
-- `weather`: official forecasts with issue and validity times. These are not live observations; expired forecasts are labelled as expired in the library.
+- `observations`: dated snapshots from official dashboards or instruments, with observation and retrieval times. They are not live feeds.
+- `weather`: official forecasts with issue and validity times. These are not live observations; expired or superseded forecasts are labelled in the library.
 
 The knowledge library is a curated static snapshot. It does not make the chat backend a live news or weather service. Open the linked original source for the newest information.
 
