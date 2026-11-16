@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "project": "CYBERAI 2.0",
   "creator": "Oduyebo Abiola",
-  "updatedAt": "2026-11-15T08:41:08+01:00",
+  "updatedAt": "2026-11-16T08:18:47+01:00",
   "contentPolicy": {
     "evergreen": "Reference lessons are stable educational explanations and should be reviewed periodically.",
     "news": "News entries are dated snapshots. Their event dates and data cut-offs are shown separately where relevant.",
@@ -209,12 +209,16 @@
       "eventDate": "2026-11-10",
       "type": "news",
       "title": "Nigeria's health ministry reports progress and remaining gaps at its 2026 sector review",
-      "summary": "At the Third Nigeria Health Sector Joint Annual Review in Abuja, the Federal Ministry of Health reported that 3,526 primary healthcare centres had been revitalised, with work continuing on another 900, and that health-insurance coverage had risen to nearly 24 million people. The ministry said 12 of 13 indicators assessed had improved, while also identifying continuing challenges in stunting, affordability, quality of care and patient satisfaction. These figures are ministry-reported statements from the review, not an independent audit in this library entry.",
-      "status": "dated government-reported review; figures and progress claims are attributed to the Federal Ministry of Health and Social Welfare",
+      "summary": "At the Third Nigeria Health Sector Joint Annual Review in Abuja, the Federal Ministry of Health reported that 3,526 primary healthcare centres had been revitalised, with work continuing on another 900, and that health-insurance coverage had risen to nearly 24 million people. The ministry said 12 of 13 indicators assessed had improved, while also identifying continuing challenges in stunting, affordability, quality of care and patient satisfaction. A communiqué from the 10–12 November review set out a 12-point action plan that includes rural health-worker retention, more predictable domestic financing, stronger emergency obstetric and newborn care at primary health centres, community referral and emergency transport, and use of DHIS2 as a common national health-data reporting platform. Ministry performance figures and review resolutions are attributed to the government and participating stakeholders, not independently audited in this entry.",
+      "status": "Dated government and stakeholder review published 13 November 2026; reported performance figures and agreed action points are attributed to the review, not an independent audit.",
       "sources": [
         {
           "label": "Federal Ministry of Health and Social Welfare, published 13 November 2026; review held 10 November",
           "url": "https://health.gov.ng/tinubu-administration-achieves-all-41-presidential-health-sector-commitments-pate/"
+        },
+        {
+          "label": "Voice of Nigeria, 13 November 2026 — 12-point health reform communiqué",
+          "url": "https://von.gov.ng/nigeria-unveils-12-point-health-reform-blueprint/"
         }
       ],
       "tags": [
@@ -295,6 +299,111 @@
         "science communication",
         "WHO"
       ]
+    },
+    {
+      "id": "drc-bundibugyo-africacdc-six-month-update-2026-11-15",
+      "category": "Central Africa",
+      "publishedAt": "2026-11-15",
+      "eventDate": "2026-11-15",
+      "type": "news",
+      "title": "Africa CDC says DRC Bundibugyo Ebola response still faces access and surveillance challenges",
+      "summary": "In a joint update dated 15 November, Africa CDC reported that more than 11,000 cases and 5,400 deaths had been reported in the Democratic Republic of the Congo six months into the Bundibugyo virus disease outbreak. The update said the outbreak had expanded to 67 health zones in eight provinces, with 400–500 new cases still being reported each week. It also described progress in laboratory capacity, treatment beds and response work in several early hotspots, while warning that gaps in contact follow-up, insecurity and access barriers continue to hamper control. These are agency-reported figures and an ongoing outbreak update, not a declaration that the outbreak has ended.",
+      "status": "Africa CDC/WHO joint update published 15 November 2026; figures are agency-reported and describe an ongoing response.",
+      "sources": [
+        {
+          "label": "Africa CDC and partners, 15 November 2026",
+          "url": "https://africacdc.org/news-item/six-months-on-accessing-hard-to-reach-communities-key-to-halting-ebola-outbreak/"
+        },
+        {
+          "label": "Reuters, 15 November 2026",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/africa-cdc-says-ebola-outbreak-still-out-control-six-months-since-it-was-2026-11-15/"
+        }
+      ],
+      "tags": [
+        "Central Africa",
+        "Democratic Republic of the Congo",
+        "Africa CDC",
+        "WHO",
+        "Bundibugyo virus disease",
+        "Ebola",
+        "public health"
+      ]
+    },
+    {
+      "id": "kenya-farmers-soil-erosion-rain-adaptation-2026-11-16",
+      "category": "East Africa",
+      "publishedAt": "2026-11-16",
+      "eventDate": "2026-11-16",
+      "type": "news",
+      "title": "Kenyan farmers adopt soil-conservation methods ahead of forecast heavy rains",
+      "summary": "An Associated Press report on 16 November described farmers in Kenya using sand-filled barriers, Napier grass and bamboo to slow runoff and protect topsoil after earlier heavy rain caused erosion. An agronomist cited in the report recommended measures including terracing, gabions, cover crops and planting across slopes. The article says the October–December rainy season is expected to bring heavier-than-usual rainfall in several regions. These are reported local adaptation examples; the article is not a live weather forecast or a guarantee that any single method will prevent erosion.",
+      "status": "Dated Associated Press reporting published 16 November 2026; seasonal rainfall expectations are forecasts and may change.",
+      "sources": [
+        {
+          "label": "Associated Press, 16 November 2026",
+          "url": "https://apnews.com/article/5490d6a6f019c7be64c105a9d3af1f42"
+        }
+      ],
+      "tags": [
+        "East Africa",
+        "Kenya",
+        "agriculture",
+        "soil conservation",
+        "erosion",
+        "rainfall adaptation",
+        "climate resilience"
+      ]
+    },
+    {
+      "id": "copernicus-2026-global-temperature-outlook-2026-11-11",
+      "category": "Global Climate Science",
+      "publishedAt": "2026-11-11",
+      "eventDate": "2026-11-11",
+      "dataAsOf": "2026-10-31",
+      "type": "news",
+      "title": "Copernicus says 2026 is virtually certain to be the second calendar year above 1.5°C",
+      "summary": "On 11 November, the Copernicus Climate Change Service said a statistical projection based on ERA5 data through October made it more than 99% likely that the 2026 annual global average temperature would exceed 1.5°C above the estimated 1850–1900 pre-industrial baseline. It said 2026 was most likely to be the second-warmest calendar year on record. October 2026 was the warmest October in the record, at 1.75°C above the pre-industrial reference. These are global climate indicators and a statistical outlook, not a local weather observation or a final full-year measurement.",
+      "status": "Copernicus statistical outlook published 11 November 2026 using ERA5 data through October; annual estimate, not a live reading.",
+      "sources": [
+        {
+          "label": "Copernicus Climate Change Service / ECMWF, 11 November 2026",
+          "url": "https://climate.copernicus.eu/2026-and-4-year-global-temperature-average-track-exceed-15degc-above-pre-industrial-levels"
+        }
+      ],
+      "tags": [
+        "Global",
+        "climate science",
+        "Copernicus",
+        "ECMWF",
+        "global temperature",
+        "El Niño",
+        "climate change"
+      ]
+    },
+    {
+      "id": "nigeria-west-africa-regional-bond-market-proposal-2026-11-10",
+      "category": "Nigeria and West Africa",
+      "publishedAt": "2026-11-10",
+      "eventDate": "2026-11-10",
+      "type": "news",
+      "title": "Nigeria proposes reforms to make West African bond trading easier across borders",
+      "summary": "Reuters reported on 10 November that Nigeria's Finance Minister Taiwo Oyedele said the country was proposing regional capital-market reforms intended to make cross-border bond trading easier for investors across West Africa. The stated aim was to encourage regional investment and support long-term financing for infrastructure and economic growth. The report did not provide detailed measures or an implementation timetable, so this should be treated as a proposal rather than an enacted regional policy.",
+      "status": "Reuters report published 10 November 2026; proposal reported, with details and implementation timeline not specified.",
+      "sources": [
+        {
+          "label": "Reuters, 10 November 2026",
+          "url": "https://www.reuters.com/world/africa/nigeria-proposes-regional-bond-market-reforms-spur-cross-border-investments-2026-11-10/"
+        }
+      ],
+      "tags": [
+        "Nigeria",
+        "West Africa",
+        "business",
+        "finance",
+        "capital markets",
+        "bonds",
+        "regional investment"
+      ]
     }
   ],
   "weather": [
@@ -313,7 +422,7 @@
       "sourceLabel": "NiMet Central Forecast Office, outlook issued 14 November 2026",
       "sourceUrl": "https://nimet.gov.ng/downloader?file=admin/uploads/forecastbulletin/6af8af653ad368.86359193_Weather_Outlook_Issued_on_the_14TH_November__2026.pdf",
       "sourcePage": "https://nimet.gov.ng/weather_forecast_bulletin_detail?id=1509",
-      "status": "official regional forecast; valid through 17 November 2026 at 23:59 UTC; not a live observation",
+      "status": "Official regional forecast issued 14 November 2026; reviewed 16 November. No newer NiMet three-day bulletin was located in the public bulletin listing during this check. Valid through 17 November 2026 at 23:59 UTC; not a live observation.",
       "tags": [
         "Nigeria",
         "NiMet",
@@ -1034,6 +1143,163 @@
         "repetition",
         "pattern"
       ]
+    },
+    {
+      "id": "math-simultaneous-equations-elimination",
+      "category": "Mathematics",
+      "title": "Solving simultaneous linear equations by elimination",
+      "summary": "A system of simultaneous linear equations asks for values that satisfy every equation at the same time. In the elimination method, multiply equations when needed so one variable has equal or opposite coefficients, then add or subtract to remove that variable.",
+      "explanation": "Solve the resulting one-variable equation, substitute its value into either original equation to find the second variable, and check both values in both original equations. If the coefficients are already opposites, add the equations; if they are equal, subtract them.",
+      "example": "For 3x − y = 7 and 2x + y = 8, add the equations to get 5x = 15, so x = 3. Substitute into 2x + y = 8 to get y = 2. The solution is (3, 2).",
+      "sourceLabel": "Khan Academy — Systems of equations with elimination",
+      "sourceUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-elimination/a/systems-of-equations-with-elimination",
+      "tags": [
+        "Mathematics",
+        "algebra",
+        "simultaneous equations",
+        "linear equations",
+        "elimination"
+      ]
+    },
+    {
+      "id": "further-math-chain-rule",
+      "category": "Further Mathematics",
+      "title": "Differentiating composite functions with the chain rule",
+      "summary": "The chain rule differentiates a function made by putting one function inside another. If y = f(g(x)), then dy/dx = f′(g(x)) × g′(x): differentiate the outer function first, keep the inner function in place, and multiply by the derivative of the inner function.",
+      "explanation": "The rule is useful when a function contains a bracketed expression raised to a power or when one function is composed with another. Work from the outside inward and apply any other differentiation rules that are needed.",
+      "example": "If y = (3x² + 1)⁴, then dy/dx = 4(3x² + 1)³ × 6x = 24x(3x² + 1)³.",
+      "sourceLabel": "OpenStax — Calculus Volume 1, Section 3.6: The Chain Rule",
+      "sourceUrl": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule",
+      "tags": [
+        "Further Mathematics",
+        "calculus",
+        "differentiation",
+        "chain rule",
+        "composite functions"
+      ]
+    },
+    {
+      "id": "physics-linear-momentum-impulse",
+      "category": "Physics",
+      "title": "Linear momentum and impulse",
+      "summary": "Linear momentum is the product of an object's mass and velocity: p = mv. Momentum is a vector, so it has direction as well as magnitude. Its SI unit is kilogram metre per second (kg m/s).",
+      "explanation": "Impulse is the change in momentum. For a constant or average resultant force, impulse J = FΔt = Δp, where F is the average net force and Δt is the time interval. The total momentum of an isolated system remains constant when the net external force on the system is zero.",
+      "example": "A 0.5 kg ball moving at 4 m/s in a straight line has momentum p = 0.5 × 4 = 2 kg m/s in its direction of motion.",
+      "sourceLabel": "OpenStax — Physics, Section 8.1: Linear Momentum, Force, and Impulse",
+      "sourceUrl": "https://openstax.org/books/physics/pages/8-1-linear-momentum-force-and-impulse",
+      "tags": [
+        "Physics",
+        "mechanics",
+        "momentum",
+        "impulse",
+        "conservation of momentum"
+      ]
+    },
+    {
+      "id": "biology-dna-genes-chromosomes",
+      "category": "Biology",
+      "title": "DNA, genes and chromosomes",
+      "summary": "DNA is a molecule that stores biological instructions. A gene is a section of DNA containing information used to make a functional product, commonly a protein. Chromosomes are organised structures in which DNA is packaged with proteins.",
+      "explanation": "In most human body cells, nuclear DNA is organised into 46 chromosomes arranged in 23 pairs. During reproduction, inherited DNA contributes to the characteristics of offspring. Genes are only part of the genome; other DNA regions help regulate how genetic information is used.",
+      "example": "A chromosome can be pictured as a carefully packaged DNA thread. A gene is one defined section of that thread with information used by cells.",
+      "sourceLabel": "National Human Genome Research Institute — A Brief Guide to Genomics",
+      "sourceUrl": "https://www.genome.gov/about-genomics/fact-sheets/A-Brief-Guide-to-Genomics",
+      "tags": [
+        "Biology",
+        "genetics",
+        "DNA",
+        "genes",
+        "chromosomes",
+        "inheritance"
+      ]
+    },
+    {
+      "id": "geography-weathering-erosion-deposition",
+      "category": "Geography",
+      "title": "Weathering, erosion and deposition",
+      "summary": "Weathering breaks down rock where it is. Erosion moves loosened rock or soil by agents such as flowing water, wind, ice or gravity. Deposition happens when transported sediment is dropped and accumulates.",
+      "explanation": "Weathering may be physical, such as cracking caused by temperature changes, or chemical, such as minerals dissolving. Erosion transports the material away. The processes often work together to shape valleys, coastlines, river channels and other landforms.",
+      "example": "Rain can weather exposed rock; runoff may then carry loosened soil downslope, and the sediment may be deposited where the water slows.",
+      "sourceLabel": "U.S. National Park Service — Erosion: Water, Wind & Weather",
+      "sourceUrl": "https://www.nps.gov/subjects/erosion/about.htm",
+      "tags": [
+        "Geography",
+        "physical geography",
+        "weathering",
+        "erosion",
+        "deposition",
+        "landforms"
+      ]
+    },
+    {
+      "id": "business-compound-interest",
+      "category": "Business Studies",
+      "title": "Understanding compound interest",
+      "summary": "Compound interest is interest calculated on the original amount saved or borrowed and on interest already added. It means the balance can grow faster over time than with simple interest, when interest is left in the account and continues to compound.",
+      "explanation": "For a fixed annual rate compounded once per year, A = P(1 + r)ᵗ, where P is the starting principal, r is the annual rate written as a decimal, t is the number of years and A is the final amount. For n compounding periods per year, A = P(1 + r/n)ⁿᵗ. Real accounts may have fees, taxes or changing rates, so check their terms.",
+      "example": "At an illustrative 5% annual rate compounded yearly, $100 becomes $105 after one year and $110.25 after two years. This is a mathematics example, not an investment recommendation.",
+      "sourceLabel": "Investor.gov — What is compound interest?",
+      "sourceUrl": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+      "tags": [
+        "Business Studies",
+        "financial literacy",
+        "savings",
+        "interest",
+        "compound interest"
+      ]
+    },
+    {
+      "id": "creative-arts-one-point-perspective",
+      "category": "Creative Arts",
+      "title": "Creating depth with one-point perspective",
+      "summary": "One-point linear perspective is a drawing method for suggesting three-dimensional depth on a flat surface. Receding parallel edges appear to converge at one vanishing point on the horizon line.",
+      "explanation": "Place the horizon line at the viewer's eye level, choose a vanishing point on it, and draw light guide lines from the corners of objects toward that point. Objects usually appear smaller as they are shown farther away. This method is useful for drawing roads, corridors and rooms viewed straight on.",
+      "example": "When drawing a straight road that extends into the distance, the road edges can be guided toward one vanishing point on the horizon.",
+      "sourceLabel": "Khan Academy — How one-point linear perspective works",
+      "sourceUrl": "https://www.khanacademy.org/humanities/art-history/introduction-to-art-history/the-basics/v/how-one-point-linear-perspective-works",
+      "tags": [
+        "Creative Arts",
+        "drawing",
+        "visual art",
+        "perspective",
+        "vanishing point"
+      ]
+    },
+    {
+      "id": "history-trans-saharan-trade-networks",
+      "category": "History",
+      "title": "Trans-Saharan trade networks in West African history",
+      "summary": "From the early medieval period onward, camel caravans connected North African and Mediterranean trading centres with communities and states south of the Sahara. West African gold and Saharan salt were major commodities, alongside other goods.",
+      "explanation": "Trade routes and control of important trading centres helped shape the wealth and influence of states including Ghana, Mali and Songhai. These networks also supported the movement of people, ideas, scholarship, technologies and religious traditions. Trade was not a single route or a simple exchange between two regions; routes and goods changed over time.",
+      "example": "Gold from West African regions could move north through caravan networks, while salt from Saharan sources and other goods moved south.",
+      "sourceLabel": "The Metropolitan Museum of Art — The Trans-Saharan Gold Trade (7th–14th Century)",
+      "sourceUrl": "https://www.metmuseum.org/es/essays/the-trans-saharan-gold-trade-7th-14th-century",
+      "tags": [
+        "History",
+        "African history",
+        "West Africa",
+        "Ghana Empire",
+        "Mali Empire",
+        "Songhai",
+        "trade"
+      ]
+    },
+    {
+      "id": "health-adolescent-sleep-basics",
+      "category": "Health Education",
+      "title": "Sleep and adolescent wellbeing",
+      "summary": "Sleep supports learning, attention, emotional wellbeing and general health. The US Centers for Disease Control and Prevention summarises expert guidance that teenagers aged 13–17 should generally get 8–10 hours of sleep in each 24-hour period.",
+      "explanation": "A regular sleep and wake schedule, a calm sleeping environment and a routine that allows enough time for rest can support healthy sleep. Sleep needs and patterns vary. Persistent sleep difficulties or daytime problems are reasons to speak with a trusted adult and a qualified health professional; this lesson is educational, not a diagnosis.",
+      "example": "A learner who needs to wake at 6:30 a.m. can plan an evening routine that leaves enough time for the recommended sleep range, while adjusting it to their own needs and responsibilities.",
+      "sourceLabel": "CDC — About Sleep",
+      "sourceUrl": "https://www.cdc.gov/sleep/about/index.html",
+      "tags": [
+        "Health Education",
+        "sleep",
+        "adolescent health",
+        "wellbeing",
+        "learning"
+      ]
     }
   ],
   "observations": [
@@ -1042,11 +1308,11 @@
       "category": "Nigeria Public Health",
       "type": "official_snapshot",
       "observedAt": "2026-11-14",
-      "retrievedAt": "2026-11-15T08:41:08+01:00",
+      "retrievedAt": "2026-11-16T08:18:47+01:00",
       "title": "NCDC dashboard snapshot: all 62 identified contacts have exited follow-up, while the outbreak remains listed as active",
-      "summary": "The Nigeria Centre for Disease Control and Prevention dashboard generated on 14 November 2026 listed one confirmed Bundibugyo virus disease case, zero deaths, seven negative cases, 62 identified contacts, zero contacts still under follow-up and 62 contacts who had exited follow-up. The dashboard continued to label the outbreak active and the national risk level High. Completion of contact follow-up is an important surveillance milestone, but it is not the same as a formal outbreak-closure declaration. These are figures from the dated dashboard snapshot, not live counts.",
-      "status": "Official dashboard snapshot generated 14 November 2026 and retrieved 15 November 2026; not a live feed. The dashboard still labels the event an active outbreak with national risk level High.",
-      "sourceLabel": "Nigeria Centre for Disease Control and Prevention (NCDC), dashboard generated 14 November 2026",
+      "summary": "The Nigeria Centre for Disease Control and Prevention dashboard page generated on 15 November 2026 reported data as of 14 November: one confirmed Bundibugyo virus disease case, zero deaths, seven negative cases, 62 identified contacts, zero contacts still under follow-up and 62 contacts who had exited follow-up. The dashboard continued to label the outbreak active and the national risk level High. Completion of contact follow-up is an important surveillance milestone, but it is not the same as a formal outbreak-closure declaration. These are dated dashboard figures, not live counts.",
+      "status": "Official dashboard snapshot generated 15 November 2026, reporting figures as of 14 November and retrieved 16 November 2026; not a live feed. The dashboard still labels the event an active outbreak with national risk level High.",
+      "sourceLabel": "Nigeria Centre for Disease Control and Prevention (NCDC), dashboard generated 15 November 2026; figures as of 14 November",
       "sourceUrl": "https://evdmicrosite.ncdc.gov.ng/en/outbreaks/ebola-2026",
       "tags": [
         "Nigeria",
