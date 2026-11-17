@@ -1,4 +1,4 @@
-const CACHE="cyberai-shell-v5";
+const CACHE="cyberai-shell-v6";
 const CORE=["./","./index.html","./manifest.webmanifest","./icon.svg","./knowledge-library.json"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));self.skipWaiting()});
 self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))));self.clients.claim()});
