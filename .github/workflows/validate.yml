@@ -49,6 +49,47 @@ jobs:
         run: python -m json.tool manifest.webmanifest > /dev/null
       - name: Check knowledge library JSON
         run: python -m json.tool knowledge-library.json > /dev/null
+      - name: Validate knowledge library structure and source links
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("knowledge-library.json").read_text(encoding="utf-8"))
+          assert data.get("schemaVersion") == 2, "Unexpected knowledge schema version"
+          assert data.get("project") == "CYBERAI 2.0", "Project name mismatch"
+          assert data.get("creator") == "Oduyebo Abiola", "Creator credit mismatch"
+
+          buckets = ("evergreen", "news", "observations", "weather")
+          for bucket in buckets:
+              assert isinstance(data.get(bucket), list), f"{bucket} must be a list"
+
+          entries = [(bucket, entry) for bucket in buckets for entry in data[bucket]]
+          ids = [entry.get("id") for _, entry in entries]
+          assert all(isinstance(value, str) and value for value in ids), "Every entry needs an ID"
+          assert len(ids) == len(set(ids)), "Duplicate knowledge entry IDs found"
+
+          for bucket, entry in entries:
+              assert entry.get("title") and entry.get("summary"), f"Missing title or summary: {entry.get('id')}"
+              urls = []
+              if entry.get("sourceUrl"):
+                  urls.append(entry["sourceUrl"])
+              if entry.get("sourcePage"):
+                  urls.append(entry["sourcePage"])
+              for source in entry.get("sources") or []:
+                  urls.append(source.get("url", ""))
+              assert urls and all(url.startswith("https://") for url in urls), f"Missing or non-HTTPS source: {entry.get('id')}"
+              if bucket == "evergreen":
+                  assert entry.get("category"), f"Missing evergreen category: {entry['id']}"
+              elif bucket == "news":
+                  assert entry.get("publishedAt") and entry.get("sources"), f"Missing dated news metadata: {entry['id']}"
+              elif bucket == "observations":
+                  assert entry.get("observedAt") and entry.get("retrievedAt"), f"Missing observation timestamps: {entry['id']}"
+              elif bucket == "weather":
+                  assert entry.get("issuedAt") and entry.get("validFrom") and entry.get("validTo"), f"Missing forecast validity: {entry['id']}"
+
+          print(f"Validated {len(entries)} entries; all IDs are unique and all source links use HTTPS.")
+          PY
       - name: Check service worker JavaScript
         run: node --check sw.js
       - name: Check whitespace errors
