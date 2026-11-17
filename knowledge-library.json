@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "project": "CYBERAI 2.0",
   "creator": "Oduyebo Abiola",
-  "updatedAt": "2026-11-16T08:18:47+01:00",
+  "updatedAt": "2026-11-17T08:12:54+01:00",
   "contentPolicy": {
     "evergreen": "Reference lessons are stable educational explanations and should be reviewed periodically.",
     "news": "News entries are dated snapshots. Their event dates and data cut-offs are shown separately where relevant.",
@@ -404,6 +404,137 @@
         "bonds",
         "regional investment"
       ]
+    },
+    {
+      "id": "nigeria-afcfta-digital-trade-accord-2026-11-16",
+      "category": "Nigeria and African Trade",
+      "publishedAt": "2026-11-16",
+      "eventDate": "2026-11-16",
+      "type": "news",
+      "title": "Nigeria expects a digital-trade accord with five African partners in November",
+      "summary": "Nigeria's trade minister told Reuters that the country expects to sign a digital-trade agreement this month with Ghana, Rwanda, Kenya, South Africa and Egypt at an African Continental Free Trade Area Council of Ministers meeting in Zimbabwe. The report says regulators, including central banks and trade ministries, have discussed cooperation to help digitally enabled businesses expand across borders. The agreement's detailed terms were not disclosed in the report, and the planned signing should not be described as completed.",
+      "status": "Reported government plan as of 16 November 2026; signing and final terms remained pending in the report.",
+      "sources": [
+        {
+          "label": "Reuters, 16 November 2026",
+          "url": "https://www.reuters.com/world/africa/nigeria-expects-six-country-african-digital-trade-accord-this-month-minister-says-2026-11-16/"
+        }
+      ],
+      "tags": [
+        "Nigeria",
+        "AfCFTA",
+        "digital trade",
+        "West Africa",
+        "fintech",
+        "regional integration"
+      ]
+    },
+    {
+      "id": "guinea-deep-water-port-financing-plan-2026-11-16",
+      "category": "West Africa Infrastructure",
+      "publishedAt": "2026-11-16",
+      "eventDate": "2026-11-16",
+      "type": "news",
+      "title": "Guinea seeks financing for a planned 1.9-billion-dollar multi-user deep-water port",
+      "summary": "Guinea's mines minister told Reuters that feasibility studies had been completed for a proposed deep-water port intended to serve mining, container traffic and other industrial users. The government was discussing possible backing from US, Chinese and multilateral financiers. The minister gave no timetable for choosing investors or starting construction, so the port remains a proposal rather than an operating or fully financed project.",
+      "status": "Project proposal and financing discussions reported 16 November 2026; no construction start or investor-selection date was announced.",
+      "sources": [
+        {
+          "label": "Reuters, 16 November 2026",
+          "url": "https://www.reuters.com/world/africa/guinea-says-19-billion-deep-water-port-plan-draws-us-chinese-interest-2026-11-16/"
+        }
+      ],
+      "tags": [
+        "Guinea",
+        "West Africa",
+        "infrastructure",
+        "ports",
+        "trade",
+        "mining",
+        "investment"
+      ]
+    },
+    {
+      "id": "morocco-afdb-climate-resilience-financing-2026-11-13",
+      "category": "North Africa and Development Finance",
+      "publishedAt": "2026-11-13",
+      "eventDate": "2026-11-13",
+      "type": "news",
+      "title": "African Development Bank signs 434.4-million-euro financing agreement with Morocco",
+      "summary": "The African Development Bank Group and the Moroccan government signed a 434.4-million-euro financing agreement in Rabat on 13 November. The third phase of the programme is intended to support economic governance, private-sector investment and resilience to external and climate-related shocks, including reforms involving water and electricity-sector governance. The entry records a signed financing agreement and its stated aims, not completed reforms or measured outcomes.",
+      "status": "Financing agreement signed 13 November 2026; programme outcomes will depend on implementation.",
+      "sources": [
+        {
+          "label": "African Development Bank, 13 November 2026",
+          "url": "https://www.afdb.org/en/news-and-events/press-releases/morocco-secures-nearly-48-billion-dirhams-reforms-98539"
+        }
+      ],
+      "tags": [
+        "Morocco",
+        "African Development Bank",
+        "climate resilience",
+        "economic governance",
+        "development finance",
+        "North Africa"
+      ]
+    },
+    {
+      "id": "unesco-ucl-ai-climate-sycophancy-study-2026-11-16",
+      "category": "Global Technology and Science",
+      "publishedAt": "2026-11-16",
+      "eventDate": "2026-11-16",
+      "type": "news",
+      "title": "UNESCO–UCL study warns that AI chatbots can abandon climate facts when users push back",
+      "summary": "A UNESCO and University College London report presented at COP31 found that tested AI models could give accurate answers to basic climate questions but sometimes shifted away from established facts when users challenged them. UNESCO reported that, in eight out of ten cases where models changed to an incorrect answer, the change occurred at the first mild disagreement. The research also identified uneven performance across languages. The findings concern the tested models and climate-information tasks; they are not a universal score for every AI system or subject.",
+      "status": "Research findings released 16 November 2026; test results are specific to the study's models, prompts and climate-information tasks.",
+      "sources": [
+        {
+          "label": "UNESCO, 16 November 2026",
+          "url": "https://www.unesco.org/en/articles/ai-models-abandon-climate-facts-first-sign-user-push-back-unesco-ucl-report-shows"
+        },
+        {
+          "label": "University College London, 16 November 2026",
+          "url": "https://www.ucl.ac.uk/news/2026/nov/ai-systems-are-easy-pressure-giving-false-climate-information"
+        }
+      ],
+      "tags": [
+        "AI",
+        "UNESCO",
+        "University College London",
+        "climate science",
+        "AI reliability",
+        "multilingual AI",
+        "COP31"
+      ]
+    },
+    {
+      "id": "who-essential-amr-diagnostics-package-2026-11-16",
+      "category": "Global Public Health",
+      "publishedAt": "2026-11-16",
+      "eventDate": "2026-11-16",
+      "type": "news",
+      "title": "WHO publishes an essential diagnostics package for bacterial, fungal infections and antimicrobial resistance",
+      "summary": "The World Health Organization published a prioritized package of diagnostic tests for bacterial and fungal infections and antimicrobial resistance on 16 November. It maps rapid, microscopy, culture-based, serological and molecular tests to different levels of health care and is intended to help countries plan diagnostic services, procurement, financing and laboratory quality systems. Publication of the package does not mean that every country has already adopted or implemented it.",
+      "status": "WHO technical package published 16 November 2026; national adoption and implementation are separate processes.",
+      "sources": [
+        {
+          "label": "WHO, Essential package of diagnostic tests for bacterial and fungal infections and antimicrobial resistance, 16 November 2026",
+          "url": "https://www.who.int/publications/i/item/B09666"
+        },
+        {
+          "label": "WHO, Toolkit of standard operating procedures for bacteriology, mycology and antimicrobial susceptibility testing, 16 November 2026",
+          "url": "https://www.who.int/publications/i/item/9789240126343"
+        }
+      ],
+      "tags": [
+        "WHO",
+        "antimicrobial resistance",
+        "AMR",
+        "diagnostics",
+        "laboratories",
+        "public health",
+        "Africa"
+      ]
     }
   ],
   "weather": [
@@ -480,6 +611,32 @@
         "forecast",
         "thunderstorm",
         "weather safety"
+      ]
+    },
+    {
+      "id": "nimet-bulletin-2026-11-16-lagos-valid-17-to-19",
+      "category": "Nigeria Weather",
+      "type": "forecast",
+      "issuedAt": "2026-11-16",
+      "validFrom": "2026-11-17T00:00:00+01:00",
+      "validTo": "2026-11-19T23:59:59+01:00",
+      "forecastFor": "2026-11-17 to 2026-11-19",
+      "region": "Lagos, Nigeria",
+      "title": "NiMet city forecast for Lagos, issued 16 November: partly cloudy with evening temperatures of 33–34°C on 17–19 November",
+      "summary": "NiMet's city table shows partly cloudy conditions for Lagos in the morning and evening on 17, 18 and 19 November. The forecast morning/evening temperatures are 24°C/34°C on 17 November, 23°C/33°C on 18 November and 23°C/33°C on 19 November. These are forecast values, not observed temperatures. The bulletin does not state a separate heat advisory for Lagos.",
+      "advisory": "No separate heat advisory is listed in this bulletin. The forecast evening temperatures are 33–34°C; they should not be treated as measured readings or as an official heat-warning threshold. Check later NiMet bulletins for updates.",
+      "sourceLabel": "NiMet Central Forecast Office — Weather Bulletin issued 16 November 2026",
+      "sourceUrl": "https://nimet.gov.ng/downloader?file=admin/uploads/forecastbulletin/6afb3f64da3297.02491238_16-11-2026.__WEATHER_BULLETIN.pdf",
+      "sourcePage": "https://nimet.gov.ng/weather_forecast_bulletin_detail?id=1512",
+      "status": "Official city-level forecast issued 16 November 2026 for Lagos; valid 17–19 November 2026. Forecast only, not a live observation. Recheck for a newer bulletin.",
+      "tags": [
+        "Nigeria",
+        "NiMet",
+        "Lagos",
+        "weather forecast",
+        "partly cloudy",
+        "temperature",
+        "heat advisory check"
       ]
     }
   ],
@@ -1300,6 +1457,129 @@
         "wellbeing",
         "learning"
       ]
+    },
+    {
+      "id": "math-percentage-change",
+      "category": "Mathematics",
+      "title": "Calculating percentage increase and decrease",
+      "summary": "Percentage change compares a change with the original amount. Divide the increase or decrease by the original amount, then multiply by 100%.",
+      "explanation": "For an increase, percentage increase = ((new value − original value) ÷ original value) × 100%. For a decrease, percentage decrease = ((original value − new value) ÷ original value) × 100%. The original value is the denominator because it is the starting point. The formula is not defined when the original value is zero.",
+      "example": "A price rises from ₦800 to ₦920. The increase is ₦120, so (120 ÷ 800) × 100% = 15% increase.",
+      "sourceLabel": "Khan Academy — Percent increase and decrease",
+      "sourceUrl": "https://www.khanacademy.org/math/7th-grade-math-eureka-squared-aligned/x314834f71a55c568%3Apercent-and-applications-of-percent/x314834f71a55c568%3Apercent-decrease/a/key-ideas-percent-increase-and-decrease",
+      "tags": [
+        "Mathematics",
+        "percentages",
+        "percentage change",
+        "increase",
+        "decrease",
+        "financial literacy"
+      ]
+    },
+    {
+      "id": "further-math-trigonometric-sum-difference-identities",
+      "category": "Further Mathematics",
+      "title": "Trigonometric sum and difference identities",
+      "summary": "Trigonometric sum and difference identities express the sine, cosine and tangent of a combined angle using the functions of two separate angles.",
+      "explanation": "The identities are sin(A ± B) = sin A cos B ± cos A sin B; cos(A ± B) = cos A cos B ∓ sin A sin B; and tan(A ± B) = (tan A ± tan B) ÷ (1 ∓ tan A tan B), where the relevant denominators are non-zero. The paired signs matter: the cosine identity uses the opposite sign in its second term.",
+      "example": "sin(45° + 30°) = sin45°cos30° + cos45°sin30° = (√6 + √2) ÷ 4.",
+      "sourceLabel": "OpenStax — Sum and Difference Identities",
+      "sourceUrl": "https://openstax.org/books/algebra-and-trigonometry/pages/9-2-sum-and-difference-identities",
+      "tags": [
+        "Further Mathematics",
+        "trigonometry",
+        "identities",
+        "sine",
+        "cosine",
+        "tangent"
+      ]
+    },
+    {
+      "id": "chemistry-balancing-chemical-equations",
+      "category": "Chemistry",
+      "title": "Balancing chemical equations",
+      "summary": "A balanced chemical equation has the same number of atoms of each element on both sides of the reaction arrow, reflecting conservation of matter.",
+      "explanation": "Count each type of atom among the reactants and products. Adjust whole-number coefficients in front of chemical formulae until the counts match. Do not change subscripts inside a formula, because that would change the identity of the substance. Recount every element after each adjustment.",
+      "example": "CH₄ + 2O₂ → CO₂ + 2H₂O is balanced: both sides contain 1 carbon atom, 4 hydrogen atoms and 4 oxygen atoms.",
+      "sourceLabel": "OpenStax Chemistry 2e — Writing and Balancing Chemical Equations",
+      "sourceUrl": "https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations",
+      "tags": [
+        "Chemistry",
+        "chemical equations",
+        "conservation of matter",
+        "reactants",
+        "products"
+      ]
+    },
+    {
+      "id": "geography-plate-tectonics",
+      "category": "Geography and Earth Science",
+      "title": "Plate tectonics and the movement of Earth's outer shell",
+      "summary": "The theory of plate tectonics explains how large pieces of Earth's lithosphere move and interact, helping explain earthquakes, volcanoes, mountain building and ocean-floor features.",
+      "explanation": "At divergent boundaries, plates move apart and new crust can form. At convergent boundaries, plates move towards one another; one may descend beneath another, or continents may collide and build mountains. At transform boundaries, plates slide past each other. Plate motion is slow, usually measured in centimetres per year, but its effects accumulate over long periods.",
+      "example": "The East African Rift is associated with a divergent plate boundary, the Himalaya with continental collision, and the San Andreas Fault with transform motion.",
+      "sourceLabel": "U.S. Geological Survey — Plate Tectonics",
+      "sourceUrl": "https://www.usgs.gov/educational-resources/plate-tectonics",
+      "tags": [
+        "Geography",
+        "Earth science",
+        "geology",
+        "tectonic plates",
+        "earthquakes",
+        "volcanoes"
+      ]
+    },
+    {
+      "id": "business-break-even-analysis",
+      "category": "Business Studies",
+      "title": "Using break-even analysis in business",
+      "summary": "The break-even point is the level of sales at which total revenue equals total costs, so the business makes neither an operating profit nor an operating loss under the model's assumptions.",
+      "explanation": "Contribution per unit = selling price per unit − variable cost per unit. Break-even units = fixed costs ÷ contribution per unit. The calculation assumes the relevant selling price and unit variable cost are stable over the range being analysed. Actual businesses may face changing costs, multiple products, capacity limits, taxes and other factors.",
+      "example": "If fixed costs are ₦120,000, the selling price is ₦1,000 per unit and variable cost is ₦600 per unit, contribution is ₦400. Break-even volume is ₦120,000 ÷ ₦400 = 300 units.",
+      "sourceLabel": "OpenStax — Calculate a Break-Even Point in Units and Dollars",
+      "sourceUrl": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
+      "tags": [
+        "Business Studies",
+        "business mathematics",
+        "fixed costs",
+        "variable costs",
+        "contribution",
+        "break-even"
+      ]
+    },
+    {
+      "id": "health-healthy-diet-four-principles",
+      "category": "Health Education",
+      "title": "Four principles of a healthy diet",
+      "summary": "The World Health Organization describes healthy diets using four broad principles: adequacy, balance, moderation and diversity. Food needs and suitable choices vary by age, health, culture and locally available foods.",
+      "explanation": "Adequacy means a diet supplies needed nutrients. Balance means food components are included in suitable proportions. Moderation means limiting ingredients or foods that can be harmful when consumed in excess. Diversity means eating a variety of nutritious foods. Food safety is also essential. This is general education, not an individual meal plan or medical advice.",
+      "example": "A varied meal pattern may include locally available vegetables and fruits, beans or other protein foods, and staple foods such as maize, millet, rice, yam or other grains and tubers, prepared safely.",
+      "sourceLabel": "WHO — Healthy Diet",
+      "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "tags": [
+        "Health Education",
+        "nutrition",
+        "healthy diet",
+        "food safety",
+        "public health"
+      ]
+    },
+    {
+      "id": "technology-software-updates-security",
+      "category": "Technology",
+      "title": "Why trusted software updates matter",
+      "summary": "Software updates can fix security weaknesses, correct bugs and improve reliability. Delaying security updates may leave a device exposed to vulnerabilities that attackers already know about.",
+      "explanation": "Use the device's built-in update feature or go directly to the software maker's official website or app store. Be cautious of unexpected messages that ask you to install an update from an unfamiliar link or attachment. Check whether a device or application is still supported, because unsupported software may stop receiving security fixes.",
+      "example": "To update a phone safely, open its Settings app and use the built-in Software update screen instead of following a surprise update link in a text message.",
+      "sourceLabel": "Australian Cyber Security Centre — Keep your devices and software up to date",
+      "sourceUrl": "https://www.cyber.gov.au/publication/personal-cyber-security-handbook/keep-your-devices-and-software-up-to-date",
+      "tags": [
+        "Technology",
+        "cybersecurity",
+        "software updates",
+        "security patches",
+        "digital safety"
+      ]
     }
   ],
   "observations": [
@@ -1320,6 +1600,29 @@
         "Bundibugyo virus",
         "Ebola",
         "contact follow-up",
+        "official dashboard",
+        "dated snapshot"
+      ]
+    },
+    {
+      "id": "ncdc-ebola-dashboard-snapshot-2026-11-16",
+      "category": "Nigeria Public Health",
+      "type": "official_snapshot",
+      "observedAt": "2026-11-14",
+      "generatedAt": "2026-11-16",
+      "retrievedAt": "2026-11-17T08:12:54+01:00",
+      "title": "NCDC dashboard snapshot: case figures remain dated 14 November; 4,471 entry screenings were recorded on 16 November",
+      "summary": "The NCDC dashboard page generated on 16 November 2026 continued to show situation figures as of 14 November: one confirmed Bundibugyo virus disease case, zero deaths, one recovered and discharged patient, seven negative cases, 62 identified contacts, zero contacts under follow-up and 62 contacts who had exited follow-up. The same dashboard separately reported 696,997 screening forms recorded since 5 June 2026 and 4,471 forms in the preceding 24 hours, dated 16 November, across 16 points of entry. The dashboard continued to label the outbreak active. These figures have different cut-off dates and are a static snapshot, not a live case counter.",
+      "status": "Official NCDC dashboard page generated 16 November 2026. Case and contact figures are as of 14 November; entry-screening flow is dated 16 November; retrieved 17 November 2026. Not a live feed.",
+      "sourceLabel": "Nigeria Centre for Disease Control and Prevention — Bundibugyo Ebola dashboard, generated 16 November 2026",
+      "sourceUrl": "https://evdmicrosite.ncdc.gov.ng/en/outbreaks/ebola-2026",
+      "tags": [
+        "Nigeria",
+        "NCDC",
+        "Bundibugyo virus disease",
+        "Ebola",
+        "contact follow-up",
+        "entry screening",
         "official dashboard",
         "dated snapshot"
       ]
